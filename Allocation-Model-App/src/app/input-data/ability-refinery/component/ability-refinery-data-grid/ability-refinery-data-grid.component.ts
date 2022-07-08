@@ -157,6 +157,7 @@ export class AbilityRefineryDataGridComponent implements OnInit {
       refineryItem.productId = lpg.id;
       refineryItem.rowOrder = item.rowOrder;
       refineryItem.product = lpg.productName;
+      refineryItem.productCode = lpg.productCode;
       refineryItem.supplierId = item.id;
       refineryItem.supplier = item.fullName;
 
@@ -214,6 +215,7 @@ export class AbilityRefineryDataGridComponent implements OnInit {
       let data: any = {};
       data.productId = itemList['productId'];
       data.product = itemList['product'];
+      data.productCode = itemList['productCode'];
       data.supplierId = itemList['supplierId'];
       data.supplier = itemList['supplier'];
       data.year = this.year;
@@ -226,6 +228,7 @@ export class AbilityRefineryDataGridComponent implements OnInit {
         let productData: any = {}
         productData.product = itemList['product'];
         productData.productId = itemList['productId'];
+        productData.productCode = itemList['productCode'];
         productData.supplierId = itemList['supplierId'];
         productData.supplier = itemList['supplier'];
         productData.year = data.year;

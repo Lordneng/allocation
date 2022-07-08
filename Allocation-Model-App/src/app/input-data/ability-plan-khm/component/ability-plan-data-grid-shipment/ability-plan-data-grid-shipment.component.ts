@@ -149,6 +149,7 @@ export class AbilityPlanDataGridShipmentComponent implements OnInit {
       productItem.productId = item.id;
       productItem.rowOrder = item.rowOrder;
       productItem.product = item.productName;
+      productItem.productCode = item.productCode;
 
       let data = _.filter(this.masterData.abilityPlanKhm, (itemProduct) => {
         return itemProduct.productId === item.id;
@@ -229,6 +230,7 @@ export class AbilityPlanDataGridShipmentComponent implements OnInit {
       let data: any = {};
       data.productId = itemList['productId'];
       data.product = itemList['product'];
+      data.productCode = itemList['productCode'];
       data.year = this.year;
       data.month = this.month;
       data.rowOrder = _.toNumber(itemList['rowOrder'])
@@ -239,7 +241,7 @@ export class AbilityPlanDataGridShipmentComponent implements OnInit {
         let productData: any = {}
         productData.product = itemList['product'];
         productData.productId = itemList['productId'];
-
+        productData.productCode = itemList['productCode'];
         productData.year = data.year;
         productData.month = data.month;
         productData.rowOrder = data.rowOrder

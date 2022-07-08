@@ -16,6 +16,9 @@ export class AbilityRefinery extends CreatedEntity<number> {
     product: string;
 
     @Column({ nullable: true, length: 200 })
+    productCode: string;
+
+    @Column({ nullable: true, length: 200 })
     supplier: string;
 
     @Column({ nullable: true })

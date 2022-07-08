@@ -35,11 +35,11 @@ export class AbilityPlanRayongDataGridImportComponent implements OnInit {
   dataSheet: any = { c2: [], c3Lpg: [], ngl: [], c3: [], lpg: [] };
   dynamicColumns: any[] = [];
   productData = [
-    { id: 0, product: 'C2', rowOrder: 0 },
-    { id: 1, product: 'C3/LPG', rowOrder: 1 },
-    { id: 2, product: 'NGL', rowOrder: 2 },
-    { id: 3, product: 'C3', rowOrder: 3 },
-    { id: 4, product: 'LPG', rowOrder: 4 },
+    { id: 0, product: 'C2', productCode: 'C2', rowOrder: 0 },
+    { id: 1, product: 'C3/LPG', productCode: 'C3', rowOrder: 1 },
+    { id: 2, product: 'NGL', productCode: 'NGL', rowOrder: 2 },
+    { id: 3, product: 'C3', productCode: 'C3', rowOrder: 3 },
+    { id: 4, product: 'LPG', productCode: 'LPG', rowOrder: 4 },
   ];
   sheets: any = [];
   masterData: any = {};
@@ -286,6 +286,8 @@ export class AbilityPlanRayongDataGridImportComponent implements OnInit {
         if (data) {
           obj.productId = data.id;
           obj.product = _.trim(item.product);
+          obj.productCode = _.trim(item.productCode);
+
           if (item.gsP1) {
             const dataProductionPlant = _.find(this.masterData.productionPlant, (itemProduct) => {
               return itemProduct.code === 'GSP1';
@@ -534,51 +536,51 @@ export class AbilityPlanRayongDataGridImportComponent implements OnInit {
       }
     }
   }
-
-  dataC2: any = [{ id: 1, product: 'C2', productionPlant: 'GSP1' }
-    , { id: 2, product: 'C2', productionPlant: 'GSP2' }
-    , { id: 3, product: 'C2', productionPlant: 'GSP3' }
-    , { id: 4, product: 'C2', productionPlant: 'GSP5' }
-    , { id: 5, product: 'C2', productionPlant: 'GSP6' }
-    , { id: 6, product: 'C2', productionPlant: 'ESP' }
-    , { id: 7, product: 'C2', productionPlant: 'Total' }
-    , { id: 8, product: 'C2', productionPlant: 'Low CO2' }
-    , { id: 9, product: 'C2', productionPlant: 'High CO2' }
+ 
+  dataC2: any = [{ id: 1, product: 'C2', productCode: 'C2', productionPlant: 'GSP1' }
+    , { id: 2, product: 'C2', productCode: 'C2', productionPlant: 'GSP2' }
+    , { id: 3, product: 'C2', productCode: 'C2', productionPlant: 'GSP3' }
+    , { id: 4, product: 'C2', productCode: 'C2', productionPlant: 'GSP5' }
+    , { id: 5, product: 'C2', productCode: 'C2', productionPlant: 'GSP6' }
+    , { id: 6, product: 'C2', productCode: 'C2', productionPlant: 'ESP' }
+    , { id: 7, product: 'C2', productCode: 'C2', productionPlant: 'Total' }
+    , { id: 8, product: 'C2', productCode: 'C2', productionPlant: 'Low CO2' }
+    , { id: 9, product: 'C2', productCode: 'C2', productionPlant: 'High CO2' }
   ];
-  dataC3LPG: any = [{ id: 10, product: 'C3/LPG', productionPlant: 'GSP1' }
-    , { id: 11, product: 'C3/LPG', productionPlant: 'GSP2' }
-    , { id: 12, product: 'C3/LPG', productionPlant: 'GSP3' }
-    , { id: 13, product: 'C3/LPG', productionPlant: 'GSP5' }
-    , { id: 14, product: 'C3/LPG', productionPlant: 'GSP6' }
-    , { id: 15, product: 'C3/LPG', productionPlant: 'Total' }
+  dataC3LPG: any = [{ id: 10, product: 'C3/LPG', productCode: 'C3', productionPlant: 'GSP1' }
+    , { id: 11, product: 'C3/LPG', productCode: 'C3', productionPlant: 'GSP2' }
+    , { id: 12, product: 'C3/LPG', productCode: 'C3', productionPlant: 'GSP3' }
+    , { id: 13, product: 'C3/LPG', productCode: 'C3', productionPlant: 'GSP5' }
+    , { id: 14, product: 'C3/LPG', productCode: 'C3', productionPlant: 'GSP6' }
+    , { id: 15, product: 'C3/LPG', productCode: 'C3', productionPlant: 'Total' }
   ];
-  dataC3: any = [{ id: 16, product: 'C3', productionPlant: 'GSP1' }
-    , { id: 17, product: 'C3', productionPlant: 'GSP2' }
-    , { id: 18, product: 'C3', productionPlant: 'GSP3' }
-    , { id: 19, product: 'C3', productionPlant: 'GSP5' }
-    , { id: 20, product: 'C3', productionPlant: 'GSP6' }
-    , { id: 21, product: 'C3', productionPlant: 'Total' }
+  dataC3: any = [{ id: 16, product: 'C3', productCode: 'C3', productionPlant: 'GSP1' }
+    , { id: 17, product: 'C3', productCode: 'C3', productionPlant: 'GSP2' }
+    , { id: 18, product: 'C3', productCode: 'C3', productionPlant: 'GSP3' }
+    , { id: 19, product: 'C3', productCode: 'C3', productionPlant: 'GSP5' }
+    , { id: 20, product: 'C3', productCode: 'C3', productionPlant: 'GSP6' }
+    , { id: 21, product: 'C3', productCode: 'C3', productionPlant: 'Total' }
   ];
-  dataLPG: any = [{ id: 22, product: 'LPG', productionPlant: 'GSP1' }
-    , { id: 23, product: 'LPG', productionPlant: 'GSP2' }
-    , { id: 24, product: 'LPG', productionPlant: 'GSP3' }
-    , { id: 25, product: 'LPG', productionPlant: 'GSP5' }
-    , { id: 26, product: 'LPG', productionPlant: 'GSP6(Butane)' }
-    , { id: 27, product: 'LPG', productionPlant: 'Total' }
-    , { id: 28, product: 'LPG', productionPlant: 'LPG-Petro' }
-    , { id: 29, product: 'LPG', productionPlant: 'LPG-Domestic' }
+  dataLPG: any = [{ id: 22, product: 'LPG', productCode: 'LPG', productionPlant: 'GSP1' }
+    , { id: 23, product: 'LPG', productCode: 'LPG', productionPlant: 'GSP2' }
+    , { id: 24, product: 'LPG', productCode: 'LPG', productionPlant: 'GSP3' }
+    , { id: 25, product: 'LPG', productCode: 'LPG', productionPlant: 'GSP5' }
+    , { id: 26, product: 'LPG', productCode: 'LPG', productionPlant: 'GSP6(Butane)' }
+    , { id: 27, product: 'LPG', productCode: 'LPG', productionPlant: 'Total' }
+    , { id: 28, product: 'LPG', productCode: 'LPG', productionPlant: 'LPG-Petro' }
+    , { id: 29, product: 'LPG', productCode: 'LPG', productionPlant: 'LPG-Domestic' }
   ];
-  dataNGL: any = [{ id: 30, product: 'NGL', productionPlant: 'GSP1' }
-    , { id: 31, product: 'NGL', productionPlant: 'GSP2' }
-    , { id: 32, product: 'NGL', productionPlant: 'GSP3' }
-    , { id: 33, product: 'NGL', productionPlant: 'GSP5' }
-    , { id: 34, product: 'NGL', productionPlant: 'GSP6' }
-    , { id: 35, product: 'NGL', productionPlant: 'Stab' }
-    , { id: 36, product: 'NGL', productionPlant: 'Total' }
+  dataNGL: any = [{ id: 30, product: 'NGL', productCode: 'NGL', productionPlant: 'GSP1' }
+    , { id: 31, product: 'NGL', productCode: 'NGL', productionPlant: 'GSP2' }
+    , { id: 32, product: 'NGL', productCode: 'NGL', productionPlant: 'GSP3' }
+    , { id: 33, product: 'NGL', productCode: 'NGL', productionPlant: 'GSP5' }
+    , { id: 34, product: 'NGL', productCode: 'NGL', productionPlant: 'GSP6' }
+    , { id: 35, product: 'NGL', productCode: 'NGL', productionPlant: 'Stab' }
+    , { id: 36, product: 'NGL', productCode: 'NGL', productionPlant: 'Total' }
   ];
-  dataGC: any = [{ id: 37, product: 'C2', productionPlant: 'Low CO2' }
-    , { id: 38, product: 'C2', productionPlant: 'High CO2' }
-    , { id: 39, product: 'NGL', productionPlant: 'Total' }
+  dataGC: any = [{ id: 37, product: 'C2', productCode: 'C2', productionPlant: 'Low CO2' }
+    , { id: 38, product: 'C2', productCode: 'C2', productionPlant: 'High CO2' }
+    , { id: 39, product: 'NGL', productCode: 'NGL', productionPlant: 'Total' }
   ];
 
   getDataMonthDaily() {

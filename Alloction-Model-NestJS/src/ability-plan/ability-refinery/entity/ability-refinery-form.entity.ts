@@ -7,6 +7,9 @@ export class AbilityRefineryForm extends CreatedEntity<number> {
     @Column({ nullable: true, length: 200 })
     product: string;
 
+    @Column({ nullable: true, length: 200 })
+    productCode: string;
+
     @Column({ nullable: true })
     year: Number;
 

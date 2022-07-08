@@ -260,6 +260,7 @@ export class AbilityPentaneDataGridComponent implements OnInit {
         productItem.unit = unit.fullName;
         productItem.unitId = unit.id;
         productItem.product = itemPlant.name;
+        productItem.productCode = item.productCode;
         productItem.productionPlantId = itemPlant.id;
         productItem.rowOrder = itemPlant.rowOrder;
 
@@ -534,6 +535,7 @@ export class AbilityPentaneDataGridComponent implements OnInit {
       data.unitId = itemList['unitId'];
       data.productionPlantId = itemList['productionPlantId'];
       data.product = itemList['product'];
+      data.productCode = itemList['productCode'];
       data.year = this.year;
       data.month = this.month;
       data.rowOrder = _.toNumber(itemList['rowOrder'])
@@ -561,6 +563,7 @@ export class AbilityPentaneDataGridComponent implements OnInit {
         let productData: any = {}
         productData.product = itemList['product'];
         productData.productId = itemList['productId'];
+        productData.productCode = itemList['productCode'];
         productData.unitId = itemList['unitId'];
         productData.productionPlantId = itemList['productionPlantId'];
         productData.year = data.year;

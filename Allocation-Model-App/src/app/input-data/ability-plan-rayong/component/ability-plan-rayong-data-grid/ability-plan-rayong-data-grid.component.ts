@@ -8,6 +8,7 @@ import { DxDataGridComponent } from 'devextreme-angular';
 import { AbilityPlanRayongService } from 'src/app/service/ability-plan-rayong.service';
 import Swal from 'sweetalert2';
 import { AuthService } from '../../../../service/auth.service';
+import data from 'src/app/constants/menu';
 
 @Component({
   selector: 'app-ability-plan-rayong-data-grid',
@@ -40,6 +41,7 @@ export class AbilityPlanRayongDataGridComponent implements OnInit {
     {
       id: 0,
       product: 'Ethane',
+      productCode: 'C2',
       rowOrder: 0,
       detail: [
         { code: 'gsP1', caption: 'GSP1', rowOrder: 0 },
@@ -54,6 +56,7 @@ export class AbilityPlanRayongDataGridComponent implements OnInit {
     {
       id: 1,
       product: 'C3/LPG',
+      productCode: 'C3',
       rowOrder: 1,
       detail: [
         { code: 'gsP1', caption: 'GSP1', rowOrder: 0 },
@@ -67,6 +70,7 @@ export class AbilityPlanRayongDataGridComponent implements OnInit {
     {
       id: 2,
       product: 'NGL',
+      productCode: 'NGL',
       rowOrder: 2,
       detail: [
         { code: 'gsP1', caption: 'GSP1', rowOrder: 0 },
@@ -81,6 +85,7 @@ export class AbilityPlanRayongDataGridComponent implements OnInit {
     {
       id: 3,
       product: 'C3',
+      productCode: 'C3',
       rowOrder: 3,
       detail: [
         { code: 'gsP1', caption: 'GSP1', rowOrder: 0 },
@@ -94,6 +99,7 @@ export class AbilityPlanRayongDataGridComponent implements OnInit {
     {
       id: 4,
       product: 'LPG',
+      productCode: 'LPG',
       rowOrder: 4,
       detail: [
         { code: 'gsP1', caption: 'GSP1', rowOrder: 0 },
@@ -107,6 +113,7 @@ export class AbilityPlanRayongDataGridComponent implements OnInit {
     {
       id: 5,
       product: 'C2',
+      productCode: 'C2',
       rowOrder: 5,
       detail: [
         { code: 'lowcO2', caption: 'Low CO2', rowOrder: 7 },
@@ -117,6 +124,7 @@ export class AbilityPlanRayongDataGridComponent implements OnInit {
     {
       id: 6,
       product: 'GC',
+      productCode: 'C2',
       rowOrder: 6,
       detail: [
         { code: 'lowcO2', caption: 'Low CO2', rowOrder: 0 },
@@ -410,6 +418,7 @@ export class AbilityPlanRayongDataGridComponent implements OnInit {
         dataProduct.id = itemProduct.id;
         dataProduct.product = itemProduct.product;
         dataProduct.rowOrder = itemProduct.rowOrder;
+        dataProduct.productCode = itemProduct.productCode;
         _.each(this.listMonth, (itemMonth) => {
           const date = moment(itemMonth.Year + '-' + itemMonth.Month + '-01');
           dataProduct['isCalculateM' + itemMonth.Month + itemMonth.Year] = false;
@@ -594,6 +603,7 @@ export class AbilityPlanRayongDataGridComponent implements OnInit {
 
       let data: any = {};
       data.product = itemList['product'];
+      data.productCode = itemList['productCode'];
       data.year = this.year;
       data.month = this.month;
       data.rowOrder = _.toNumber(itemList['rowOrder']);
@@ -601,6 +611,7 @@ export class AbilityPlanRayongDataGridComponent implements OnInit {
 
       dataForm.push({
         product: data.product,
+        productCode: data.productCode,
         year: data.year,
         month: data.month,
         rowOrder: data.rowOrder,
