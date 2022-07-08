@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-12">
+    <h2 class="mb-2">Margin per unit</h2>
+    <div class="setting-float">
+      <form>
+        <label class="form-group has-float-label w-auto d-inline-block mb-0">
+          <dx-number-box [width]="107" [step]="1" [min]="0" [max]="15" [(value)]="numberBoxDigi"
+            (onFocusOut)="checkNullValue($event)" valueChangeEvent="keyup"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+          </dx-number-box>
+          <span>จำนวนจุดทศนิยม</span>
+        </label>
+      </form>
+    </div>
+    <br><br>
+    <dx-data-grid #marginDataGrid [columns]="dynamicColumns" [dataSource]="calMarginDataList" columnResizingMode="widget"
+      [allowColumnResizing]="true" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+      [focusedRowEnabled]="false">
+      <dxo-group-panel [visible]="false"></dxo-group-panel>
+      <dxo-sorting [mode]="'none'"></dxo-sorting>
+      <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+      <!-- <dxo-paging [enabled]="false"></dxo-paging> -->
+      <!-- <dxo-pager [visible]="false"></dxo-pager> -->
+      <div *dxTemplate="let itemTemp of cellTemplate" placement="bottom">
+        {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+        (numberBoxDigi ? numberBoxDigi: 0)}}
+      </div>
+      <div *dxTemplate="let itemTemp of 'cellEditTemplate'" placement="bottom">
+        <dx-number-box #numberBox [(value)]="itemTemp.data[itemTemp.column.dataField]"
+          (paste)="onPaste($event,itemTemp.column.code,itemTemp.rowIndex,itemTemp)">
+        </dx-number-box>
+      </div>
+    </dx-data-grid>
+  </div>
+</div>

@@ -1,0 +1,121 @@
+<div class="page-wrapper">
+  <div #spacer></div>
+  <div class="page-header" sticky [spacer]="spacer">
+    <!-- sticky [spacer]="spacer" -->
+    <div class="nav-block">
+      <a
+        href="javascript:;"
+        (click)="
+          menuButtonClick(
+            $event,
+            sidebar.menuClickCount,
+            sidebar.containerClassnames
+          );
+          (false)
+        "
+        class="menu-button"
+      >
+        <i class="fas fa-align-left"></i>
+      </a>
+    </div>
+    <div class="header-block">
+      <div class="block">
+        <div class="page-title">
+          <div class="page-name">Inform OR Report</div>
+        </div>
+        <div class="text-zero top-right-button-container">
+          <button class="btn btn-outline-primary mg-l-5 mr-1" (click)="onSearch($event)">
+            <i ng-reflect-ng-class="simple-icon-magnifier" class="simple-icon-magnifier mr-1"></i>
+            <span>ค้นหา</span>
+          </button>
+          <div class="btn-group" dropdown>
+            <div>
+              <button id="button-split" type="button" class="btn btn-primary mg-l-5 mr-1" (click)="exportFile()">
+                <i ng-reflect-ng-class="iconsminds-save" class="fas fa-file-excel mr-2"></i>
+                <span class="caret">Export Excel </span>
+              </button> &nbsp;
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+  <div class="page-body">
+    <section class="section section-bg-grey">
+      <div class="block-wrapper">
+        <div class="result-block">
+          <div class="detail-block">
+            <div class="row">
+              <div class="col-10">
+                <div class="form-group">
+                  <label>OR Demand Plan Version :</label>
+                  <dx-select-box [dataSource]="orDemandPlanVersionList" valueExpr="id" [displayExpr]="displayVersion"
+                    name="costVersionId" [showClearButton]="true" [(ngModel)]="m7VersionId"
+                    (onValueChanged)="onAccept($event)">
+                    <dx-validator>
+                      <dxi-validation-rule type="required" message="กรุณาเลือก OR Demand Plan Version">
+                      </dxi-validation-rule>
+                    </dx-validator>
+                  </dx-select-box>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="d-flex flex-column mt-2 ml-auto">
+                  <label class="has-float-label">
+                    <dx-number-box [width]="107" [step]="1" [min]="0" [max]="15" [(value)]="numberBoxDigi"
+                      (onFocusOut)="checkNullValue($event)" valueChangeEvent="keyup"
+                      onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    </dx-number-box>
+                    <span>จำนวนจุดทศนิยม</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <tabset #tabSet class="separator-tabs">
+              <tab heading="Ability" (selectTab)="tabAbilityChange($event)" class="nav-link">
+                <app-ability-report-inform #dataGridAbility [(numberBoxDigi)]="numberBoxDigi"></app-ability-report-inform>
+              </tab>
+              <tab heading="OR Demand" (selectTab)="tabDemandChange($event)">
+                <app-or-demand-inform #dataORDemandInform [(numberBoxDigi)]="numberBoxDigi"></app-or-demand-inform>
+              </tab>
+              <tab heading="ปรับแผน"></tab>
+            </tabset>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<ng-template #template>
+  <div class="modal-body">
+    <h5 class="mb-4"><i class="far fa-calendar-alt icon-color"></i> Year</h5>
+    <form>
+      <!-- <dx-calendar [maxZoomLevel]="'decade'" [minZoomLevel]="'century'" [(value)]="date">
+      </dx-calendar> -->
+      <dx-calendar
+        [maxZoomLevel]="'year'"
+        [minZoomLevel]="'century'"
+        [(value)]="date"
+      >
+      </dx-calendar>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      (click)="searchCancelClick()"
+    >
+      ยกเลิก
+    </button>
+    <button
+      type="submit"
+      class="btn btn-primary float-right"
+      (click)="searchClick()"
+    >
+      ค้นหา
+    </button>
+  </div>
+</ng-template>

@@ -1,0 +1,12 @@
+.product-grade {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+::ng-deep.swal2-container {
+    z-index: 1000000;
+}
+
+.formula-danger {
+    border: 0.1px solid #dd8784 !important;
+}

@@ -1,0 +1,9 @@
+
+
+{
+  "/model/*": {
+    "target": "https://allouatapp.pttplc.com:5000",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

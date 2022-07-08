@@ -1,0 +1,1 @@
+export * from './master-production-plant.entity';

@@ -1,0 +1,65 @@
+<dx-data-grid #dataGrid [columns]="dynamicColumns" [dataSource]="dataList" columnResizingMode="widget"
+    [allowColumnResizing]="true" [focusedRowEnabled]="false" (onCellPrepared)="onCellPrepared($event)"
+    (onRowPrepared)="onRowPrepared($event)">
+    <dxo-sorting [mode]="'none'"></dxo-sorting>
+    <dxo-search-panel [visible]="false"></dxo-search-panel>
+    <dxo-filter-row [visible]="false"></dxo-filter-row>
+    <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+    <dxo-paging [enabled]="false"></dxo-paging>
+    <dxo-pager [visible]="false"></dxo-pager>
+    <div *dxTemplate="let itemTemp of cellTemplate">
+      <div *ngIf="itemTemp.column.dataField != 'total'" [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer"
+        (mouseenter)="itemTemp.data[itemTemp.column.dataField + itemTemp.rowIndex] = true"
+        (mouseleave)="itemTemp.data[itemTemp.column.dataField + itemTemp.rowIndex] = false">
+        <i class="glyph-icon simple-icon-options-vertical"></i>
+        {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+        (numberBoxDigi ? numberBoxDigi: 0)}}
+      </div>
+      <dx-context-menu [dataSource]="[{text:'Edit'}, {text:'Paste'}]"
+        [showEvent]="'dxclick'" [width]="200" [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
+        (onItemClick)="itemClick($event, itemTemp.data, itemTemp.rowIndex ,itemTemp.column.code, itemTemp.column,  false, itemTemp)">
+      </dx-context-menu>
+      <div *ngIf="itemTemp.column.dataField == 'total'">
+        {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+        (numberBoxDigi ? numberBoxDigi: 0)}}
+      </div>
+    </div>
+  </dx-data-grid>
+<dx-popup [width]="500" [height]="350" [showTitle]="true" [title]="titleEdit" [closeOnOutsideClick]="false"
+  [(visible)]="popupVisible" [showCloseButton]="false">
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-outline-primary" (click)="popupCancelClick()">
+
+      <span>ยกเลิก</span>
+    </button>
+
+  </dxi-toolbar-item>
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-primary" [disabled]="this.accessMenu != 1" (click)="popupSaveClick()">
+      <span>ตกลง</span>
+    </button>
+  </dxi-toolbar-item>
+  <div *dxTemplate="let data of 'content'">
+    <div class="row mt-2">
+
+      <div class="col-md-12">
+        <div class="form-group">
+          <label class="control-label">Value</label>
+          <dx-number-box #numberBox [readOnly]="this.accessMenu != 1" [(value)]="dataEdit[dataFieldEdit + 'Value']">
+          </dx-number-box>
+        </div>
+
+        <div class="form-group">
+          <label for="remark-data">remark</label>
+          <dx-text-area [readOnly]="this.accessMenu != 1" [(value)]="dataEdit[dataFieldEdit + 'Remark']">
+          </dx-text-area>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+</dx-popup>

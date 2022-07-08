@@ -1,0 +1,104 @@
+<dx-popup class="popup" [showTitle]="true" title="Customer" [dragEnabled]="true" [closeOnOutsideClick]="false"
+    [(visible)]="popupVisible" [showCloseButton]="false">
+    <div *dxTemplate="let data of 'content'">
+
+        <dx-scroll-view #scrollView [scrollByContent]="true" [scrollByThumb]="true" showScrollbar="onScroll">
+            <div class="row mt-2">
+                <div class="col-6">
+                    <div class="section-wrapper">
+                        <div class="dx-field year-filed">
+                            <label class="form-group has-float-label">
+                                <div class="">
+                                    <input type="text" class="form-control" [(ngModel)]="dataInfo.customerCode">
+                                </div>
+                                <span class="float-label ">Customer Code</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <div class="section-wrapper">
+                        <div class="dx-field year-filed">
+                            <label class="form-group has-float-label">
+                                <div class="">
+                                    <input type="text" class="form-control" [(ngModel)]="dataInfo.customerName">
+                                </div>
+                                <span class="float-label ">Customer Name</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="section-wrapper">
+                        <div class="dx-field year-filed">
+                            <label class="form-group has-float-label">
+                                <div class="">
+                                    <input type="text" class="form-control" [(ngModel)]="dataInfo.customerShortName">
+
+                                </div>
+                                <span class="float-label ">Customer Short Name</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-6">
+                <div class="section-wrapper">
+                    <dx-check-box [(value)]="dataInfo.isSaleSubCustomer"></dx-check-box> แยกการขายตามบริษัทในเคลือ
+                </div>
+            </div> -->
+                <div class="col-6">
+                    <div class="section-wrapper">
+                        <div class="dx-field year-filed">
+                            <label class="form-group has-float-label">
+                                <div class="">
+                                    <textarea type="text" class="form-control" [(ngModel)]="dataInfo.remark"></textarea>
+                                </div>
+                                <span class="float-label ">Remark</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h3>Plant</h3>
+                    <!-- <app-breadcrumb></app-breadcrumb> -->
+                </div>
+                <div class="col-6"><button type="submit" class="btn btn-primary float-right"
+                        (click)="plantAddClick()"><i ng-reflect-ng-class="iconsminds-save"
+                            class="iconsminds-save mr-1"></i> เพิ่ม</button></div>
+            </div>
+            <div class="row">
+                <ng-container *ngFor="let item of dataInfo.plantData; let i=index">
+                    <div class="col-11">
+                        <div class="section-wrapper">
+                            <div class="dx-field year-filed">
+                                <label class="form-group has-float-label">
+                                    <div class="">
+                                        <input type="text" class="form-control" [(ngModel)]="item.name">
+                                    </div>
+                                    <span class="float-label ">{{i + 1}}</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <a class="text-dark" title="ลบ" (click)="deleteClick($event, item)">
+                            <span class="tx-18 p-1 w-100"><i class="far fa-trash-alt"></i></span>
+                        </a>
+                    </div>
+                </ng-container>
+
+
+
+            </div>
+        </dx-scroll-view>
+    </div>
+    <dxi-toolbar-item widget="dxButton" toolbar="bottom" location="after"
+        [options]="{ text: 'บันทึก', type:'default', icon: 'fas fa-save', onClick: popupSaveClick }">
+    </dxi-toolbar-item>
+    <dxi-toolbar-item widget="dxButton" toolbar="bottom" location="after"
+        [options]="{ text: 'ยกเลิก', type:'default', icon: 'fas fa-info', onClick: popupCancelClick }">
+    </dxi-toolbar-item>
+</dx-popup>

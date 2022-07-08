@@ -1,0 +1,85 @@
+<div class="row">
+  <div class="col-12">
+    <div>
+      <!-- <h1><i ng-reflect-ng-class="iconsminds-three-arrow-fork" class="rounded-circle border iconsminds-three-arrow-fork"></i> Cost ผวก</h1> -->
+      <h1> Cost And Selling Price Export</h1>
+      <div class="text-zero top-right-button-container">
+
+        <button class="btn btn-sm pd-x-15 mg-l-5 btn-outline-secondary">
+          <i ng-reflect-ng-class="iconsminds-back-2" class="iconsminds-back-2"></i>
+
+        </button>
+
+
+
+        <button class="btn btn-sm pd-x-15 mg-l-5 btn btn-secondary btn-shadow">
+          <i ng-reflect-ng-class="iconsminds-save" class="far fa-file-excel"></i>
+
+        </button>
+
+        <button class="btn btn-sm pd-x-15 mg-l-5 btn-outline-secondary">
+          <i ng-reflect-ng-class="simple-icon-options" class="simple-icon-options-vertical"></i>
+
+        </button>
+      </div>
+      <div class="separator mb-3"></div>
+    </div>
+
+    <div>
+      <tabset class="separator-tabs">
+        <tab heading="Data">
+
+          <div class="row">
+            <div class="col-12 col-md-12 col-xl-4 col-left">
+              <div class="card mb-4 w-100">
+                <div class="card-body">
+                  <h5 class="mb-4">Year</h5>
+                  <form>
+                    <dx-calendar [maxZoomLevel]="'decade'" [minZoomLevel]="'century'">
+                    </dx-calendar>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </tab>
+
+        <!-- <tab heading="History">
+          <app-cost-history></app-cost-history>
+        </tab> -->
+        <!-- <tab heading="{{'pages.followers' | translate | uppercase }}">
+            <app-profile-friends></app-profile-friends>
+          </tab> -->
+      </tabset>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <ng-template #template>
+
+    <div class="modal-body">
+      <!-- <div class="row"> -->
+      <!-- <div class="col-12">
+        <div class="card mb-4">
+          <div class="card-body"> -->
+      <h5 class="mb-4">ค้นหา</h5>
+      <label class="form-group has-top-label">
+        <input class="form-control" bsDatepicker [container]="'html'">
+        <span>Year</span>
+      </label>
+      <!-- </div>
+        </div>
+      </div> -->
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-primary" (click)="modalRef.hide()">ยกเลิก</button>
+      <button type="submit" class="btn btn-primary float-right">ค้นหา</button>
+    </div>
+  </ng-template>

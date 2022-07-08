@@ -1,0 +1,89 @@
+<div class="row">
+  <div class="col-12">
+    <div class="d-flex flex-column mt-2 ml-auto float-right">
+      <label class="has-float-label">
+        <dx-number-box [width]="107" [step]="1" [min]="0" [max]="15" [(value)]="numberBoxDigi"
+          (onFocusOut)="checkNullValue($event)" valueChangeEvent="keyup"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+        </dx-number-box>
+        <span>จำนวนจุดทศนิยม</span>
+      </label>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <dx-data-grid #sellPriceDataGrid [columns]="dynamicSellColumns" [dataSource]="sellPriceList"
+      columnResizingMode="widget" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+      [focusedRowEnabled]="false" (onCellPrepared)="onCellPrepared($event)">
+      <dxo-group-panel [visible]="false"></dxo-group-panel>
+      <dxo-sorting [mode]="'none'"></dxo-sorting>
+      <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+      <!-- <dxo-paging [enabled]="false"></dxo-paging> -->
+      <!-- <dxo-pager [visible]="false"></dxo-pager> -->
+      <div *dxTemplate="let itemTemp of 'formulaTemplate'">
+        <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer "
+        [tooltip]="itemTemp.data['formula']"
+          placement="bottom">
+          {{itemTemp.data[itemTemp.column.dataField]}}
+        </div>
+
+      </div>
+      <div *dxTemplate="let itemTemp of cellTemplate">
+        <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer "
+          [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}"
+          (mouseenter)="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex] = true"
+          (mouseleave)="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex] = false">
+          <i class="glyph-icon simple-icon-options-vertical"></i>
+          {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+          (numberBoxDigi ? numberBoxDigi: 0)}}
+        </div>
+        <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
+          [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
+          (onItemClick)="itemClick($event,itemTemp.column.code,itemTemp.rowIndex,itemTemp.column.monthIndex,sellPriceList,itemTemp.data,itemTemp.column.dataField)">
+        </dx-context-menu>
+        <dx-tooltip [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex" *ngIf="itemTemp.data['isManual' +
+            itemTemp.column.dataField] === true"
+          [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex]"
+          [closeOnOutsideClick]="false">
+          <div *dxTemplate="let data = data; of: 'content'">
+            {{ 'ค่าจากการคำนวน ' + itemTemp.data['calculate' + itemTemp.column.dataField]}}
+          </div>
+        </dx-tooltip>
+      </div>
+    </dx-data-grid>
+  </div>
+</div>
+
+<dx-popup #sellingPricePopup [width]="550" [height]="280" [showTitle]="true" [title]="titleEdit"
+  [closeOnOutsideClick]="false" [(visible)]="popupVisible" [showCloseButton]="false">
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-outline-primary" (click)="popupCancelClick()">
+      <span>ยกเลิก</span>
+    </button>
+  </dxi-toolbar-item>
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-primary" (click)="popupSaveClick()" [disabled]="this.accessMenu != 1">
+      <span>ตกลง</span>
+    </button>
+  </dxi-toolbar-item>
+  <div *dxTemplate="let data of 'content'">
+    <div class="row mt-2">
+      <div class="col-md-12">
+        <div class="form-group">
+          <div class="d-flex flex-row justify-content-between align-items-center">
+            <label class="control-label">Value</label>
+            <div class="custom-control custom-checkbox mb-2" Tooltip="Edit">
+              <input type="checkbox" id="checkManualsellingPrice" [(ngModel)]="dataEdit['isManual' + dataFieldEdit]"
+                [disabled]="this.accessMenu != 1" class="custom-control-input">
+              <label for="checkManualsellingPrice" class="custom-control-label">Manual</label>
+            </div>
+          </div>
+          <dx-number-box #numberBox [(value)]="dataEdit[dataFieldEdit]"
+            [disabled]="this.accessMenu != 1 || !dataEdit['isManual' + dataFieldEdit]">
+          </dx-number-box>
+        </div>
+      </div>
+    </div>
+  </div>
+</dx-popup>

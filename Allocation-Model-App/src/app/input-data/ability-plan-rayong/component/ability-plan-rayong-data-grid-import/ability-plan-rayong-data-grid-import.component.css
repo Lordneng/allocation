@@ -1,0 +1,30 @@
+:host {
+    display: block;
+  }
+  
+  @media (min-width: 768px) {
+    .setting-float {
+      position: absolute;
+      top: 28px;
+      right: 25px;
+      max-width: 200px;
+    }
+    .setting-float-xx {
+      position: absolute;
+      top: 32px;
+      right: 250px;
+      max-width: 150px;
+    }
+  }
+
+  .txt-h-month {
+    font-family: 'Prompt', sans-serif;
+    font-size: 5px;
+    line-height: 0;
+  }
+  
+  .txt-month {
+    font-family: 'Prompt', sans-serif;
+    line-height: 0;
+    font-size: 16px;
+  }

@@ -1,0 +1,32 @@
+<div class="card mt-4">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-8">
+        <dx-select-box [placeholder]="'Select Version'"></dx-select-box>
+      </div>
+      <div class="col-4">
+        <dx-button
+          stylingMode="contained"
+          text="Search"
+          type="default"
+          [width]="'100%'"
+        >
+        </dx-button>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <dx-data-grid [allowColumnReordering]="true">
+        <dxi-column dataField="FullName"></dxi-column>
+        <dxi-column dataField="Position"></dxi-column>
+        <dxi-column dataField="BirthDate" dataType="date"> </dxi-column>
+        <dxi-column dataField="HireDate" dataType="date"> </dxi-column>
+        <dxi-column dataField="City"></dxi-column>
+        <dxi-column dataField="Country"></dxi-column>
+        <dxi-column dataField="Address"></dxi-column>
+        <dxi-column dataField="HomePhone"></dxi-column>
+        <dxi-column dataField="PostalCode"></dxi-column>
+      </dx-data-grid>
+    </div>
+  </div>
+</div>

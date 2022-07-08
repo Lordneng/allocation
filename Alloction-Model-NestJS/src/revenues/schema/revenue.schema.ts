@@ -1,0 +1,28 @@
+// import * as mongoose from 'mongoose';
+
+// export const RevenueSchema = new mongoose.Schema({
+//   _id: String,
+//   year: Number,
+//   productVersion:String,
+//   product:String,
+//   unit:String,
+//   M1:Number,
+//   M2:Number,
+//   M3:Number,
+//   M4:Number,
+//   M5:Number,
+//   M6:Number,
+//   M7:Number,
+//   M8:Number,
+//   M9:Number,
+//   M10:Number,
+//   M11:Number,
+//   M12:Number,
+//   version:Number,
+//   filePath:String,
+//   rowOrder:Number,
+//   createBy:String,
+//   createDate:Date,
+//   updateBy:String,
+//   updateDate:Date,
+// });

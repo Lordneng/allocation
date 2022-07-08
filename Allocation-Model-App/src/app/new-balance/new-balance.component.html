@@ -1,0 +1,110 @@
+<div class="page-wrapper">
+  <div #spacer></div>
+  <div class="page-header" sticky [spacer]="spacer">
+    <!-- sticky [spacer]="spacer" -->
+    <div class="nav-block">
+      <a
+        href="javascript:;"
+        (click)="
+          menuButtonClick(
+            $event,
+            sidebar.menuClickCount,
+            sidebar.containerClassnames
+          );
+          (false)
+        "
+        class="menu-button"
+      >
+        <i class="fas fa-align-left"></i>
+      </a>
+    </div>
+    <div class="header-block">
+      <div class="block">
+        <div class="page-title">
+          <div class="page-name">New Balance</div>
+          <p class="mb-0 page-sub-title">
+            <span class="badge badge-success mb-1">{{
+              dataInfo.versionName
+            }}</span>
+            <!-- <span class="space"> | </span> -->
+            <!-- <span>Last Updated, 10 days ago</span> -->
+            <span
+              >Last updated By : {{ dataInfo.updateBy }} |
+              <span class="badge badge-light mb-1">{{
+                dataInfo.updateDate | date: "dd/MM/yyyy HH:mm:ss"
+              }}</span>
+            </span>
+          </p>
+        </div>
+        <div class="text-zero top-right-button-container">
+          <button
+            class="btn btn-outline-primary mg-l-5 mr-1"
+            (click)="onSearch($event)"
+          >
+            <i
+              ng-reflect-ng-class="simple-icon-magnifier"
+              class="simple-icon-magnifier mr-1"
+            ></i>
+            <span>ค้นหา</span>
+          </button>
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+  <div class="page-body">
+    <section class="section section-bg-grey">
+      <div class="block-wrapper">
+        <div class="result-block">
+          <div class="detail-block">
+            <tabset #tabSet class="separator-tabs">
+              <tab heading="Ability" class="nav-link">
+                <app-ability-report></app-ability-report>
+              </tab>
+              <tab heading="Balance">
+                <app-balance-report></app-balance-report>
+              </tab>
+              <tab heading="แผนจำหน่าย">
+                <app-distribution-plan-report></app-distribution-plan-report>
+              </tab>
+              <tab heading="ปรับแผนจำหน่าย"> </tab>
+              <tab heading="สรุปแผนจำหน่าย"> </tab>
+            </tabset>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<ng-template #template>
+  <div class="modal-body">
+    <h5 class="mb-4"><i class="far fa-calendar-alt icon-color"></i> Year</h5>
+    <form>
+      <!-- <dx-calendar [maxZoomLevel]="'decade'" [minZoomLevel]="'century'" [(value)]="date">
+      </dx-calendar> -->
+      <dx-calendar
+        [maxZoomLevel]="'year'"
+        [minZoomLevel]="'century'"
+        [(value)]="date"
+      >
+      </dx-calendar>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      (click)="searchCancelClick()"
+    >
+      ยกเลิก
+    </button>
+    <button
+      type="submit"
+      class="btn btn-primary float-right"
+      (click)="searchClick()"
+    >
+      ค้นหา
+    </button>
+  </div>
+</ng-template>

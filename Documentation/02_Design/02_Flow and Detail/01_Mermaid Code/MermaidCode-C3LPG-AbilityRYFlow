@@ -1,0 +1,17 @@
+
+
+    flowchart LR
+   
+  
+   Margin[fas:fa-hand-holding-usd : Margin/unit ] -->|input data| Web[fas:fa-database :Allocation Web]
+   Ability[fas:fa-industry : Ability RY C3LPG] -->|input data| Web[fas:fa-database :Allocation Web]
+   Inventory[fas:fa-cog : Inventory] -->|input data| Web[fas:fa-database :Allocation Web]
+   ImportGSP[fas:fa-cog : Import GSP] -->|input data| Web[fas:fa-database :Allocation Web]
+   YearlyConstrain[fas:fa-cog : Yearly Constrain] -->|input data| Web[fas:fa-database :Allocation Web]
+   MonthlyConstrain[fas:fa-cog : Monthly Constrain] -->|input data| Web[fas:fa-database :Allocation Web]
+   Web[fas:fa-database : Allocation Web] --> |interface data| Model[fas:fa-laptop-code : Model Optimization]
+   Model[fas:fa-laptop-code : Model Optimization]-->|output to allocation web| VolumnKT[fas:fa-burn : Volumn KT]
+   VolumnKT-.present customer.-> demand[fas:fa-user-edit : Adjust Demand ?]
+  
+   demand[fas:fa-user-edit : Adjust Demand ?]-->|input data| Web
+   

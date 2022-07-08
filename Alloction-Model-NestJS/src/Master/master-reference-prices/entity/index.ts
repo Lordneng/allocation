@@ -1,0 +1,1 @@
+export * from './master-reference-prices.entity';

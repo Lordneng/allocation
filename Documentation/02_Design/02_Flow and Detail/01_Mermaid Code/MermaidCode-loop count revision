@@ -1,0 +1,8 @@
+
+
+    flowchart LR
+   
+  
+   rev0[fas:fa-hand-holding-usd : rev0 ] -->|change demand| rev1[fas:fa-database :rev1]
+   rev1[fas:fa-hand-holding-usd : rev1 ] -->|change cost,price| rev2[fas:fa-hand-holding-usd : rev0 ]
+   rev0[fas:fa-hand-holding-usd : rev0 ] -->|change ability|rev2[fas:fa-hand-holding-usd : rev0 ]

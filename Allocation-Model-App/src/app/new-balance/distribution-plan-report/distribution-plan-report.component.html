@@ -1,0 +1,123 @@
+<div class="card mt-4">
+  <div class="card-body">
+    <div class="row justify-content-end">
+      <div class="col-2">
+        <dx-button
+          icon="plus"
+          stylingMode="contained"
+          text="Create New Report"
+          type="default"
+          [width]="'100%'"
+          (onClick)="onCreate()"
+        >
+        </dx-button>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12 d-none d-md-block">
+        <div class="d-flex mb-2">
+          <div
+            class="d-flex flex-grow-1 min-width-zero card-heading card-heading--with-color"
+          >
+            <div
+              class="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center card-body py-1"
+            >
+              <div class="mb-0 truncate w-40 w-xs-100 my-1">Version</div>
+              <div class="mb-0 truncate w-10 w-xs-100 my-1">Year</div>
+              <div class="w-15 w-xs-200">File</div>
+              <div class="w-15 w-xs-100">Updated by</div>
+              <div class="w-15 w-xs-100">Updated date</div>
+              <div class="w-10 w-xs-100 text-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12" *ngFor="let item of costVersions; let i = index">
+        <div [ngClass]="{ 'card d-flex mb-3 card': true, active: true }">
+          <div class="d-flex flex-grow-1 min-width-zero">
+            <div
+              class="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center card-body py-2"
+            >
+              <div class="mb-0 w-40 w-xs-100 my-1 field-version">
+                <span class="field-label d-block d-md-none"> Version </span>
+                <a id="toggler1" href="javascript:;">
+                  <span class="align-middle d-inline-block">{{
+                    item.versionName
+                  }}</span>
+                </a>
+              </div>
+              <div class="mb-0 truncate w-10 w-xs-100 my-1">
+                <span class="field-label d-block d-md-none"> Year </span>
+                <a id="toggler1" href="javascript:;">
+                  <span class="align-middle d-inline-block">{{
+                    item.year
+                  }}</span></a
+                >
+              </div>
+
+              <div class="my-1 w-15 w-xs-200">
+                <span class="field-label d-block d-md-none">File</span>
+                <!-- <span class="text-muted text-small">{{item.fileName}}</span> -->
+                <a class="text-muted text-small" target="_blank">{{
+                  item.fileNameUser
+                }}</a>
+              </div>
+
+              <div class="my-1 w-15 w-xs-100">
+                <span class="field-label d-block d-md-none">Updated by</span>
+                <span class="text-muted text-small">{{ item.updateBy }}</span>
+              </div>
+              <div class="my-1 w-15 w-xs-100">
+                <span class="field-label d-block d-md-none">Updated by</span>
+                <span class="text-muted text-small">{{
+                  item.updateDate | date: "dd/MM/yyyy HH:mm:sss"
+                }}</span>
+              </div>
+
+              <div class="my-1 w-10 w-xs-100 text-md-right">
+                <button
+                  class="btn btn-outline-secondary btn-xs btn-viewmore"
+                  (click)="onView($event, item)"
+                >
+                  ดูข้อมูล
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <dx-popup
+    [width]="600"
+    [height]="400"
+    [showTitle]="true"
+    title="Create new report"
+    [dragEnabled]="false"
+    [closeOnOutsideClick]="false"
+    container=".dx-viewport"
+    [(visible)]="popupVisible"
+  >
+    <div *dxTemplate="let data of 'content'">
+      <app-add-new-plan></app-add-new-plan>
+    </div>
+  </dx-popup>
+
+  <dx-popup
+    [showTitle]="true"
+    [title]="currentReport?.versionName"
+    [dragEnabled]="false"
+    [fullScreen]="true"
+    [closeOnOutsideClick]="false"
+    container=".dx-viewport"
+    [(visible)]="reportVisible"
+  >
+    <div *dxTemplate="let data of 'content'">
+      <dx-scroll-view width="100%" height="100%">
+        <app-distribution-report-plan-detail></app-distribution-report-plan-detail>
+      </dx-scroll-view>
+    </div>
+  </dx-popup>
+</div>

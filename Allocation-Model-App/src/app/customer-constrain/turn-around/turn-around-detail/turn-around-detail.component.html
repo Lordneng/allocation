@@ -1,0 +1,252 @@
+<div class="page-wrapper">
+	<div #spacer></div>
+	<div class="page-header" sticky [spacer]="spacer">
+		<!-- sticky [spacer]="spacer" -->
+		<div class="nav-block">
+			<a href="javascript:;"
+				(click)="menuButtonClick($event, sidebar.menuClickCount, sidebar.containerClassnames); false;"
+				class="menu-button">
+				<i class="fas fa-align-left"></i>
+			</a>
+		</div>
+		<div class="header-block">
+			<div class="block">
+				<div class="page-title">
+					<div class="page-name">Turn Around</div>
+					<p class="mb-0">
+						<span>Last updated By : {{ dataInfo.updateBy}} |
+							<span class="badge badge-light mb-1">{{ dataInfo.updateDate | date:"dd/MM/yyyy
+								HH:mm:ss"}}</span>
+						</span>
+					</p>
+				</div>
+				<div class="text-zero top-right-button-container">
+					<button class="btn btn-danger mg-l-5 mr-1" (click)="BackClick()">
+						<i ng-reflect-ng-class="iconsminds-back" class="iconsminds-back mr-1"></i>
+						<span>ย้อนกลับ</span>
+					</button>
+					<button [disabled]="this.accessMenu != 1" class="btn btn-primary mg-l-5 mr-1" (click)="SaveClick()">
+						<i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save mr-1"></i>
+						<span>บันทึก</span>
+					</button>
+				</div>
+			</div>
+			<hr class="line" />
+		</div>
+	</div>
+	<div class="page-body">
+		<section class="section section-input">
+			<div class="block-wrapper">
+				<div class="result-block">
+					<div class="summary-block">
+						<h3><i class="simple-icon-book-open"></i> ข้อมูล Turn Around {{copyMsg}}
+						</h3>
+					</div>
+					<div class="detail-block" style="margin-top: 50px;">
+						<div class="row">
+							<div class="col-12">
+								<dx-validation-group #targetGroup>
+									<div class="mb-4">
+										<div class="row">
+											<div class="col-4">
+												<div class="row">
+													<div class="col-12">
+														<div class="form-group">
+															<label for="code">Customer<span
+																	class="dx-field-item-required-mark">&nbsp;*</span></label>
+															<dx-select-box [readOnly]="this.accessMenu != 1"
+																name="customer" [dataSource]="dataCustomer"
+																valueExpr="id" displayExpr="name"
+																(onValueChanged)="customerChanged($event)"
+																[(ngModel)]="dataTurnaround.customerId">
+																<dx-validator>
+																	<dxi-validation-rule type="required"
+																		message="กรุณาเลือก Customer">
+																	</dxi-validation-rule>
+																</dx-validator>
+															</dx-select-box>
+														</div>
+													</div>
+													<div class="col-12">
+														<div class="form-group">
+															<label for="code">Plant<span
+																	class="dx-field-item-required-mark">&nbsp;*</span></label>
+															<dx-select-box [readOnly]="this.accessMenu != 1"
+																name="plant" [dataSource]="dataPlantCustomer"
+																valueExpr="id" displayExpr="name"
+																(onValueChanged)="plantChanged($event)"
+																[(ngModel)]="dataTurnaround.plantId">
+																<dx-validator>
+																	<dxi-validation-rule type="required"
+																		message="กรุณาเลือก Plant">
+																	</dxi-validation-rule>
+																</dx-validator>
+															</dx-select-box>
+														</div>
+													</div>
+													<div class="col-12">
+														<div class="form-group">
+															<label for="code">Product<span
+																	class="dx-field-item-required-mark">&nbsp;*</span></label>
+															<dx-select-box [readOnly]="this.accessMenu != 1"
+																name="product" [dataSource]="dataProduct" valueExpr="id"
+																displayExpr="productCode"
+																(onValueChanged)="productChanged($event)"
+																[(ngModel)]="dataTurnaround.productId">
+																<dx-validator>
+																	<dxi-validation-rule type="required"
+																		message="กรุณาเลือก Product">
+																	</dxi-validation-rule>
+																</dx-validator>
+															</dx-select-box>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-4">
+												<div class="row">
+													<div class="col-12">
+														<div class="form-group">
+															<label for="code">Turn Type<span
+																	class="dx-field-item-required-mark">&nbsp;*</span></label>
+															<!-- ข้อมูลใน dropdown มี Turn around , Turn Down -->
+															<dx-select-box [readOnly]="this.accessMenu != 1"
+																name="turntype" [dataSource]="dataTurnType"
+																valueExpr="id" displayExpr="name"
+																(onValueChanged)="turnTypeChanged($event)"
+																[(ngModel)]="dataTurnaround.turnaroundTypeId">
+																<dx-validator>
+																	<dxi-validation-rule type="required"
+																		message="กรุณาเลือก Turn Type">
+																	</dxi-validation-rule>
+																</dx-validator>
+															</dx-select-box>
+														</div>
+													</div>
+
+													<div class="col-12">
+														<div class="form-group">
+															<label for="inputState">Percent<span
+																	class="dx-field-item-required-mark">&nbsp;*</span></label>
+															<!-- to top na ja : text percent สามารถคีย์ ได้ min 1 max 100 
+                                     กรณี เลือก Turn Type เป็น Turn around ให้ disable และ Default Value 100
+                                     กรณี เลือก Turn Type เป็น Turn down ให้ enable text user ตัวเลขทศนิยมได้ 
+                                     กรณี ไม่เลือก disable และ clear value
+                                     กรณี เปลี่ยน Turn Type ไปมา อย่าลืม set/clear value นะ -->
+															<dx-number-box [readOnly]="isDisablePercent" format="##0.##"
+																[min]="1" [max]="100"
+																[(ngModel)]="dataTurnaround.percent">
+																<dx-validator>
+																	<dxi-validation-rule type="required"
+																		message="กรุณากรอก Percent">
+																	</dxi-validation-rule>
+																</dx-validator>
+
+																<dxi-button name="today" location="after"
+																	[options]="{icon:'fas fa-percent'}">
+																</dxi-button>
+															</dx-number-box>
+														</div>
+													</div>
+
+													<div class="col-12">
+														<div class="form-group">
+															<label for="activeStatus">Active Status<span
+																	class="dx-field-item-required-mark">&nbsp;*</span></label>
+															<dx-select-box [readOnly]="this.accessMenu != 1"
+																name="activeStatus"
+																[(ngModel)]="dataTurnaround.activeStatus"
+																[dataSource]="[{value:'Active'},{value:'Inactive'}]"
+																valueExpr="value" displayExpr="value">
+																<dx-validator>
+																	<dxi-validation-rule type="required"
+																		message="กรุณาเลือก Active Status">
+																	</dxi-validation-rule>
+																</dx-validator>
+															</dx-select-box>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-4">
+												<div class="row">
+													<div class="col-12">
+														<div class="form-row">
+															<div class="form-group col-md-6">
+																<label for="inputState">Start Date <span
+																		class="dx-field-item-required-mark">&nbsp;*</span></label>
+																<div class="">
+																	<dx-date-box [readOnly]="this.accessMenu != 1"
+																		type="date" (onValueChanged)="dateChanged()"
+																		[(ngModel)]="dataTurnaround.startTurnaroundDate">
+																		<dx-validator>
+																			<dxi-validation-rule type="required"
+																				message="กรุณาเลือก Start Date">
+																			</dxi-validation-rule>
+																		</dx-validator>
+																	</dx-date-box>
+																</div>
+															</div>
+															<div class="form-group col-md-6">
+																<label for="inputState">End Date<span
+																		class="dx-field-item-required-mark">&nbsp;*</span></label>
+																<div class="">
+																	<dx-date-box [readOnly]="this.accessMenu != 1"
+																		type="date" (onValueChanged)="dateChanged()"
+																		[(ngModel)]="dataTurnaround.endTurnaroundDate">
+																		<dx-validator>
+																			<dxi-validation-rule type="required"
+																				message="กรุณาเลือก End Date">
+																			</dxi-validation-rule>
+																		</dx-validator>
+																	</dx-date-box>
+																</div>
+															</div>
+														</div>
+													</div>
+
+
+												</div>
+												<div class="col-md-12">
+													<div class="row">
+
+														<div class="col-12">
+															<div class="form-group">
+																<!-- to top na ja : 
+                                            คำนวณจำนวนวันระหว่าง stardate enddate มา assign แทน เลข 14
+                                            ถ้ายังไม่ระบุวันที่ default 0
+                                            -->
+																<div class="text-center mt-2">
+																	<i
+																		class="iconsminds-clock duration-days-icon duration-day-color"></i>
+																	<p class="duration-day-card-text  mb-0">
+																		Duration Days </p>
+																	<p class="lead text-center duration-day-color">
+																		{{ dataTurnaround.duration }} </p>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label for="remark">Remark</label>
+													<dx-text-area [readOnly]="this.accessMenu != 1" name="remark"
+														[(ngModel)]="dataTurnaround.remark">
+													</dx-text-area>
+												</div>
+											</div>
+										</div>
+									</div>
+								</dx-validation-group>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

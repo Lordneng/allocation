@@ -1,0 +1,31 @@
+<section class="section section-bg-grey">
+  <div class="block-wrapper" style="margin-bottom: 10px;">
+    <div class="result-block">
+      <div class="summary-block">
+        <h3><i class="simple-icon-diamond"></i> Volumn(KT)</h3>
+      </div>
+      <div class="detail-block">
+        <dx-data-grid #dataGrid1 [columns]="dynamicColumns" [dataSource]="dataList" columnResizingMode="widget"
+          keyExpr="contractConditionOfSaleId" [allowColumnResizing]="true" [rowAlternationEnabled]="true" [focusedRowEnabled]="false">
+          <dxo-group-panel [visible]="false"></dxo-group-panel>
+          <dxo-sorting [mode]="'none'"></dxo-sorting>
+          <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+          <div *dxTemplate="let itemTemp of cellTemplate">
+            <div class="pointer " style="font-weight: 500;"
+              [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+              {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+              0) + '-' +
+              (numberBoxDigi ? numberBoxDigi: 0)}}
+            </div>
+            <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+              [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName"
+              [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex]"
+              [closeOnOutsideClick]="false">
+              <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+            </dx-tooltip>
+          </div>
+        </dx-data-grid>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,146 @@
+{
+    "volumeYear": [
+        {
+            "key": "Ethane_SCG Chem / MOC_GSP RY",
+            "min": 150000,
+            "max": null,
+            "endContract": "2030-12-31"
+        },
+        {
+            "key": "Ethane_GC_GSP RY",
+            "min": 1900000,
+            "max": 2500000,
+            "endContract": "2030-12-31"
+        },
+        {
+            "key": "Sub Propane_SCG Chem / MOC_GSP RY/SCG Terminal",
+            "min": 150000,
+            "max": null,
+            "endContract": "2030-12-31"
+        },
+        {
+            "key": "Propane_GC_GSP RY",
+            "min": 260000,
+            "max": 1200000,
+            "endContract": "2030-12-31"
+        },
+        {
+            "key": "Propane_HMC (PDH Plant)_GSP RY",
+            "min": 350000,
+            "max": 410000,
+            "endContract": "2025-01-18"
+        },
+        {
+            "key": "Propane_HMC (PDH Plant)_GSP RY",
+            "min": 350000,
+            "max": 410000,
+            "endContract": "2025-01-18"
+        },
+        {
+            "key": "Propane_SCG Chem / MOC_GSP RY/SCG Terminal",
+            "min": 0,
+            "max": 48000,
+            "tier": 1,
+            "endContract": "2030-12-31"
+        },
+        {
+            "key": "Propane_SCG Chem / MOC_GSP RY/SCG Terminal",
+            "min": 48001,
+            "max": 400000,
+            "tier": 2,
+            "endContract": "2030-12-31"
+        },
+        {
+            "key": "LPG_GC_GSP RY",
+            "min": 400000,
+            "max": 1000000,
+            "endContract": "2030-12-31"
+        },
+        {
+            "key": "LPG_ROC & MOC_GSP RY",
+            "min": 48000,
+            "max": 240000,
+            "endContract": "2023-05-31"
+        },
+        {
+            "key": "LPG_SCG Chem / ROC_GSP RY",
+            "min": 0,
+            "max": 384000,
+            "tier": 1,
+            "endContract": "2030-12-31"
+        },
+        {
+            "key": "LPG_SCG Chem / ROC_GSP RY",
+            "min": 384001,
+            "max": 720000,
+            "tier": 2,
+            "endContract": "2030-12-31"
+        },
+        {
+            "key": "SWAP LPG_SCG Chem / ROC_SCG Terminal",
+            "min": 0,
+            "max": 400000,
+            "endContract": "2027-12-31"
+        },
+        {
+            "key": "NGL_GC_GSP RY",
+            "min": 200000,
+            "max": 400000,
+            "endContract": "2030-12-31"
+        },
+        {
+            "key": "NGL_ROC_GSP RY",
+            "min": 380000,
+            "max": 600000,
+            "endContract": "2023-05-31"
+        },
+        {
+            "key": "Pentane_ROC_GSP RY",
+            "min": 26000,
+            "max": 87000,
+            "endContract": "2025-02-19"
+        },
+        {
+            "key": "CO2_Praxair_GSP RY",
+            "min": 120000,
+            "max": null,
+            "endContract": "2028-12-31"
+        },
+        {
+            "key": "CO2_Linde_GSP RY",
+            "min": 7200,
+            "max": null,
+            "endContract": "2028-12-31"
+        },
+        {
+            "key": "LPG_OR_MT/BRP/KHM/PTT TANK/SPRC",
+            "min": 155000,
+            "max": null,
+            "endContract": "2021-12-31"
+        },
+        {
+            "key": "LPG_OR_LKB",
+            "min": 6000,
+            "max": null,
+            "endContract": "2021-12-31"
+        },
+        {
+            "key": "LPG_SGP/UGP_MT",
+            "min": 44000,
+            "max": null,
+            "endContract": "2021-12-31"
+        },
+        {
+            "key": "LPG_WP_PTTTANK/IRPC/SPRC",
+            "min": 15000,
+            "max": null,
+            "endContract": "2021-12-31"
+        },
+        {
+            "key": "LPG_PAP_PTT TANK",
+            "min": 4350,
+            "max": null,
+            "endContract": "2021-12-31"
+        }
+    ]
+}

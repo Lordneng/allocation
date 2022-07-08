@@ -1,0 +1,294 @@
+<div class="row">
+  <div class="col-12">
+    <div class="d-flex flex-column mt-2 ml-auto float-right">
+      <label class="form-group has-float-label">
+        <dx-select-box [dataSource]="sheets" valueExpr="sheet" displayExpr="name" [(value)]="sheetValue"
+          (onValueChanged)="onValueChanged($event)" [showClearButton]="true">
+        </dx-select-box>
+        <span>sheet</span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<!-- <div> -->
+<!-- <div class="setting-float-xx">
+    <p class="txt-h-month">Month</p>
+    <p class="txt-month text-primary">{{ this.monthSelect }}</p>
+  </div> -->
+<!-- <div class="setting-float">
+    <form>
+      <label class="form-group has-float-label">
+        <dx-select-box [dataSource]="sheets" valueExpr="sheet" displayExpr="name" [(value)]="sheetValue"
+          (onValueChanged)="onValueChanged($event)" [showClearButton]="true">
+        </dx-select-box>
+        <span>sheet</span>
+      </label>
+    </form>
+  </div> -->
+
+<!-- <div class="d-flex flex-row flex align-items-center mt-3 mb-2">
+    <div class="d-flex flex-column mr-2">
+      <button class="btn btn-outline-secondary btn-xs d-flex align-items-center border-none" *ngIf="!isOpen"
+        (click)="isOpen = true">
+        <i class="glyph-icon simple-icon-note mr-1"></i>
+        <div>
+          Show
+        </div>
+      </button>
+      <button class="btn btn-outline-secondary btn-xs d-flex align-items-center" *ngIf="isOpen"
+        (click)="isOpen = false">
+        <i class="glyph-icon simple-icon-eye mr-1"></i> Hide
+      </button>
+    </div>
+  </div> -->
+<!-- </div> -->
+<div class="row">
+  <div class="col-12">
+    <div class="block-wrapper" style="margin-bottom: 20px;">
+      <div class="result-block">
+        <div class="summary-block">
+          <h3>C2</h3>
+        </div>
+        <div class="detail-block">
+          <dx-data-grid #dataGridEthene [dataSource]="dataSheet.c2" columnResizingMode="widget" [keyExpr]="'createDate'"
+            [allowColumnResizing]="true" [rowAlternationEnabled]="true" [height]="420">
+            <dxo-group-panel [visible]="false"></dxo-group-panel>
+            <dxo-sorting [mode]="'none'"></dxo-sorting>
+            <dxo-scrolling mode="infinite"></dxo-scrolling>
+            <dxo-paging [enabled]="false"></dxo-paging>
+            <dxo-pager [visible]="false"></dxo-pager>
+            <dxo-filter-row [visible]="false"></dxo-filter-row>
+            <dxo-paging [pageSize]="10" [pageIndex]="1">
+            </dxo-paging>
+            <dxi-column caption="วันที่" dataField="createDate" dataType="datetime" [format]="{ type: 'dd/MM/yyyy'}">
+            </dxi-column>
+            <dxi-column caption="GSP1" dataField="gsP1" cellTemplate="cellTemplate"></dxi-column>
+            <dxi-column caption="GSP2" dataField="gsP2" cellTemplate="cellTemplate"></dxi-column>
+            <dxi-column caption="GSP3" dataField="gsP3" cellTemplate="cellTemplate"></dxi-column>
+            <dxi-column caption="ESP" dataField="esp" cellTemplate="cellTemplate"></dxi-column>
+            <dxi-column caption="GSP5" dataField="gsP5" cellTemplate="cellTemplate"></dxi-column>
+            <dxi-column caption="GSP6" dataField="gsP6" cellTemplate="cellTemplate"></dxi-column>
+            <dxi-column caption="Total" dataField="total" cellTemplate="cellTemplate"></dxi-column>
+            <dxi-column caption="Avg" dataField="avg" cellTemplate="cellTemplate"></dxi-column>
+            <dxi-column caption="Low CO2" dataField="lowcO2" cellTemplate="cellTemplate"></dxi-column>
+            <dxi-column caption="High CO2" dataField="highcO2" cellTemplate="cellTemplate"></dxi-column>
+            <dxi-column caption="Ton/Hr" dataField="tonhr" cellTemplate="cellTemplate"></dxi-column>
+            <div *dxTemplate="let itemTemp of cellTemplate" placement="bottom">
+              <ng-container *ngIf="numberBoxReadOnly; else elseTemplate">
+                <div>
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.0-2'}}
+                </div>
+              </ng-container>
+              <ng-template #elseTemplate>
+
+                <dx-number-box #numberBox [(value)]="itemTemp.data[itemTemp.column.dataField]">
+                </dx-number-box>
+              </ng-template>
+            </div>
+            <dxo-summary>
+              <dxi-total-item column="createDate" summaryType="count" displayFormat="Total" alignment="center">
+              </dxi-total-item>
+              <dxi-total-item column="gsP1" summaryType="sum" displayFormat="{0}" valueFormat="#,##0.##">
+              </dxi-total-item>
+              <dxi-total-item column="gsP2" summaryType="sum" displayFormat="{0}" valueFormat="#,##0.##">
+              </dxi-total-item>
+              <dxi-total-item column="gsP3" summaryType="sum" displayFormat="{0}" valueFormat="#,##0.##">
+              </dxi-total-item>
+              <dxi-total-item column="esp" summaryType="sum" displayFormat="{0}" valueFormat="#,##0.##">
+              </dxi-total-item>
+              <dxi-total-item column="gsP5" summaryType="sum" displayFormat="{0}" valueFormat="#,##0.##">
+              </dxi-total-item>
+              <dxi-total-item column="gsP6" summaryType="sum" displayFormat="{0}" valueFormat="#,##0.##">
+              </dxi-total-item>
+              <dxi-total-item column="total" summaryType="sum" displayFormat="{0}" valueFormat="#,##0.##">
+              </dxi-total-item>
+              <dxi-total-item column="avg" summaryType="sum" displayFormat="{0}" valueFormat="#,##0.##">
+              </dxi-total-item>
+              <dxi-total-item column="lowcO2" summaryType="sum" displayFormat="{0}" valueFormat="#,##0.##">
+              </dxi-total-item>
+              <dxi-total-item column="highcO2" summaryType="sum" displayFormat="{0}" valueFormat="#,##0.##">
+              </dxi-total-item>
+              <dxi-total-item column="tonhr" summaryType="sum" displayFormat="{0}" valueFormat="#,##0.##">
+              </dxi-total-item>
+            </dxo-summary>
+          </dx-data-grid>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <accordion [isAnimated]="true">
+  <accordion-group [isOpen]="isOpen" (isOpenChange)="isOpenChange($event,'Ethane')">
+    <div class="custom-header" accordion-heading>
+      <button class="header-toggle btn btn-link btn-block clearfix" type="button">
+        <div class="d-inline-block">C2</div>
+      </button>
+    </div>
+
+  </accordion-group> -->
+
+<!-- <accordion-group [isOpen]="true">
+        <div class="custom-header" accordion-heading>
+          <button class="header-toggle btn btn-link btn-block clearfix" type="button">
+            <div class="d-inline-block">C3/LPG</div>
+          </button>
+        </div>
+        <dx-data-grid #dataGridC3Lpg
+          [dataSource]="dataSheet.c3Lpg" columnResizingMode="widget" [keyExpr]="'createDate'"
+          [allowColumnResizing]="true" [rowAlternationEnabled]="true">
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-filter-row [visible]="false"></dxo-filter-row>
+              <dxo-paging
+                  [pageSize]="10"
+                  [pageIndex]="1">
+              </dxo-paging>
+              <dxi-column caption="วันที่" dataField="createDate" dataType="datetime" [format]="{ type: 'dd/MM/yyyy'}"></dxi-column>
+              <dxi-column caption="GSP1" dataField="gsP1" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP2" dataField="gsP2" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP3" dataField="gsP3" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP5" dataField="gsP5" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP6" dataField="gsP6" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="Total" dataField="total" cellTemplate="cellTemplate"></dxi-column>
+              <div *dxTemplate="let itemTemp of cellTemplate" placement="bottom">
+                  <ng-container *ngIf="numberBoxReadOnly; else elseTemplate">
+                  <div>
+                      {{itemTemp.data[itemTemp.column.dataField] | number: '1.0-2'}}
+                  </div>
+                  </ng-container>
+                  <ng-template #elseTemplate>
+
+                  <dx-number-box #numberBox [(value)]="itemTemp.data[itemTemp.column.dataField]">
+                  </dx-number-box>
+                  </ng-template>
+              </div>
+        </dx-data-grid>
+    </accordion-group> -->
+<!-- <accordion-group [isOpen]="isOpen" (isOpenChange)="isOpenChange($event,'ngl')">
+        <div class="custom-header" accordion-heading>
+          <button class="header-toggle btn btn-link btn-block clearfix" type="button">
+            <div class="d-inline-block">NGL</div>
+          </button>
+        </div>
+        <dx-data-grid #dataGridNgl
+          [dataSource]="dataSheet.ngl" columnResizingMode="widget" [keyExpr]="'createDate'" [height]="420"
+          [allowColumnResizing]="true" [rowAlternationEnabled]="true">
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling mode="infinite"></dxo-scrolling>
+              <dxo-paging [enabled]="false"></dxo-paging>
+              <dxo-pager [visible]="false"></dxo-pager>
+              <dxo-filter-row [visible]="false"></dxo-filter-row>
+              <dxo-paging
+                  [pageSize]="10"
+                  [pageIndex]="1"> 
+              </dxo-paging>
+              <dxi-column caption="วันที่" dataField="createDate" dataType="datetime" [format]="{ type: 'dd/MM/yyyy'}"></dxi-column>
+              <dxi-column caption="GSP1" dataField="gsP1" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP2" dataField="gsP2" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP3" dataField="gsP3" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP5" dataField="gsP5" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP6" dataField="gsP6" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="Stab" dataField="stab" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="Total" dataField="total" cellTemplate="cellTemplate"></dxi-column>
+              <div *dxTemplate="let itemTemp of cellTemplate" placement="bottom">
+                  <ng-container *ngIf="numberBoxReadOnly; else elseTemplate">
+                  <div>
+                      {{itemTemp.data[itemTemp.column.dataField] | number: '1.0-2'}}
+                  </div>
+                  </ng-container>
+                  <ng-template #elseTemplate>
+
+                  <dx-number-box #numberBox [(value)]="itemTemp.data[itemTemp.column.dataField]">
+                  </dx-number-box>
+                  </ng-template>
+              </div>
+        </dx-data-grid>
+    </accordion-group> -->
+<!-- <accordion-group [isOpen]="isOpen" (isOpenChange)="isOpenChange($event,'c3')">
+        <div class="custom-header" accordion-heading>
+          <button class="header-toggle btn btn-link btn-block clearfix" type="button">
+            <div class="d-inline-block">C3</div>
+          </button>
+        </div>
+        <dx-data-grid #dataGridC3
+          [dataSource]="dataSheet.c3" columnResizingMode="widget" [keyExpr]="'createDate'" [height]="420"
+          [allowColumnResizing]="true" [rowAlternationEnabled]="true">
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling mode="infinite"></dxo-scrolling>
+              <dxo-paging [enabled]="false"></dxo-paging>
+              <dxo-pager [visible]="false"></dxo-pager>
+              <dxo-filter-row [visible]="false"></dxo-filter-row>
+              <dxo-paging
+                  [pageSize]="10"
+                  [pageIndex]="1"> 
+              </dxo-paging>
+              <dxi-column caption="วันที่" dataField="createDate" dataType="datetime" [format]="{ type: 'dd/MM/yyyy'}"></dxi-column>
+              <dxi-column caption="GSP1" dataField="gsP1" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP2" dataField="gsP2" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP3" dataField="gsP3" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP5" dataField="gsP5" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP6" dataField="gsP6" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="Total" dataField="total" cellTemplate="cellTemplate"></dxi-column>
+              <div *dxTemplate="let itemTemp of cellTemplate" placement="bottom">
+                  <ng-container *ngIf="numberBoxReadOnly; else elseTemplate">
+                  <div>
+                      {{itemTemp.data[itemTemp.column.dataField] | number: '1.0-2'}}
+                  </div>
+                  </ng-container>
+                  <ng-template #elseTemplate>
+
+                  <dx-number-box #numberBox [(value)]="itemTemp.data[itemTemp.column.dataField]">
+                  </dx-number-box>
+                  </ng-template>
+              </div>
+        </dx-data-grid>
+    </accordion-group> -->
+<!-- <accordion-group [isOpen]="isOpen" (isOpenChange)="isOpenChange($event,'lpg')">
+        <div class="custom-header" accordion-heading>
+          <button class="header-toggle btn btn-link btn-block clearfix" type="button">
+            <div class="d-inline-block">LPG</div>
+          </button>
+        </div>
+        <dx-data-grid #dataGridLpg
+          [dataSource]="dataSheet.lpg" columnResizingMode="widget" [keyExpr]="'createDate'" [height]="420"
+          [allowColumnResizing]="true" [rowAlternationEnabled]="true">
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling mode="infinite"></dxo-scrolling>
+              <dxo-paging [enabled]="false"></dxo-paging>
+              <dxo-pager [visible]="false"></dxo-pager>
+              <dxo-filter-row [visible]="false"></dxo-filter-row>
+              <dxo-paging
+                  [pageSize]="10"
+                  [pageIndex]="1"> 
+              </dxo-paging>
+              <dxi-column caption="วันที่" dataField="createDate" dataType="datetime" [format]="{ type: 'dd/MM/yyyy'}"></dxi-column>
+              <dxi-column caption="GSP1" dataField="gsP1" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP2" dataField="gsP2" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP3" dataField="gsP3" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP5" dataField="gsP5" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="GSP6" dataField="gsP6" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="Total" dataField="total" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="LPG-Petro" dataField="lpgPetro" cellTemplate="cellTemplate"></dxi-column>
+              <dxi-column caption="LPG-Domestic" dataField="lpgDomestic" cellTemplate="cellTemplate"></dxi-column>
+              <div *dxTemplate="let itemTemp of cellTemplate" placement="bottom">
+                  <ng-container *ngIf="numberBoxReadOnly; else elseTemplate">
+                  <div>
+                      {{itemTemp.data[itemTemp.column.dataField] | number: '1.0-2'}}
+                  </div>
+                  </ng-container>
+                  <ng-template #elseTemplate>
+
+                  <dx-number-box #numberBox [(value)]="itemTemp.data[itemTemp.column.dataField]">
+                  </dx-number-box>
+                  </ng-template>
+              </div>
+        </dx-data-grid>
+    </accordion-group> -->
+
+<!-- </accordion> -->

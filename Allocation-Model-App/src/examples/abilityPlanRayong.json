@@ -1,0 +1,1297 @@
+{
+    "abilityPlanRayong": [
+        {
+            "key": "Ethane Low_GSP I_07_2021",
+            "value": 28.10666666666668
+        },
+        {
+            "key": "Ethane Low_GSP I_08_2021",
+            "value": 21.7
+        },
+        {
+            "key": "Ethane Low_GSP I_09_2021",
+            "value": 19.6
+        },
+        {
+            "key": "Ethane Low_GSP I_10_2021",
+            "value": 21.7
+        },
+        {
+            "key": "Ethane Low_GSP I_11_2021",
+            "value": 21
+        },
+        {
+            "key": "Ethane Low_GSP I_12_2021",
+            "value": 21.7
+        },
+        {
+            "key": "Ethane Low_GSP I_01_2022",
+            "value": 29.52
+        },
+        {
+            "key": "Ethane Low_GSP I_02_2022",
+            "value": 30.504
+        },
+        {
+            "key": "Ethane Low_GSP I_03_2022",
+            "value": 29.76
+        },
+        {
+            "key": "Ethane Low_GSP I_04_2022",
+            "value": 28.8
+        },
+        {
+            "key": "Ethane Low_GSP I_05_2022",
+            "value": 28.933333333333323
+        },
+        {
+            "key": "Ethane Low_GSP I_06_2022",
+            "value": 27.20000000000001
+        },
+        {
+            "key": "Ethane Low_GSP II_07_2021",
+            "value": 5.952
+        },
+        {
+            "key": "Ethane Low_GSP II_08_2021",
+            "value": 5.208
+        },
+        {
+            "key": "Ethane Low_GSP II_09_2021",
+            "value": 4.704
+        },
+        {
+            "key": "Ethane Low_GSP II_10_2021",
+            "value": 5.208
+        },
+        {
+            "key": "Ethane Low_GSP II_11_2021",
+            "value": 5.76
+        },
+        {
+            "key": "Ethane Low_GSP II_12_2021",
+            "value": 5.952
+        },
+        {
+            "key": "Ethane Low_GSP II_01_2022",
+            "value": 5.04
+        },
+        {
+            "key": "Ethane Low_GSP II_02_2022",
+            "value": 5.208
+        },
+        {
+            "key": "Ethane Low_GSP II_03_2022",
+            "value": 5.208
+        },
+        {
+            "key": "Ethane Low_GSP II_04_2022",
+            "value": 5.256
+        },
+        {
+            "key": "Ethane Low_GSP II_05_2022",
+            "value": 4.8
+        },
+        {
+            "key": "Ethane Low_GSP II_06_2022",
+            "value": 5.76
+        },
+        {
+            "key": "Ethane Low_GSP III_07_2021",
+            "value": 7.285
+        },
+        {
+            "key": "Ethane Low_GSP III_08_2021",
+            "value": 7.44
+        },
+        {
+            "key": "Ethane Low_GSP III_09_2021",
+            "value": 6.72
+        },
+        {
+            "key": "Ethane Low_GSP III_10_2021",
+            "value": 7.44
+        },
+        {
+            "key": "Ethane Low_GSP III_11_2021",
+            "value": 7.2
+        },
+        {
+            "key": "Ethane Low_GSP III_12_2021",
+            "value": 7.44
+        },
+        {
+            "key": "Ethane Low_GSP III_01_2022",
+            "value": 7.2
+        },
+        {
+            "key": "Ethane Low_GSP III_02_2022",
+            "value": 8.114
+        },
+        {
+            "key": "Ethane Low_GSP III_03_2022",
+            "value": 8.184
+        },
+        {
+            "key": "Ethane Low_GSP III_04_2022",
+            "value": 6.072
+        },
+        {
+            "key": "Ethane Low_GSP III_05_2022",
+            "value": 1.8
+        },
+        {
+            "key": "Ethane Low_GSP III_06_2022",
+            "value": 7.05
+        },
+        {
+            "key": "Ethane High_GSP V_07_2021",
+            "value": 47.52620689655173
+        },
+        {
+            "key": "Ethane High_GSP V_08_2021",
+            "value": 47.52620689655173
+        },
+        {
+            "key": "Ethane High_GSP V_09_2021",
+            "value": 42.92689655172414
+        },
+        {
+            "key": "Ethane High_GSP V_10_2021",
+            "value": 47.52620689655173
+        },
+        {
+            "key": "Ethane High_GSP V_11_2021",
+            "value": 45.99310344827586
+        },
+        {
+            "key": "Ethane High_GSP V_12_2021",
+            "value": 47.52620689655173
+        },
+        {
+            "key": "Ethane High_GSP V_01_2022",
+            "value": 46.8
+        },
+        {
+            "key": "Ethane High_GSP V_02_2022",
+            "value": 48.36
+        },
+        {
+            "key": "Ethane High_GSP V_03_2022",
+            "value": 48.36
+        },
+        {
+            "key": "Ethane High_GSP V_04_2022",
+            "value": 46.8
+        },
+        {
+            "key": "Ethane High_GSP V_05_2022",
+            "value": 46.692413793103455
+        },
+        {
+            "key": "Ethane High_GSP V_06_2022",
+            "value": 45.18620689655173
+        },
+        {
+            "key": "Ethane Low_GSP VI_07_2021",
+            "value": 66.216
+        },
+        {
+            "key": "Ethane Low_GSP VI_08_2021",
+            "value": 63.24
+        },
+        {
+            "key": "Ethane Low_GSP VI_09_2021",
+            "value": 57.12
+        },
+        {
+            "key": "Ethane Low_GSP VI_10_2021",
+            "value": 63.24
+        },
+        {
+            "key": "Ethane Low_GSP VI_11_2021",
+            "value": 58.32
+        },
+        {
+            "key": "Ethane Low_GSP VI_12_2021",
+            "value": 60.264
+        },
+        {
+            "key": "Ethane Low_GSP VI_01_2022",
+            "value": 61.2
+        },
+        {
+            "key": "Ethane Low_GSP VI_02_2022",
+            "value": 10.2
+        },
+        {
+            "key": "Ethane Low_GSP VI_03_2022",
+            "value": 62.496
+        },
+        {
+            "key": "Ethane Low_GSP VI_04_2022",
+            "value": 61.92
+        },
+        {
+            "key": "Ethane Low_GSP VI_05_2022",
+            "value": 65.43818181818179
+        },
+        {
+            "key": "Ethane Low_GSP VI_06_2022",
+            "value": 62.64
+        },
+        {
+            "key": "Ethane Low_ESP_07_2021",
+            "value": 46.36390243902439
+        },
+        {
+            "key": "Ethane Low_ESP_08_2021",
+            "value": 43.18829268292682
+        },
+        {
+            "key": "Ethane Low_ESP_09_2021",
+            "value": 39.00878048780487
+        },
+        {
+            "key": "Ethane Low_ESP_10_2021",
+            "value": 43.18829268292682
+        },
+        {
+            "key": "Ethane Low_ESP_11_2021",
+            "value": 39.33658536585367
+        },
+        {
+            "key": "Ethane Low_ESP_12_2021",
+            "value": 40.647804878048795
+        },
+        {
+            "key": "Ethane Low_ESP_01_2022",
+            "value": 46.8
+        },
+        {
+            "key": "Ethane Low_ESP_02_2022",
+            "value": 48.36
+        },
+        {
+            "key": "Ethane Low_ESP_03_2022",
+            "value": 49.104
+        },
+        {
+            "key": "Ethane Low_ESP_04_2022",
+            "value": 34.776
+        },
+        {
+            "key": "Ethane Low_ESP_05_2022",
+            "value": 11.853658536585364
+        },
+        {
+            "key": "Ethane Low_ESP_06_2022",
+            "value": 49.9960975609756
+        },
+        {
+            "key": "Propane_GSP I_07_2021",
+            "value": 12.58944444444445
+        },
+        {
+            "key": "Propane_GSP I_08_2021",
+            "value": 11.108333333333336
+        },
+        {
+            "key": "Propane_GSP I_09_2021",
+            "value": 10.033333333333333
+        },
+        {
+            "key": "Propane_GSP I_10_2021",
+            "value": 11.108333333333336
+        },
+        {
+            "key": "Propane_GSP I_11_2021",
+            "value": 10.750000000000002
+        },
+        {
+            "key": "Propane_GSP I_12_2021",
+            "value": 11.108333333333336
+        },
+        {
+            "key": "Propane_GSP I_01_2022",
+            "value": 11.61
+        },
+        {
+            "key": "Propane_GSP I_02_2022",
+            "value": 13.33
+        },
+        {
+            "key": "Propane_GSP I_03_2022",
+            "value": 13.33
+        },
+        {
+            "key": "Propane_GSP I_04_2022",
+            "value": 12.9
+        },
+        {
+            "key": "Propane_GSP I_05_2022",
+            "value": 12.959722222222213
+        },
+        {
+            "key": "Propane_GSP I_06_2022",
+            "value": 12.183333333333337
+        },
+        {
+            "key": "Propane_GSP II_07_2021",
+            "value": 6.086585365853656
+        },
+        {
+            "key": "Propane_GSP II_08_2021",
+            "value": 6.086585365853656
+        },
+        {
+            "key": "Propane_GSP II_09_2021",
+            "value": 5.497560975609755
+        },
+        {
+            "key": "Propane_GSP II_10_2021",
+            "value": 6.086585365853656
+        },
+        {
+            "key": "Propane_GSP II_11_2021",
+            "value": 5.890243902439022
+        },
+        {
+            "key": "Propane_GSP II_12_2021",
+            "value": 6.086585365853656
+        },
+        {
+            "key": "Propane_GSP II_01_2022",
+            "value": 6.9
+        },
+        {
+            "key": "Propane_GSP II_02_2022",
+            "value": 7.13
+        },
+        {
+            "key": "Propane_GSP II_03_2022",
+            "value": 7.13
+        },
+        {
+            "key": "Propane_GSP II_04_2022",
+            "value": 6.69
+        },
+        {
+            "key": "Propane_GSP II_05_2022",
+            "value": 6.65
+        },
+        {
+            "key": "Propane_GSP II_06_2022",
+            "value": 6.563414634146346
+        },
+        {
+            "key": "Propane_GSP III_07_2021",
+            "value": 7.9390243902439
+        },
+        {
+            "key": "Propane_GSP III_08_2021",
+            "value": 7.9390243902439
+        },
+        {
+            "key": "Propane_GSP III_09_2021",
+            "value": 7.1707317073170715
+        },
+        {
+            "key": "Propane_GSP III_10_2021",
+            "value": 7.9390243902439
+        },
+        {
+            "key": "Propane_GSP III_11_2021",
+            "value": 7.682926829268291
+        },
+        {
+            "key": "Propane_GSP III_12_2021",
+            "value": 7.9390243902439
+        },
+        {
+            "key": "Propane_GSP III_01_2022",
+            "value": 11.4
+        },
+        {
+            "key": "Propane_GSP III_02_2022",
+            "value": 9.3
+        },
+        {
+            "key": "Propane_GSP III_03_2022",
+            "value": 9.3
+        },
+        {
+            "key": "Propane_GSP III_04_2022",
+            "value": 6.9
+        },
+        {
+            "key": "Propane_GSP III_05_2022",
+            "value": 4.5
+        },
+        {
+            "key": "Propane_GSP III_06_2022",
+            "value": 8.560975609756095
+        },
+        {
+            "key": "Propane_GSP V_07_2021",
+            "value": 13.709482758620682
+        },
+        {
+            "key": "Propane_GSP V_08_2021",
+            "value": 13.709482758620682
+        },
+        {
+            "key": "Propane_GSP V_09_2021",
+            "value": 12.38275862068965
+        },
+        {
+            "key": "Propane_GSP V_10_2021",
+            "value": 13.709482758620682
+        },
+        {
+            "key": "Propane_GSP V_11_2021",
+            "value": 13.267241379310338
+        },
+        {
+            "key": "Propane_GSP V_12_2021",
+            "value": 13.709482758620682
+        },
+        {
+            "key": "Propane_GSP V_01_2022",
+            "value": 10.5
+        },
+        {
+            "key": "Propane_GSP V_02_2022",
+            "value": 13.95
+        },
+        {
+            "key": "Propane_GSP V_03_2022",
+            "value": 13.95
+        },
+        {
+            "key": "Propane_GSP V_04_2022",
+            "value": 13.5
+        },
+        {
+            "key": "Propane_GSP V_05_2022",
+            "value": 13.468965517241385
+        },
+        {
+            "key": "Propane_GSP V_06_2022",
+            "value": 13.034482758620694
+        },
+        {
+            "key": " Propane_GSP VI_07_2021",
+            "value": 53.568
+        },
+        {
+            "key": " Propane_GSP VI_08_2021",
+            "value": 53.568
+        },
+        {
+            "key": " Propane_GSP VI_09_2021",
+            "value": 48.384
+        },
+        {
+            "key": " Propane_GSP VI_10_2021",
+            "value": 53.568
+        },
+        {
+            "key": " Propane_GSP VI_11_2021",
+            "value": 51.84
+        },
+        {
+            "key": " Propane_GSP VI_12_2021",
+            "value": 53.568
+        },
+        {
+            "key": " Propane_GSP VI_01_2022",
+            "value": 51.84
+        },
+        {
+            "key": " Propane_GSP VI_02_2022",
+            "value": 8.64
+        },
+        {
+            "key": " Propane_GSP VI_03_2022",
+            "value": 53.568
+        },
+        {
+            "key": " Propane_GSP VI_04_2022",
+            "value": 51.84
+        },
+        {
+            "key": " Propane_GSP VI_05_2022",
+            "value": 52.35054545454544
+        },
+        {
+            "key": " Propane_GSP VI_06_2022",
+            "value": 51.250909090909126
+        },
+        {
+            "key": "LPG_GSP I_07_2021",
+            "value": 26.93555555555555
+        },
+        {
+            "key": "LPG_GSP I_08_2021",
+            "value": 23.766666666666666
+        },
+        {
+            "key": "LPG_GSP I_09_2021",
+            "value": 21.46666666666667
+        },
+        {
+            "key": "LPG_GSP I_10_2021",
+            "value": 23.766666666666666
+        },
+        {
+            "key": "LPG_GSP I_11_2021",
+            "value": 23
+        },
+        {
+            "key": "LPG_GSP I_12_2021",
+            "value": 23.766666666666666
+        },
+        {
+            "key": "LPG_GSP I_01_2022",
+            "value": 27.86435820303354
+        },
+        {
+            "key": "LPG_GSP I_02_2022",
+            "value": 26.660000000000004
+        },
+        {
+            "key": "LPG_GSP I_03_2022",
+            "value": 27.590000000000003
+        },
+        {
+            "key": "LPG_GSP I_04_2022",
+            "value": 26.700000000000003
+        },
+        {
+            "key": "LPG_GSP I_05_2022",
+            "value": 27.72777777777779
+        },
+        {
+            "key": "LPG_GSP I_06_2022",
+            "value": 26.066666666666663
+        },
+        {
+            "key": "LPG_GSP II_07_2021",
+            "value": 31.113414634146345
+        },
+        {
+            "key": "LPG_GSP II_08_2021",
+            "value": 31.113414634146345
+        },
+        {
+            "key": "LPG_GSP II_09_2021",
+            "value": 28.102439024390247
+        },
+        {
+            "key": "LPG_GSP II_10_2021",
+            "value": 31.113414634146345
+        },
+        {
+            "key": "LPG_GSP II_11_2021",
+            "value": 30.10975609756098
+        },
+        {
+            "key": "LPG_GSP II_12_2021",
+            "value": 31.113414634146345
+        },
+        {
+            "key": "LPG_GSP II_01_2022",
+            "value": 31.039186201742396
+        },
+        {
+            "key": "LPG_GSP II_02_2022",
+            "value": 29.45
+        },
+        {
+            "key": "LPG_GSP II_03_2022",
+            "value": 30.070000000000004
+        },
+        {
+            "key": "LPG_GSP II_04_2022",
+            "value": 27.209999999999997
+        },
+        {
+            "key": "LPG_GSP II_05_2022",
+            "value": 25.75
+        },
+        {
+            "key": "LPG_GSP II_06_2022",
+            "value": 29.436585365853652
+        },
+        {
+            "key": "LPG_GSP III_07_2021",
+            "value": 41.6609756097561
+        },
+        {
+            "key": "LPG_GSP III_08_2021",
+            "value": 41.6609756097561
+        },
+        {
+            "key": "LPG_GSP III_09_2021",
+            "value": 37.62926829268292
+        },
+        {
+            "key": "LPG_GSP III_10_2021",
+            "value": 41.6609756097561
+        },
+        {
+            "key": "LPG_GSP III_11_2021",
+            "value": 40.31707317073171
+        },
+        {
+            "key": "LPG_GSP III_12_2021",
+            "value": 41.6609756097561
+        },
+        {
+            "key": "LPG_GSP III_01_2022",
+            "value": 38.22776951864078
+        },
+        {
+            "key": "LPG_GSP III_02_2022",
+            "value": 40.92
+        },
+        {
+            "key": "LPG_GSP III_03_2022",
+            "value": 48.05
+        },
+        {
+            "key": "LPG_GSP III_04_2022",
+            "value": 31.740000000000002
+        },
+        {
+            "key": "LPG_GSP III_05_2022",
+            "value": 15
+        },
+        {
+            "key": "LPG_GSP III_06_2022",
+            "value": 39.4390243902439
+        },
+        {
+            "key": "LPG_GSP V_07_2021",
+            "value": 56.361206896551764
+        },
+        {
+            "key": "LPG_GSP V_08_2021",
+            "value": 56.361206896551764
+        },
+        {
+            "key": "LPG_GSP V_09_2021",
+            "value": 50.90689655172418
+        },
+        {
+            "key": "LPG_GSP V_10_2021",
+            "value": 56.361206896551764
+        },
+        {
+            "key": "LPG_GSP V_11_2021",
+            "value": 54.543103448275915
+        },
+        {
+            "key": "LPG_GSP V_12_2021",
+            "value": 56.361206896551764
+        },
+        {
+            "key": "LPG_GSP V_01_2022",
+            "value": 50.25
+        },
+        {
+            "key": "LPG_GSP V_02_2022",
+            "value": 54.86999999999999
+        },
+        {
+            "key": "LPG_GSP V_03_2022",
+            "value": 51.14999999999999
+        },
+        {
+            "key": "LPG_GSP V_04_2022",
+            "value": 52.5
+        },
+        {
+            "key": "LPG_GSP V_05_2022",
+            "value": 55.37241379310343
+        },
+        {
+            "key": "Butane_GSP VI_07_2021",
+            "value": 40.982
+        },
+        {
+            "key": "Butane_GSP VI_08_2021",
+            "value": 36.33200000000001
+        },
+        {
+            "key": "Butane_GSP VI_09_2021",
+            "value": 32.816
+        },
+        {
+            "key": "Butane_GSP VI_10_2021",
+            "value": 36.33200000000001
+        },
+        {
+            "key": "Butane_GSP VI_11_2021",
+            "value": 35.16
+        },
+        {
+            "key": "Butane_GSP VI_12_2021",
+            "value": 36.33200000000001
+        },
+        {
+            "key": "Butane_GSP VI_01_2022",
+            "value": 38.764224187317865
+        },
+        {
+            "key": "Butane_GSP VI_02_2022",
+            "value": 6.76
+        },
+        {
+            "key": "Butane_GSP VI_03_2022",
+            "value": 39.122
+        },
+        {
+            "key": "Butane_GSP VI_04_2022",
+            "value": 37.86
+        },
+        {
+            "key": "Butane_GSP VI_05_2022",
+            "value": 41.56536363636367
+        },
+        {
+            "key": "Butane_GSP VI_06_2022",
+            "value": 40.692272727272645
+        },
+        {
+            "key": "C3_GSP I_07_2021",
+            "value": 39.525
+        },
+        {
+            "key": "C3_GSP I_08_2021",
+            "value": 34.875
+        },
+        {
+            "key": "C3_GSP I_09_2021",
+            "value": 31.5
+        },
+        {
+            "key": "C3_GSP I_10_2021",
+            "value": 34.875
+        },
+        {
+            "key": "C3_GSP I_11_2021",
+            "value": 33.75
+        },
+        {
+            "key": "C3_GSP I_12_2021",
+            "value": 34.875
+        },
+        {
+            "key": "C3_GSP I_01_2022",
+            "value": 39.47435820303354
+        },
+        {
+            "key": "C3_GSP I_02_2022",
+            "value": 39.99
+        },
+        {
+            "key": "C3_GSP I_03_2022",
+            "value": 40.92
+        },
+        {
+            "key": "C3_GSP I_04_2022",
+            "value": 39.6
+        },
+        {
+            "key": "C3_GSP I_05_2022",
+            "value": 40.6875
+        },
+        {
+            "key": "C3_GSP I_06_2022",
+            "value": 38.25
+        },
+        {
+            "key": "C3_GSP II_07_2021",
+            "value": 31.113414634146345
+        },
+        {
+            "key": "C3_GSP II_08_2021",
+            "value": 31.113414634146345
+        },
+        {
+            "key": "C3_GSP II_09_2021",
+            "value": 28.102439024390247
+        },
+        {
+            "key": "C3_GSP II_10_2021",
+            "value": 31.113414634146345
+        },
+        {
+            "key": "C3_GSP II_11_2021",
+            "value": 30.10975609756098
+        },
+        {
+            "key": "C3_GSP II_12_2021",
+            "value": 31.113414634146345
+        },
+        {
+            "key": "C3_GSP II_01_2022",
+            "value": 31.039186201742396
+        },
+        {
+            "key": "C3_GSP II_02_2022",
+            "value": 29.45
+        },
+        {
+            "key": "C3_GSP II_03_2022",
+            "value": 30.070000000000004
+        },
+        {
+            "key": "C3_GSP II_04_2022",
+            "value": 27.209999999999997
+        },
+        {
+            "key": "C3_GSP II_05_2022",
+            "value": 25.75
+        },
+        {
+            "key": "C3_GSP II_06_2022",
+            "value": 29.436585365853652
+        },
+        {
+            "key": "C3_GSP III_07_2021",
+            "value": 41.6609756097561
+        },
+        {
+            "key": "C3_GSP III_08_2021",
+            "value": 41.6609756097561
+        },
+        {
+            "key": "C3_GSP III_09_2021",
+            "value": 37.62926829268292
+        },
+        {
+            "key": "C3_GSP III_10_2021",
+            "value": 41.6609756097561
+        },
+        {
+            "key": "C3_GSP III_11_2021",
+            "value": 40.31707317073171
+        },
+        {
+            "key": "C3_GSP III_12_2021",
+            "value": 41.6609756097561
+        },
+        {
+            "key": "C3_GSP III_01_2022",
+            "value": 38.22776951864078
+        },
+        {
+            "key": "C3_GSP III_02_2022",
+            "value": 40.92
+        },
+        {
+            "key": "C3_GSP III_03_2022",
+            "value": 48.05
+        },
+        {
+            "key": "C3_GSP III_04_2022",
+            "value": 31.740000000000002
+        },
+        {
+            "key": "C3_GSP III_05_2022",
+            "value": 15
+        },
+        {
+            "key": "C3_GSP III_06_2022",
+            "value": 39.4390243902439
+        },
+        {
+            "key": "C3_GSP V_07_2021",
+            "value": 56.361206896551764
+        },
+        {
+            "key": "C3_GSP V_08_2021",
+            "value": 56.361206896551764
+        },
+        {
+            "key": "C3_GSP V_09_2021",
+            "value": 50.90689655172418
+        },
+        {
+            "key": "C3_GSP V_10_2021",
+            "value": 56.361206896551764
+        },
+        {
+            "key": "C3_GSP V_11_2021",
+            "value": 54.543103448275915
+        },
+        {
+            "key": "C3_GSP V_12_2021",
+            "value": 56.361206896551764
+        },
+        {
+            "key": "C3_GSP V_01_2022",
+            "value": 50.25
+        },
+        {
+            "key": "C3_GSP V_02_2022",
+            "value": 54.86999999999999
+        },
+        {
+            "key": "C3_GSP V_03_2022",
+            "value": 51.14999999999999
+        },
+        {
+            "key": "C3_GSP V_04_2022",
+            "value": 52.5
+        },
+        {
+            "key": "C3_GSP V_05_2022",
+            "value": 55.37241379310343
+        },
+        {
+            "key": "C3_GSP V_06_2022",
+            "value": 53.0068965517241
+        },
+        {
+            "key": "C3_GSP VI_07_2021",
+            "value": 94.55
+        },
+        {
+            "key": "C3_GSP VI_08_2021",
+            "value": 89.9
+        },
+        {
+            "key": "C3_GSP VI_09_2021",
+            "value": 81.2
+        },
+        {
+            "key": "C3_GSP VI_10_2021",
+            "value": 89.9
+        },
+        {
+            "key": "C3_GSP VI_11_2021",
+            "value": 87
+        },
+        {
+            "key": "C3_GSP VI_12_2021",
+            "value": 89.9
+        },
+        {
+            "key": "C3_GSP VI_01_2022",
+            "value": 90.60422418731787
+        },
+        {
+            "key": "C3_GSP VI_02_2022",
+            "value": 15.4
+        },
+        {
+            "key": "C3_GSP VI_03_2022",
+            "value": 92.69
+        },
+        {
+            "key": "C3_GSP VI_04_2022",
+            "value": 89.7
+        },
+        {
+            "key": "C3_GSP VI_05_2022",
+            "value": 93.91590909090911
+        },
+        {
+            "key": "C3_GSP VI_06_2022",
+            "value": 91.94318181818177
+        },
+        {
+            "key": "NGL_GSP I_07_2021",
+            "value": 9.076111111111103
+        },
+        {
+            "key": "NGL_GSP I_08_2021",
+            "value": 8.00833333333333
+        },
+        {
+            "key": "NGL_GSP I_09_2021",
+            "value": 7.233333333333331
+        },
+        {
+            "key": "NGL_GSP I_10_2021",
+            "value": 8.00833333333333
+        },
+        {
+            "key": "NGL_GSP I_11_2021",
+            "value": 7.7499999999999964
+        },
+        {
+            "key": "NGL_GSP I_12_2021",
+            "value": 8.00833333333333
+        },
+        {
+            "key": "NGL_GSP I_01_2022",
+            "value": 10.5
+        },
+        {
+            "key": "NGL_GSP I_02_2022",
+            "value": 10.85
+        },
+        {
+            "key": "NGL_GSP I_03_2022",
+            "value": 10.85
+        },
+        {
+            "key": "NGL_GSP I_04_2022",
+            "value": 9.3
+        },
+        {
+            "key": "NGL_GSP I_05_2022",
+            "value": 9.343055555555551
+        },
+        {
+            "key": "NGL_GSP I_06_2022",
+            "value": 8.783333333333326
+        },
+        {
+            "key": "NGL_GSP II_07_2021",
+            "value": 31.113414634146345
+        },
+        {
+            "key": "NGL_GSP II_08_2021",
+            "value": 31.113414634146345
+        },
+        {
+            "key": "NGL_GSP II_09_2021",
+            "value": 28.102439024390247
+        },
+        {
+            "key": "NGL_GSP II_10_2021",
+            "value": 31.113414634146345
+        },
+        {
+            "key": "NGL_GSP II_11_2021",
+            "value": 30.10975609756098
+        },
+        {
+            "key": "NGL_GSP II_12_2021",
+            "value": 31.113414634146345
+        },
+        {
+            "key": "NGL_GSP II_01_2022",
+            "value": 31.039186201742396
+        },
+        {
+            "key": "NGL_GSP II_02_2022",
+            "value": 29.45
+        },
+        {
+            "key": "NGL_GSP II_03_2022",
+            "value": 30.070000000000004
+        },
+        {
+            "key": "NGL_GSP II_04_2022",
+            "value": 27.209999999999997
+        },
+        {
+            "key": "NGL_GSP II_05_2022",
+            "value": 25.75
+        },
+        {
+            "key": "NGL_GSP II_06_2022",
+            "value": 29.436585365853652
+        },
+        {
+            "key": "NGL_GSP III_07_2021",
+            "value": 41.6609756097561
+        },
+        {
+            "key": "NGL_GSP III_08_2021",
+            "value": 41.6609756097561
+        },
+        {
+            "key": "NGL_GSP III_09_2021",
+            "value": 37.62926829268292
+        },
+        {
+            "key": "NGL_GSP III_10_2021",
+            "value": 41.6609756097561
+        },
+        {
+            "key": "NGL_GSP III_11_2021",
+            "value": 40.31707317073171
+        },
+        {
+            "key": "NGL_GSP III_12_2021",
+            "value": 41.6609756097561
+        },
+        {
+            "key": "NGL_GSP III_01_2022",
+            "value": 38.22776951864078
+        },
+        {
+            "key": "NGL_GSP III_02_2022",
+            "value": 40.92
+        },
+        {
+            "key": "NGL_GSP III_03_2022",
+            "value": 48.05
+        },
+        {
+            "key": "NGL_GSP III_04_2022",
+            "value": 31.740000000000002
+        },
+        {
+            "key": "NGL_GSP III_05_2022",
+            "value": 15
+        },
+        {
+            "key": "NGL_GSP III_06_2022",
+            "value": 39.4390243902439
+        },
+        {
+            "key": "NGL_GSP V_07_2021",
+            "value": 56.361206896551764
+        },
+        {
+            "key": "NGL_GSP V_08_2021",
+            "value": 56.361206896551764
+        },
+        {
+            "key": "NGL_GSP V_09_2021",
+            "value": 50.90689655172418
+        },
+        {
+            "key": "NGL_GSP V_10_2021",
+            "value": 56.361206896551764
+        },
+        {
+            "key": "NGL_GSP V_11_2021",
+            "value": 54.543103448275915
+        },
+        {
+            "key": "NGL_GSP V_12_2021",
+            "value": 56.361206896551764
+        },
+        {
+            "key": "NGL_GSP V_01_2022",
+            "value": 50.25
+        },
+        {
+            "key": "NGL_GSP V_02_2022",
+            "value": 54.86999999999999
+        },
+        {
+            "key": "NGL_GSP V_03_2022",
+            "value": 51.14999999999999
+        },
+        {
+            "key": "NGL_GSP V_04_2022",
+            "value": 52.5
+        },
+        {
+            "key": "NGL_GSP V_05_2022",
+            "value": 55.37241379310343
+        },
+        {
+            "key": "NGL_GSP V_06_2022",
+            "value": 53.0068965517241
+        },
+        {
+            "key": "NGL_GSP VI_07_2021",
+            "value": 94.55
+        },
+        {
+            "key": "NGL_GSP VI_08_2021",
+            "value": 89.9
+        },
+        {
+            "key": "NGL_GSP VI_09_2021",
+            "value": 81.2
+        },
+        {
+            "key": "NGL_GSP VI_10_2021",
+            "value": 89.9
+        },
+        {
+            "key": "NGL_GSP VI_11_2021",
+            "value": 87
+        },
+        {
+            "key": "NGL_GSP VI_12_2021",
+            "value": 89.9
+        },
+        {
+            "key": "NGL_GSP VI_01_2022",
+            "value": 90.60422418731787
+        },
+        {
+            "key": "NGL_GSP VI_02_2022",
+            "value": 15.4
+        },
+        {
+            "key": "NGL_GSP VI_03_2022",
+            "value": 92.69
+        },
+        {
+            "key": "NGL_GSP VI_04_2022",
+            "value": 89.7
+        },
+        {
+            "key": "NGL_GSP VI_05_2022",
+            "value": 93.91590909090911
+        },
+        {
+            "key": "NGL_GSP VI_06_2022",
+            "value": 91.94318181818177
+        },
+        {
+            "key": "NGL_NGL FROM STABILIZER_07_2021",
+            "value": 13.02
+        },
+        {
+            "key": "NGL_NGL FROM STABILIZER_08_2021",
+            "value": 13.02
+        },
+        {
+            "key": "NGL_NGL FROM STABILIZER_09_2021",
+            "value": 11.76
+        },
+        {
+            "key": "NGL_NGL FROM STABILIZER_10_2021",
+            "value": 13.02
+        },
+        {
+            "key": "NGL_NGL FROM STABILIZER_11_2021",
+            "value": 12.6
+        },
+        {
+            "key": "NGL_NGL FROM STABILIZER_12_2021",
+            "value": 13.02
+        },
+        {
+            "key": "NGL_NGL FROM STABILIZER_01_2022",
+            "value": 13.5
+        },
+        {
+            "key": "NGL_NGL FROM STABILIZER_02_2022",
+            "value": 13.02
+        },
+        {
+            "key": "NGL_NGL FROM STABILIZER_03_2022",
+            "value": 13.02
+        },
+        {
+            "key": "NGL_NGL FROM STABILIZER_04_2022",
+            "value": 12.6
+        },
+        {
+            "key": "NGL_NGL FROM STABILIZER_05_2022",
+            "value": 13.02
+        },
+        {
+            "key": "NGL_NGL FROM STABILIZER_06_2022",
+            "value": 12.6
+        }
+        
+    ]
+}

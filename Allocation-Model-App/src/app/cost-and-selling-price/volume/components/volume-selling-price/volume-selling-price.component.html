@@ -1,0 +1,14 @@
+<div class="row">
+    <accordion [isAnimated]="true">
+        <ng-container>
+            <dx-data-grid #dxDataGridList [columns]="dynamicColumns" [dataSource]="masterData.masterDemand"
+                columnResizingMode="widget" [allowColumnResizing]="true">
+                <dxo-sorting [mode]="'none'"></dxo-sorting>
+                <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+                <div *dxTemplate="let itemTemp of cellTemplate">
+                    {{itemTemp.data[itemTemp.column.dataField] | number: '1.0-' + numberBoxDigi}}
+                </div>
+            </dx-data-grid>
+        </ng-container>
+    </accordion>
+</div>

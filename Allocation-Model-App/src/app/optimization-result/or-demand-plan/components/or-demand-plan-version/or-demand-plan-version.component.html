@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-12 d-none d-md-block">
+    <div class="d-flex mb-2">
+      <div class="d-flex flex-grow-1 min-width-zero card-heading">
+        <div
+          class="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center card-body py-1">
+          <div class="mb-0 truncate w-40 w-xs-100 my-1">
+            Version
+          </div>
+          <div class="mb-0 truncate w-10 w-xs-100 my-1">
+            Year
+          </div>
+          <div class="w-15 w-xs-100">Updated by</div>
+          <div class="w-15 w-xs-100">Updated date</div>
+          <!-- <div class="w-10 w-xs-100">Version ที่ใช้คำนวณ</div> -->
+          <div class="w-10 w-xs-100 text-right">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12" *ngFor="let item of masterData.version; let i=index">
+    <div [ngClass]="{'card d-flex mb-3 card': true, 'active':true}">
+      <div class="d-flex flex-grow-1 min-width-zero">
+        <div
+          class="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center card-body py-2">
+          <div class="mb-0 w-40 w-xs-100 my-1 field-version">
+            <span class="field-label d-block d-md-none">
+              Version
+            </span>
+            <a id="toggler1" href="javascript:;">
+              <i
+                [ngClass]="{'heading-icon mr-2':true, 'simple-icon-refresh opacity-0 d-none d-md-inline-block' : !(item.id === dataInfo.id), 'simple-icon-check color-success' : item.id === dataInfo.id }"></i>
+              <span class="align-middle d-inline-block">{{item.versionName}}</span>
+            </a>
+          </div>
+          <div class="mb-0 truncate w-10 w-xs-100 my-1">
+            <span class="field-label d-block d-md-none">
+              Year
+            </span>
+            <a id="toggler1" href="javascript:;">
+              <span class="align-middle d-inline-block">{{item.year}}</span></a>
+          </div>
+
+          <div class="my-1 w-15 w-xs-100">
+            <span class="field-label d-block d-md-none">Updated by</span>
+            <span class="text-muted text-small">{{item.updateBy}}</span>
+
+          </div>
+          <div class="my-1 w-15 w-xs-100">
+            <span class="field-label d-block d-md-none">Updated by</span>
+            <span class="text-muted text-small">{{item.updateDate | date:'dd/MM/yyyy HH:mm:sss'}}</span>
+          </div>
+          <!-- <div class="my-1 w-10 w-xs-100">
+            <span class="field-label d-block d-md-none">Version ที่ใช้คำนวณ</span>
+            <span class="text-muted text-small">
+              <i *ngIf="item.isApply === true" class="heading-icon mr-2 simple-icon-check"></i>
+            </span>
+          </div> -->
+          <div class="my-1 w-10 w-xs-100 text-md-right">
+            <button class="btn btn-outline-secondary btn-xs btn-viewmore" (click)="onView($event,item)">
+              <!-- <i class="iconsminds-file"></i> -->
+              ดูข้อมูล
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

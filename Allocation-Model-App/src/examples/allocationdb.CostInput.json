@@ -1,0 +1,2491 @@
+[{
+  "id": "6088f1e3b748963e285375ed",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "ngl",
+  "Source": "gsp-full-cost",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 364.20437087012573
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 369.4527154861023
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 368.4807357276556
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 371.4057451599866
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 371.39197612634825
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 372.44615864211426
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 373.8581154206078
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 377.6129123764555
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 369.6721196605997
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 359.4452166922241
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 364.3711789591013
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 364.7327065018058
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375ec",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "ngl",
+  "Source": "gsp-cash-cost",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 338.52442636871064
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 343.8240113129242
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 342.903067805735
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 345.7685151371168
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 345.75474610347845
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 346.80892861924445
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 348.1610452476346
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 351.91584220348227
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 343.9750494876265
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 333.6794148036428
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 338.60537707052003
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 338.96690461322453
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375eb",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "ngl",
+  "Source": "ng-cost-fuel",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 308.57019924630185
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 313.92955318377597
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 313.06814062540025
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 315.86411207845117
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 315.85034304481286
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 316.90452556057886
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 318.18684198176305
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 321.9416389376107
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 314.00084622175495
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 303.6250398138907
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 308.5510020807679
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 308.9125296234724
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375ea",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "ngl",
+  "Source": "fx",
+  "Currency": "baht-dollar",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 30.01
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 30.07
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 30.13
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 29.91
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 29.91
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 29.91
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375e9",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "ngl",
+  "Source": "dubai",
+  "Currency": "dollar-bbl",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 49.9
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 49.9
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 49.8
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 50.4
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 51
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 51.3
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 52
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 52.7
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 52.5
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375e8",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-domestic-mt-brp",
+  "Source": "gsp-full-cost",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.1908408288791
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64291489156943
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.59832333035655
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.68765941680033
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67327842611155
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77431349813367
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.2835103886353
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.20518720918744
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91147037262687
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.2696491590338
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.4145430822167
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.7921385157079
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375e7",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-domestic-mt-brp",
+  "Source": "gsp-cash-cost",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 360.17451976906756
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 365.6964634447805
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 364.721463223986
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 367.72958240399447
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 367.7152014133057
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 368.8162364853278
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 370.2438373307846
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 374.1655141513367
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 365.87179731477613
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 355.1362558121617
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 360.2811497353446
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 360.6587451688358
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375e6",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-domestic-mt-brp",
+  "Source": "ng-cost-fuel",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 322.2844303239153
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 327.8819777697216
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 326.9822802087514
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 329.9025170597156
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 329.8881360690268
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 330.989171141049
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 332.3284794031747
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 336.25015622372683
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 327.95643938716626
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 317.11948602784145
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 322.26437995102435
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 322.64197538451555
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375e5",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-domestic-mt-brp",
+  "Source": "fx",
+  "Currency": "baht-dollar",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 30.01
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 30.07
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 30.13
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 29.91
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 29.91
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 29.91
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375e4",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-domestic-mt-brp",
+  "Source": "dubai",
+  "Currency": "dollar-bbl",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 49.9
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 49.9
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 49.8
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 50.4
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 51
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 51.3
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 52
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 52.7
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 52.5
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375e3",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-domestic-ptt-tank",
+  "Source": "gsp-full-cost",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 377.91860194773915
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 383.4051400720479
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 382.39487531100673
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 385.44415014125104
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 385.42976915056227
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 386.5308042225844
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 387.99975284201946
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 391.9214296625716
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 383.627712826011
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 372.9396629061749
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 378.0845568293578
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 378.462152262849
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375e2",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-domestic-ptt-tank",
+  "Source": "gsp-cash-cost",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 352.23865744632405
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 357.7764358988698
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 356.81720738908615
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 359.80692011838124
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 359.79253912769246
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 360.8935741997146
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 362.30268266904625
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 366.2243594895984
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 357.9306426530378
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 347.1738610175936
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 352.3187549407765
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 352.6963503742677
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375e1",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-domestic-ptt-tank",
+  "Source": "ng-cost-fuel",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 322.2844303239153
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 327.8819777697216
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 326.9822802087514
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 329.9025170597156
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 329.8881360690268
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 330.989171141049
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 332.3284794031747
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 336.25015622372683
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 327.95643938716626
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 317.11948602784145
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 322.26437995102435
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 322.64197538451555
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375e0",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-domestic-ptt-tank",
+  "Source": "fx",
+  "Currency": "baht-dollar",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 30.01
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 30.07
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 30.13
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 29.91
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 29.91
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 29.91
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375df",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-domestic-ptt-tank",
+  "Source": "dubai",
+  "Currency": "dollar-bbl",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 49.9
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 49.9
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 49.8
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 50.4
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 51
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 51.3
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 52
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 52.7
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 52.5
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375de",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-feedstock",
+  "Source": "gsp-full-cost",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 377.91860194773915
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 383.4051400720479
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 382.39487531100673
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 385.44415014125104
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 385.42976915056227
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 386.5308042225844
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 387.99975284201946
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 391.9214296625716
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 383.627712826011
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 372.9396629061749
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 378.0845568293578
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 378.462152262849
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375dd",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-feedstock",
+  "Source": "gsp-cash-cost",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 352.23865744632405
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 357.7764358988698
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 356.81720738908615
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 359.80692011838124
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 359.79253912769246
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 360.8935741997146
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 362.30268266904625
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 366.2243594895984
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 357.9306426530378
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 347.1738610175936
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 352.3187549407765
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 352.6963503742677
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375dc",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-feedstock",
+  "Source": "ng-cost-fuel",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 322.2844303239153
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 327.8819777697216
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 326.9822802087514
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 329.9025170597156
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 329.8881360690268
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 330.989171141049
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 332.3284794031747
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 336.25015622372683
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 327.95643938716626
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 317.11948602784145
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 322.26437995102435
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 322.64197538451555
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375db",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-feedstock",
+  "Source": "fx",
+  "Currency": "baht-dollar",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 30.01
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 30.07
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 30.13
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 29.91
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 29.91
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 29.91
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375da",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "lpg-feedstock",
+  "Source": "dubai",
+  "Currency": "dollar-bbl",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 49.9
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 49.9
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 49.8
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 50.4
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 51
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 51.3
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 52
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 52.7
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 52.5
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375d9",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "propane",
+  "Source": "gsp-full-cost",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 384.77571748654583
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 390.38135236502075
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 389.3519451026823
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 392.46335263188325
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 392.4486656626691
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 393.57312701281955
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 395.0705715527253
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 399.07568830562957
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 390.6055094087167
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 379.68688601315023
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 384.94124576448587
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 385.3268751433706
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375d8",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "propane",
+  "Source": "gsp-cash-cost",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 359.09577298513074
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 364.75264819184264
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 363.7742771807617
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 366.82612260901345
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 366.8114356397993
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 367.93589698994975
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 369.3735013797521
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 373.37861813265636
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 364.9084392357435
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 353.92108412456895
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 359.1754438759046
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 359.56107325478933
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375d7",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "propane",
+  "Source": "ng-cost-fuel",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 329.14154586272196
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 334.8581900626944
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 333.93935000042694
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 336.92171955034786
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 336.90703258113365
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 338.0314939312841
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 339.39929811388055
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 343.4044148667848
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 334.93423596987196
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 323.8667091348168
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 329.12106888615244
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 329.5066982650372
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375d6",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "propane",
+  "Source": "fx",
+  "Currency": "baht-dollar",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 30.01
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 30.07
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 30.13
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 29.91
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 29.91
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 29.91
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375d5",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "propane",
+  "Source": "dubai",
+  "Currency": "dollar-bbl",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 49.9
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 49.9
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 49.8
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 50.4
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 51
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 51.3
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 52
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 52.7
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 52.5
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375d4",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "ethane",
+  "Source": "gsp-full-cost",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 391.63283302535257
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 397.3575646579935
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 396.30901489435786
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 399.4825551225156
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 399.46756217477605
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 400.6154498030546
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 402.14139026343116
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 406.2299469486876
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 397.5833059914223
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 386.4341091201256
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 391.7979346996141
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 392.1915980238922
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375d3",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "ethane",
+  "Source": "gsp-cash-cost",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 365.9528885239375
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 371.7288604848154
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 370.7313469724373
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 373.8453250996458
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 373.83033215190625
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 374.9782197801848
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 376.44432009045795
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 380.5328767757144
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 371.8862358184491
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 360.6683072315443
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 366.0321328110328
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 366.4257961353109
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375d2",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "ethane",
+  "Source": "ng-cost-fuel",
+  "Currency": "dollar-ton",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 335.9986614015287
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 341.8344023556672
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 340.8964197921025
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 343.9409220409801
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 343.92592909324065
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 345.07381672151917
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 346.4701168245864
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 350.55867350984283
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 341.91203255257756
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 330.61393224179216
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 335.97775782128065
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 336.37142114555877
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375d1",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.532Z",
+  "Product": "ethane",
+  "Source": "fx",
+  "Currency": "baht-dollar",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 30.01
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 30.07
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 30.13
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 30.06
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 29.99
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 29.91
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 29.91
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 29.91
+    }
+  ]
+},
+{
+  "id": "6088f1e3b748963e285375d0",
+  "_t": "CostInput",
+  "Version": "59e36baf-2ca5-4e9e-b744-aad0e9b83ed6",
+  "DateCreated": "2021-04-28T05:25:55.519Z",
+  "Product": "ethane",
+  "Source": "dubai",
+  "Currency": "dollar-bbl",
+  "Items": [
+    {
+      "_t": "CostInputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 49.9
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 50
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 49.9
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 49.8
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 50.4
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 51
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 51.3
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 52
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 52.7
+    },
+    {
+      "_t": "CostInputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 52.5
+    }
+  ]
+}
+]

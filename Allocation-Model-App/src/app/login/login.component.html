@@ -1,0 +1,58 @@
+<ngx-spinner bdColor="rgba(51,51,51,0.8)" size="medium" color="#fff" type="ball-beat">
+  <p style="font-size: 20px; color: white">Loading...</p>
+  <!-- pacman -->
+  <!-- ball-beat -->
+</ngx-spinner>
+<div class="fixed-background"></div>
+<main>
+  <div class="container">
+    <div class="row h-100">
+      <div class="col-12 col-md-10 mx-auto my-auto">
+        <div class="card auth-card">
+          <div class="position-relative image-side ">
+            <p class=" text-white h2">GSP Product Balance System</p>
+            <p class="white mb-0">
+              Please use your credentials to login.
+              <!-- <br>If you are not a member, please
+              <a routerLink="/user/register" class="white white-underline-link">register</a>. -->
+            </p>
+          </div>
+          <div class="form-side">
+            <a class="c-pointer ">
+              <span class="logo-single"></span>
+            </a>
+            <h6 class="mb-4">Login</h6>
+
+            <form #loginForm="ngForm" novalidate (ngSubmit)="formSubmit(loginForm)">
+              <label class="form-group has-float-label">
+                <input class="form-control" required username ngModel #username="ngModel" name="username" />
+                <span>User</span>
+                <div *ngIf="!username.valid && loginForm.submitted" class="invalid-tooltip">Username is required!</div>
+              </label>
+              <label class="form-group has-float-label">
+                <input class="form-control" type="password" placeholder="" required ngModel #password="ngModel"
+                  name="password" />
+                <span>Password</span>
+                <div *ngIf="!password.valid && loginForm.submitted" class="invalid-tooltip">Password is required!</div>
+              </label>
+              <div class="d-flex justify-content-between align-items-center">
+                <!-- <a routerLink="/user/forgot-password">Forgot Password?</a> -->
+                <app-state-button [btnClass]="'btn btn-primary btn-lg btn-shadow'">
+                  LOGIN
+                </app-state-button>
+              </div>
+              <div class="my-3">
+                <span class="text-danger" *ngIf="errorMessage">{{ errorMessage }}</span>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+<!-- <simple-notifications></simple-notifications> -->

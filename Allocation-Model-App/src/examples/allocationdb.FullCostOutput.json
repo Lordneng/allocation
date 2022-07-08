@@ -1,0 +1,7651 @@
+[{
+  "id": "6089404bb34244a74221316b",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 364.2
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 369.45
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 368.48
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 371.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 371.39
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 372.45
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 373.86
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 377.61
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 369.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 359.45
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 364.37
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 364.73
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.078Z",
+  "Product": "pentane",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "scg",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404bb34244a74221316a",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 308.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 313.93
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 313.07
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 315.86
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 315.85
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 316.9
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 318.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 321.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 314
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 303.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 308.55
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 308.91
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.058Z",
+  "Product": "ngl",
+  "UnitPrice": "dollar-ton",
+  "Source": "gsp-ksm",
+  "Demand": "irpc",
+  "DeliveryPoint": "gsp-ksm"
+},
+{
+  "id": "6089404bb34244a742213169",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 308.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 313.93
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 313.07
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 315.86
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 315.85
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 316.9
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 318.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 321.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 314
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 303.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 308.55
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 308.91
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.058Z",
+  "Product": "ngl",
+  "UnitPrice": "dollar-ton",
+  "Source": "gsp-ksm",
+  "Demand": "export",
+  "DeliveryPoint": "gsp-ksm"
+},
+{
+  "id": "6089404bb34244a742213168",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 308.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 313.93
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 313.07
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 315.86
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 315.85
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 316.9
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 318.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 321.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 314
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 303.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 308.55
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 308.91
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.058Z",
+  "Product": "ngl",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "export",
+  "DeliveryPoint": "mt-ptt-tank"
+},
+{
+  "id": "6089404bb34244a742213167",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 308.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 313.93
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 313.07
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 315.86
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 315.85
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 316.9
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 318.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 321.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 314
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 303.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 308.55
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 308.91
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.058Z",
+  "Product": "ngl",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "scg",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404bb34244a742213166",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 308.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 313.93
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 313.07
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 315.86
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 315.85
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 316.9
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 318.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 321.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 314
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 303.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 308.55
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 308.91
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.058Z",
+  "Product": "ngl",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "gc",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404bb34244a742213165",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.039Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gsp-ksm",
+  "Demand": "pttor",
+  "DeliveryPoint": "gsp-ksm"
+},
+{
+  "id": "6089404bb34244a742213164",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 667.17
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 660.73
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 621.87
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 563.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 477.51
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 460.85
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 421.98
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 438.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 444.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 449.74
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 455.3
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 455.3
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.038Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "pttep-lkb",
+  "Demand": "pttor",
+  "DeliveryPoint": "pttep-lkb-truck"
+},
+{
+  "id": "6089404bb34244a742213163",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 554.5850778403444
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 578.9350778403444
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 543.8009352037408
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 491.29010695187173
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 413.7901069518717
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 398.7901069518717
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 363.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 378.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 383.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.6535220761712
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6535220761712
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 393.6535220761712
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.037Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "sprc",
+  "Demand": "atlas",
+  "DeliveryPoint": "sprc"
+},
+{
+  "id": "6089404bb34244a742213162",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 554.5850778403444
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 578.9350778403444
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 543.8009352037408
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 491.29010695187173
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 413.7901069518717
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 398.7901069518717
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 363.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 378.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 383.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.6535220761712
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6535220761712
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 393.6535220761712
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.037Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "sprc",
+  "Demand": "wp",
+  "DeliveryPoint": "sprc"
+},
+{
+  "id": "6089404bb34244a742213161",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 554.5850778403444
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 578.9350778403444
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 543.8009352037408
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 491.29010695187173
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 413.7901069518717
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 398.7901069518717
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 363.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 378.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 383.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.6535220761712
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6535220761712
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 393.6535220761712
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.037Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "sprc",
+  "Demand": "pap",
+  "DeliveryPoint": "sprc"
+},
+{
+  "id": "6089404bb34244a742213160",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 554.5850778403444
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 578.9350778403444
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 543.8009352037408
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 491.29010695187173
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 413.7901069518717
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 398.7901069518717
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 363.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 378.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 383.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.6535220761712
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6535220761712
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 393.6535220761712
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.037Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "sprc",
+  "Demand": "pttor",
+  "DeliveryPoint": "sprc"
+},
+{
+  "id": "6089404bb34244a74221315f",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 554.5850778403444
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 578.9350778403444
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 543.8009352037408
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 491.29010695187173
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 413.7901069518717
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 398.7901069518717
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 363.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 378.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 383.74664879356567
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.6535220761712
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6535220761712
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 393.6535220761712
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.037Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "sprc",
+  "Demand": "sgp",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404bb34244a74221315e",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 609.9413481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 603.5013481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 564.1634869739479
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 505.82491310160435
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 419.7649131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.1049131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 364.0801005361931
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 380.74010053619304
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 386.29010053619305
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 391.50835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.035Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "orchid",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404bb34244a74221315d",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 609.9413481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 603.5013481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 564.1634869739479
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 505.82491310160435
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 419.7649131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.1049131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 364.0801005361931
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 380.74010053619304
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 386.29010053619305
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 391.50835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.035Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "esso",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404bb34244a74221315c",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 594.6294236502152
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 588.1894236502153
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 548.7237074148296
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 490.37481283422466
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 404.3148128342246
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 387.65481283422463
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 348.5885790884719
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 365.24857908847184
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 370.79857908847185
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 375.92806875631953
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.034Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "esso",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404bb34244a74221315b",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 609.9413481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 603.5013481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 564.1634869739479
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 505.82491310160435
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 419.7649131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.1049131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 364.0801005361931
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 380.74010053619304
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 386.29010053619305
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 391.50835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.034Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "atlas",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404bb34244a74221315a",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 594.6294236502152
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 588.1894236502153
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 548.7237074148296
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 490.37481283422466
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 404.3148128342246
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 387.65481283422463
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 348.5885790884719
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 365.24857908847184
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 370.79857908847185
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 375.92806875631953
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.034Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "atlas",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404bb34244a742213159",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 609.9413481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 603.5013481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 564.1634869739479
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 505.82491310160435
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 419.7649131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.1049131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 364.0801005361931
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 380.74010053619304
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 386.29010053619305
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 391.50835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.034Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "irpc",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404bb34244a742213158",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 594.6294236502152
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 588.1894236502153
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 548.7237074148296
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 490.37481283422466
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 404.3148128342246
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 387.65481283422463
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 348.5885790884719
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 365.24857908847184
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 370.79857908847185
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 375.92806875631953
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.033Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "irpc",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404bb34244a742213157",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 609.9413481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 603.5013481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 564.1634869739479
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 505.82491310160435
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 419.7649131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.1049131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 364.0801005361931
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 380.74010053619304
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 386.29010053619305
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 391.50835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.033Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "wp",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404bb34244a742213156",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 594.6294236502152
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 588.1894236502153
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 548.7237074148296
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 490.37481283422466
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 404.3148128342246
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 387.65481283422463
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 348.5885790884719
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 365.24857908847184
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 370.79857908847185
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 375.92806875631953
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.033Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "wp",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404bb34244a742213155",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 611.8536700894335
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 605.4136700894336
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 566.0917768871075
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 507.7544919786097
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 421.6944919786096
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 405.03449197860965
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 366.0148525469169
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 382.6748525469169
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 388.2248525469169
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 393.45418941691946
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 399.01418941691946
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 399.01418941691946
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.032Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "pap",
+  "DeliveryPoint": "ptt-tank-truck"
+},
+{
+  "id": "6089404bb34244a742213154",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 609.9413481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 603.5013481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 564.1634869739479
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 505.82491310160435
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 419.7649131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.1049131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 364.0801005361931
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 380.74010053619304
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 386.29010053619305
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 391.50835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.029Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "pap",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404bb34244a742213153",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 594.6294236502152
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 588.1894236502153
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 548.7237074148296
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 490.37481283422466
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 404.3148128342246
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 387.65481283422463
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 348.5885790884719
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 365.24857908847184
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 370.79857908847185
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 375.92806875631953
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.029Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "pap",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404bb34244a742213152",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 609.9413481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 603.5013481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 564.1634869739479
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 505.82491310160435
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 419.7649131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.1049131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 364.0801005361931
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 380.74010053619304
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 386.29010053619305
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 391.50835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.028Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "bcp",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404bb34244a742213151",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 594.6294236502152
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 588.1894236502153
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 548.7237074148296
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 490.37481283422466
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 404.3148128342246
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 387.65481283422463
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 348.5885790884719
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 365.24857908847184
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 370.79857908847185
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 375.92806875631953
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.028Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "bcp",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404bb34244a742213150",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 602.9103113613779
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 596.470311361378
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 557.0737408149632
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 498.7304278074867
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 412.67042780748665
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 396.0104278074867
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 356.96659517426275
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 373.6265951742627
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 379.17659517426273
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 384.35408830468486
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 389.91408830468487
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 389.91408830468487
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.028Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "pttor",
+  "DeliveryPoint": "ptt-tank-truck"
+},
+{
+  "id": "6089404bb34244a74221314f",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 609.9413481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 603.5013481285193
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 564.1634869739479
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 505.82491310160435
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 419.7649131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.1049131016043
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 364.0801005361931
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 380.74010053619304
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 386.29010053619305
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 391.50835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 397.06835187057635
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.026Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "pttor",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404bb34244a74221314e",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 594.6294236502152
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 588.1894236502153
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 548.7237074148296
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 490.37481283422466
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 404.3148128342246
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 387.65481283422463
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 348.5885790884719
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 365.24857908847184
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 370.79857908847185
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 375.92806875631953
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 381.48806875631954
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.024Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gc",
+  "Demand": "pttor",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404bb34244a74221314d",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 642.9898078834051
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 636.5498078834052
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 597.4879024716099
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 539.1716042780749
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 453.1116042780749
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 436.4516042780749
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 397.51619302949064
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 414.1761930294906
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 419.7261930294906
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 425.13602291877316
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 430.69602291877317
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 430.69602291877317
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.022Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "irpc",
+  "Demand": "atlas",
+  "DeliveryPoint": "irpc"
+},
+{
+  "id": "6089404bb34244a74221314c",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 642.9898078834051
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 636.5498078834052
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 597.4879024716099
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 539.1716042780749
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 453.1116042780749
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 436.4516042780749
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 397.51619302949064
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 414.1761930294906
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 419.7261930294906
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 425.13602291877316
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 430.69602291877317
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 430.69602291877317
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.022Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "irpc",
+  "Demand": "wp",
+  "DeliveryPoint": "irpc"
+},
+{
+  "id": "6089404bb34244a74221314b",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 642.9898078834051
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 636.5498078834052
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 597.4879024716099
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 539.1716042780749
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 453.1116042780749
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 436.4516042780749
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 397.51619302949064
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 414.1761930294906
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 419.7261930294906
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 425.13602291877316
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 430.69602291877317
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 430.69602291877317
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:27.022Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "irpc",
+  "Demand": "pttor",
+  "DeliveryPoint": "irpc"
+},
+{
+  "id": "6089404ab34244a74221314a",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.996Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "export",
+  "Demand": "tbu",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a742213149",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 613.32048
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 660.36256
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 618.17636
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 562.24964
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 479.61664
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 457.04104
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 420.57547999999997
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 432.15584
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 438.6214
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 444.10992
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 449.59844
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 450.08696
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.996Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "import",
+  "Demand": "ugp",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a742213148",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 613.32048
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 660.36256
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 618.17636
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 562.24964
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 479.61664
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 457.04104
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 420.57547999999997
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 432.15584
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 438.6214
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 444.10992
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 449.59844
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 450.08696
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.996Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "import",
+  "Demand": "sgp",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a742213147",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 613.32048
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 660.36256
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 618.17636
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 562.24964
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 479.61664
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 457.04104
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 420.57547999999997
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 432.15584
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 438.6214
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 444.10992
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 449.59844
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 450.08696
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.995Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "import",
+  "Demand": "pttor",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a742213146",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 640.12
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 664.33
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 625.47
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 567.1700000000001
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 481.11
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 464.45000000000005
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 425.58000000000004
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 442.24
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 447.79
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 453.34000000000003
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 458.90000000000003
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 458.90000000000003
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.995Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "import",
+  "Demand": "spot-lpg-max-400-kt",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213145",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 613.32048
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 660.36256
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 618.17636
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 562.24964
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 479.61664
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 457.04104
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 420.57547999999997
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 432.15584
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 438.6214
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 444.10992
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 449.59844
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 450.08696
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.976Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "import",
+  "Demand": "import-lpg-to-gc",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213144",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 393.2319244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 398.7219244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 397.8297795591182
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 400.8901002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 400.8801002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 401.98010026737967
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 403.4915214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 407.4115214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 399.1215214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.5202831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6602831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 394.0402831142568
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.976Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "orchid",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404ab34244a742213143",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 393.2319244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 398.7219244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 397.8297795591182
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 400.8901002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 400.8801002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 401.98010026737967
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 403.4915214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 407.4115214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 399.1215214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.5202831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6602831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 394.0402831142568
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "uno",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404ab34244a742213142",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 393.2319244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 398.7219244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 397.8297795591182
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 400.8901002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 400.8801002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 401.98010026737967
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 403.4915214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 407.4115214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 399.1215214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.5202831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6602831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 394.0402831142568
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "esso",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404ab34244a742213141",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "esso",
+  "DeliveryPoint": "brp"
+},
+{
+  "id": "6089404ab34244a742213140",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "esso",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a74221313f",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 393.2319244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 398.7219244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 397.8297795591182
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 400.8901002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 400.8801002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 401.98010026737967
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 403.4915214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 407.4115214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 399.1215214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.5202831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6602831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 394.0402831142568
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "atlas",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404ab34244a74221313e",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "atlas",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a74221313d",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 393.2319244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 398.7219244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 397.8297795591182
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 400.8901002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 400.8801002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 401.98010026737967
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 403.4915214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 407.4115214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 399.1215214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.5202831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6602831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 394.0402831142568
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "irpc",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404ab34244a74221313c",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "irpc",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a74221313b",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 393.2319244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 398.7219244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 397.8297795591182
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 400.8901002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 400.8801002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 401.98010026737967
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 403.4915214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 407.4115214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 399.1215214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.5202831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6602831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 394.0402831142568
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "chevron",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404ab34244a74221313a",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 393.2319244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 398.7219244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 397.8297795591182
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 400.8901002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 400.8801002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 401.98010026737967
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 403.4915214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 407.4115214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 399.1215214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.5202831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6602831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 394.0402831142568
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "wp",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404ab34244a742213139",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "wp",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a742213138",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 386.20088771116264
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 391.69088771116265
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 390.7400334001336
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 393.79561497326205
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 393.78561497326206
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 394.885614973262
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 396.3780160857909
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 400.2980160857909
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 392.00801608579087
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 381.36601954836533
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 386.5060195483653
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 386.8860195483653
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "pap",
+  "DeliveryPoint": "ptt-tank-truck"
+},
+{
+  "id": "6089404ab34244a742213137",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 393.2319244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 398.7219244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 397.8297795591182
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 400.8901002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 400.8801002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 401.98010026737967
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 403.4915214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 407.4115214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 399.1215214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.5202831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6602831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 394.0402831142568
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "pap",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404ab34244a742213136",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "pap",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a742213135",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 393.2319244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 398.7219244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 397.8297795591182
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 400.8901002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 400.8801002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 401.98010026737967
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 403.4915214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 407.4115214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 399.1215214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.5202831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6602831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 394.0402831142568
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "big-gas",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404ab34244a742213134",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "big-gas",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a742213133",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 393.2319244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 398.7219244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 397.8297795591182
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 400.8901002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 400.8801002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 401.98010026737967
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 403.4915214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 407.4115214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 399.1215214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.5202831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6602831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 394.0402831142568
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "bcp",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404ab34244a742213132",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "bcp",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a742213131",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "ugp",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a742213130",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "sgp",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a74221312f",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 386.20088771116264
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 391.69088771116265
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 390.7400334001336
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 393.79561497326205
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 393.78561497326206
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 394.885614973262
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 396.3780160857909
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 400.2980160857909
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 392.00801608579087
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 381.36601954836533
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 386.5060195483653
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 386.8860195483653
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.975Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "pttor",
+  "DeliveryPoint": "ptt-tank-truck"
+},
+{
+  "id": "6089404ab34244a74221312e",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 393.2319244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 398.7219244783041
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 397.8297795591182
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 400.8901002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 400.8801002673797
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 401.98010026737967
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 403.4915214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 407.4115214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 399.1215214477212
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 388.5202831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 393.6602831142568
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 394.0402831142568
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.974Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "pttor",
+  "DeliveryPoint": "ptt-tank"
+},
+{
+  "id": "6089404ab34244a74221312d",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.955Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "pttor",
+  "DeliveryPoint": "brp"
+},
+{
+  "id": "6089404ab34244a74221312c",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 395.19
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 400.64
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 399.6
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 402.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 402.67
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 403.77
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 405.28
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 409.21
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 400.91
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 390.27
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 395.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 395.79
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.954Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "pttor",
+  "DeliveryPoint": "mt"
+},
+{
+  "id": "6089404ab34244a74221312b",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 447.4794567737662
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 452.9694567737662
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 452.53028056112225
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 455.62716577540107
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 455.6171657754011
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 456.71716577540104
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 458.3753351206434
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 462.2953351206435
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 454.0053351206434
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 443.718564206269
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 448.85856420626897
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 449.23856420626896
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.935Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "pttor-lpg-no-smell",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a74221312a",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 377.92
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 383.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 382.39
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 385.44
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 385.43
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 386.53
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 388
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 391.92
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 383.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 372.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 378.08
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 378.46
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.911Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "additional-lpg-tier-2-384-001-720-kt",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213129",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 377.92
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 383.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 382.39
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 385.44
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 385.43
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 386.53
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 388
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 391.92
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 383.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 372.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 378.08
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 378.46
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.911Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "additional-lpg-tier-1-1-384-kt",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213128",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 377.92
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 383.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 382.39
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 385.44
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 385.43
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 386.53
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 388
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 391.92
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 383.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 372.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 378.08
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 378.46
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.911Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "lpg-48-240-kt",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213127",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 377.92
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 383.41
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 382.39
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 385.44
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 385.43
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 386.53
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 388
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 391.92
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 383.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 372.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 378.08
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 378.46
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.911Z",
+  "Product": "lpg",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "gsp-lpg-to-gc",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213126",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 613.32048
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 660.36256
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 618.17636
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 562.24964
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 479.61664
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 457.04104
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 420.57547999999997
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 432.15584
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 438.6214
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 444.10992
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 449.59844
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 450.08696
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.892Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "import",
+  "Demand": "scg-substitued-c3",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213125",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 613.32048
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 660.36256
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 618.17636
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 562.24964
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 479.61664
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 457.04104
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 420.57547999999997
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 432.15584
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 438.6214
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 444.10992
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 449.59844
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 450.08696
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.892Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "import",
+  "Demand": "scg-tier2",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213124",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 613.32048
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 660.36256
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 618.17636
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 562.24964
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 479.61664
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 457.04104
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 420.57547999999997
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 432.15584
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 438.6214
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 444.10992
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 449.59844
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 450.08696
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.891Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "import",
+  "Demand": "scg-tier1",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213123",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 613.32048
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 660.36256
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 618.17636
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 562.24964
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 479.61664
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 457.04104
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 420.57547999999997
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 432.15584
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 438.6214
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 444.10992
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 449.59844
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 450.08696
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.891Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "import",
+  "Demand": "pttac",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213122",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 613.32048
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 660.36256
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 618.17636
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 562.24964
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 479.61664
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 457.04104
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 420.57547999999997
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 432.15584
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 438.6214
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 444.10992
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 449.59844
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 450.08696
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.891Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "import",
+  "Demand": "hmc",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213121",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 613.32048
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 660.36256
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 618.17636
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 562.24964
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 479.61664
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 457.04104
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 420.57547999999997
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 432.15584
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 438.6214
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 444.10992
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 449.59844
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 450.08696
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.891Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "import",
+  "Demand": "gc",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213120",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 384.78
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 390.38
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 389.35
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 392.46
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 392.45
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 393.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 395.07
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 399.08
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 390.61
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 379.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 384.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 385.33
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.830Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "scg-c3-truck",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a74221311f",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 384.78
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 390.38
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 389.35
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 392.46
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 392.45
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 393.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 395.07
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 399.08
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 390.61
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 379.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 384.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 385.33
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.830Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "scg-substitued-c3",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a74221311e",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 384.78
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 390.38
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 389.35
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 392.46
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 392.45
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 393.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 395.07
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 399.08
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 390.61
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 379.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 384.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 385.33
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.830Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "scg-tier2",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a74221311d",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 384.78
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 390.38
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 389.35
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 392.46
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 392.45
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 393.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 395.07
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 399.08
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 390.61
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 379.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 384.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 385.33
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.830Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "scg-tier1",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a74221311c",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 384.78
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 390.38
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 389.35
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 392.46
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 392.45
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 393.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 395.07
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 399.08
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 390.61
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 379.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 384.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 385.33
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.830Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "pttac-spot",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a74221311b",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 384.78
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 390.38
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 389.35
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 392.46
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 392.45
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 393.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 395.07
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 399.08
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 390.61
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 379.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 384.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 385.33
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.830Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "pttac",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a74221311a",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 384.78
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 390.38
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 389.35
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 392.46
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 392.45
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 393.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 395.07
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 399.08
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 390.61
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 379.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 384.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 385.33
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.830Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "hmc",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213119",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 384.78
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 390.38
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 389.35
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 392.46
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 392.45
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 393.57
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 395.07
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 399.08
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 390.61
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 379.69
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 384.94
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 385.33
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.830Z",
+  "Product": "c3",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "gc",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213118",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 391.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 397.36
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 396.31
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 399.48
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 399.47
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 400.62
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 402.14
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 406.23
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 397.58
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 386.43
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 391.8
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 392.19
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.808Z",
+  "Product": "c2",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "c2-scg",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213117",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 391.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 397.36
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 396.31
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 399.48
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 399.47
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 400.62
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 402.14
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 406.23
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 397.58
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 386.43
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 391.8
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 392.19
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.808Z",
+  "Product": "c2",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "c2-ole3-hybrid-supplement-c2",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213116",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 391.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 397.36
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 396.31
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 399.48
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 399.47
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 400.62
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 402.14
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 406.23
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 397.58
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 386.43
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 391.8
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 392.19
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.807Z",
+  "Product": "c2",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "c2-ole3-spot-gsp5",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213115",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 391.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 397.36
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 396.31
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 399.48
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 399.47
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 400.62
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 402.14
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 406.23
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 397.58
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 386.43
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 391.8
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 392.19
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.807Z",
+  "Product": "c2",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "c2-ole3-vol-274t-hr",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213114",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 391.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 397.36
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 396.31
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 399.48
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 399.47
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 400.62
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 402.14
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 406.23
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 397.58
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 386.43
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 391.8
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 392.19
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.807Z",
+  "Product": "c2",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "c2-ole3",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213113",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 391.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 397.36
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 396.31
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 399.48
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 399.47
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 400.62
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 402.14
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 406.23
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 397.58
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 386.43
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 391.8
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 392.19
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.807Z",
+  "Product": "c2",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "c2-ole2",
+  "DeliveryPoint": "gspry"
+},
+{
+  "id": "6089404ab34244a742213112",
+  "_t": "FullCostOutput",
+  "Items": [
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 1,
+      "Year": 2021,
+      "Value": 391.63
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 2,
+      "Year": 2021,
+      "Value": 397.36
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 3,
+      "Year": 2021,
+      "Value": 396.31
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 4,
+      "Year": 2021,
+      "Value": 399.48
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 5,
+      "Year": 2021,
+      "Value": 399.47
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 6,
+      "Year": 2021,
+      "Value": 400.62
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 7,
+      "Year": 2021,
+      "Value": 402.14
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 8,
+      "Year": 2021,
+      "Value": 406.23
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 9,
+      "Year": 2021,
+      "Value": 397.58
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 10,
+      "Year": 2021,
+      "Value": 386.43
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 11,
+      "Year": 2021,
+      "Value": 391.8
+    },
+    {
+      "_t": "FullCostOutputItem",
+      "Month": 12,
+      "Year": 2021,
+      "Value": 392.19
+    }
+  ],
+  "Version": "c657907a-ccaa-41a2-b58e-69ad9e42a64e",
+  "DateCreated": "2021-04-28T11:00:26.767Z",
+  "Product": "c2",
+  "UnitPrice": "dollar-ton",
+  "Source": "gspry",
+  "Demand": "c2-ole1",
+  "DeliveryPoint": "gspry"
+}
+]

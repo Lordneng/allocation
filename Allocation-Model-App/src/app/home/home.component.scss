@@ -1,0 +1,62 @@
+::ng-deep #pie {
+  height: 440px;
+}
+::ng-deep #pie * {
+  margin: 0 auto;
+}
+
+::ng-deep #chart {
+  height: 440px;
+}
+
+.card-body {
+  border-top: 0px;
+}
+
+.fit-daterange {
+  width: 220px;
+}
+
+.fullsize {
+  width: 100%;
+  height: 100%;
+  z-index: 1800;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.fullsize-backdrop {
+  background-color: #333333e0;
+  width: 100%;
+  height: 100%;
+  z-index: 1790;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.btn-float {
+  position: absolute;
+  top: 2%;
+  right: 50px;
+}
+
+.btn-float:hover {
+  cursor: pointer;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.imgPopup {
+  margin-top: 2%;
+  width: auto;
+  height: 100%;
+  max-height: 90vh;
+}
+
+.dx-htmleditor{
+  border-color:transparent !important;
+}

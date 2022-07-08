@@ -1,0 +1,178 @@
+<div class="page-wrapper">
+
+  <div #spacer></div>
+  <div class="page-header" sticky [spacer]="spacer">
+    <!-- sticky [spacer]="spacer" -->
+    <div class="nav-block">
+      <a href="javascript:;"
+        (click)="menuButtonClick($event, sidebar.menuClickCount, sidebar.containerClassnames); false;"
+        class="menu-button">
+        <i class="fas fa-align-left"></i>
+      </a>
+    </div>
+    <div class="header-block">
+      <div class="block">
+        <div class="page-title">
+          <div class="page-name">User</div>
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+
+  <div class="page-body">
+    <section class="section section-bg-grey">
+      <div class="block-wrapper">
+        <div class="result-block">
+          <div class="detail-block">
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-4">
+                  <!-- <div class="card-body"> -->
+                  <dx-data-grid #dxDataGridList keyExpr="id" [dataSource]="dataList" [showBorders]="true"
+                    (onSaved)="onSave($event)" (onToolbarPreparing)="onToolbarPreparing($event)">
+                    <dxo-row-dragging [allowReordering]="true" [onReorder]="onReorderListAssessor"
+                      [showDragIcons]="true">
+                    </dxo-row-dragging>
+                    <dxo-paging [enabled]="false"></dxo-paging>
+                    <dxi-column dataField="rowOrder" caption="#">
+                    </dxi-column>
+                    <dxi-column dataField="userName" caption="Username" [width]="200"></dxi-column>
+                    <dxi-column dataField="firstName"></dxi-column>
+                    <dxi-column dataField="lastName"></dxi-column>
+                    <dxi-column dataField="email"></dxi-column>
+                    <dxi-column dataField="positionName" caption="Position"></dxi-column>
+                    <dxi-column dataField="createBy"></dxi-column>
+                    <dxi-column dataField="createDate" dataType="datetime" [format]="{ type: 'dd/MM/yyy HH:mm' }">
+                    </dxi-column>
+                    <dxi-column dataField="updateBy"></dxi-column>
+                    <dxi-column dataField="updateDate" dataType="datetime" [format]="{ type: 'dd/MM/yyy HH:mm' }">
+                    </dxi-column>
+                    <dxi-column cellTemplate="cellTemplateAction" caption="" alignment="center" width="70px"
+                      [allowHiding]="false" [fixed]="true" fixedPosition="right">
+                      <div *dxTemplate="let actionCell of 'cellTemplateAction'">
+                        <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+                          <a class="text-dark" title="แก้ไข" (click)="editClick($event, actionCell.data)">
+                            <span class="tx-18 p-1 w-100"><i class="fas fa-pen"></i></span>
+                          </a>
+                        </div>
+                      </div>
+                    </dxi-column>
+                  </dx-data-grid>
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<dx-popup [width]="1200" [height]="650" class="popup" [showTitle]="true" title="Users" [dragEnabled]="true"
+  [closeOnOutsideClick]="false" [(visible)]="popupVisible" [showCloseButton]="false">
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-outline-primary" (click)="popupCancelClick()">ยกเลิก</button>
+  </dxi-toolbar-item>
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-primary" (click)="popupSaveClick()" [disabled]="this.accessMenu != 1">บันทึก</button>
+  </dxi-toolbar-item>
+  <dx-scroll-view #scrollView [scrollByContent]="true" [scrollByThumb]="true" showScrollbar="onScroll">
+    <form>
+      <dx-validation-group #targetGroup>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="unit">Username<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+            <dx-text-box name="userName" [(ngModel)]="dataInfo.userName" [readOnly]="dataInfo.isEdit">
+              <dx-validator>
+                <dxi-validation-rule type="required" message="กรุณากรอก Username"></dxi-validation-rule>
+              </dx-validator>
+            </dx-text-box>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="cal-data">First Name<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+            <dx-text-box [readOnly]="this.accessMenu != 1" name="firstName" [(ngModel)]="dataInfo.firstName">
+              <dx-validator>
+                <dxi-validation-rule type="required" message="กรุณากรอก First Name"></dxi-validation-rule>
+              </dx-validator>
+            </dx-text-box>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="unit">Last Name<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+            <dx-text-box [readOnly]="this.accessMenu != 1" name="lastName" [(ngModel)]="dataInfo.lastName">
+              <dx-validator>
+                <dxi-validation-rule type="required" message="กรุณากรอก Last Name"></dxi-validation-rule>
+              </dx-validator>
+            </dx-text-box>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="cal-data">Phone Number</label>
+            <dx-text-box [readOnly]="this.accessMenu != 1" name="phoneNumber" [(ngModel)]="dataInfo.phoneNumber">
+            </dx-text-box>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="unit">Email<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+            <dx-text-box [readOnly]="this.accessMenu != 1" name="email" [(ngModel)]="dataInfo.email">
+              <dx-validator>
+                <dxi-validation-rule type="required" message="กรุณากรอก Email"></dxi-validation-rule>
+                <dxi-validation-rule type="email" message="รูปแบบ Email ไม่ถูกต้อง"></dxi-validation-rule>
+              </dx-validator>
+            </dx-text-box>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="cal-data">Email supvisor</label>
+            <dx-text-box [readOnly]="this.accessMenu != 1" name="emailSupvisor" [(ngModel)]="dataInfo.emailSupvisor">
+            </dx-text-box>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="cal-data">Position</label>
+            <dx-text-box [readOnly]="this.accessMenu != 1" name="positionName" [(ngModel)]="dataInfo.positionName">
+            </dx-text-box>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="cal-data">User Group<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+            <dx-tag-box [readOnly]="this.accessMenu != 1" name="userGroupDropdown" [(ngModel)]="dataInfo.userGroupDropdown"
+              [dataSource]="dataMaster.UserGroup" displayExpr="name" valueExpr="id">
+              <dx-validator>
+                <dxi-validation-rule type="required" message="กรุณากรอก User Group"></dxi-validation-rule>
+              </dx-validator>
+            </dx-tag-box>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="unit">Create By</label>
+            <dx-text-box name="createBy" [(ngModel)]="dataInfo.createBy" [readOnly]="true">
+            </dx-text-box>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="unit">Update By</label>
+            <dx-text-box name="updateBy" [(ngModel)]="dataInfo.updateBy" [readOnly]="true">
+            </dx-text-box>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="unit">Create Date</label>
+            <dx-date-box name="createDate" [(ngModel)]="dataInfo.createDate" type="datetime" [readOnly]="true"
+              displayFormat='dd/MM/yyyy HH:mm:ss'>
+            </dx-date-box>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="unit">Update Date</label>
+            <dx-date-box name="updateDate" [(ngModel)]="dataInfo.updateDate" type="datetime" [readOnly]="true"
+              displayFormat='dd/MM/yyyy HH:mm:ss'>
+            </dx-date-box>
+          </div>
+        </div>
+      </dx-validation-group>
+    </form>
+  </dx-scroll-view>
+</dx-popup>

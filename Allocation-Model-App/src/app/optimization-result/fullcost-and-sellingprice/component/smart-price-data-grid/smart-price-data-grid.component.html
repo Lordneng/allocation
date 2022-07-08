@@ -1,0 +1,30 @@
+<div class="d-flex justify-content-between"
+   style="height: 35px;position: absolute;top: 28px;right: 25px;max-width: 115px;">
+   <h5></h5>
+   <div class="d-flex"> </div>
+</div>
+<div class="mt-4">
+   <button class="btn mg-l-5 btn btn-secondary mr-1" (click)="onGetData()">
+      <i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save mr-1"></i>
+      <span>ดึง Actual</span>
+   </button>
+</div>
+<div>
+   <hr>
+</div>
+<dx-data-grid #dataGridSmartPrice [dataSource]="dataList" columnResizingMode="widget" [allowColumnResizing]="true"
+   [rowAlternationEnabled]="true">
+   <dxo-group-panel [visible]="false"></dxo-group-panel>
+   <dxo-sorting [mode]="'none'"></dxo-sorting>
+   <dxo-paging [pageSize]="10" [pageIndex]="1">
+      <!-- Shows the second page -->
+   </dxo-paging>
+   <dxi-column caption="Product Grp Name" dataField="product_grp_name"></dxi-column>
+   <dxi-column caption="Product Name" dataField="product_name"></dxi-column>
+   <dxi-column caption="Customer Name" dataField="customer_name"></dxi-column>
+   <dxi-column caption="Actual Selling Price" dataField="actual_selling_price"></dxi-column>
+   <dxi-column caption="Actual Volume" dataField="actual_volume"></dxi-column>
+   <dxi-column caption="Transaction Date" dataField="transation_date" dataType="datetime"
+      [format]="{ type: 'dd/MM/yyyy HH:mm:ss' }">
+   </dxi-column>
+</dx-data-grid>

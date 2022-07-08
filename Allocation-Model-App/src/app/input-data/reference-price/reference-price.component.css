@@ -1,0 +1,14 @@
+/* .block-a {
+width: 100px;
+height: 50px;
+background-color: antiquewhite;
+}
+
+.block-a:before {
+  content: "";
+}
+
+.block-a.required-caption:after {
+content: "*";
+color: red;
+} */

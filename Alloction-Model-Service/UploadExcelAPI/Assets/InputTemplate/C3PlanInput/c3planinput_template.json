@@ -1,0 +1,41 @@
+{ 
+  "entity": "c3planinput",
+  "range": {
+    "from": "01/2021",
+    "to": "01/2022"
+  },
+  "data": {
+    "c3": {
+      "gsp1": {
+        "item": {
+          "column": 53,
+          "row": 5
+        }
+      },
+      "gsp2": {
+        "item": {
+          "column": 53,
+          "row": 6
+        }
+      },
+      "gsp3": {
+        "item": {
+          "column": 53,
+          "row": 7
+        }
+      },
+      "gsp5": {
+        "item": {
+          "column": 53,
+          "row": 8
+        }
+      },
+      "gsp6": {
+        "item": {
+          "column": 53,
+          "row": 9
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+export const TOKENS = {
+    // Add more tokens here
+    ProjectRepositoryToken: 'ProjectRepositoryToken',
+    ProjectMenuLevel1RepositoryToken: 'ProjectMenuLevel1RepositoryToken',
+    ProjectMenuLevel2RepositoryToken: 'ProjectMenuLevel2RepositoryToken',
+    ProjectMenuLevel3RepositoryToken: 'ProjectMenuLevel3RepositoryToken',
+    ProjectRepositoryTokenHistory: 'ProjectRepositoryTokenHistory',
+    ProjectRepositoryTokenVersion: 'ProjectRepositoryTokenVersion',
+    ProjectRepositoryTokenForm: 'ProjectRepositoryTokenForm',
+    ProjectRepositoryTokenFormHistory: 'ProjectRepositoryTokenFormHistory',
+    ProjectRepositoryTokenManual: 'ProjectRepositoryTokenManual',
+    ProjectRepositoryTokenActual: 'ProjectRepositoryTokenActual',
+    ProjectRepositoryTokenNew: 'ProjectRepositoryTokenNew',
+    ProjectRepositoryTokenImport: 'ProjectRepositoryTokenImport',
+    ProjectRepositoryC3LpgToken: 'ProjectRepositoryC3LpgToken',
+    ProjectRepositoryC3LpgRevisionToken: 'ProjectRepositoryC3LpgRevisionToken',
+    ProjectRepositoryCo2Token: 'ProjectRepositoryCo2Token',
+    ProjectRepositoryCo2RevisionToken: 'ProjectRepositoryCo2RevisionToken',
+    ProjectRepositoryNglToken: 'ProjectRepositoryNglToken',
+    ProjectRepositoryNglRevisionToken: 'ProjectRepositoryNglRevisionToken',
+    ProjectRepositoryPantaneToken: 'ProjectRepositoryPantaneToken',
+    ProjectRepositoryPantaneRevisionToken: 'ProjectRepositoryPantaneRevisionToken',
+    ProjectRepositoryLrMonthlyToken: 'ProjectRepositoryLrMonthlyToken',
+    ProjectRepositoryLrMonthlyRevisionToken: 'ProjectRepositoryLrMonthlyRevisionToken',
+    ProjectRepositoryTokenMaster: 'ProjectRepositoryTokenMaster',
+    ProjectSystemModeRepositoryToken: 'ProjectSystemModeRepositoryToken',
+    ProjectRepositoryVolumnToken: 'ProjectRepositoryVolumnToken',
+    ProjectRepositoryOptimizationVolumnActualToken: 'ProjectRepositoryOptimizationVolumnActualToken',
+
+    inject: ['DbConnectionToken']
+};

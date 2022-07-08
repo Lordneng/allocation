@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>80883315-ce05-4548-b7be-0d721ff95813</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="FileUpload\Summary\**" />
+    <Compile Remove="FileUpload\VolumeMeter\**" />
+    <Content Remove="FileUpload\Summary\**" />
+    <Content Remove="FileUpload\VolumeMeter\**" />
+    <EmbeddedResource Remove="FileUpload\Summary\**" />
+    <EmbeddedResource Remove="FileUpload\VolumeMeter\**" />
+    <None Remove="FileUpload\Summary\**" />
+    <None Remove="FileUpload\VolumeMeter\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="1" Version="1.0.0" />
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="CoreCLR-NCalc" Version="2.2.92" />
+    <PackageReference Include="EPPlus" Version="5.5.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="MongoDB.Driver" Version="2.11.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="System.DirectoryServices" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\ExcelFiles\Cost and selling price_Confidential_rev3.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="FileUpload\Cost\" />
+    <Folder Include="FileUpload\AbilityRayong\" />
+    <Folder Include="FileUpload\AbilityKHM\" />
+    <Folder Include="FileUpload\AbilityRayong\" />
+    <Folder Include="FileUpload\AbilityKHM\" />
+    <Folder Include="FileUpload\VolumeKT\" />
+    <Folder Include="FileUpload\VolumeKT\" />
+    <Folder Include="FileUpload\ReferencePrice\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,381 @@
+<div class="page-wrapper">
+  <div #spacer></div>
+  <div class="page-header" sticky [spacer]="spacer">
+    <!-- sticky [spacer]="spacer" -->
+    <div class="nav-block">
+      <a href="javascript:;"
+        (click)="menuButtonClick($event, sidebar.menuClickCount, sidebar.containerClassnames); false;"
+        class="menu-button">
+        <i class="fas fa-align-left"></i>
+      </a>
+    </div>
+    <div class="header-block">
+      <div class="block">
+        <div class="page-title">
+          <div class="page-name">Optimization</div>
+          <p class="mb-0">
+            <span class="badge badge-success mb-1">{{ dataInfo.versionName }}</span>
+            <span class="space"> | </span>
+            <!-- <span>Last Updated, 10 days ago</span> -->
+            <span>Last updated By : {{ dataInfo.updateBy}} |
+              <span class="badge badge-light mb-1">{{ dataInfo.updateDate | date:"dd/MM/yyyy HH:mm:ss"}}</span>
+            </span>
+          </p>
+        </div>
+        <div class="text-zero top-right-button-container">
+          <button class="btn btn-outline-primary mg-l-5 mr-1" (click)="onSearch($event)">
+            <i ng-reflect-ng-class="simple-icon-magnifier" class="simple-icon-magnifier mr-1"></i>
+            <span>ค้นหา</span>
+          </button>
+          <button class="btn btn-outline-success mg-l-5 mr-1" (click)="onOptimization()">
+            <i ng-reflect-ng-class="simple-icon-magnifier" class="simple-icon-magnifier mr-1"></i>
+            <span>Optimization</span>
+          </button>
+          <div class="btn-group" dropdown>
+            <div class="">
+              <button id="button-split" type="button" dropdownToggle
+                class="btn btn-primary dropdown-toggle dropdown-toggle-split mr-1" aria-controls="dropdown-split">
+                <i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save mr-1"></i>
+                <span class="caret">บันทึก </span>
+              </button> &nbsp;
+            </div>
+            <ul id="dropdown-split" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
+              aria-labelledby="button-split">
+              <li role="menuitem" *ngIf="isSave"><a class="dropdown-item" tooltip="Save this version (ctrl+s)"
+                  placement="right" href="javascript:;" (click)="onSave()">บันทึก</a></li>
+              <ng-container *ngIf="version">
+                <li role="menuitem"><a class="dropdown-item" tooltip="Save new version (ctrl+shift+s)" placement="right"
+                    href="javascript:;" (click)="onSaveAs()">บันทึกเป็น</a></li>
+              </ng-container>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+  <div class="page-body">
+    <section class="section section-bg-grey" style="margin-bottom: 1rem;">
+      <div class="block-wrapper">
+        <div class="result-block">
+          <div class="detail-block">
+            <tabset #tabSet class="separator-tabs">
+              <tab heading="Data" class="nav-link">
+                <div class="row">
+                  <div class="col-12 mt-4">
+                    <div class="row">
+                      <div class="col-xl-8 col-lg-12">
+                        <div class="card mb-4 w-100 card-color-blue-primary card-version text-white">
+                          <div class="card-body d-flex flex-row align-items-center">
+                            <div class="item-version-icon">
+                              <i class="iconsminds-bell mr-2"></i>
+                            </div>
+                            <div class="d-flex flex-column">
+                              <div class="version-content-title title">
+                                <h5>{{ dataInfo.versionName }} </h5>
+                              </div>
+                              <div class="version-content-title">
+                                <h5>Last updated By : <span> {{ dataInfo.updateBy}} | {{ dataInfo.updateDate |
+                                    date:"dd/MM/yyyy HH:mm:ss"}} </span></h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-12">
+                        <div class="card mb-4 w-100  card-version">
+                          <div class="card-body d-flex flex-row align-items-center">
+                            <div class="item-version-icon">
+                              <i class="simple-icon-calendar icon-color mr-3"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <div class="version-content-title text-gray">
+                                <h5><span>ข้อมูลเดือน/ปี</span></h5>
+                              </div>
+                              <div class="version-content-title title text-primary">
+                                <h5>{{ dateDisplay }}</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-wrapper">
+                  <div class="result-block" style="padding-right: 30px;">
+                    <div class="d-flex flex-row flex align-items-center">
+                      <div class="mr-2 ml-2" style="margin-top: -.5rem;">
+                        <button class="btn btn-outline-secondary btn-xs d-flex align-items-center border-none"
+                          (click)="remarkPopupClick($event)">
+                          <i class="glyph-icon simple-icon-note mr-1"></i>Remark
+                        </button>
+                      </div>
+                      <div class="d-flex flex-column ml-auto">
+                        <label class="has-float-label">
+                          <!-- <dx-number-box [width]="107" [(value)]="numberBoxDigi" [min]="0">
+                          </dx-number-box> -->
+                          <dx-number-box [width]="107" [step]="1" [min]="0" [max]="15" [(value)]="numberBoxDigi"
+                            (onFocusOut)="checkNullValue($event)" valueChangeEvent="keyup"
+                            onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                          </dx-number-box>
+                          <span>จำนวนจุดทศนิยม</span>
+                        </label>
+                      </div>
+                      <div class="d-flex flex-column ml-2" style="margin-top: -.5rem;">
+                        <button class="btn btn-outline-secondary btn-xs d-flex align-items-center border-none"
+                          (click)="showHideClick(false)" *ngIf="isShowFilterBlock">
+                          <i class="glyph-icon simple-icon-note mr-1"></i>Hide
+                        </button>
+                        <button class="btn btn-outline-secondary btn-xs d-flex align-items-center border-none"
+                          (click)="showHideClick(true)" *ngIf="!isShowFilterBlock">
+                          <i class="glyph-icon simple-icon-note mr-1"></i>Show
+                        </button>
+                      </div>
+                      <!-- <div class="border-left-default-version mr-2">
+                            <div class="ml-2 custom-control custom-checkbox"><input [disabled]="this.accessMenu != 1" type="checkbox" id="customCheckThis"
+                                [(ngModel)]="dataInfo.isApply" class="custom-control-input">
+                              <label for="customCheckThis" class="custom-control-label">Default Version</label>
+                            </div>
+                          </div> -->
+                    </div>
+                    <tabset #tabSetProduct class="separator-tabs">
+                      <tab heading="C2" class="nav-link" (selectTab)="tabC2Change($event)">
+                        <app-optimization-data-grid-c2 #optimizationDataGridC2 [(dataInfo)]="dataInfo"
+                          [(numberBoxDigi)]="numberBoxDigi">
+                        </app-optimization-data-grid-c2>
+                      </tab>
+                      <tab heading="LR MONTHLY" (selectTab)="tabLRMonthlyChange($event)">
+                        <app-optimization-data-grid-lr-monthly #optimizationDataGridLrMonthly
+                          [(numberBoxDigi)]="numberBoxDigi">
+                        </app-optimization-data-grid-lr-monthly>
+                      </tab>
+                      <tab heading="C3/LPG" (selectTab)="tabC3LPGChange($event)">
+                        <app-optimization-data-grid-c3lpg #optimizationDataGridC3LPG [(numberBoxDigi)]="numberBoxDigi">
+                        </app-optimization-data-grid-c3lpg>
+                      </tab>
+                      <tab heading="NGL" (selectTab)="tabNGLChange($event)">
+                        <app-optimization-data-grid-ngl #optimizationDataGridNGL [(numberBoxDigi)]="numberBoxDigi">
+                        </app-optimization-data-grid-ngl>
+                      </tab>
+                      <tab heading="CO2" *ngIf="false" (selectTab)="tabCO2Change($event)">
+                        <app-optimization-data-grid-co2 #optimizationDataGridCo2 [(numberBoxDigi)]="numberBoxDigi">
+                        </app-optimization-data-grid-co2>
+                      </tab>
+                      <tab heading="PANTANE" *ngIf="false" [hidden]="false" (selectTab)="tabPantaneChange($event)">
+                        <app-optimization-data-grid-pantane #optimizationDataGridPantane
+                          [(numberBoxDigi)]="numberBoxDigi">
+                        </app-optimization-data-grid-pantane>
+                      </tab>
+                      <tab heading="VOLUMN(KT)" (selectTab)="tabVolumnChange($event)">
+                        <app-optimization-data-grid-volumn #optimizationDataGridVolumn
+                          [(numberBoxDigi)]="numberBoxDigi">
+                        </app-optimization-data-grid-volumn>
+                      </tab>
+                    </tabset>
+                  </div>
+                  <div class="filter-block" *ngIf="isShowFilterBlock">
+                    <div class="block ability-block">
+                      <h4 class="title">Abilities</h4>
+                      <div class="items">
+                        <div class="ability-item">
+                          <div class="detail">
+                            <div class="">
+                              <label class="name">Ability Rayong(New)
+                                <a [href]="urlWeb + 'input-data/ability-plan-rayong;versionId=' +dataInfo.abilityPlanRayongId"
+                                  target="_blank">คลิกดูข้อมูล</a>
+                              </label>
+                              <dx-select-box #abilityPlanRayongSelectBox
+                                [dataSource]="dataMaster.masterAbilityPlanRayong" valueExpr="id"
+                                displayExpr="versionName" [(ngModel)]="dataInfo.abilityPlanRayongId"
+                                [showClearButton]="true" [(selectedItem)]="dataInfo.abilityPlanRayongItem">
+                              </dx-select-box>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ability-item">
+                          <div class="detail">
+                            <div class="">
+                              <label class="name">Ability Rayong(Old)
+                                <a [href]="urlWeb + 'input-data/ability-plan-rayong;versionId=' +dataInfo.abilityPlanRayongOldId"
+                                  target="_blank">คลิกดูข้อมูล</a>
+                              </label>
+                              <dx-select-box #abilityPlanRayongOldSelectBox
+                                [dataSource]="dataMaster.masterAbilityPlanRayong" valueExpr="id"
+                                displayExpr="versionName" [(ngModel)]="dataInfo.abilityPlanRayongOldId"
+                                [showClearButton]="true" [(selectedItem)]="dataInfo.abilityPlanRayongOldItem">
+                              </dx-select-box>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ability-item">
+                          <div class="detail">
+                            <div class="">
+                              <label class="name">Ability Pentane
+                                <a [href]="urlWeb + 'input-data/ability-pentane;versionId=' +dataInfo.abilityPentaneId"
+                                  target="_blank">คลิกดูข้อมูล</a>
+                              </label>
+                              <dx-select-box [dataSource]="dataMaster.masterAbilityPentane" valueExpr="id"
+                                displayExpr="versionName" [(ngModel)]="dataInfo.abilityPentaneId"
+                                [showClearButton]="true">
+                              </dx-select-box>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ability-item">
+                          <div class="detail">
+                            <div class="">
+                              <label class="name">Ability Khm
+                                <a [href]="urlWeb + 'input-data/ability-plan-khm;versionId=' +dataInfo.abilityPlanKhmId"
+                                  target="_blank">คลิกดูข้อมูล</a>
+                              </label>
+                              <dx-select-box [dataSource]="dataMaster.masterAbilityPlanKhm" valueExpr="id"
+                                displayExpr="versionName" [(ngModel)]="dataInfo.abilityPlanKhmId"
+                                [showClearButton]="true">
+                              </dx-select-box>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ability-item">
+                          <div class="detail">
+                            <div class="">
+                              <label class="name">Ability โรงกลั่น
+                                <a [href]="urlWeb + 'input-data/ability-refinery;versionId=' +dataInfo.abilityRefineryId"
+                                  target="_blank">คลิกดูข้อมูล</a>
+                              </label>
+                              <dx-select-box [dataSource]="dataMaster.masterAbilityRefinery" valueExpr="id"
+                                displayExpr="versionName" [(ngModel)]="dataInfo.abilityRefineryId"
+                                [showClearButton]="true">
+                              </dx-select-box>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block ability-block">
+                      <h4 class="title">Cal margin</h4>
+                      <div class="items">
+                        <div class="ability-item">
+                          <div class="detail">
+                            <div class="">
+                              <label class="name">Cal margin($/Ton)
+                                <a [href]="urlWeb + 'optimization-result/fullcost-and-sellingprice;versionId=' +dataInfo.calMarginId"
+                                  target="_blank">คลิกดูข้อมูล</a>
+                              </label>
+                              <dx-select-box [dataSource]="dataMaster.masterCalMargin" valueExpr="id"
+                                displayExpr="versionName" [(ngModel)]="dataInfo.calMarginId" [showClearButton]="true">
+                              </dx-select-box>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block ability-block">
+                      <h4 class="title">Constrain</h4>
+                      <div class="items">
+                        <div class="ability-item">
+                          <div class="detail">
+                            <div class="">
+                              <label class="name">Tank Cap.
+                                <a [href]="urlWeb + 'inventory-lr-constrain/tank-cap;versionId=' +dataInfo.tankCapId"
+                                  target="_blank">คลิกดูข้อมูล</a>
+                              </label>
+                              <dx-select-box [dataSource]="dataMaster.masterTankCap" valueExpr="id"
+                                displayExpr="versionName" [(ngModel)]="dataInfo.tankCapId" [showClearButton]="true">
+                              </dx-select-box>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ability-item">
+                          <div class="detail">
+                            <div class="">
+                              <label class="name">LR by Legal
+                                <a [href]="urlWeb + 'inventory-lr-constrain/lr-by-legal;versionId=' +dataInfo.lRbyLegalId"
+                                  target="_blank">คลิกดูข้อมูล</a>
+                              </label>
+                              <dx-select-box [dataSource]="dataMaster.masterLRByLegal" valueExpr="id"
+                                displayExpr="versionName" [(ngModel)]="dataInfo.lRbyLegalId" [showClearButton]="true">
+                              </dx-select-box>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ability-item">
+                          <div class="detail">
+                            <div class="">
+                              <label class="name">Depot Constrain
+                                <a [href]="urlWeb + 'inventory-lr-constrain/depot-management;versionId=' +dataInfo.depotConstrainId"
+                                  target="_blank">คลิกดูข้อมูล</a>
+                              </label>
+                              <dx-select-box [dataSource]="dataMaster.masterDepotManagement" valueExpr="id"
+                                displayExpr="versionName" [(ngModel)]="dataInfo.depotConstrainId"
+                                [showClearButton]="true">
+                              </dx-select-box>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ability-item">
+                          <div class="detail">
+                            <div class="">
+                              <label class="name">Volume Constrain
+                                <a [href]="urlWeb + 'customer-constrain/volume-constrain;versionId=' +dataInfo.volumeConstrainId"
+                                  target="_blank">คลิกดูข้อมูล</a>
+                              </label>
+                              <dx-select-box [dataSource]="dataMaster.masterVolumeConstrain" valueExpr="id"
+                                displayExpr="versionName" [(ngModel)]="dataInfo.volumeConstrainId"
+                                [showClearButton]="true">
+                              </dx-select-box>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block ability-block">
+                      <div class="items">
+                        <div class="ability-item">
+                          <div class="detail">
+                            <div class="mt-2">
+                              <div class="custom-control custom-checkbox mb-2" Tooltip="Manual">
+                                <input type="checkbox" id="checkManual" name="isManual" class="custom-control-input"
+                                  [(ngModel)]="dataInfo.isWithOutDemandAI">
+                                <label for="checkManual" class="custom-control-label text-dark">
+                                  With out demand (AI)
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="action-block">
+                              <button type="button" class="btn btn-primary btn-lg default mb-1 w-100">Optimize</button>
+                            </div> -->
+                  </div>
+                </div>
+              </tab>
+              <tab heading="Version">
+                <app-optimization-version #optimizationVersion (onEventClick)="onHistoryClick($event)">
+                </app-optimization-version>
+              </tab>
+            </tabset>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<ng-template #template>
+  <div class="modal-body">
+    <h5 class="mb-4"> <i class="far fa-calendar-alt icon-color"></i> Year</h5>
+    <form>
+      <!-- <dx-calendar [maxZoomLevel]="'decade'" [minZoomLevel]="'century'" [(value)]="date">
+      </dx-calendar> -->
+      <dx-calendar [maxZoomLevel]="'year'" [minZoomLevel]="'century'" [(value)]="date">
+      </dx-calendar>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-primary" (click)="searchCancelClick()">ยกเลิก</button>
+    <button type="submit" class="btn btn-primary float-right" (click)="searchClick()">ค้นหา</button>
+  </div>
+</ng-template>

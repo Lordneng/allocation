@@ -1,0 +1,21 @@
+:host {
+    display: block;
+  }
+  
+  @media (min-width: 768px) {
+    .setting-float {
+      position: absolute;
+      top: 28px;
+      right: 25px;
+      max-width: 115px;
+    }
+  }
+
+  .isNullBox {
+    margin-top: 10px;
+  }
+
+  .lblisNullBox {
+    padding-left: 5px !important;
+  }
+  

@@ -1,0 +1,35 @@
+<div class="d-flex justify-content-between"
+    style="height: 35px;position: absolute;top: 28px;right: 25px;max-width: 115px;">
+    <h5></h5>
+    <div class="d-flex"> </div>
+</div>
+<div class="mt-4">
+    <button class="btn mg-l-5 btn btn-secondary mr-1" (click)="onGetData()">
+        <i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save mr-1"></i>
+        <span>ดึง Actual</span>
+    </button>
+    <!-- <button class="btn mg-l-5 btn btn-secondary mr-1"
+        title="ข้อมูล Forecast ที่สามารถดึงได้ต้องเป็นข้อมูลตั้งแต่เดือนปัจจุบันขึ้นไปเท่านั้น" placement="bottom"
+        (click)="onGetDataForecast()">
+        <i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save mr-1"></i>
+        <span>ดึง Forecast</span>
+    </button> -->
+</div>
+<div>
+    <hr>
+</div>
+<dx-data-grid #costDataSmartPriceGrid [dataSource]="dataList" columnResizingMode="widget" [allowColumnResizing]="true"
+    [rowAlternationEnabled]="true">
+    <dxo-group-panel [visible]="false"></dxo-group-panel>
+    <dxo-sorting [mode]="'none'"></dxo-sorting>
+    <dxo-paging [pageSize]="10" [pageIndex]="1">
+        <!-- Shows the second page -->
+    </dxo-paging>
+    <dxi-column caption="Gsp Cost Name" dataField="gsp_cost_name"></dxi-column>
+    <dxi-column caption="Name" dataField="name"></dxi-column>
+    <dxi-column caption="Actual" dataField="actual"></dxi-column>
+    <dxi-column caption="Rolling" dataField="rolling"></dxi-column>
+    <dxi-column caption="Transaction Date" dataField="transation_date" dataType="datetime"
+        [format]="{ type: 'dd/MM/yyyy HH:mm:ss' }">
+    </dxi-column>
+</dx-data-grid>

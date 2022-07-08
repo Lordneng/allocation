@@ -1,0 +1,22 @@
+<div class="card mt-4">
+  <div class="card-body">
+    <dx-data-grid #dataGridOrDemand [columns]="dynamicColumns" [dataSource]="dataList" columnResizingMode="widget"
+      [allowColumnResizing]="true" [focusedRowEnabled]="false" (onToolbarPreparing)="onToolbarPreparing($event)"
+      (onRowPrepared)="onRowPrepared($event)"
+      (onCellPrepared)="onCellPrepared($event)">
+      <dxo-sorting [mode]="'none'"></dxo-sorting>
+      <dxo-search-panel [visible]="false"></dxo-search-panel>
+      <dxo-filter-row [visible]="false"></dxo-filter-row>
+      <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+      <dxo-paging [enabled]="false"></dxo-paging>
+      <dxo-pager [visible]="false"></dxo-pager>
+      <div *dxTemplate="let itemTemp of cellTemplate">
+        <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex">
+          <!-- <i class="glyph-icon simple-icon-options-vertical"></i> -->
+          {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+          (numberBoxDigi ? numberBoxDigi: 0)}}
+        </div>
+      </div>
+    </dx-data-grid>
+  </div>
+</div>

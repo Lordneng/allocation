@@ -1,0 +1,273 @@
+<div class="page-wrapper">
+  <div #spacer></div>
+  <div class="page-header" sticky [spacer]="spacer">
+    <!-- sticky [spacer]="spacer" -->
+    <div class="nav-block">
+      <a href="javascript:;"
+        (click)="menuButtonClick($event, sidebar.menuClickCount, sidebar.containerClassnames); false;"
+        class="menu-button">
+        <i class="fas fa-align-left"></i>
+      </a>
+    </div>
+    <div class="header-block">
+      <div class="block">
+        <div class="page-title">
+          <div class="page-name">Ability Rayong</div>
+          <p class="mb-0">
+            <span class="badge badge-success mb-1">{{ dataInfo.versionName }}</span>
+            <span class="space"> | </span>
+            <!-- <span>Last Updated, 10 days ago</span> -->
+            <span>Last updated By : {{ dataInfo.updateBy}} |
+              <span class="badge badge-light mb-1">{{ dataInfo.updateDate | date:"dd/MM/yyyy HH:mm:ss"}}</span>
+            </span>
+          </p>
+        </div>
+        <div class="text-zero top-right-button-container">
+
+          <button class="btn btn-outline-primary mg-l-5 mr-1" (click)="onSearch($event)">
+            <i ng-reflect-ng-class="simple-icon-magnifier" class="simple-icon-magnifier mr-1"></i>
+            <span>ค้นหา</span>
+          </button>
+
+          <div class="btn-group" dropdown>
+            <div *ngIf="accessMenu === 1">
+              <button id="button-split" type="button" dropdownToggle
+                class="btn btn-primary dropdown-toggle dropdown-toggle-split mr-1" aria-controls="dropdown-split">
+                <i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save mr-1"></i>
+                <span class="caret">บันทึก </span>
+              </button> &nbsp;
+            </div>
+            <div *ngIf="accessMenu !== 1">
+              <button id="button-split" type="button" disabled
+                class="btn btn-primary dropdown-toggle dropdown-toggle-split mr-1" aria-controls="dropdown-split">
+                <i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save mr-1"></i>
+                <span class="caret">บันทึก </span>
+              </button> &nbsp;
+            </div>
+
+            <ul id="dropdown-split" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
+              aria-labelledby="button-split">
+              <li role="menuitem"><a class="dropdown-item" tooltip="Save this version (ctrl+s)" placement="right"
+                  href="javascript:;" (click)="onSave()">บันทึก</a></li>
+              <li role="menuitem"><a class="dropdown-item" tooltip="Save new version (ctrl+shift+s)" placement="right"
+                  href="javascript:;" (click)="onSaveAs()">บันทึกเป็น</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+  <div class="page-body">
+    <section class="section section-bg-grey">
+      <div class="block-wrapper">
+        <div class="result-block">
+          <div class="detail-block">
+            <tabset #tabSet class="separator-tabs">
+              <tab heading="Data">
+                <div class="row">
+                  <div class="col-12 mt-4">
+                    <div class="row">
+                      <div class="col-xl-8 col-lg-12">
+                        <div class="card mb-4 w-100 card-color-blue-primary card-version text-white">
+                          <div class="card-body d-flex flex-row align-items-center">
+                            <div class="item-version-icon">
+                              <i class="iconsminds-bell mr-2"></i>
+                            </div>
+                            <div class="d-flex flex-column">
+                              <div class="version-content-title title">
+                                <h5>{{ dataInfo.versionName }} </h5>
+                              </div>
+                              <div class="version-content-title">
+                                <h5>Last updated By : <span> {{ dataInfo.updateBy}} | {{ dataInfo.updateDate |
+                                    date:"dd/MM/yyyy HH:mm:ss"}} </span></h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-12">
+                        <div class="card mb-4 w-100  card-version">
+                          <div class="card-body d-flex flex-row align-items-center">
+                            <div class="item-version-icon">
+                              <i class="simple-icon-calendar icon-color mr-3"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <div class="version-content-title text-gray">
+                                <h5><span>ข้อมูลเดือน/ปี</span></h5>
+                              </div>
+                              <div class="version-content-title title text-primary">
+                                <h5>{{ dateDisplay }}</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="col-12">
+                    <div class="mb-4">
+                      <div class="card-body">
+                      <h2 class="mb-2">Ability Rayong</h2>
+                      <div class="d-flex flex-row flex align-items-center mt-3 mb-2">
+                        <div class="d-flex flex-column mr-2">
+                          <button class="btn btn-outline-secondary btn-xs d-flex align-items-center border-none"
+                            [disabled]="this.accessMenu != 1" (click)="importExcelClick($event)">
+                            <i class="glyph-icon simple-icon-note mr-1"></i>Import Excel
+                          </button>
+                        </div>
+                      </div>
+                      <app-ability-plan-rayong-data-grid #abilityPlanRayongDataGrid [maxVersion]="maxVersion"
+                        [numberBoxReadOnly]="numberBoxReadOnly"></app-ability-plan-rayong-data-grid>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+
+                <div class="d-flex flex-row flex align-items-center">
+                  <div class="d-flex flex-column mr-2">
+                    <button [disabled]="this.accessMenu != 1"
+                      class="btn btn-outline-secondary btn-xs d-flex align-items-center border-none"
+                      (click)="importExcelClick($event)">
+                      <i class="glyph-icon simple-icon-note mr-1"></i>Import Excel
+                    </button>
+                  </div>
+                  <div class="border-left-default-version mr-2">
+                    <div class="ml-2">
+                      <button class="btn btn-outline-secondary btn-xs d-flex align-items-center border-none"
+                        (click)="remarkPopupClick($event)">
+                        <i class="glyph-icon simple-icon-note mr-1"></i>Remark
+                      </button>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column mt-2 ml-auto">
+                    <label class="has-float-label">
+                      <dx-number-box [width]="107" [step]="1" [min]="0" [max]="15" [(value)]="numberBoxDigi"
+                        (onFocusOut)="checkNullValue($event)" valueChangeEvent="keyup"
+                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                      </dx-number-box>
+                      <span>จำนวนจุดทศนิยม</span>
+                    </label>
+                  </div>
+                </div>
+                <app-ability-plan-rayong-data-grid #abilityPlanRayongDataGrid [maxVersion]="maxVersion"
+                  [(numberBoxDigi)]="numberBoxDigi" [numberBoxReadOnly]="numberBoxReadOnly">
+                </app-ability-plan-rayong-data-grid>
+
+              </tab>
+              <tab heading="Data Daily" (selectTab)="tabDailyClick()">
+                <div class="row">
+                  <div class="col-12 mt-4">
+                    <div class="row">
+                      <div class="col-xl-8 col-lg-12">
+                        <div class="card mb-4 w-100 card-color-blue-primary card-version text-white">
+                          <div class="card-body d-flex flex-row">
+                            <div class="item-version-icon">
+                              <i class="iconsminds-bell mr-2"></i>
+                            </div>
+                            <div class="d-flex flex-column">
+                              <div class="version-content-title title">
+                                <h5>{{ dataInfo.versionName }} </h5>
+                              </div>
+                              <div class="version-content-title">
+                                <h5>Last updated By : <span> {{ dataInfo.updateBy}} | {{ dataInfo.updateDate |
+                                    date:"dd/MM/yyyy HH:mm:ss"}} </span></h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-12">
+                        <div class="card mb-4 w-100  card-version">
+                          <div class="card-body d-flex flex-row">
+                            <div class="item-version-icon">
+                              <i class="simple-icon-calendar icon-color mr-3"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <div class="version-content-title text-gray">
+                                <h5><span>ข้อมูลปี</span></h5>
+                              </div>
+                              <div class="version-content-title title text-primary">
+                                <h5>{{ year }}</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="mb-4">
+                      <!-- <div class="card-body"> -->
+                      <app-ability-plan-rayong-data-grid-import [maxVersion]="maxVersion" class="custom-data-grid"
+                        [numberBoxReadOnly]="numberBoxReadOnly" #abilityPlanRayongDataGridImport
+                        (onEventDataMonthDaily)="onEventDataMonthDaily($event)">
+                      </app-ability-plan-rayong-data-grid-import>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </div>
+              </tab>
+              <tab heading="Version">
+                <app-ability-plan-rayong-history #abilityPlanRayongHistory (onEventClick)="onHistoryClick($event)">
+                </app-ability-plan-rayong-history>
+              </tab>
+            </tabset>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<dx-popup [showTitle]="true" title="Import Excel" [dragEnabled]="false" [fullScreen]="popupFull"
+  [closeOnOutsideClick]="false" container=".dx-viewport" [(visible)]="popupVisible">
+  <dxi-toolbar-item widget="dxButton" toolbar="top" location="after"
+    [options]="{  icon: ' simple-icon-size-fullscreen', onClick: fullClick }">
+  </dxi-toolbar-item>
+  <!-- <dxi-toolbar-item widget="dxButton" toolbar="bottom" location="before"
+    [options]="{ text: 'ตกลง', type:'default', icon: 'fas fa-save', onClick: popupSaveClick }">
+  </dxi-toolbar-item>
+  <dxi-toolbar-item widget="dxButton" toolbar="bottom" location="after"
+    [options]="{ text: 'ยกเลิก', type:'default', icon: 'fas fa-info', onClick: popupCancelClick }">
+  </dxi-toolbar-item> -->
+  <div *dxTemplate="let data of 'content'">
+    <dx-scroll-view #scrollView [scrollByContent]="true" [scrollByThumb]="true" showScrollbar="onScroll">
+      <app-ability-plan-rayong-import-excel #abilityPlanRayongImportExcel [yearImport]="year" [monthImport]="month"
+        [(dataInfo)]="dataInfo" (onEventImport)="onEventImport($event)"></app-ability-plan-rayong-import-excel>
+    </dx-scroll-view>
+  </div>
+</dx-popup>
+<ng-template #template>
+  <div class="modal-body">
+    <h5 class="mb-4"> <i class="far fa-calendar-alt icon-color"></i> Year</h5>
+    <form>
+      <dx-calendar [maxZoomLevel]="'year'" [minZoomLevel]="'century'" [(value)]="date">
+      </dx-calendar>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-primary" (click)="searchCancelClick()">ยกเลิก</button>
+    <button type="submit" class="btn btn-primary float-right" (click)="searchClick()">ค้นหา</button>
+  </div>
+</ng-template>
+
+<dx-popup [width]="500" [height]="450" [showTitle]="true" title="Remark" [closeOnOutsideClick]="false"
+  [(visible)]="remarkPopupVisible" [showCloseButton]="false">
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-outline-primary" (click)="onRemarkPopupCancel()">ยกเลิก</button>
+  </dxi-toolbar-item>
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-primary" (click)="onRemarkPopupSubmit()" [disabled]="this.accessMenu != 1">ตกลง</button>
+  </dxi-toolbar-item>
+  <dx-scroll-view width="100%" height="100%">
+    <form>
+      <div class="form-group">
+        <dx-text-area [(value)]="dataInfo.remark" [readOnly]="this.accessMenu != 1">
+        </dx-text-area>
+      </div>
+    </form>
+  </dx-scroll-view>
+</dx-popup>

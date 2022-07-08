@@ -1,0 +1,143 @@
+{
+  "entity": "price",
+  "range": {
+    "from": "12/2020",
+    "to": "12/2021"
+  },
+  "data": {
+    "crude-dubai": {
+      "dollar-bbl": {
+        "item": {
+          "column": 3,
+          "row": 4
+        }
+      }
+    },
+    "naphtha-mopj": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 5
+        }
+      }
+    },
+    "naphtha-mops": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 6
+        }
+      },
+      "dollar-bbl": {
+        "item": {
+          "column": 3,
+          "row": 7
+        }
+      }
+    },
+    "cp-platts": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 8
+        }
+      }
+    },
+    "lpg-cp": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 9
+        }
+      }
+    },
+    "c3-cp": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 10
+        }
+      }
+    },
+    "c4-cp": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 11
+        }
+      }
+    },
+    "hdpe-cfr-sea": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 12
+        }
+      }
+    },
+    "ldpe-cfr-sea": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 13
+        }
+      }
+    },
+    "lldpe-cfr-sea": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 14
+        }
+      }
+    },
+    "pp-cfr-sea": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 15
+        }
+      }
+    },
+    "propylene": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 16
+        }
+      }
+    },
+    "baltic-rate": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 17
+        }
+      }
+    },
+    "freight-x": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 18
+        }
+      }
+    },
+    "gsp-cost": {
+      "dollar-ton": {
+        "item": {
+          "column": 3,
+          "row": 19
+        }
+      }
+    },
+    "fx": {
+      "baht-dollar": {
+        "item": {
+          "column": 3,
+          "row": 20
+        }
+      }
+    }
+  }
+}

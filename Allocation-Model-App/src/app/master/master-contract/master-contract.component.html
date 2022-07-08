@@ -1,0 +1,138 @@
+<div class="row">
+  <div class="col-12">
+    <h1>Contract</h1>
+    <!-- <app-breadcrumb></app-breadcrumb> -->
+
+    <div class="text-zero top-right-button-container">
+      <!-- <div dropdown>
+            <button id="button-basic" dropdownToggle type="button" placement="bottom right"
+              class="btn btn-outline-primary dropdown-toggle btn-lg"
+              aria-controls="dropdown-basic">{{ 'pages.actions' | translate }} <span class="caret"></span>
+            </button>
+            <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
+              aria-labelledby="button-basic">
+              <li role="menuitem"><a class="dropdown-item" href="javascript:;">{{ 'pages.action' | translate }}</a></li>
+              <li role="menuitem"><a class="dropdown-item"
+                  href="javascript:;">{{ 'pages.another-action' | translate }}</a></li>
+            </ul>
+          </div> -->
+
+      <!-- <button type="button" class="btn btn-outline-primary mb-1"> <i class="fas fa-plus"></i> New</button> -->
+      <!-- <button class="btn btn-sm pd-x-15 mg-l-5 btn-outline-secondary">
+            <i ng-reflect-ng-class="iconsminds-back-2" class="iconsminds-back-2"></i>
+
+          </button>
+
+          <button class="btn btn-sm pd-x-15 mg-l-5 btn-outline-secondary">
+            <i ng-reflect-ng-class="simple-icon-refresh" class="simple-icon-refresh"></i>
+
+          </button> -->
+
+      <!-- <button class="btn btn-sm pd-x-15 mg-l-5 btn btn-secondary btn-shadow" tooltip="Save data OR ctrl+s" placement="top"
+          (click)="onSave()">
+            <i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save"></i>
+
+          </button>
+
+          <button class="btn btn-sm pd-x-15 mg-l-5 btn-outline-secondary">
+            <i ng-reflect-ng-class="simple-icon-options" class="simple-icon-options-vertical"></i>
+
+          </button> -->
+    </div>
+    <div class="separator mb-3"></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="card mb-4">
+      <div class="card-body">
+
+        <dx-data-grid #dxDataGridList keyExpr="id" [dataSource]="dataList" [showBorders]="true"
+          (onSaved)="onSave($event)" (onToolbarPreparing)="onToolbarPreparing($event)">
+          <dxo-row-dragging [allowReordering]="true" [onReorder]="onReorderListAssessor" [showDragIcons]="true">
+          </dxo-row-dragging>
+          <!-- <dxo-paging [enabled]="false"></dxo-paging> -->
+          <dxo-editing mode="popup" [allowUpdating]="this.accessMenu === 1" [allowAdding]="this.accessMenu === 1" [allowDeleting]="this.accessMenu === 1">
+            <dxo-popup title="Product Cost" [showTitle]="true" [height]="525">
+            </dxo-popup>
+            <dxo-form id="form" [formData]="dataList">
+              <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+                <dxi-item dataField="contractGroup">
+                  <!-- <dxo-label text="Product Cost Name (From excel)" ></dxo-label> -->
+                </dxi-item>
+                <dxi-item dataField="product">
+                  <!-- <dxo-label text="Product Name"></dxo-label> -->
+                </dxi-item>
+                <dxi-item dataField="customer">
+                  <!-- <dxo-label text="Product Name"></dxo-label> -->
+                </dxi-item>
+                <dxi-item dataField="source">
+                  <!-- <dxo-label text="Product Name"></dxo-label> -->
+                </dxi-item>
+                <dxi-item dataField="volumePerYearMin">
+                  <!-- <dxo-label text="Product Name"></dxo-label> -->
+                </dxi-item>
+                <dxi-item dataField="volumePerYearMax">
+                  <!-- <dxo-label text="Product Name"></dxo-label> -->
+                </dxi-item>
+                <dxi-item dataField="unit" editorType="dxSelectBox"
+                  [editorOptions]="{ dataSource :[{value:'$/Ton'},{value:'$/BBL'}],displayExpr:'value',valueExpr:'value'}">
+                  <dxo-label text="Unit"></dxo-label>
+                </dxi-item>
+                <dxi-item dataField="contractStartDate" [editorType]="'dxDateBox'" [editorOptions]="{ width: '100%',format: 'date',
+                  showClearButton: true ,displayFormat:'dd/MM/yyyy'}">
+                </dxi-item>
+                <dxi-item dataField="contractEndDate" [editorType]="'dxDateBox'" [editorOptions]="{  width: '100%',format: 'date',
+                  showClearButton: true ,displayFormat:'dd/MM/yyyy'}">
+                </dxi-item>
+                <!-- <dxi-item dataField="duration" [editorOptions]="{readOnly:true}">
+                </dxi-item> -->
+
+                <dxi-item dataField="tier"></dxi-item>
+
+                <dxi-item dataField="remark" editorType="dxTextArea" [colSpan]="2" [editorOptions]="{ height: 100 }">
+                  <dxo-label text="Remark"></dxo-label>
+                </dxi-item>
+                <dxi-item dataField="activeStatus" editorType="dxSelectBox"
+                  [editorOptions]="{dataSource :[{value:'Active'},{value:'Inactive'}],displayExpr:'value',valueExpr:'value'}">
+                </dxi-item>
+              </dxi-item>
+
+              <dxi-item itemType="group" caption="" [colCount]="2" [colSpan]="2">
+                <dxi-item dataField="createBy" [editorOptions]="{readOnly: true}"></dxi-item>
+                <dxi-item dataField="updateBy" [editorOptions]="{readOnly: true}"></dxi-item>
+                <dxi-item dataField="createDate"
+                  [editorOptions]="{format: 'datetime',readOnly: true,displayFormat:'dd/MM/yyyy HH:mm:ss'}"></dxi-item>
+                <dxi-item dataField="updateDate"
+                  [editorOptions]="{format: 'datetime',readOnly: true,displayFormat:'dd/MM/yyyy HH:mm:ss'}"></dxi-item>
+              </dxi-item>
+            </dxo-form>
+          </dxo-editing>
+
+          <dxi-column dataField="rowOrder" caption="#">
+          </dxi-column>
+          <dxi-column dataField="contractGroup" groupIndex=0></dxi-column>
+          <dxi-column dataField="product"></dxi-column>
+          <dxi-column dataField="customer"></dxi-column>
+          <dxi-column dataField="source"></dxi-column>
+          <dxi-column dataField="volumePerYearMin" dataType="number" format="#,##0"></dxi-column>
+          <dxi-column dataField="volumePerYearMax" dataType="number" format="#,##0"></dxi-column>
+          <dxi-column dataField="unit"></dxi-column>
+          <dxi-column dataField="contractStartDate" dataType="date" [customizeText]="customizeTextDateFormat">
+          </dxi-column>
+          <dxi-column dataField="contractEndDate" dataType="date" [customizeText]="customizeTextDateFormat">
+          </dxi-column>
+          <dxi-column dataField="duration" [caption]="'Duration(Year)'"></dxi-column>
+          <dxi-column dataField="tier" dataType="number"></dxi-column>
+          <dxi-column dataField="remark"></dxi-column>
+          <dxi-column dataField="activeStatus"></dxi-column>
+          <dxi-column dataField="createBy"></dxi-column>
+          <dxi-column dataField="createDate" dataType="datetime"></dxi-column>
+          <dxi-column dataField="updateBy"></dxi-column>
+          <dxi-column dataField="updateDate" dataType="datetime"></dxi-column>
+        </dx-data-grid>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,2019 @@
+{
+  "entity": "sellingpriceoutput",
+  "range": {
+    "from": "01/2021",
+    "to": "12/2021"
+  },
+  "data": {
+    "c2": {
+      "dollar-ton": {
+        "gspry": {
+          "c2-ole1": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "hdpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"hdpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  },
+                  {
+                    "name": "ldpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"ldpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  },
+                  {
+                    "name": "lldpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lldpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  }
+                ],
+                "equation": "if(((0.42 * ((0.336 * [hdpe]) + 28)) + (0.42 * ((0.314 * [lldpe]) + 69)) + (0.16 * ((0.344 * [ldpe]) + 17))) < 370, 370.00, (0.42 * ((0.336 * [hdpe]) + 28)) + (0.42 * ((0.314 * [lldpe]) + 69)) + (0.16 * ((0.344 * [ldpe]) + 17)))"
+              }
+            }
+          },
+          "c2-ole2": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "hdpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"hdpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  },
+                  {
+                    "name": "ldpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"ldpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  },
+                  {
+                    "name": "lldpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lldpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  }
+                ],
+                "equation": "(if(((0.42 * ((0.336 * [hdpe]) + 28)) + (0.42 * ((0.314 * [lldpe]) + 69)) + (0.16 * ((0.344 * [ldpe]) + 17))) < 370, 370.00, (0.42 * ((0.336 * [hdpe]) + 28)) + (0.42 * ((0.314 * [lldpe]) + 69)) + (0.16 * ((0.344 * [ldpe]) + 17)))) * 1.0496"
+              }
+            }
+          },
+          "c2-ole3": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "hdpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"hdpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  },
+                  {
+                    "name": "ldpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"ldpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  },
+                  {
+                    "name": "lldpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lldpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  }
+                ],
+                "equation": "((if(((0.42 * ((0.336 * [hdpe]) + 28)) + (0.42 * ((0.314 * [lldpe]) + 69)) + (0.16 * ((0.344 * [ldpe]) + 17))) < 370, 370.00, (0.42 * ((0.336 * [hdpe]) + 28)) + (0.42 * ((0.314 * [lldpe]) + 69)) + (0.16 * ((0.344 * [ldpe]) + 17)))) * 1.014) + 2.0224"
+              }
+            }
+          },
+          "c2-ole3-vol-274t-hr": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "hdpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"hdpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  },
+                  {
+                    "name": "ldpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"ldpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  },
+                  {
+                    "name": "lldpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lldpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  }
+                ],
+                "equation": "((if(((0.42 * ((0.336 * [hdpe]) + 28)) + (0.42 * ((0.314 * [lldpe]) + 69)) + (0.16 * ((0.344 * [ldpe]) + 17))) < 370, 370.00, (0.42 * ((0.336 * [hdpe]) + 28)) + (0.42 * ((0.314 * [lldpe]) + 69)) + (0.16 * ((0.344 * [ldpe]) + 17)))) * 1.014) + 28"
+              }
+            }
+          },
+          "c2-ole3-spot-gsp5": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "hdpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"hdpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  },
+                  {
+                    "name": "ldpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"ldpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  },
+                  {
+                    "name": "lldpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lldpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  }
+                ],
+                "equation": "(if(((0.42 * ((0.336 * [hdpe]) + 28)) + (0.42 * ((0.314 * [lldpe]) + 69)) + (0.16 * ((0.344 * [ldpe]) + 17))) < 370, 370.00, (0.42 * ((0.336 * [hdpe]) + 28)) + (0.42 * ((0.314 * [lldpe]) + 69)) + (0.16 * ((0.344 * [ldpe]) + 17)))) * 1.0496"
+              }
+            }
+          },
+          "c2-ole3-hybrid-supplement-c2": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "hdpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"hdpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  },
+                  {
+                    "name": "ldpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"ldpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  },
+                  {
+                    "name": "lldpe",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lldpe-cfr-sea\" , \"Currency\": \"dollar-ton\" }"
+                  }
+                ],
+                "equation": "((if(((0.42 * ((0.336 * [hdpe]) + 28)) + (0.42 * ((0.314 * [lldpe]) + 69)) + (0.16 * ((0.344 * [ldpe]) + 17))) < 370, 370.00, (0.42 * ((0.336 * [hdpe]) + 28)) + (0.42 * ((0.314 * [lldpe]) + 69)) + (0.16 * ((0.344 * [ldpe]) + 17)))) * 1.014) + 100"
+              }
+            }
+          },
+          "c2-scg": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "naphtha-mopj",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"naphtha-mopj\" , \"Currency\": \"dollar-ton\" }"
+                  }
+                ],
+                "equation": "if((0.86 * [naphtha-mopj]) < 410, 410, 0.86 * [naphtha-mopj])"
+              }
+            }
+          }
+        }
+      }
+    },
+    "c3": {
+      "dollar-ton": {
+        "gspry": {
+          "gc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "c3-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"c3-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[c3-cp] + ([prev-baltic-rate] * 0.8) + 27 - 15"
+              }
+            }
+          },
+          "hmc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "c3-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"c3-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "if(([c3-cp] + ([prev-baltic-rate] * 0.8) + 17 + 7.0563) < 330.00, 330.00, ([c3-cp] + ([prev-baltic-rate] * 0.8) + 17 + 7.8217))"
+              }
+            }
+          },
+          "pttac": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "prev-pp-cfr-sea",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"pp-cfr-sea\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "([prev-pp-cfr-sea] * 0.295) + 72"
+              }
+            }
+          },
+          "pttac-spot": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "c3-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"c3-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[c3-cp] + [prev-baltic-rate] + 20"
+              }
+            }
+          },
+          "scg-tier1": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "c3-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"c3-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[c3-cp] + (0.71 * [prev-baltic-rate]) + 17 - 10"
+              }
+            }
+          },
+          "scg-tier2": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "c3-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"c3-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[c3-cp] + (0.73 * [prev-baltic-rate]) + 17 - 10"
+              }
+            }
+          },
+          "scg-substitued-c3": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "c3-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"c3-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[c3-cp] + (0.71 * [prev-baltic-rate]) + 17 - 10"
+              }
+            }
+          },
+          "scg-c3-truck": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost] + ((0.53 * 1000) / [fx])"
+              }
+            }
+          }
+        },
+        "import": {
+          "gc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "c3-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"c3-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[c3-cp] + ([prev-baltic-rate] * 0.8) + 27 - 15"
+              }
+            }
+          },
+          "hmc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "c3-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"c3-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "if(([c3-cp] + ([prev-baltic-rate] * 0.8) + 17 + 7.0563) < 330.00, 330.00, ([c3-cp] + ([prev-baltic-rate] * 0.8) + 17 + 7.8217))"
+              }
+            }
+          },
+          "pttac": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "prev-pp-cfr-sea",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"pp-cfr-sea\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "([prev-pp-cfr-sea] * 0.295) + 72"
+              }
+            }
+          },
+          "scg-tier1": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "c3-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"c3-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[c3-cp] + (0.71 * [prev-baltic-rate])"
+              }
+            }
+          },
+          "scg-tier2": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "c3-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"c3-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[c3-cp] + (0.73 * [prev-baltic-rate])"
+              }
+            }
+          },
+          "scg-substitued-c3": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "c3-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"c3-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[c3-cp] + (0.71 * [prev-baltic-rate])"
+              }
+            }
+          }
+        }
+      }
+    },
+    "lpg": {
+      "dollar-ton": {
+        "gspry": {
+          "gsp-lpg-to-gc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "lpg-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lpg-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[lpg-cp]+(0.8*[prev-baltic-rate])+20-13"
+              }
+            }
+          },
+          "lpg-48-240-kt": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "lpg-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"naphtha-mopj\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[lpg-cp]-80"
+              }
+            }
+          },
+          "additional-lpg-tier-1-1-384-kt": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "lpg-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lpg-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[lpg-cp]+(0.71*[prev-baltic-rate])+17-10"
+              }
+            }
+          },
+          "additional-lpg-tier-2-384-001-720-kt": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "lpg-cp",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lpg-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[lpg-cp]+(0.73*[prev-baltic-rate])+17-10"
+              }
+            }
+          },
+          "pttor-lpg-no-smell": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]+(2500/[fx])"
+              }
+            }
+          },
+          "pttor": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(550/[fx])"
+              }
+            },
+            "brp": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(550/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(550/[fx])-(150/[fx])"
+              }
+            },
+            "ptt-tank-truck": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(550/[fx])-(150/[fx])+(250/[fx])"
+              }
+            }
+          },
+          "sgp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(510/[fx])"
+              }
+            }
+          },
+          "ugp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(510/[fx])"
+              }
+            }
+          },
+          "bcp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]+(150/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]"
+              }
+            }
+          },
+          "big-gas": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(400/[fx])+(150/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(400/[fx])"
+              }
+            }
+          },
+          "pap": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(400/[fx])+(150/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(400/[fx])"
+              }
+            },
+            "ptt-tank-truck": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(400/[fx])+(250/[fx])"
+              }
+            }
+          },
+          "wp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(620/[fx])+(150/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(620/[fx])"
+              }
+            }
+          },
+          "chevron": {
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]"
+              }
+            }
+          },
+          "irpc": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(400/[fx])+(150/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(400/[fx])"
+              }
+            }
+          },
+          "atlas": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(400/[fx])+(150/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(400/[fx])"
+              }
+            }
+          },
+          "esso": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]+(150/[fx])"
+              }
+            },
+            "brp": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]+(150/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]"
+              }
+            }
+          },
+          "uno": {
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]"
+              }
+            }
+          },
+          "orchid": {
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]"
+              }
+            }
+          }
+        },
+        "import": {
+          "import-lpg-to-gc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "lpg-price",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lpg-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "prev-baltic-rate",
+                    "collection": "PriceInput",
+                    "condition": "PreviousMonth",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"baltic-rate\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[lpg-price]+(0.8*[prev-baltic-rate])+20-13"
+              }
+            }
+          },
+          "spot-lpg-max-400-kt": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "lpg-price",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lpg-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-price",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "([lpg-price]+[freight-price]+3.6)+17-10"
+              }
+            }
+          },
+          "pttor": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "lpg-price",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lpg-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-price",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[lpg-price]+[freight-price]-(550/[fx])"
+              }
+            }
+          },
+          "sgp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "lpg-price",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lpg-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-price",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[lpg-price]+[freight-price]-(50/[fx])"
+              }
+            }
+          },
+          "ugp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "lpg-price",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lpg-cp\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-price",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[lpg-price]+[freight-price]-(50/[fx])"
+              }
+            }
+          }
+        },
+        "export": {
+          "tbu": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"lpg-cp\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[cost]"
+              }
+            }
+          }
+        },
+        "irpc": {
+          "pttor": {
+            "irpc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts]+[freight-x]-(550/[fx])-(150/[fx])"
+              }
+            }
+          },
+          "wp": {
+            "irpc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts]+[freight-x]-(620/[fx])"
+              }
+            }
+          },
+          "atlas": {
+            "irpc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts]+[freight-x]-(500/[fx])"
+              }
+            }
+          }
+        },
+        "gc": {
+          "pttor": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] - (550 / [fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] - (550 / [fx]) - (150/[fx])"
+              }
+            },
+            "ptt-tank-truck": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] - (550/[fx])-(150/[fx])+(250/[fx])"
+              }
+            }
+          },
+          "bcp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] +(150/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x]"
+              }
+            }
+          },
+          "pap": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] -(400/[fx])+(150/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] -(400/[fx])"
+              }
+            },
+            "ptt-tank-truck": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] -(400/[fx])+(250/[fx])"
+              }
+            }
+          },
+          "wp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] -(620/[fx])+(150/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] -(620/[fx])"
+              }
+            }
+          },
+          "irpc": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] -(400/[fx])+(150/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] -(400/[fx])"
+              }
+            }
+          },
+          "atlas": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] -(400/[fx])+(150/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] -(400/[fx])"
+              }
+            }
+          },
+          "esso": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] +(150/[fx])"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x]"
+              }
+            }
+          },
+          "orchid": {
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x]"
+              }
+            }
+          }
+        },
+        "sprc": {
+          "sgp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts]+[freight-x]-(510/[fx])"
+              }
+            }
+          },
+          "pttor": {
+            "sprc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts]+[freight-x]-(550/[fx])-(300/[fx])"
+              }
+            }
+          },
+          "pap": {
+            "sprc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] - (400/[fx])"
+              }
+            }
+          },
+          "wp": {
+            "sprc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] - (620/[fx])"
+              }
+            }
+          },
+          "atlas": {
+            "sprc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-x",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts] + [freight-x] - (500/[fx])"
+              }
+            }
+          }
+        },
+        "pttep-lkb": {
+          "pttor": {
+            "pttep-lkb-truck": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "cp-platts",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"cp-platts\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "freight-price",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"freight-x\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[cp-platts]+[freight-price]+(100/[fx])"
+              }
+            }
+          }
+        },
+        "gsp-ksm": {
+          "pttor": {
+            "gsp-ksm": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "gsp-cost",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"gsp-cost\" , \"Currency\": \"dollar-ton\"}"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[gsp-cost]-(550/[fx])"
+              }
+            }
+          }
+        }
+      }
+    },
+    "ngl": {
+      "dollar-ton": {
+        "gspry": {
+          "gc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "naphtha-mopj",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"naphtha-mopj\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[naphtha-mopj]-12.5"
+              }
+            }
+          },
+          "scg": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "naphtha-mopj",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"naphtha-mopj\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[naphtha-mopj]-12"
+              }
+            }
+          },
+          "export": {
+            "mt-ptt-tank": {
+              "item": {
+                "parameters": [
+                  //{
+                  //  "name": "naphtha-mopj",
+                  //  "collection": "PriceInput",
+                  //  "condition": "",
+                  //  "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"naphtha-mopj\" , \"Currency\": \"dollar-ton\"}"
+                  //}
+                ],
+                "equation": "(-0.2-8-0.01)/158.987/0.648*1000"
+              }
+            }
+          }
+        },
+        "gsp-ksm": {
+          "export": {
+            "gsp-ksm": {
+              "item": {
+                "parameters": [
+                  //{
+                  //  "name": "naphtha-mopj",
+                  //  "collection": "PriceInput",
+                  //  "condition": "",
+                  //  "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"naphtha-mopj\" , \"Currency\": \"dollar-ton\"}"
+                  //}
+                ],
+                "equation": "(-0.2-8-0.01)/158.987/0.648*1000"
+              }
+            }
+          },
+          "irpc": {
+            "gsp-ksm": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "naphtha-mopj",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"naphtha-mopj\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[naphtha-mopj]-10-22.5"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pentane": {
+      "dollar-ton": {
+        "gspry": {
+          "scg": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "naphtha-mopj",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"naphtha-mopj\" , \"Currency\": \"dollar-ton\"}"
+                  }
+                ],
+                "equation": "[naphtha-mopj]-100"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

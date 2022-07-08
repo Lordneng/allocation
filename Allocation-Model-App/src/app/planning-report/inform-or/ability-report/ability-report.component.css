@@ -1,0 +1,3 @@
+.dx-datagrid .dx-datagrid-headers .dx-header-filter, .dx-datagrid .dx-datagrid-headers .dx-header-row > td {
+    background-color: gold !important;
+}

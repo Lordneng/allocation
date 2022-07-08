@@ -1,0 +1,47 @@
+{ 
+  "entity": "nglplaninput",
+  "range": {
+    "from": "01/2021",
+    "to": "01/2022"
+  },
+  "data": {
+    "ngl": {
+      "gsp1": {
+        "item": {
+          "column": 51,
+          "row": 5
+        }
+      },
+      "gsp2": {
+        "item": {
+          "column": 51,
+          "row": 6
+        }
+      },
+      "gsp3": {
+        "item": {
+          "column": 51,
+          "row": 7
+        }
+      },
+      "gsp5": {
+        "item": {
+          "column": 51,
+          "row": 8
+        }
+      },
+      "gsp6": {
+        "item": {
+          "column": 51,
+          "row": 9
+        }
+      },
+      "stab": {
+        "item": {
+          "column": 51,
+          "row": 10
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+<div class="row">
+  <div class="col-12">
+    <div>
+      <!-- <h1><i ng-reflect-ng-class="iconsminds-three-arrow-fork" class="rounded-circle border iconsminds-three-arrow-fork"></i> Cost ผวก</h1> -->
+      <h1> Volume Constrain</h1>
+      <div class="text-zero top-right-button-container">
+        <button class="btn mg-l-5 btn btn-secondary mr-1" tooltip="Save data OR ctrl+s" placement="top"
+          (click)="onSave()">
+          <i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save mr-1"></i>
+          <span>บันทึก</span>
+        </button>
+
+        <!-- <button class="btn mg-l-5 btn btn-secondary mr-1" tooltip="Save As data OR ctrl+shift+s" placement="top"
+          (click)="onSaveAs()">
+          <i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save mr-1"></i>
+          <span>สร้าง Version ใหม่</span>
+        </button> -->
+      </div>
+      <div class="separator mb-3"></div>
+    </div>
+    <div>
+      <tabset #tabSet class="separator-tabs">
+        <!-- <tab heading="Data (Volume Contrain by Meter)" (selectTab)="tabSecondChange($event)">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card mb-4 w-100 card-color-blue-light card-version">
+                    <div class="card-body">
+                      <!-- <i class="simple-icon-info"></i> -->
+                      <!-- <div class="version-content-title title">
+                        <h5>{{ dataInfo.versionName }}</h5>
+                      </div> 
+                      <div class="version-content-title">
+                        <h5>Last updated By : <span> {{ dataInfo.updateBy}} | {{ dataInfo.updateDate | date:"dd/MM/yyyy HH:mm:ss"}} </span></h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card card-cost-data mb-4">
+                <div class="card-body">
+                  <h2 class="mb-2">Volume Contrain by Meter
+                    <button type="button" class="btn btn-outline-secondary btn-xs" (click)="onSearch($event)"><i
+                        class="iconsminds-filter-2"></i>Filter by month</button>
+                  </h2>
+                  <app-volume-constrain-meter-data-grid #volumeConstrainMeterDataGrid [maxVersion]="maxVersion"
+                    [numberBoxReadOnly]="numberBoxReadOnly">
+                  </app-volume-constrain-meter-data-grid>
+                </div>
+              </div>
+            </div>
+          </div>
+        </tab> -->
+        <tab heading="Data (Volume constrain (KT))" (selectTab)="tabFirstChange($event)">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card mb-4 w-100 card-color-blue-light card-version">
+                    <div class="card-body">
+                      <!-- <i class="simple-icon-info"></i> -->
+                      <div class="version-content-title">
+                        <h5>Last updated By : <span> {{ dataInfo.updateBy}} | {{ dataInfo.updateDate | date:"dd/MM/yyyy HH:mm:ss"}} </span></h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card card-cost-data mb-4">
+                <div class="card-body">
+                  <h2 class="mb-2">Volume constrain (KT)
+                    <button type="button" class="btn btn-outline-secondary btn-xs" (click)="onSearch($event)"><i
+                        class="iconsminds-filter-2"></i>Filter by month</button>
+                  </h2>
+                  <app-volume-constrain-data-grid #volumeConstrainDataGrid [maxVersion]="maxVersion"
+                    [numberBoxReadOnly]="numberBoxReadOnly"></app-volume-constrain-data-grid>
+                </div>
+              </div>
+            </div>
+          </div>
+        </tab>
+        <tab heading="Import Excel">
+          <app-volume-constrain-import-excel #importExcel [yearImport]="year" [monthImport]="month"
+            (onEventImport)="onEventImport($event)"></app-volume-constrain-import-excel>
+        </tab>
+        <!-- <tab heading="Version">
+          <app-volume-constrain-history #volumeConstrainHistory (onEventClick)="onHistoryClick($event)">
+          </app-volume-constrain-history>
+        </tab> -->
+      </tabset>
+    </div>
+  </div>
+</div>
+
+<ng-template #template>
+
+  <div class="modal-body">
+    <h5 class="mb-4"> <i class="far fa-calendar-alt icon-color"></i> Year</h5>
+    <form>
+      <dx-calendar [maxZoomLevel]="'year'" [minZoomLevel]="'century'" [(value)]="date">
+      </dx-calendar>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-primary" (click)="searchCancelClick()">ยกเลิก</button>
+    <button type="submit" class="btn btn-primary float-right" (click)="searchClick()">ค้นหา</button>
+  </div>
+</ng-template>

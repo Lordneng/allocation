@@ -1,0 +1,12 @@
+.fs-16 {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+body.style-1 main .page-wrapper .page-body {
+  padding: 0px 0px 0px 100px;
+}
+

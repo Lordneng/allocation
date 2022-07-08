@@ -1,0 +1,93 @@
+<div class="page-wrapper">
+  <div #spacer></div>
+  <div class="page-header" sticky [spacer]="spacer">
+    <!-- sticky [spacer]="spacer" -->
+    <div class="nav-block">
+      <a href="javascript:;" class="menu-button">
+        <i class="fas fa-align-left"></i>
+      </a>
+    </div>
+    <div class="header-block">
+      <div class="block">
+        <div class="page-title">
+          <p class="page-name">Product Cost</p>
+        </div>
+        <div class="text-zero top-right-button-container">
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div class="col-12">
+      <h1>Product Cost</h1>
+      <div class="text-zero top-right-button-container">
+      </div>
+      <div class="separator mb-3"></div>
+    </div>
+  </div> -->
+
+  <div class="page-body">
+    <section class="section section-bg-grey">
+      <div class="block-wrapper">
+        <div class="result-block">
+          <div class="detail-block">
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-4">
+                  <!-- <div class="card-body"> -->
+                    <dx-data-grid #dxDataGridList keyExpr="id" [dataSource]="dataList" [showBorders]="true"
+                      (onSaved)="onSave($event)" (onToolbarPreparing)="onToolbarPreparing($event)">
+                      <dxo-row-dragging [allowReordering]="true" [onReorder]="onReorderListAssessor"
+                        [showDragIcons]="true">
+                      </dxo-row-dragging>
+                      <!-- <dxo-paging [enabled]="false"></dxo-paging> -->
+                      <dxo-editing mode="popup" [allowUpdating]="this.accessMenu === 1"
+                        [allowAdding]="this.accessMenu === 1" [allowDeleting]="this.accessMenu === 1">
+                        <dxo-popup title="Product Cost" [showTitle]="true" [height]="525">
+                        </dxo-popup>
+                        <dxo-form>
+                          <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+                            <dxi-item dataField="value">
+                            </dxi-item>
+                            <dxi-item dataField="name">
+                            </dxi-item>
+                            <dxi-item dataField="remark" editorType="dxTextArea" [colSpan]="2"
+                              [editorOptions]="{ height: 100 }">
+                              <dxo-label text="Remark"></dxo-label>
+                            </dxi-item>
+                            <dxi-item dataField="activeStatus" editorType="dxSelectBox"
+                              [editorOptions]="{dataSource :[{value:'Active'},{value:'Inactive'}],displayExpr:'value',valueExpr:'value'}">
+                            </dxi-item>
+                          </dxi-item>
+
+                          <dxi-item itemType="group" caption="" [colCount]="2" [colSpan]="2">
+                            <dxi-item dataField="createBy" [editorOptions]="{readOnly: true}"></dxi-item>
+                            <dxi-item dataField="updateBy" [editorOptions]="{readOnly: true}"></dxi-item>
+                            <dxi-item dataField="createDate" dataType="date" [editorOptions]="{readOnly: true}">
+                            </dxi-item>
+                            <dxi-item dataField="updateDate" dataType="date" [editorOptions]="{readOnly: true}">
+                            </dxi-item>
+                          </dxi-item>
+                        </dxo-form>
+                      </dxo-editing>
+                      <dxi-column dataField="rowOrder" caption="#"></dxi-column>
+                      <dxi-column dataField="value"></dxi-column>
+                      <dxi-column dataField="name"></dxi-column>
+                      <dxi-column dataField="remark"></dxi-column>
+                      <dxi-column dataField="activeStatus"></dxi-column>
+                      <dxi-column dataField="createBy" [visible]="false"></dxi-column>
+                      <dxi-column dataField="createDate" [visible]="false"></dxi-column>
+                      <dxi-column dataField="updateBy" [visible]="false"></dxi-column>
+                      <dxi-column dataField="updateDate" [visible]="false"></dxi-column>
+                    </dx-data-grid>
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

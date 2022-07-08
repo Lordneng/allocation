@@ -1,0 +1,447 @@
+<div class="page-wrapper">
+  <div #spacer></div>
+  <div class="page-header" sticky [spacer]="spacer">
+    <!-- sticky [spacer]="spacer" -->
+    <div class="nav-block">
+      <a href="javascript:;"
+        (click)="menuButtonClick($event, sidebar.menuClickCount, sidebar.containerClassnames); false;"
+        class="menu-button">
+        <i class="fas fa-align-left"></i>
+      </a>
+    </div>
+    <div class="header-block">
+      <div class="block">
+        <div class="page-title">
+          <div class="page-name">Product</div>
+          <p class="mb-0">
+            <span>Last updated By : {{ dataProduct.updateBy }} |
+              <span class="badge badge-light mb-1">{{ dataProduct.updateDate | date:"dd/MM/yyyy HH:mm:ss"}}</span>
+            </span>
+          </p>
+        </div>
+        <div class="text-zero top-right-button-container">
+          <button class="btn btn-danger mg-l-5 mr-1" (click)="onCancelClick($event)">
+            <i ng-reflect-ng-class="fa fa-arrow-left" class="fa fa-arrow-left mr-1"></i>
+            <span>ย้อนกลับ</span>
+          </button>
+
+          <button class="btn btn-primary mg-l-5 mr-1" (click)="SaveClick()" [disabled]="this.accessMenu != 1">
+            <i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save mr-1"></i>
+            <span>บันทึก</span>
+          </button>
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+
+  <div class="page-body">
+    <section class="section section-input">
+      <div class="block-wrapper">
+        <div class="result-block">
+
+          <div class="summary-block">
+            <h3><i class="simple-icon-social-dropbox"></i> ข้อมูล Product
+            </h3>
+          </div>
+          <div class="detail-block" style="margin-top: 50px;">
+            <div class="row">
+              <div class="col-12">
+                <dx-validation-group #targetGroupProduct>
+                  <div class="row">
+                    <div class="form-group col-md-4">
+                      <label for="code">Product Code<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+                      <dx-text-box name="code" [(ngModel)]="dataProduct.productCode" [disabled]="dataProduct.isEdit"
+                        [readOnly]="this.accessMenu != 1">
+                        <dx-validator>
+                          <dxi-validation-rule type="required" message="กรุณากรอก Product Code">
+                          </dxi-validation-rule>
+                        </dx-validator>
+                      </dx-text-box>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="name">Product Name<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+                      <dx-text-box name="name" [(ngModel)]="dataProduct.productName" [readOnly]="this.accessMenu != 1">
+                        <dx-validator>
+                          <dxi-validation-rule type="required" message="กรุณากรอก Product Name">
+                          </dxi-validation-rule>
+                        </dx-validator>
+                      </dx-text-box>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="shortname">Product Short Name<span
+                          class="dx-field-item-required-mark">&nbsp;*</span></label>
+                      <dx-text-box name="shortname" [(ngModel)]="dataProduct.productShortName"
+                        [readOnly]="this.accessMenu != 1">
+                        <dx-validator>
+                          <dxi-validation-rule type="required" message="กรุณากรอก Product Short Name">
+                          </dxi-validation-rule>
+                        </dx-validator>
+                      </dx-text-box>
+                    </div>
+                    <div class="form-group col-md-12">
+                      <label for="remark">Remark</label>
+                      <dx-text-area name="remark" [(ngModel)]="dataProduct.remark" [readOnly]="this.accessMenu != 1">
+                      </dx-text-area>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="activeStatus">Active Status<span
+                          class="dx-field-item-required-mark">&nbsp;*</span></label>
+                      <dx-select-box name="activeStatus" [(ngModel)]="dataProduct.activeStatus"
+                        [readOnly]="this.accessMenu != 1" [dataSource]="[{value:'Active'},{value:'Inactive'}]"
+                        valueExpr="value" displayExpr="value">
+                        <dx-validator>
+                          <dxi-validation-rule type="required" message="กรุณาเลือก Active Status">
+                          </dxi-validation-rule>
+                        </dx-validator>
+                      </dx-select-box>
+                    </div>
+                  </div>
+                </dx-validation-group>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-bg-grey">
+      <div class="block-wrapper">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-star"></i> กำหนดเกรดผลิตภัณฑ์</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dxDataGridListGrade keyExpr="id" [dataSource]="dataGradeList" [showBorders]="true"
+              (onToolbarPreparing)="onToolbargradePreparing($event)">
+              <dxi-column dataField="productGrade" caption="เกรดผลิตภัณฑ์" [width]="200"></dxi-column>
+              <!-- <dxi-column dataField="activeStatus" caption="Active Status"></dxi-column> -->
+              <dxi-column dataField="createDate" dataType="datetime" [format]="{ type: 'dd/MM/yyy HH:mm' }">
+              </dxi-column>
+              <dxi-column dataField="updateBy"></dxi-column>
+              <dxi-column dataField="updateDate" dataType="datetime" [format]="{ type: 'dd/MM/yyy HH:mm' }">
+              </dxi-column>
+              <dxi-column cellTemplate="cellTemplateAction" caption="" alignment="center" width="70px"
+                [allowHiding]="false" [fixed]="true" fixedPosition="right">
+                <div *dxTemplate="let actionCell of 'cellTemplateAction'">
+                  <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+                    <a class="text-dark" title="แก้ไข"
+                      (click)="editgradeClick($event, actionCell.data, actionCell.rowIndex)">
+                      <span class="tx-18 p-1 w-100"><i class="fas fa-pen"></i></span>
+                    </a>
+                    <a class="text-dark" title="ลบ" (click)="deletegradeClick($event, actionCell.data)">
+                      <span class="tx-18 p-1 w-100"><i class="fas fa-eraser"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </dxi-column>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-bg-grey">
+      <div class="block-wrapper">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="iconsminds-formula"></i> Product Formula</h3>
+          </div>
+          <div class="detail-block">
+            <ng-container *ngIf="systemMode.isUserConfigFormula == true">
+              <dx-data-grid #dxDataGridList keyExpr="id" [dataSource]="dataListProductFormular" [showBorders]="true"
+                (onToolbarPreparing)="onToolbarPreparing($event)">
+                <dxo-row-dragging [allowReordering]="true" [onReorder]="onReorderListAssessor" [showDragIcons]="true">
+                </dxo-row-dragging>
+                <dxi-column dataField="rowOrder" caption="#">
+                </dxi-column>
+                <dxi-column dataField="productGrade" caption="เกรดผลิตภัณฑ์" [width]="200"></dxi-column>
+                <dxi-column dataField="source" caption="Source"></dxi-column>
+                <dxi-column dataField="deliveryPoint" caption="Delivery Point"></dxi-column>
+                <dxi-column dataField="fullcostFormula" caption="Formula"></dxi-column>
+                <dxi-column dataField="activeStatus" caption="Active Status"></dxi-column>
+                <dxi-column dataField="createDate" dataType="datetime" [format]="{ type: 'dd/MM/yyy HH:mm' }">
+                </dxi-column>
+                <dxi-column dataField="updateBy"></dxi-column>
+                <dxi-column dataField="updateDate" dataType="datetime" [format]="{ type: 'dd/MM/yyy HH:mm' }">
+                </dxi-column>
+                <dxi-column cellTemplate="cellTemplateAction" caption="" alignment="center" width="70px"
+                  [allowHiding]="false" [fixed]="true" fixedPosition="right">
+                  <div *dxTemplate="let actionCell of 'cellTemplateAction'">
+                    <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+                      <a class="text-dark" title="แก้ไข" (click)="editClick($event, actionCell.data)">
+                        <span class="tx-18 p-1 w-100"><i class="fas fa-pen"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                </dxi-column>
+              </dx-data-grid>
+            </ng-container>
+
+            <ng-container *ngIf="!systemMode.isUserConfigFormula">
+              <dx-data-grid #dxDataGridList keyExpr="id" [dataSource]="dataListProductFormular" [showBorders]="true">
+                <dxo-row-dragging [allowReordering]="true" [onReorder]="onReorderListAssessor" [showDragIcons]="true">
+                </dxo-row-dragging>
+                <dxi-column dataField="rowOrder" caption="#">
+                </dxi-column>
+                <dxi-column dataField="productGrade" caption="เกรดผลิตภัณฑ์" [width]="200"></dxi-column>
+                <dxi-column dataField="source" caption="Source"></dxi-column>
+                <dxi-column dataField="deliveryPoint" caption="Delivery Point"></dxi-column>
+                <dxi-column dataField="fullcostFormula" caption="Formula"></dxi-column>
+                <dxi-column dataField="activeStatus" caption="Active Status"></dxi-column>
+                <dxi-column dataField="createDate" dataType="datetime" [format]="{ type: 'dd/MM/yyy HH:mm' }">
+                </dxi-column>
+                <dxi-column dataField="updateBy"></dxi-column>
+                <dxi-column dataField="updateDate" dataType="datetime" [format]="{ type: 'dd/MM/yyy HH:mm' }">
+                </dxi-column>
+                <!-- <dxi-column cellTemplate="cellTemplateAction" caption="" alignment="center" width="70px"
+                  [allowHiding]="false" [fixed]="true" fixedPosition="right">
+                  <div *dxTemplate="let actionCell of 'cellTemplateAction'">
+                    <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+                      <a class="text-dark" title="แก้ไข" (click)="editClick($event, actionCell.data)">
+                        <span class="tx-18 p-1 w-100"><i class="fas fa-pen"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                </dxi-column> -->
+              </dx-data-grid>
+            </ng-container>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <dx-popup [width]="850" class="popup" [showTitle]="true" title="Product Formula" [dragEnabled]="true"
+    [fullScreen]="popupFull" [closeOnOutsideClick]="false" [(visible)]="popupVisible" [showCloseButton]="false">
+    <dxi-toolbar-item widget="dxButton" toolbar="top" location="after"
+      [options]="{  icon: ' simple-icon-size-fullscreen', onClick: fullClick }">
+    </dxi-toolbar-item>
+
+    <dxi-toolbar-item toolbar="bottom" location="after">
+      <button class="btn btn-outline-primary" (click)="popupCancelClick()">&nbsp;ยกเลิก</button>
+    </dxi-toolbar-item>
+    <dxi-toolbar-item toolbar="bottom" location="after">
+      <button class="btn btn-primary" (click)="popupSaveClick()" [disabled]="this.accessMenu != 1">&nbsp;ตกลง</button>
+    </dxi-toolbar-item>
+
+    <dx-scroll-view #scrollView [scrollByContent]="true" [scrollByThumb]="true" showScrollbar="onScroll">
+      <form>
+        <dx-validation-group #targetGroup>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+
+              <ng-container *ngIf="dataGradeList.length">
+                <label for="grade">เกรดผลิตภัณฑ์<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+                <dx-select-box name="productGrade" [dataSource]="dataGradeList" valueExpr="id"
+                  displayExpr="productGrade" [readOnly]="this.accessMenu != 1" [(ngModel)]="dataInfo.productGradeId">
+                  <dx-validator>
+                    <dxi-validation-rule type="required" message="กรุณาเลือก เกรดผลิตภัณฑ์">
+                    </dxi-validation-rule>
+                  </dx-validator>
+                </dx-select-box>
+              </ng-container>
+
+              <ng-container *ngIf="!dataGradeList.length">
+                <label for="grade">เกรดผลิตภัณฑ์</label>
+                <dx-select-box name="productGrade" [dataSource]="dataGradeList" valueExpr="id"
+                  displayExpr="productGrade" [readOnly]="this.accessMenu != 1" [(ngModel)]="dataInfo.productGradeId">
+                </dx-select-box>
+              </ng-container>
+
+            </div>
+            <div class="form-group col-md-4">
+              <label for="source">Source<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+              <dx-select-box name="source" [dataSource]="dataSourceList" valueExpr="id" displayExpr="name"
+                [readOnly]="this.accessMenu != 1" [(ngModel)]="dataInfo.sourceId">
+                <dx-validator>
+                  <dxi-validation-rule type="required" message="กรุณาเลือก Source">
+                  </dxi-validation-rule>
+                </dx-validator>
+              </dx-select-box>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="delivery_point">Delivery Point<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+              <dx-select-box name="delivery_point" [dataSource]="dataDeliveryPointList" valueExpr="id"
+                displayExpr="name" [readOnly]="this.accessMenu != 1" [(ngModel)]="dataInfo.deliveryPointId">
+                <dx-validator>
+                  <dxi-validation-rule type="required" message="กรุณาเลือก Delivery Point">
+                  </dxi-validation-rule>
+                </dx-validator>
+              </dx-select-box>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-11">
+              <label for="formular">Formula<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+              <!-- <textarea class="form-control" [mention]="mentionConfig.mentions"
+              [mentionConfig]="{triggerChar:'@',maxItems:10,labelKey:'name'}"></textarea> -->
+
+              <input #inputRef type="text" class="form-control"
+                [ngClass]="{'formula-danger': isFormulaValidate == true }" [readOnly]="this.accessMenu != 1"
+                name="formula" [(ngModel)]="dataInfo.fullcostFormula" required [mentionConfig]="mentionConfig$ | async">
+
+              <!-- <dx-text-box #inputRef name="formula" [(ngModel)]="dataInfo.fullcostFormula">
+              <dx-validator>
+                  <dxi-validation-rule type="required" message="กรุณาเลือก Formula">
+                  </dxi-validation-rule>
+              </dx-validator>
+          </dx-text-box> -->
+
+              <!-- <dx-validator>
+                  <dxi-validation-rule type="required" message="กรุณากรอก Formula">
+                  </dxi-validation-rule>
+              </dx-validator>
+          </dx-text-box> -->
+              <!--
+          <flx-text-input-autocomplete [textInputElement]="inputRef" [menuTemplate]="menuTemplate"
+              [triggerCharacter]="'@'" [getChoiceLabel]="getChoiceLabel" class="menu-template-container"
+              [searchRegexp]="'^([-&.\\w]+ *){0,3}$'" (search)="loadChoices($event)"
+              (selectedChoicesChange)="onSelectedChoicesChange($event)" (menuShow)="onMenuShow()"
+              (menuHide)="onMenuHide()">
+          </flx-text-input-autocomplete>
+
+          <ng-template #menuTemplate let-selectChoice="selectChoice">
+              <ul flxLoader [flxLoaderVisible]="loading" class="flx-selectable-list"
+                  [class.loader-only]="!choices.length && loading">
+                  <li *ngFor="let fm of choices" class="flx-selectable-list-item"
+                      (click)="selectChoice(fm)">
+                      <span title="{{fm.name}}">{{fm.name}}</span>
+                  </li>
+              </ul>
+          </ng-template> -->
+            </div>
+            <div class="form-group col-md-1">
+              <label for="formular">&nbsp;</label>
+              <button type="button" class="btn btn-info float-right" (click)="showFormulaInfo()">สูตร</button>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="activeStatus">Active Status<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+              <dx-select-box name="activeStatus" [(ngModel)]="dataInfo.activeStatus" [readOnly]="this.accessMenu != 1"
+                [dataSource]="[{value:'Active'},{value:'Inactive'}]" valueExpr="value" displayExpr="value">
+                <dx-validator>
+                  <dxi-validation-rule type="required" message="กรุณาเลือก Active Status">
+                  </dxi-validation-rule>
+                </dx-validator>
+              </dx-select-box>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="unit">Create By</label>
+              <dx-text-box name="createBy" [(ngModel)]="dataInfo.createBy" [readOnly]="true">
+              </dx-text-box>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="unit">Update By:</label>
+              <dx-text-box name="updateBy" [(ngModel)]="dataInfo.updateBy" [readOnly]="true">
+              </dx-text-box>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="unit">Create Date</label>
+              <dx-date-box name="createDate" [(ngModel)]="dataInfo.createDate" type="datetime" [readOnly]="true"
+                displayFormat='dd/MM/yyyy HH:mm:ss'>
+              </dx-date-box>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="unit">Update Date:</label>
+              <dx-date-box name="updateDate" [(ngModel)]="dataInfo.updateDate" type="datetime" [readOnly]="true"
+                displayFormat='dd/MM/yyyy HH:mm:ss'>
+              </dx-date-box>
+            </div>
+          </div>
+        </dx-validation-group>
+      </form>
+    </dx-scroll-view>
+  </dx-popup>
+
+  <dx-popup [width]="650" class="popup" [showTitle]="true" title="กำหนดเกรดผลิตภัณฑ์" [dragEnabled]="true"
+    [fullScreen]="popupFull" [closeOnOutsideClick]="false" [(visible)]="popupgradeVisible" [showCloseButton]="false">
+    <dxi-toolbar-item widget="dxButton" toolbar="top" location="after"
+      [options]="{  icon: ' simple-icon-size-fullscreen', onClick: fullClick }">
+    </dxi-toolbar-item>
+    <dxi-toolbar-item toolbar="bottom" location="after">
+      <button class="btn btn-outline-primary" (click)="popupgradeCancelClick()">&nbsp;ยกเลิก</button>
+    </dxi-toolbar-item>
+    <dxi-toolbar-item toolbar="bottom" location="after">
+      <button class="btn btn-primary" (click)="popupgradeSaveClick()"
+        [disabled]="this.accessMenu != 1">&nbsp;ตกลง</button>
+    </dxi-toolbar-item>
+
+    <dx-scroll-view #scrollView [scrollByContent]="true" [scrollByThumb]="true" showScrollbar="onScroll">
+      <form>
+        <dx-validation-group #targetGroupGrade>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="grade">เกรดผลิตภัณฑ์<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+              <dx-text-box name="productGrade" [(ngModel)]="dataInfograde.productGrade"
+                [readOnly]="this.accessMenu != 1">
+                <dx-validator>
+                  <dxi-validation-rule type="required" message="กรุณากรอก เกรดผลิตภัณฑ์">
+                  </dxi-validation-rule>
+                </dx-validator>
+              </dx-text-box>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="unit">Create By</label>
+              <dx-text-box name="createBy" [(ngModel)]="dataInfograde.createBy" [readOnly]="true">
+              </dx-text-box>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="unit">Update By:</label>
+              <dx-text-box name="updateBy" [(ngModel)]="dataInfograde.updateBy" [readOnly]="true">
+              </dx-text-box>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="unit">Create Date</label>
+              <dx-date-box name="createDate" [(ngModel)]="dataInfograde.createDate" type="datetime" [readOnly]="true"
+                displayFormat='dd/MM/yyyy HH:mm:ss'>
+              </dx-date-box>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="unit">Update Date:</label>
+              <dx-date-box name="updateDate" [(ngModel)]="dataInfograde.updateDate" type="datetime" [readOnly]="true"
+                displayFormat='dd/MM/yyyy HH:mm:ss'>
+              </dx-date-box>
+            </div>
+          </div>
+        </dx-validation-group>
+      </form>
+    </dx-scroll-view>
+  </dx-popup>
+
+  <dx-popup [width]="900" class="popup" [showTitle]="true" title="Formula Info" [dragEnabled]="true"
+    [closeOnOutsideClick]="false" [(visible)]="popupFormulaVisible" (onHiding)="onHidingFormulaClick()">
+
+
+    <dxi-toolbar-item toolbar="bottom" location="after">
+      <button class="btn btn-outline-primary" (click)="popupFormulaCancelClick()"><i
+          class="fas fa-info"></i>&nbsp;ปิด</button>
+    </dxi-toolbar-item>
+
+    <dx-scroll-view #scrollView [scrollByContent]="true" [scrollByThumb]="true" showScrollbar="onScroll">
+      <div class="row">
+        <div class="col-6">
+          <h4 class="text-bold">Reference Price Parameter พิมพ์ @ เพิ่มแสดง Parameter</h4>
+          <li *ngFor="let item of dataParameterRefPrice;">
+            {{item.parameterName + ' : ' + item.referencePriceName}}
+          </li>
+        </div>
+        <div class="col-6">
+          <h4 class="text-bold">Cost Parameter พิมพ์ # เพิ่มแสดง Parameter</h4>
+          <li *ngFor="let item of dataParameterCost;">
+            {{item.parameterName + ' : ' + item.productName}}
+          </li>
+        </div>
+      </div>
+    </dx-scroll-view>
+  </dx-popup>

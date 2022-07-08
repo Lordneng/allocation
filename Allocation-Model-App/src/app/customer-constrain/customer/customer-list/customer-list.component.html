@@ -1,0 +1,84 @@
+<div class="page-wrapper">
+  <div #spacer></div>
+  <div class="page-header" sticky [spacer]="spacer">
+    <!-- sticky [spacer]="spacer" -->
+    <div class="nav-block">
+      <a href="javascript:;"
+        (click)="menuButtonClick($event, sidebar.menuClickCount, sidebar.containerClassnames); false;"
+        class="menu-button">
+        <i class="fas fa-align-left"></i>
+      </a>
+    </div>
+    <div class="header-block">
+      <div class="block">
+        <div class="page-title">
+          <div class="page-name">Customer</div>
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+  <div class="page-body">
+    <section class="section section-bg-grey">
+      <div class="block-wrapper">
+        <div class="result-block">
+          <div class="detail-block">
+            <!-- <div class="row">
+              <div class="col-12">
+                <h1>Customer</h1>
+                <div class="separator mb-3"></div>
+              </div>
+            </div> -->
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-4">
+                  <!-- <div class="card-body"> -->
+                  <dx-data-grid #dxDataGridList keyExpr="id" [dataSource]="dataList" [showBorders]="true"
+                    (onSaved)="onSave($event)" (onToolbarPreparing)="onToolbarPreparing($event)">
+                    <dxo-row-dragging [allowReordering]="true" [onReorder]="onReorderListAssessor"
+                      [showDragIcons]="true">
+                    </dxo-row-dragging>
+                    <!-- <dxi-column dataField="rowOrder" caption="#"></dxi-column> -->
+                    <dxi-column cellTemplate="cellTemplateRowOrder" caption="#" alignment="center" [allowHiding]="false"
+                      [fixed]="true" fixedPosition="left">
+                      <div *dxTemplate="let actionCell of 'cellTemplateRowOrder'">
+                        <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+                          {{getRowNumber(actionCell)}}
+                        </div>
+                      </div>
+                    </dxi-column>
+                    <dxi-column dataField="code"></dxi-column>
+                    <dxi-column dataField="name"></dxi-column>
+                    <dxi-column dataField="shortName"></dxi-column>
+                    <dxi-column dataField="customerTypeName" caption="Customer Type"></dxi-column>
+                    <dxi-column dataField="remark"></dxi-column>
+                    <dxi-column dataField="activeStatus"></dxi-column>
+                    <dxi-column dataField="createBy"></dxi-column>
+                    <dxi-column dataField="createDate" dataType="datetime"
+                      [customizeText]="customizeTextDateTimeFormat"></dxi-column>
+                    <dxi-column dataField="updateBy"></dxi-column>
+                    <dxi-column dataField="updateDate" dataType="datetime"
+                      [customizeText]="customizeTextDateTimeFormat"></dxi-column>
+                    <dxi-column cellTemplate="cellTemplateAction" caption="" alignment="center" width="70px"
+                      [allowHiding]="false" [fixed]="true" fixedPosition="right">
+                      <div *dxTemplate="let actionCell of 'cellTemplateAction'">
+                        <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+                          <a class="text-dark" title="แก้ไข" (click)="editClick($event, actionCell.data)">
+                            <span class="tx-18 p-1 w-100"><i class="fas fa-pen"></i></span>
+                          </a>
+                        </div>
+                      </div>
+                    </dxi-column>
+                  </dx-data-grid>
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+            <app-customer-info #infoForm>
+            </app-customer-info>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

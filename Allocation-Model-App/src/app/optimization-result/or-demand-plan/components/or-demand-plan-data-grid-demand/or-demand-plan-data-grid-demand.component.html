@@ -1,0 +1,186 @@
+<div class="row">
+  <div class="col-12 mt-2">
+    <form>
+      <dx-validation-group #targetGroup>
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label>Ability โรงกลั่น Version:</label>
+                  <dx-select-box [readOnly]="this.accessMenu != 1" [dataSource]="abilityRefineryVersionList" valueExpr="id" [displayExpr]="displayVersion"
+                    name="costVersionId" [showClearButton]="true" [(ngModel)]="dataCondition.abilityRefineryVersionId"
+                    (onValueChanged)="onAccept($event)">
+                    <dx-validator>
+                      <dxi-validation-rule type="required" message="กรุณาเลือก Cost Version">
+                      </dxi-validation-rule>
+                    </dx-validator>
+                  </dx-select-box>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label>Ability KHM Version:</label>
+                  <dx-select-box [readOnly]="this.accessMenu != 1" [dataSource]="abilityKHMVersionList" valueExpr="id" name="abilityKHMVersionId"
+                    [displayExpr]="displayVersion" [showClearButton]="true"
+                    [(ngModel)]="dataCondition.abilityKHMVersionId" (onValueChanged)="onAccept($event)">
+                    <dx-validator>
+                      <dxi-validation-rule type="required" message="กรุณาเลือก Reference Price Version">
+                      </dxi-validation-rule>
+                    </dx-validator>
+                  </dx-select-box>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="row mt-2">
+              <div class="col-12 text-right">
+                <div class="form-group">
+                  <button class="btn btn-primary mg-l-5 mr-1" (click)="onAccept($event)"
+                    [disabled]="this.accessMenu != 1">
+                    <span>ตกลง</span>
+                  </button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </dx-validation-group>
+    </form>
+  </div>
+</div>
+<section class="section section-bg-grey">
+  <div class="block-wrapper">
+    <div class="result-block">
+      <div class="summary-block">
+        <h3><i class="simple-icon-basket-loaded"></i> ทางรถ</h3>
+      </div>
+      <div class="detail-block">
+        <dx-data-grid #dataGridByCar [columns]="dynamicColumns" [dataSource]="dataListByCar" columnResizingMode="widget"
+          [allowColumnResizing]="true" [focusedRowEnabled]="false">
+          <dxo-sorting [mode]="'none'"></dxo-sorting>
+          <dxo-search-panel [visible]="false"></dxo-search-panel>
+          <dxo-filter-row [visible]="false"></dxo-filter-row>
+          <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+          <dxo-paging [enabled]="false"></dxo-paging>
+          <dxo-pager [visible]="false"></dxo-pager>
+          <div *dxTemplate="let itemTemp of cellTemplate">
+            <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex">
+              <!-- <i class="glyph-icon simple-icon-options-vertical"></i> -->
+              {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+              (numberBoxDigi ? numberBoxDigi: 0)}}
+            </div>
+          </div>
+        </dx-data-grid>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="section section-bg-grey">
+  <div class="block-wrapper" style="margin-bottom: 20px;">
+    <div class="result-block">
+      <div class="summary-block">
+        <h3><i class="simple-icon-basket-loaded"></i> ทางเรือ</h3>
+      </div>
+      <div class="detail-block">
+
+        <dx-data-grid #dataGridByVessel [columns]="dynamicColumns" [dataSource]="dataListByVessel" columnResizingMode="widget"
+          [allowColumnResizing]="true" [focusedRowEnabled]="false">
+          <dxo-sorting [mode]="'none'"></dxo-sorting>
+          <dxo-search-panel [visible]="false"></dxo-search-panel>
+          <dxo-filter-row [visible]="false"></dxo-filter-row>
+          <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+          <dxo-paging [enabled]="false"></dxo-paging>
+          <dxo-pager [visible]="false"></dxo-pager>
+          <div *dxTemplate="let itemTemp of cellTemplate">
+            <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex">
+              <!-- <i class="glyph-icon simple-icon-options-vertical"></i> -->
+              {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+              (numberBoxDigi ? numberBoxDigi: 0)}}
+            </div>
+          </div>
+        </dx-data-grid>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="section section-bg-grey">
+  <div class="block-wrapper" style="margin-bottom: 20px;">
+    <div class="result-block">
+      <div class="summary-block">
+        <h3><i class="simple-icon-basket-loaded"></i> รวม</h3>
+      </div>
+      <div class="detail-block">
+
+        <dx-data-grid #dataGrid [columns]="dynamicColumns" [dataSource]="dataListTotal" columnResizingMode="widget"
+          [allowColumnResizing]="true" [focusedRowEnabled]="false">
+          <dxo-sorting [mode]="'none'"></dxo-sorting>
+          <dxo-search-panel [visible]="false"></dxo-search-panel>
+          <dxo-filter-row [visible]="false"></dxo-filter-row>
+          <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+          <dxo-paging [enabled]="false"></dxo-paging>
+          <dxo-pager [visible]="false"></dxo-pager>
+          <div *dxTemplate="let itemTemp of cellTemplate">
+            <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex">
+              <!-- <i class="glyph-icon simple-icon-options-vertical"></i> -->
+              {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+              (numberBoxDigi ? numberBoxDigi: 0)}}
+            </div>
+          </div>
+        </dx-data-grid>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+<dx-popup [width]="500" [height]="350" [showTitle]="true" [title]="titleEdit" [closeOnOutsideClick]="false"
+  [(visible)]="popupVisible" [showCloseButton]="false">
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-outline-primary" (click)="popupCancelClick()">
+
+      <span>ยกเลิก</span>
+    </button>
+
+  </dxi-toolbar-item>
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-primary" (click)="popupSaveClick()">
+      <span>ตกลง</span>
+    </button>
+  </dxi-toolbar-item>
+  <div *dxTemplate="let data of 'content'">
+    <div class="row mt-2">
+
+      <div class="col-md-12">
+        <div class="form-group">
+          <div class="d-flex flex-row justify-content-between align-items-center">
+            <label class="control-label">Value</label>
+
+            <div class="custom-control custom-checkbox mb-2" Tooltip="xxxxx">
+              <input type="checkbox" id="checkManual" [(ngModel)]="dataEdit['isManual' + dataFieldEdit]"
+                class="custom-control-input">
+              <label for="checkManual" class="custom-control-label">Manual</label>
+
+            </div>
+          </div>
+
+          <dx-number-box #numberBox [(value)]="dataEdit[dataFieldEdit]">
+          </dx-number-box>
+        </div>
+
+        <div class="form-group">
+          <label for="remark-data">remark</label>
+          <dx-text-area [(value)]="dataEdit['remark'+ dataFieldEdit]">
+          </dx-text-area>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+</dx-popup>

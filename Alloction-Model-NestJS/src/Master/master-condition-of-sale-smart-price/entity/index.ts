@@ -1,0 +1,1 @@
+export * from './master-condition-of-sale-smart-price.entity';

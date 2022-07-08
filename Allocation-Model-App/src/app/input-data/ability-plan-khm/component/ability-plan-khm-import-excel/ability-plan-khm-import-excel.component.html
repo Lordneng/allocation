@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-12 col-md-12 col-xl-8">
+      <div class="card mb-4 w-100">
+        <div class="card-body">
+          <div class="section-wrapper">
+            <div class="dx-field year-filed">
+              <h5 class="mb-3">ปีของข้อมูลที่ import</h5>
+              <label class="form-group has-float-label">
+                  <div class="">
+                      <input type="text" class="form-control" [(ngModel)]="yearImport" readonly>
+                  </div>
+                  <span class="float-label ">Year</span>
+              </label>
+            </div>
+            <div class="dx-field year-filed">
+              <h5 class="mb-3">เดือนของข้อมูลที่ import</h5>
+              <label class="form-group has-float-label">
+                  <div class="">
+                      <input type="text" class="form-control" [(ngModel)]="monthImport" readonly>
+                  </div>
+                  <span class="float-label ">Month</span>
+              </label>
+            </div>
+          </div>
+         <div class="section-wrapper">
+            <h5 class="mb-4">Import Data From Excel</h5>
+            <form>
+              <div class="form-group mb-0">
+                  <dx-file-uploader accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                      class="file-input" [(value)]="uploadFile" [uploadUrl]="uploadFilesUrl" width="100%"
+                      [uploadMode]="uploadMode" [multiple]="true"
+                      (onValueChanged)="onFileUploadValueChanged($event)" selectButtonText="เลือกไฟล์"
+                      labelText="หรือ วางไฟล์ที่นี่เพื่ออัพโหลด">
+                  </dx-file-uploader>
+              </div>
+              <div class="form-group row mb-0">
+                  <div class="col-sm-10">
+                      <button type="button" [attr.disabled]="!isImport ? 'disabled' : null"
+                          (click)="onImportExcel($event)" class="btn btn-secondary mb-0">Import</button>
+                  </div>
+              </div>
+          </form>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-12 col-xl-4">
+      <div class="card mb-4 w-100">
+        <div class="card-body">
+          <div class="text-center">
+            <i class="fas fa-file-download large-icon icon-color"></i>
+            <h5 class="mb-0 font-weight-semibold color-theme-1 mb-4">Dowload Excel Template</h5>
+          </div>
+          <div class="pl-3 pr-3 pt-3 pb-0 d-flex flex-column flex-grow-1">
+            <p class="text-muted mb-4">รูปแบบ File Template สำหรับ Import ข้อมูลเข้าระบหน้า Ability Plan</p>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a [href]="apiUrlService + 'FileUpload/ExcelTemplate/Template AbilityKHM.xlsx'" target="_blank"><i
+                  class="fas fa-file-excel icon-color-green mr-2"></i>Template AbilityKHM.xlsx</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

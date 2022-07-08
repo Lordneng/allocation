@@ -1,0 +1,330 @@
+<div class="page-wrapper">
+  <div #spacer></div>
+  <div class="page-header" sticky [spacer]="spacer">
+    <!-- sticky [spacer]="spacer" -->
+    <div class="nav-block">
+      <a href="javascript:;"
+        (click)="menuButtonClick($event, sidebar.menuClickCount, sidebar.containerClassnames); false;"
+        class="menu-button">
+        <i class="fas fa-align-left"></i>
+      </a>
+    </div>
+    <div class="header-block">
+      <div class="block">
+        <div class="page-title">
+          <div class="page-name">Contract <label class="text-danger" [innerHTML]="copyMsg"></label></div>
+          <p class="mb-0">
+            <span>Last updated By : {{ dataInfo.updateBy}} |
+              <span class="badge badge-light mb-1">{{ dataInfo.updateDate | date:"dd/MM/yyyy HH:mm:ss"}}</span>
+            </span>
+          </p>
+        </div>
+        <div class="text-zero top-right-button-container">
+          <!-- *ngIf="params.ISCOPY === null && params.ID !== null && this.accessMenu == 1" -->
+          <ng-container>
+            <div class="btn-group" dropdown>
+              <div class="">
+                <button id="button-split" type="button" dropdownToggle
+                  class="btn btn-outline-primary  dropdown-toggle-split mr-1" aria-controls="dropdown-split">
+                  <i ng-reflect-ng-class="simple-icon-options-vertical"
+                    class="simple-icon-options-vertical mr-1 ml-1"></i>
+                </button> &nbsp;
+              </div>
+              <ul id="dropdown-split" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
+                aria-labelledby="button-split">
+                <li role="menuitem">
+                  <a class="dropdown-item" tooltip="Delete Contract" placement="right"
+                    (click)="deleteDocumentClick($event)">
+                    <i class="simple-icon-trash mr-2"></i>Delete
+                  </a>
+                </li>
+                <div class="separator mb-1"></div>
+                <li role="menuitem">
+                  <a class="dropdown-item" tooltip="Copy Contract" placement="right"
+                    (click)="copyDocumentClick($event)">
+                    <i class="iconsminds-file-copy mr-2"></i>Copy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </ng-container>
+          <button class="btn btn-danger mg-l-5 mr-1" (click)="onCancelClick($event)">
+            <i ng-reflect-ng-class="fa fa-arrow-left" class="fa fa-arrow-left mr-1"></i>
+            <span>ย้อนกลับ</span>
+          </button>
+          <button class="btn btn-primary mg-l-5 mr-1" (click)="onSaveClick($event)" [disabled]="this.accessMenu != 1">
+            <i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save mr-1"></i>
+            <span>บันทึก</span>
+          </button>
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+  <div class="page-body">
+    <form>
+      <dx-validation-group #targetGroup>
+        <div class="row">
+          <div class="col-4">
+            <section class="section section-input">
+              <div class="block-wrapper">
+                <div class="result-block">
+                  <div class="summary-block">
+                    <h3><i class="simple-icon-book-open"></i> ข้อมูล Contract</h3>
+                  </div>
+                  <div class="detail-block" style="margin-top: 3rem;">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="inputState">Contract Number</label>
+                          <dx-text-box [(ngModel)]="dataInfo.contractNumber" name="contractNumber"
+                            placeholder="System is running" [readOnly]="true">
+                          </dx-text-box>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="inputState">Contract Name<span
+                              class="dx-field-item-required-mark">&nbsp;*</span></label>
+                          <dx-text-box [showClearButton]="true" [(ngModel)]="dataInfo.contractName" name="contractName"
+                            [readOnly]="this.accessMenu != 1">
+                            <dx-validator>
+                              <dxi-validation-rule type="required" message="กรุณาระบุ Contract Name">
+                              </dxi-validation-rule>
+                            </dx-validator>
+                          </dx-text-box>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="inputState">Contract Type<span
+                              class="dx-field-item-required-mark">&nbsp;*</span></label>
+                          <div class="">
+                            <dx-select-box [(ngModel)]="dataInfo.contractType"
+                              [dataSource]="dataMaster.masterContractType" name="contractType" displayExpr="name"
+                              [readOnly]="this.accessMenu != 1" valueExpr="id"
+                              [(selectedItem)]="dataInfo.contractTypeList">
+                              <dx-validator>
+                                <dxi-validation-rule type="required" message="กรุณาเลือกข้อมูล Contract Type">
+                                </dxi-validation-rule>
+                              </dx-validator>
+                            </dx-select-box>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputState">Start Contract<span
+                                class="dx-field-item-required-mark">&nbsp;*</span></label>
+                            <div class="">
+                              <dx-date-box type="date" name="startDate" [(ngModel)]="dataInfo.startDate"
+                                [readOnly]="this.accessMenu != 1">
+                                <dx-validator>
+                                  <dxi-validation-rule type="required" message="กรุณาเลือก Start Contract">
+                                  </dxi-validation-rule>
+                                </dx-validator>
+                              </dx-date-box>
+                            </div>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputState">End Contract<span
+                                class="dx-field-item-required-mark">&nbsp;*</span></label>
+                            <div class="">
+                              <dx-date-box type="date" name="endDate" [min]="dataInfo.startDate"
+                                [readOnly]="this.accessMenu != 1" [(ngModel)]="dataInfo.endDate">
+                                <dx-validator>
+                                  <dxi-validation-rule type="required" message="กรุณาเลือก End Contract">
+                                  </dxi-validation-rule>
+                                </dx-validator>
+                              </dx-date-box>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputState">Actual Volumes <label>{{unitLabel}}</label></label>
+                            <div class="">
+                              <dx-number-box [showSpinButtons]="true" [min]="0" [(ngModel)]="dataInfo.actualVolume"
+                                format="#,##0.####" [readOnly]="this.accessMenu != 1" name="actualVolume">
+                                <dxi-button name="spins"></dxi-button>
+                              </dx-number-box>
+                            </div>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputState">Actual + Plan Volume <label>{{unitLabel}}</label></label>
+                            <div class="">
+                              <dx-number-box [showSpinButtons]="true" [min]="0" [(ngModel)]="dataInfo.forecastVolume"
+                                format="#,##0.####" [readOnly]="this.accessMenu != 1" name="forecastVolume">
+                                <dxi-button name="spins"></dxi-button>
+                              </dx-number-box>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-4 d-flex">
+            <section class="section section-input">
+              <div class="block-wrapper">
+                <div class="result-block">
+                  <div class="summary-block">
+                    <h3><i class="simple-icon-book-open"></i> ข้อมูล Product
+                    </h3>
+                  </div>
+                  <div class="detail-block" style="margin-top: 3rem;">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="inputState">Product<span
+                              class="dx-field-item-required-mark">&nbsp;*</span></label>
+                          <div class="">
+                            <dx-select-box [(ngModel)]="dataInfo.productId" [dataSource]="dataMaster.products"
+                              (onValueChanged)="onProductChanged()" name="productId" [displayExpr]="displayProduct"
+                              [readOnly]="this.accessMenu != 1" valueExpr="id" [(selectedItem)]="dataInfo.productList">
+                              <dx-validator>
+                                <dxi-validation-rule type="required" message="กรุณาเลือกข้อมูล Product">
+                                </dxi-validation-rule>
+                              </dx-validator>
+                            </dx-select-box>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-row">
+                          <div class="form-group col-12">
+                            <label class="row">
+                              <div class="col-6">Year Volume (Min) </div>
+                              <div class="col-6 text-right">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" id="yearVolumnMin" name="isMinVolumnNoLimit"
+                                    [(ngModel)]="dataInfo.isMinVolumnNoLimit" (change)="onCheckboxChanged($event,'min')"
+                                    class="custom-control-input">
+                                  <label for="yearVolumnMin" class="custom-control-label">No Limit</label>
+                                </div>
+                              </div>
+                            </label>
+                            <dx-number-box [showSpinButtons]="true" [min]="0" [(ngModel)]="dataInfo.yearVolumnMin"
+                              format="#,##0.####" [readOnly]="this.accessMenu != 1 || dataInfo.isMinVolumnNoLimit"
+                              name="yearVolumnMin" mode="number">
+                              <dxi-button name="spins"></dxi-button>
+                            </dx-number-box>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-row">
+                          <div class="form-group col-12">
+                            <label class="row">
+                              <div class="col-6">Year Volume (Max)</div>
+                              <div class="col-6 text-right">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" id="yearVolumnMax" name="isMaxVolumnNoLimit"
+                                    class="custom-control-input" [(ngModel)]="dataInfo.isMaxVolumnNoLimit"
+                                    (change)="onCheckboxChanged($event,'max')">
+                                  <label for="yearVolumnMax" class="custom-control-label">No Limit</label>
+                                </div>
+                              </div>
+                            </label>
+                            <dx-number-box [showSpinButtons]="true" [min]="0" format="#,##0.####"
+                              [readOnly]="this.accessMenu != 1 || dataInfo.isMaxVolumnNoLimit"
+                              [(ngModel)]="dataInfo.yearVolumnMax" name="yearVolumnMax">
+                              <dxi-button name="spins"></dxi-button>
+                            </dx-number-box>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="inputState">Unit<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+                          <div class="">
+                            <dx-select-box [(ngModel)]="dataInfo.unitId" [dataSource]="dataMaster.masterUnit"
+                              [readOnly]="this.accessMenu != 1" name="unitId" displayExpr="fullName" valueExpr="id"
+                              [(selectedItem)]="dataInfo.unitList">
+                              <dx-validator>
+                                <dxi-validation-rule type="required" message="กรุณาเลือกข้อมูล วันที่สิ้นสุด">
+                                </dxi-validation-rule>
+                              </dx-validator>
+                            </dx-select-box>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-4 d-flex">
+            <section class="section section-input w-100">
+              <div class="block-wrapper">
+                <div class="result-block">
+                  <div class="summary-block">
+                    <h3><i class="simple-icon-book-open"></i> ข้อมูล Customer
+                    </h3>
+                  </div>
+                  <div class="detail-block" style="margin-top: 3rem;">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="inputState">Customer<span
+                              class="dx-field-item-required-mark">&nbsp;*</span></label>
+                          <div class="dx-field year-filed">
+                            <div class="">
+                              <dx-select-box [(ngModel)]="dataInfo.customer" [dataSource]="dataMaster.customers"
+                                [readOnly]="this.accessMenu != 1" name="customer" [displayExpr]="displayCustomer"
+                                valueExpr="id" (onValueChanged)="onCustomerChanged()" [(ngModel)]="dataInfo.customerId"
+                                [(selectedItem)]="dataInfo.customerList">
+                                <dx-validator>
+                                  <dxi-validation-rule type="required" message="กรุณาเลือกข้อมูล วันที่สิ้นสุด">
+                                  </dxi-validation-rule>
+                                </dx-validator>
+                              </dx-select-box>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="inputState">Plant<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+                          <div class="">
+                            <dx-tag-box [items]="dataMaster.plant" [displayExpr]="displayPlant" valueExpr="id"
+                              name="plant" (onValueChanged)="onPlantChange()" [(selectedItems)]="dataInfo.plantList"
+                              [(ngModel)]="dataInfo.plantListID">
+                              <dx-validator>
+                                <dxi-validation-rule type="required" message="กรุณาเลือกข้อมูล Plant">
+                                </dxi-validation-rule>
+                              </dx-validator>
+                            </dx-tag-box>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </dx-validation-group>
+    </form>
+
+    <section class="section section-bg-grey">
+      <!-- <div class="block-wrapper">
+        <div class="result-block">
+          <div class="detail-block"> -->
+      <div class="row mt-4">
+        <app-condition-setting #conditionSetting [(dataInfo)]="dataInfo"></app-condition-setting>
+      </div>
+      <!-- </div>
+        </div>
+      </div> -->
+    </section>
+  </div>
+</div>

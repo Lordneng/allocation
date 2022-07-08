@@ -1,0 +1,39 @@
+.card-heading {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .btn-viewmore {
+    font-size: 10px;
+  }
+  
+  .field-label {
+    font-weight: 500;
+  }
+  
+  .color-success {
+    color: #28a745;
+  }
+  
+  .select-row-icon {
+    width: 30px;
+  }
+  
+  .opacity-0 {
+    opacity: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .field-version {
+      position: relative;
+      padding-right: 40px;
+    }
+    .field-version i {
+      position: absolute;
+      right: -5px;
+      top: -5px;
+      font-size: 30px;
+      margin-right: 0 !important;
+    }
+  }
+  

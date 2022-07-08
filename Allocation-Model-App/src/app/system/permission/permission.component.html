@@ -1,0 +1,131 @@
+<div class="page-wrapper">
+
+  <div #spacer></div>
+  <div class="page-header" sticky [spacer]="spacer">
+    <!-- sticky [spacer]="spacer" -->
+    <div class="nav-block">
+      <a href="javascript:;"
+        (click)="menuButtonClick($event, sidebar.menuClickCount, sidebar.containerClassnames); false;"
+        class="menu-button">
+        <i class="fas fa-align-left"></i>
+      </a>
+    </div>
+    <div class="header-block">
+      <div class="block">
+        <div class="page-title">
+          <div class="page-name">Permission</div>
+        </div>
+        <div class="text-zero top-right-button-container">
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+
+  <div class="page-body">
+    <section class="section section-bg-grey">
+      <div class="block-wrapper">
+        <div class="result-block">
+          <div class="detail-block">
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-4">
+                  <!-- <div class="card-body"> -->
+                  <dx-data-grid #dxDataGridList keyExpr="id" [dataSource]="dataList" [showBorders]="true"
+                    (onToolbarPreparing)="onToolbarPreparing($event)">
+                    <dxo-row-dragging [allowReordering]="true" [showDragIcons]="true">
+                    </dxo-row-dragging>
+                    <dxi-column dataField="rowOrder" caption="#">
+                    </dxi-column>
+                    <dxi-column dataField="name" caption="User Group" [width]="200"></dxi-column>
+                    <dxi-column dataField="activeStatus"></dxi-column>
+                    <dxi-column dataField="createBy"></dxi-column>
+                    <dxi-column dataField="createDate" dataType="datetime" [format]="{ type: 'dd/MM/yyy HH:mm' }">
+                    </dxi-column>
+                    <dxi-column dataField="updateBy"></dxi-column>
+                    <dxi-column dataField="updateDate" dataType="datetime" [format]="{ type: 'dd/MM/yyy HH:mm' }">
+                    </dxi-column>
+                    <dxi-column cellTemplate="cellTemplateAction" caption="" alignment="center" width="120px"
+                      [allowHiding]="false" [fixed]="true" fixedPosition="right">
+                      <div *dxTemplate="let actionCell of 'cellTemplateAction'">
+                        <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+                          <a class="text-dark" title="Edit" (click)="editPermissionClick($event, actionCell.data)">
+                            <span class="tx-18 p-1 w-100"><i class="fas fa-pencil-alt"></i></span>
+                          </a>
+                        </div>
+                      </div>
+                    </dxi-column>
+                  </dx-data-grid>
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+            <dx-popup [showTitle]="true" title="Permission" [dragEnabled]="false" [fullScreen]="popupFull"
+              [closeOnOutsideClick]="false" container=".dx-viewport" [(visible)]="popupVisible">
+              <dxi-toolbar-item widget="dxButton" toolbar="top" location="after"
+                [options]="{  icon: ' simple-icon-size-fullscreen', onClick: fullClick }">
+              </dxi-toolbar-item>
+
+              <dxi-toolbar-item toolbar="bottom" location="after">
+                <button type="button" class="btn-resize btn btn-secondary mb-1" (click)="popupSaveClick()">
+                  <i class="fas fa-save"></i>
+                  ตกลง</button>
+              </dxi-toolbar-item>
+
+              <dxi-toolbar-item toolbar="bottom" location="after">
+                <button type="button" class="btn-resize btn btn-secondary mb-1 ml-1" (click)="popupCancelClick()">
+                  <i class="fas fa-info"></i>
+                  ยกเลิก</button>
+              </dxi-toolbar-item>
+
+              <div *dxTemplate="let data of 'content'">
+                <dx-scroll-view #scrollView [scrollByContent]="true" [scrollByThumb]="true" showScrollbar="onScroll">
+                  <dx-data-grid #dxDataGridPermission keyExpr="id" [dataSource]="menuList" [showBorders]="true"
+                    (onToolbarPreparing)="onToolbarPreparingPermission($event)" [allowColumnReordering]="false">
+                    <dxi-column dataField="menu1" caption="Module " [width]="200" [groupIndex]="0"></dxi-column>
+                    <dxi-column dataField="menu2" caption=""></dxi-column>
+                    <dxi-column dataField="menu3" caption=""></dxi-column>
+                    <dxi-column cellTemplate="cellTemplateMenu" caption="Menu" alignment="center" [width]="100"
+                      [allowHiding]="false" [fixed]="true" fixedPosition="right">
+                      <div *dxTemplate="let actionCell of 'cellTemplateMenu'">
+                        <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+                          <div class="dx-field">
+                            <div class="dx-field-value">
+                              <dx-switch [value]="actionCell.data.isActiveStatus" switchedOnText="Open"
+                                switchedOffText="Close" [width]="80"
+                                (onValueChanged)="onVisibleMenuClick($event,actionCell.data)">
+                              </dx-switch>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </dxi-column>
+                    <dxi-column cellTemplate="cellTemplateAction" caption="Action" alignment="center" [width]="250"
+                      [allowHiding]="false" [fixed]="true" fixedPosition="right">
+                      <div *dxTemplate="let actionCell of 'cellTemplateAction'">
+                        <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" [name]="actionCell.data.id" type="radio"
+                              (click)="onActionMenuClick(actionCell.data,1)" [id]="'r1_' + actionCell.data.id" value="1"
+                              [checked]="actionCell.data.isAction == 1">
+                            <label class="form-check-label" [for]="'r1_' + actionCell.data.id">Add, Edit</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" [name]="actionCell.data.id" type="radio"
+                              (click)="onActionMenuClick(actionCell.data,2)" [id]="'r2_' + actionCell.data.id" value="2"
+                              [checked]="actionCell.data.isAction == 2">
+                            <label class="form-check-label" [for]="'r2_' + actionCell.data.id">View Only</label>
+                          </div>
+                        </div>
+                      </div>
+                    </dxi-column>
+                  </dx-data-grid>
+                </dx-scroll-view>
+              </div>
+            </dx-popup>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

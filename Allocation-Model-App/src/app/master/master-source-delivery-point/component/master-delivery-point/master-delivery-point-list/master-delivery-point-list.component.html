@@ -1,0 +1,113 @@
+<div class="row">
+  <div class="col-12">
+    <div class="block-wrapper" style="margin-bottom: 20px;">
+      <div class="result-block">
+        <div class="summary-block">
+          <h2><i class="simple-icon-book-open"></i> Master Delivery Point</h2>
+        </div>
+        <div class="detail-block">
+          <dx-data-grid #dxDataGridList keyExpr="id" [dataSource]="dataList" [showBorders]="true"
+            (onToolbarPreparing)="onToolbarPreparing($event)">
+            <dxo-row-dragging [allowReordering]="true" [onReorder]="onReorderListAssessor" [showDragIcons]="true">
+            </dxo-row-dragging>
+            <dxi-column dataField="rowOrder" caption="#">
+            </dxi-column>
+            <dxi-column dataField="code"></dxi-column>
+            <dxi-column dataField="name"></dxi-column>
+            <dxi-column dataField="activeStatus"></dxi-column>
+            <dxi-column dataField="createBy"></dxi-column>
+            <dxi-column dataField="createDate" dataType="datetime"></dxi-column>
+            <dxi-column dataField="updateBy"></dxi-column>
+            <dxi-column dataField="updateDate" dataType="datetime"></dxi-column>
+            <dxi-column cellTemplate="cellTemplateAction" caption="" alignment="center" width="70px"
+              [allowHiding]="false" [fixed]="true" fixedPosition="right">
+              <div *dxTemplate="let actionCell of 'cellTemplateAction'">
+                <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+                  <a class="text-dark" title="แก้ไข" (click)="editClick($event, actionCell.data)">
+                    <span class="tx-18 p-1 w-100"><i class="fas fa-pen"></i></span>
+                  </a>
+                </div>
+              </div>
+            </dxi-column>
+          </dx-data-grid>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<dx-popup #infoForm [width]="1000" [height]="400" class="popup" [showTitle]="true" title="Master Delivery Point"
+  [showCloseButton]="false" [dragEnabled]="true" [closeOnOutsideClick]="false" [(visible)]="popupVisible"
+  (onHiding)="onHidingClick()">
+
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-outline-primary" (click)="popupCancelClick()">&nbsp;ยกเลิก</button>
+  </dxi-toolbar-item>
+
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-primary" (click)="popupSaveClick()">&nbsp;บันทึก</button>
+  </dxi-toolbar-item>
+
+  <!-- <div *dxTemplate="let data of 'content'"> -->
+  <dx-scroll-view #scrollView [scrollByContent]="true" [scrollByThumb]="true" showScrollbar="onScroll">
+    <form>
+      <dx-validation-group #targetGroup>
+        <!-- <div class="row row-sm mg-t-15 sticky-validate-result mb-3" [ngClass]="{'d-hidden': validateResult.isValid}">
+          <div class="col-sm-12">
+            <div class="card pd-20">
+              <div class="">
+                <dx-validation-summary id="summary"></dx-validation-summary>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="unit">Code<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+            <dx-text-box name="code" [(ngModel)]="dataInfo.code">
+              <dx-validator>
+                <dxi-validation-rule type="required" message="กรุณากรอก Code"></dxi-validation-rule>
+              </dx-validator>
+            </dx-text-box>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="cal-data">Name<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+            <dx-text-box name="name" [(ngModel)]="dataInfo.name">
+              <dx-validator>
+                <dxi-validation-rule type="required" message="กรุณากรอก Name"></dxi-validation-rule>
+              </dx-validator>
+            </dx-text-box>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="unit">Transportation Type<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+            <dx-radio-group name="transportationType" layout="horizontal"
+              [dataSource]="[{value:'ทางรถ'},{value:'ทางเรือ'}]" [(ngModel)]="dataInfo.transportationType"
+              valueExpr="value" displayExpr="value">
+              <dx-validator>
+                <dxi-validation-rule type="required" message="กรุณาเลือก Transportation Type"></dxi-validation-rule>
+              </dx-validator>
+            </dx-radio-group>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="unit">Active Status<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+            <dx-select-box name="activeStatus" [(ngModel)]="dataInfo.activeStatus"
+              [dataSource]="[{value:'Active'},{value:'Inactive'}]" valueExpr="value" displayExpr="value">
+              <dx-validator>
+                <dxi-validation-rule type="required" message="กรุณาเลือก Active Status"></dxi-validation-rule>
+              </dx-validator>
+            </dx-select-box>
+          </div>
+        </div>
+      </dx-validation-group>
+    </form>
+  </dx-scroll-view>
+  <!-- </div> -->
+  <!-- <dxi-toolbar-item widget="dxButton" toolbar="bottom" location="after"
+      [options]="{ text: 'บันทึก', type:'default', icon: 'fas fa-save', onClick: popupSaveClick }">
+    </dxi-toolbar-item>
+    <dxi-toolbar-item widget="dxButton" toolbar="bottom" location="after"
+      [options]="{ text: 'ยกเลิก', type:'default', icon: 'fas fa-info', onClick: popupCancelClick }">
+    </dxi-toolbar-item> -->
+</dx-popup>

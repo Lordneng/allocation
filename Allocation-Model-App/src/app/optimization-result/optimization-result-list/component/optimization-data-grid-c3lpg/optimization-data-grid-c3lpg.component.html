@@ -1,0 +1,691 @@
+<tabset #tabSet class="separator-tabs">
+  <tab heading="Balance" class="nav-link"  (selectTab)="tabBalanceChange($event)">
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 10px;">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-diamond"></i> Balance C3/LPG</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dataGrid1 [columns]="dynamicColumns" [dataSource]="dataListBalanceC3LPG"
+              columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+              [focusedRowEnabled]="false" (onCellPrepared)="onCellPrepared($event)">
+              <dxo-filter-row [visible]="false"></dxo-filter-row>
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+              <dxo-paging [enabled]="false"></dxo-paging>
+              <dxo-pager [visible]="false"></dxo-pager>
+              <div *dxTemplate="let itemTemp of cellTemplate">
+                <div
+                  [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceC3LPG'"
+                  class="pointer" style="font-weight: 500;"
+                  [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+                  <i class="glyph-icon simple-icon-options-vertical" *ngIf="!itemTemp.data.isViewOnly"></i>
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+                  0) + '-' +
+                  (numberBoxDigi ? numberBoxDigi: 0)}}
+                </div>
+                <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
+                  *ngIf="!itemTemp.data.isViewOnly"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceC3LPG'"
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                </dx-context-menu>
+                <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceC3LPG'"
+                  [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex+ itemTemp.column.headerName + 'dataListBalanceC3LPG']"
+                  [closeOnOutsideClick]="false">
+                  <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+                </dx-tooltip>
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 10px;">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-diamond"></i> Balance C3</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dataGrid2 [columns]="dynamicColumns" [dataSource]="dataListBalanceC3" columnResizingMode="widget"
+              keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true" [focusedRowEnabled]="false"
+              (onCellPrepared)="onCellPrepared($event)">
+              <dxo-filter-row [visible]="false"></dxo-filter-row>
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+              <dxo-paging [enabled]="false"></dxo-paging>
+              <dxo-pager [visible]="false"></dxo-pager>
+              <div *dxTemplate="let itemTemp of cellTemplate">
+                <div
+                  [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceC3'"
+                  class="pointer " style="font-weight: 500;"
+                  [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+                  <i class="glyph-icon simple-icon-options-vertical" *ngIf="!itemTemp.data.isViewOnly"></i>
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+                  0) + '-' +
+                  (numberBoxDigi ? numberBoxDigi: 0)}}
+                </div>
+                <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
+                  *ngIf="!itemTemp.data.isViewOnly"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceC3'"
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                </dx-context-menu>
+                <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceC3'"
+                  [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceC3']"
+                  [closeOnOutsideClick]="false">
+                  <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+                </dx-tooltip>
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 10px;">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-diamond"></i> Balance LPG</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dataGrid3 [columns]="dynamicColumns" [dataSource]="dataListBalanceLPG"
+              columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+              [focusedRowEnabled]="false" (onCellPrepared)="onCellPrepared($event)">
+              <dxo-filter-row [visible]="false"></dxo-filter-row>
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+              <dxo-paging [enabled]="false"></dxo-paging>
+              <dxo-pager [visible]="false"></dxo-pager>
+              <div *dxTemplate="let itemTemp of cellTemplate">
+                <div
+                  [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPG'"
+                  class="pointer " style="font-weight: 500;"
+                  [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+                  <i class="glyph-icon simple-icon-options-vertical" *ngIf="!itemTemp.data.isViewOnly"></i>
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+                  0) + '-' +
+                  (numberBoxDigi ? numberBoxDigi: 0)}}
+                </div>
+                <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
+                  *ngIf="!itemTemp.data.isViewOnly"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPG'"
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                </dx-context-menu>
+                <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPG'"
+                  [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPG']"
+                  [closeOnOutsideClick]="false">
+                  <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+                </dx-tooltip>
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 10px;">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-diamond"></i> Balance LPG Petro (ประมาณ 54 KT check เดือนต่อเดือน)</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dataGrid4 [columns]="dynamicColumns" [dataSource]="dataListBalanceLPGPetro"
+              columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+              [focusedRowEnabled]="false" (onCellPrepared)="onCellPrepared($event)">
+              <dxo-filter-row [visible]="false"></dxo-filter-row>
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+              <dxo-paging [enabled]="false"></dxo-paging>
+              <dxo-pager [visible]="false"></dxo-pager>
+              <div *dxTemplate="let itemTemp of cellTemplate">
+                <div
+                  [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPGPetro'"
+                  class="pointer " style="font-weight: 500;"
+                  [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+                  <i class="glyph-icon simple-icon-options-vertical" *ngIf="!itemTemp.data.isViewOnly"></i>
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+                  0) + '-' +
+                  (numberBoxDigi ? numberBoxDigi: 0)}}
+                </div>
+                <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
+                  *ngIf="!itemTemp.data.isViewOnly"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex  + itemTemp.column.headerName + 'dataListBalanceLPGPetro'"
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                </dx-context-menu>
+                <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPGPetro'"
+                  [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPGPetro']"
+                  [closeOnOutsideClick]="false">
+                  <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+                </dx-tooltip>
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 10px;">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-diamond"></i> Balance LPG Dom</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dataGrid5 [columns]="dynamicColumns" [dataSource]="dataListBalanceLPGDom"
+              columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+              [focusedRowEnabled]="false" (onCellPrepared)="onCellPrepared($event)">
+              <dxo-filter-row [visible]="false"></dxo-filter-row>
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+              <dxo-paging [enabled]="false"></dxo-paging>
+              <dxo-pager [visible]="false"></dxo-pager>
+              <div *dxTemplate="let itemTemp of cellTemplate">
+                <div
+                  [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPGDom'"
+                  class="pointer " style="font-weight: 500;"
+                  [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+                  <i class="glyph-icon simple-icon-options-vertical" *ngIf="!itemTemp.data.isViewOnly"></i>
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+                  0) + '-' +
+                  (numberBoxDigi ? numberBoxDigi: 0)}}
+                </div>
+                <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
+                  *ngIf="!itemTemp.data.isViewOnly"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPGDom'"
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                </dx-context-menu>
+                <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPGDom'"
+                  [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPGDom']"
+                  [closeOnOutsideClick]="false">
+                  <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+                </dx-tooltip>
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+  </tab>
+  <tab heading="Supply"  (selectTab)="tabSupplyChange($event)">
+
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 10px;">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-diamond"></i> Supply Old</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dataGrid6 [columns]="dynamicColumnsSupply" [dataSource]="dataListSupply0"
+              columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+              [focusedRowEnabled]="false">
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+
+              <div *dxTemplate="let itemTemp of cellTemplate">
+                <div
+                  [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + dataListSupply0"
+                  class="pointer " style="font-weight: 500;"
+                  [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+                  0) + '-' +
+                  (numberBoxDigi ? numberBoxDigi: 0)}}
+                </div>
+                <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + dataListSupply0"
+                  [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + dataListSupply0]"
+                  [closeOnOutsideClick]="false">
+                  <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+                </dx-tooltip>
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 10px;">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-diamond"></i> Supply Lastest</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dataGrid7 [columns]="dynamicColumnsSupply" [dataSource]="dataListSupply1"
+              columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+              [focusedRowEnabled]="false">
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+              <div *dxTemplate="let itemTemp of cellTemplate">
+                <div
+                  [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListSupply1'"
+                  class="pointer " style="font-weight: 500;"
+                  [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+                  0) + '-' +
+                  (numberBoxDigi ? numberBoxDigi: 0)}}
+                </div>
+                <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListSupply1'"
+                  [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListSupply1']"
+                  [closeOnOutsideClick]="false">
+                  <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+                </dx-tooltip>
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 10px;">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-diamond"></i> Supply Diff</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dataGrid8 [columns]="dynamicColumnsSupply" [dataSource]="dataListSupply2"
+              columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+              [focusedRowEnabled]="false">
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+              <div *dxTemplate="let itemTemp of cellTemplate">
+                <div
+                  [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListSupply2'"
+                  class="pointer " style="font-weight: 500;"
+                  [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+                  0) + '-' +
+                  (numberBoxDigi ? numberBoxDigi: 0)}}
+                </div>
+                <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListSupply2'"
+                  [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListSupply2']"
+                  [closeOnOutsideClick]="false">
+                  <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+                </dx-tooltip>
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 10px;">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-diamond"></i> เพื่อใส่ใน New balance</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dataGrid9 [columns]="dynamicColumnsNewBalance" [dataSource]="dataListNewBalance"
+              columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+              [focusedRowEnabled]="false">
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+              <div *dxTemplate="let itemTemp of cellTemplate">
+                <div
+                  [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListNewBalance'"
+                  class="pointer " style="font-weight: 500;"
+                  [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+                  0) + '-' +
+                  (numberBoxDigi ? numberBoxDigi: 0)}}
+                </div>
+                <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListNewBalance'"
+                  [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListNewBalance']"
+                  [closeOnOutsideClick]="false">
+                  <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+                </dx-tooltip>
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 10px;">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-diamond"></i> C3 Import</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dataGrid10 [columns]="dynamicColumnsNewBalance" [dataSource]="dataListC3Import"
+              columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+              [focusedRowEnabled]="false" (onCellPrepared)="onCellPrepared($event)">
+              <dxo-filter-row [visible]="false"></dxo-filter-row>
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+              <dxo-paging [enabled]="false"></dxo-paging>
+              <dxo-pager [visible]="false"></dxo-pager>
+              <div *dxTemplate="let itemTemp of cellTemplate">
+                <div
+                  [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListC3Import'"
+                  class="pointer" style="font-weight: 500;"
+                  [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+                  <i class="glyph-icon simple-icon-options-vertical" *ngIf="!itemTemp.data.isViewOnly"></i>
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+                  0) + '-' +
+                  (numberBoxDigi ? numberBoxDigi: 0)}}
+                </div>
+                <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
+                  *ngIf="!itemTemp.data.isViewOnly"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListC3Import'"
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                </dx-context-menu>
+                <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListC3Import'"
+                  [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListC3Import']"
+                  [closeOnOutsideClick]="false">
+                  <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+                </dx-tooltip>
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+  </tab>
+  <tab heading="Demand"  (selectTab)="tabDemandChange($event)">
+
+
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 10px;">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-diamond"></i> Demand</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dataGrid11 [columns]="dynamicColumnsDemand" [dataSource]="dataListDemand"
+              columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+              [focusedRowEnabled]="false" (onCellPrepared)="onCellPrepared($event)">
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+              <div *dxTemplate="let itemTemp of cellTemplate">
+                <div
+                  [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListDemand'"
+                  class="pointer" style="font-weight: 500;"
+                  [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+                  <i class="glyph-icon simple-icon-options-vertical" *ngIf="!itemTemp.data.isViewOnly"></i>
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+                  0) + '-' +
+                  (numberBoxDigi ? numberBoxDigi: 0)}}
+                </div>
+                <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
+                  *ngIf="!itemTemp.data.isViewOnly"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListDemand'"
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                </dx-context-menu>
+                <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListDemand'"
+                  [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListDemand']"
+                  [closeOnOutsideClick]="false">
+                  <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+                </dx-tooltip>
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 10px;">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-diamond"></i> Sum</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dataGrid12 [columns]="dynamicColumnsDemand" [dataSource]="dataListSum"
+              columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+              [focusedRowEnabled]="false">
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+              <div *dxTemplate="let itemTemp of cellTemplate">
+                <div
+                  [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListSum'"
+                  class="pointer " style="font-weight: 500;"
+                  [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+                  0) + '-' +
+                  (numberBoxDigi ? numberBoxDigi: 0)}}
+                </div>
+                <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListSum'"
+                  [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListSum']"
+                  [closeOnOutsideClick]="false">
+                  <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+                </dx-tooltip>
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 10px;">
+        <div class="result-block">
+          <div class="summary-block">
+            <h3><i class="simple-icon-diamond"></i> Check</h3>
+          </div>
+          <div class="detail-block">
+            <dx-data-grid #dataGrid13 [columns]="dynamicColumnsSupply" [dataSource]="dataListCheck"
+              columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+              [focusedRowEnabled]="false">
+              <dxo-filter-row [visible]="false"></dxo-filter-row>
+              <dxo-group-panel [visible]="false"></dxo-group-panel>
+              <dxo-sorting [mode]="'none'"></dxo-sorting>
+              <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+              <dxo-paging [enabled]="false"></dxo-paging>
+              <dxo-pager [visible]="false"></dxo-pager>
+              <div *dxTemplate="let itemTemp of cellTemplate">
+                <div
+                  [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListCheck'"
+                  class="pointer " style="font-weight: 500;"
+                  [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
+                  {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi:
+                  0) + '-' +
+                  (numberBoxDigi ? numberBoxDigi: 0)}}
+                </div>
+                <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
+                  [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListCheck'"
+                  [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListCheck']"
+                  [closeOnOutsideClick]="false">
+                  <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
+                </dx-tooltip>
+              </div>
+            </dx-data-grid>
+          </div>
+        </div>
+      </div>
+    </section>
+  </tab>
+
+</tabset>
+
+
+
+
+
+<dx-popup [width]="800" [height]="600" [showTitle]="true" [title]="titleEdit" [closeOnOutsideClick]="false"
+  [(visible)]="popupVisible" [showCloseButton]="false">
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-outline-primary" (click)="popupCancelClick()">
+      <span>ยกเลิก</span>
+    </button>
+  </dxi-toolbar-item>
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-primary" (click)="popupSaveClick()">
+      <span>ตกลง</span>
+    </button>
+  </dxi-toolbar-item>
+  <div *dxTemplate="let data of 'content'">
+    <dx-scroll-view width="100%" height="100%">
+      <dx-data-grid #dataGrid [dataSource]="dataEdit['listRevision' + dataFieldEdit]" columnResizingMode="widget"
+        [allowColumnResizing]="true" keyExpr="rowOrder" [rowAlternationEnabled]="true" [focusedRowEnabled]="false"
+        [height]="420" (onToolbarPreparing)="onToolbarPreparing($event)">
+        <dxo-filter-row [visible]="false"></dxo-filter-row>
+        <dxo-group-panel [visible]="false"></dxo-group-panel>
+        <dxo-sorting [mode]="'none'"></dxo-sorting>
+        <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+        <dxo-paging [enabled]="false"></dxo-paging>
+        <dxo-pager [visible]="false"></dxo-pager>
+        <dxo-editing mode="batch" [allowUpdating]="false" [allowAdding]="false" [allowDeleting]="false">
+        </dxo-editing>
+        <dxo-column-chooser [enabled]="false"></dxo-column-chooser>
+        <dxo-export [enabled]="false"></dxo-export>
+        <dxi-column dataField="rowOrder" [width]="100" alignment="center" caption="Revision">
+        </dxi-column>
+        <dxi-column dataField="value" caption="Value">
+        </dxi-column>
+        <dxi-column dataField="unit" caption="Unit">
+        </dxi-column>
+        <dxi-column dataField="remark" caption="Remark">
+        </dxi-column>
+        <dxi-column cellTemplate="cellTemplateAction" caption="" alignment="center" width="70px" [allowHiding]="false"
+          [fixed]="true" fixedPosition="right">
+          <div *dxTemplate="let actionCell of 'cellTemplateAction'">
+            <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+              <a class="text-dark" title="Edit" (click)="editClick($event, actionCell.data)">
+                <span class="tx-18 p-1 w-100"><i class="fas fa-pencil-alt"></i></span>
+              </a>
+              <a class="text-dark" title="Delete" (click)="deleteClick($event,actionCell.data)">
+                <span class="tx-18 p-1 w-100"><i class="fas fa-trash text-danger"></i></span>
+              </a>
+            </div>
+          </div>
+        </dxi-column>
+      </dx-data-grid>
+    </dx-scroll-view>
+  </div>
+</dx-popup>
+
+<dx-popup [width]="800" [height]="600" [showTitle]="true" [title]="titleEdit" [closeOnOutsideClick]="false"
+  [(visible)]="popupVisibleEdit" [showCloseButton]="false">
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-outline-primary" (click)="popupEditCancelClick()">
+      <span>ยกเลิก</span>
+    </button>
+  </dxi-toolbar-item>
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-primary" (click)="popupEditSaveClick()">
+      <span>ตกลง</span>
+    </button>
+  </dxi-toolbar-item>
+  <dx-scroll-view width="100%" height="100%">
+    <form>
+      <dx-validation-group #targetGroup>
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group" style="margin-top: 0.4rem">
+              <label for="inputState">Unit<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+              <dx-select-box [(ngModel)]="dataInfoPopup.unit" [dataSource]="dataMaster.masterUnit" name="unit"
+                displayExpr="fullName" valueExpr="fullName" [(selectedItem)]="dataInfoPopup.unitList">
+                <dx-validator>
+                  <dxi-validation-rule type="required" message="กรุณาเลือกข้อมูล Unit">
+                  </dxi-validation-rule>
+                </dx-validator>
+              </dx-select-box>
+            </div>
+          </div>
+          <div class="col-6">
+            <!-- <div class="form-group">
+                <label for="cal-data">Value<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+                <dx-number-box [inputAttr]="{ id: 'val-data'}" [step]="1" [min]="0" name="value"
+                  [(ngModel)]="dataInfoPopup.value">
+                  <dx-validator>
+                    <dxi-validation-rule type="required" message="กรุณากรอก Value"></dxi-validation-rule>
+                  </dx-validator>
+                </dx-number-box>
+              </div> -->
+            <div class="form-group">
+              <div class="d-flex flex-row justify-content-between align-items-center">
+                <label class="control-label">Value</label>
+                <div class="custom-control custom-checkbox mb-2" Tooltip="Manual">
+                  <input type="checkbox" id="checkManual" name="isManual" [(ngModel)]="dataInfoPopup.isManual"
+                    class="custom-control-input">
+                  <label for="checkManual" class="custom-control-label">Manual</label>
+                </div>
+              </div>
+              <dx-number-box [inputAttr]="{ id: 'val-data'}" [step]="1" [min]="0" name="value"
+                [(ngModel)]="dataInfoPopup.value">
+                <dx-validator>
+                  <dxi-validation-rule type="required" message="กรุณากรอก Value">
+                  </dxi-validation-rule>
+                </dx-validator>
+              </dx-number-box>
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="remark-data">Remark</label>
+              <dx-text-area name="remark" [(ngModel)]="dataInfoPopup.remark"></dx-text-area>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="cal-data">Work Day<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+              <dx-number-box [inputAttr]="{ id: 'val-data'}" [step]="1" [min]="0" name="workDay"
+                [(ngModel)]="dataInfoPopup.workDay">
+                <dx-validator>
+                  <dxi-validation-rule type="required" message="กรุณากรอก Work Day">
+                  </dxi-validation-rule>
+                </dx-validator>
+              </dx-number-box>
+            </div>
+          </div>
+        </div>
+      </dx-validation-group>
+    </form>
+  </dx-scroll-view>
+</dx-popup>
+
+<dx-popup [width]="600" [height]="400" [showTitle]="true" [title]="dataEdit.title" [closeOnOutsideClick]="false"
+  [(visible)]="popupEditSpacialVisible" [showCloseButton]="false">
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-outline-primary" (click)="onEditSpacialCancel()">ยกเลิก</button>
+  </dxi-toolbar-item>
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-primary" (click)="onEditSpacialSubmit()">ตกลง</button>
+  </dxi-toolbar-item>
+  <dx-scroll-view width="100%" height="100%">
+    <form>
+      <dx-validation-group #targetGroupPopup>
+        <div class="form-group">
+          <label for="cal-data">Value</label>
+          <dx-number-box [inputAttr]="{ id: 'val-data'}" [step]="1" [min]="0" [(value)]="dataEdit[dataFieldEdit]">
+            <dx-validator>
+              <dxi-validation-rule type="required" message="กรุณากรอก Value"></dxi-validation-rule>
+            </dx-validator>
+          </dx-number-box>
+        </div>
+        <div class="form-group">
+          <label for="remark-data">remark</label>
+          <dx-text-area [(value)]="dataEdit['Remark'+ dataFieldEdit]">
+          </dx-text-area>
+        </div>
+      </dx-validation-group>
+    </form>
+  </dx-scroll-view>
+</dx-popup>

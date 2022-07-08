@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  mongo:
+    image: 'mongo'
+    container_name: 'mongo'
+    ports:
+      - '27017:27017'
+    volumes:
+      - 'mongo:/data/db'
+    networks: 
+      - backend
+
+  nestapi:
+    image: 'nestapi'
+    container_name: 'nestapi'
+    build: .
+    ports:
+      - '3000:3000'  
+    links:
+      - "mongo"
+    networks: 
+      - backend    
+
+volumes:
+  mongo:
+
+networks: 
+  backend:
+    driver: "bridge"

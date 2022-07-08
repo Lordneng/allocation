@@ -1,0 +1,52 @@
+<div class="card mt-4">
+  <div class="card-body">
+    <div class="mt-4">
+      <dx-data-grid #dataGridAbility [columns]="dynamicColumns" [dataSource]="dataList" columnResizingMode="widget"
+          [allowColumnResizing]="true" [focusedRowEnabled]="false" (onToolbarPreparing)="onToolbarPreparing($event)"
+         (onRowPrepared)="onRowPrepared($event)"
+         (onCellPrepared)="onCellPrepared($event)">
+          <dxo-sorting [mode]="'none'"></dxo-sorting>
+          <dxo-search-panel [visible]="false"></dxo-search-panel>
+          <dxo-filter-row [visible]="false"></dxo-filter-row>
+          <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+          <dxo-paging [enabled]="false"></dxo-paging>
+          <dxo-pager [visible]="false"></dxo-pager>
+          <div *dxTemplate="let itemTemp of cellTemplate" >
+            <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex">
+              <!-- <i class="glyph-icon simple-icon-options-vertical"></i> -->
+              {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+              (numberBoxDigi ? numberBoxDigi: 0)}}
+            </div>
+          </div>
+        </dx-data-grid>
+    </div>
+    <label for="inputState"><span class="dx-field-item-required-mark">&nbsp;*Total</span> : ไม่ใช่การคำนวณ Total Ability แต่คำนวณจากสัญญารายปี OR {{ inform_ability_total.value }} </label>
+    <div class="mt-4">
+      <dx-data-grid #dataGridAbility [columns]="dynamicColumns" [dataSource]="dataListImport" columnResizingMode="widget"
+          [allowColumnResizing]="true" [focusedRowEnabled]="false" (onToolbarPreparing)="onToolbarPreparing($event)" 
+          (onRowPrepared)="onRowPrepared($event)"
+          (onCellPrepared)="onCellPrepared($event)">
+          <dxo-sorting [mode]="'none'"></dxo-sorting>
+          <dxo-search-panel [visible]="false"></dxo-search-panel>
+          <dxo-filter-row [visible]="false"></dxo-filter-row>
+          <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+          <dxo-paging [enabled]="false"></dxo-paging>
+          <dxo-pager [visible]="false"></dxo-pager>
+          <div *dxTemplate="let itemTemp of cellTemplate">
+            <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex">
+              <!-- <i class="glyph-icon simple-icon-options-vertical"></i> -->
+              {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+              (numberBoxDigi ? numberBoxDigi: 0)}}
+            </div>
+          </div>
+        </dx-data-grid>
+    </div>
+  <hr>
+    <div>
+      <label for="inputState"><span class="dx-field-item-required-mark">&nbsp;Ability KHM Remark</span> : {{ dataSupplier?.abilityPlanKhmVersion?.remark }} </label>
+    </div>
+    <div>
+      <label for="inputState"><span class="dx-field-item-required-mark">&nbsp;Ability Refinery Remark</span> : {{ this.dataSupplier?.abilityRefineryVersion?.remark }} </label>
+    </div>
+  </div>
+</div>

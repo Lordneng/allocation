@@ -1,0 +1,156 @@
+<div class="page-wrapper">
+
+  <div #spacer></div>
+  <div class="page-header" sticky [spacer]="spacer">
+    <!-- sticky [spacer]="spacer" -->
+    <div class="nav-block">
+      <a href="javascript:;"
+        (click)="menuButtonClick($event, sidebar.menuClickCount, sidebar.containerClassnames); false;"
+        class="menu-button">
+        <i class="fas fa-align-left"></i>
+      </a>
+    </div>
+    <div class="header-block">
+      <div class="block">
+        <div class="page-title">
+          <div class="page-name">Global Variable</div>
+        </div>
+        <div class="text-zero top-right-button-container">
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+
+  <div class="page-body">
+    <section class="section section-bg-grey">
+      <div class="block-wrapper">
+        <div class="result-block">
+          <div class="detail-block">
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-4">
+                  <!-- <div class="card-body"> -->
+                  <dx-data-grid #dxDataGridList keyExpr="id" [dataSource]="dataList" [showBorders]="true"
+                    (onToolbarPreparing)="onToolbarPreparing($event)">
+                    <dxo-row-dragging [allowReordering]="true" [onReorder]="onReorderListAssessor"
+                      [showDragIcons]="true">
+                    </dxo-row-dragging>
+                    <dxi-column dataField="rowOrder" caption="#">
+                    </dxi-column>
+                    <dxi-column dataField="variable" caption="Varriable" [width]="200"></dxi-column>
+                    <dxi-column dataField="value" caption="Value" [width]="200"></dxi-column>
+                    <dxi-column dataField="activeStatus"></dxi-column>
+                    <dxi-column dataField="createBy"></dxi-column>
+                    <dxi-column dataField="createDate" dataType="datetime" [format]="{ type: 'dd/MM/yyy HH:mm' }">
+                    </dxi-column>
+                    <dxi-column dataField="updateBy"></dxi-column>
+                    <dxi-column dataField="updateDate" dataType="datetime" [format]="{ type: 'dd/MM/yyy HH:mm' }">
+                    </dxi-column>
+                    <dxi-column cellTemplate="cellTemplateAction" caption="" alignment="center" width="70px"
+                      [allowHiding]="false" [fixed]="true" fixedPosition="right">
+                      <div *dxTemplate="let actionCell of 'cellTemplateAction'">
+                        <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+                          <a class="text-dark" title="แก้ไข" (click)="editClick($event, actionCell.data)">
+                            <span class="tx-18 p-1 w-100"><i class="fas fa-pen"></i></span>
+                          </a>
+                        </div>
+                      </div>
+                    </dxi-column>
+                  </dx-data-grid>
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+
+            <dx-popup [width]="850" [height]="450" class="popup" [showTitle]="true" title="Global Variable"
+              [dragEnabled]="true" [closeOnOutsideClick]="false" [(visible)]="popupVisible" [showCloseButton]="false">
+
+              <dxi-toolbar-item toolbar="bottom" location="after">
+                <button class="btn btn-primary" (click)="popupSaveClick()" [disabled]="this.accessMenu != 1"> <i
+                    class="fas fa-save"></i>&nbsp;บันทึก</button>
+              </dxi-toolbar-item>
+
+              <dxi-toolbar-item toolbar="bottom" location="after">
+                <button class="btn btn-outline-primary" (click)="popupCancelClick()"><i
+                    class="fas fa-info"></i>&nbsp;ยกเลิก</button>
+              </dxi-toolbar-item>
+
+              <dx-scroll-view #scrollView [scrollByContent]="true" [scrollByThumb]="true" showScrollbar="onScroll">
+                <form>
+                  <dx-validation-group #targetGroup>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="unit">Variable<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+                        <dx-text-box [readOnly]="this.accessMenu != 1" name="variable" [(ngModel)]="dataInfo.variable">
+                          <dx-validator>
+                            <dxi-validation-rule type="required" message="กรุณากรอก Variable"></dxi-validation-rule>
+                          </dx-validator>
+                        </dx-text-box>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="unit">Value<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+                        <dx-text-box [readOnly]="this.accessMenu != 1" name="value" [(ngModel)]="dataInfo.value">
+                          <dx-validator>
+                            <dxi-validation-rule type="required" message="กรุณากรอก Value"></dxi-validation-rule>
+                          </dx-validator>
+                        </dx-text-box>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="unit">Remark<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+                        <dx-text-box [readOnly]="this.accessMenu != 1" name="remark" [(ngModel)]="dataInfo.remark">
+                          <!-- <dx-validator>
+                            <dxi-validation-rule type="required" message="กรุณากรอก Variable"></dxi-validation-rule>
+                          </dx-validator> -->
+                        </dx-text-box>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="unit">Active Status<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+                        <dx-select-box [readOnly]="this.accessMenu != 1" name="activeStatus"
+                          [(ngModel)]="dataInfo.activeStatus" [dataSource]="[{value:'Active'},{value:'Inactive'}]"
+                          valueExpr="value" displayExpr="value">
+                          <dx-validator>
+                            <dxi-validation-rule type="required" message="กรุณาเลือก Active Status">
+                            </dxi-validation-rule>
+                          </dx-validator>
+                        </dx-select-box>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="unit">Create By</label>
+                        <dx-text-box name="createBy" [(ngModel)]="dataInfo.createBy" [readOnly]="true">
+                        </dx-text-box>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="unit">Update By:</label>
+                        <dx-text-box name="updateBy" [(ngModel)]="dataInfo.updateBy" [readOnly]="true">
+                        </dx-text-box>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="unit">Create Date</label>
+                        <dx-date-box name="createDate" [(ngModel)]="dataInfo.createDate" type="datetime"
+                          [readOnly]="true" displayFormat='dd/MM/yyyy HH:mm:ss'>
+                        </dx-date-box>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="unit">Update Date:</label>
+                        <dx-date-box name="updateDate" [(ngModel)]="dataInfo.updateDate" type="datetime"
+                          [readOnly]="true" displayFormat='dd/MM/yyyy HH:mm:ss'>
+                        </dx-date-box>
+                      </div>
+                    </div>
+                  </dx-validation-group>
+                </form>
+              </dx-scroll-view>
+            </dx-popup>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

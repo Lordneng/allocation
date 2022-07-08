@@ -1,0 +1,19 @@
+1.ที่มาข้อมูลของ Cost วผก ในระบบ Smartprice (ดึงข้อมูล forecast ,actual)
+ - Cost < ปี 2019 cost จาก SAP ( คุณเตย จะมีการดึงข้อมูลย้อนหลังหรือไม่)
+ - Cost ปี 2020 cost จาก วผก (คุณเตย จะมีการดึงข้อมูลย้อนหลังหรือไม่)
+ - Cost ปี 2021 cost จาก วผก (ทีม Performance)  
+
+2. Volume ใน smart price เป็น Volume ที่หัก CN DN แล้ว  (ดึงเฉพาะ actual เท่านั้น) 
+
+3. Selling Price  Unit : $/Ton  เป็นยอดที่คำนวณมาจาก Revenue/Volume/fx (ดึงเฉพาะ actual เท่านั้น)
+
+4. Reference Price (ดึงข้อมูล forecast ,actual)
+
+5. คุณโบว์จะเพิ่มข้อมูลในส่วนที่เป็นโรงกลั่น ต่างๆให้ และรวมถึง TBU(ต้นทุน Import) ที่ระบบ Smart Price
+
+6. ปกติ คุณโบว์จะ Update ข้อมูลทุกวันที่ 15 ของเดือน ถ้าจะนำข้อมูลไปใช้ ต้องเป็นหลังวันที่ 15 
+
+7. ล่าสุด คุณโบว์จะ Update Forecaste ข้อมูลให้ทางคุณเตยเร็วขึ้น
+
+7. Job ดึงเฉพาะ ข้อมูล Actual , ข้อมูล Forecast จะดึง manual เท่านั้น
+

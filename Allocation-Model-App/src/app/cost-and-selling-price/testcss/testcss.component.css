@@ -1,0 +1,18 @@
+.flex-container{
+  display: flex;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  flex-flow: column wrap;
+  /* justify-content:flex-end; */
+  align-items:center;
+
+}
+.flex-item-1,flex-item-2,flex-item-3,flex-item-4{
+  width: 150px;
+  height: 150px;
+  background-color: #ccc;
+  margin: 10px;
+  display: flex;
+  align-items: center ;
+  justify-content:flex-end
+}

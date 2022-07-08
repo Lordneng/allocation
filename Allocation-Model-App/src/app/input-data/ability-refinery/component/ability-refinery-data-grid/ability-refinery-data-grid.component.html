@@ -1,0 +1,63 @@
+<div>
+  <!-- <div class="setting-float">
+    <label class="form-group has-float-label">
+      <dx-number-box [width]="107" [step]="1" [min]="0" [max]="15" [(value)]="numberBoxDigi"
+        (onFocusOut)="checkNullValue($event)" valueChangeEvent="keyup"
+        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+      </dx-number-box>
+      <span>จำนวนจุดทศนิยม</span>
+    </label>
+  </div> -->
+
+  <accordion [isAnimated]="true">
+    <dx-data-grid #dataGridList [columns]="dynamicColumns" [dataSource]="dataList.data" columnResizingMode="widget"
+      [allowColumnResizing]="true" [focusedRowEnabled]="false" (onCellPrepared)="onCellPrepared($event)">
+      <dxo-sorting [mode]="'none'"></dxo-sorting>
+      <dxo-search-panel [visible]="false"></dxo-search-panel>
+      <dxo-filter-row [visible]="false"></dxo-filter-row>
+      <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+      <dxo-paging [enabled]="false"></dxo-paging>
+      <dxo-pager [visible]="false"></dxo-pager>
+      <div *dxTemplate="let itemTemp of cellTemplate">
+        <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer">
+          <i class="glyph-icon simple-icon-options-vertical"></i>
+          {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+          (numberBoxDigi ? numberBoxDigi: 0)}}
+        </div>
+        <dx-context-menu [dataSource]="[{text:'Edit'}, {text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
+          [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
+          (onItemClick)="itemClick($event, itemTemp.data, itemTemp.rowIndex ,itemTemp.column.code, itemTemp.column.dataField)">
+        </dx-context-menu>
+      </div>
+    </dx-data-grid>
+  </accordion>
+</div>
+<dx-popup [width]="500" [height]="450" [showTitle]="true" [title]="dataInfoEditColumn.title"
+  [closeOnOutsideClick]="false" [(visible)]="popupVisible" [showCloseButton]="false">
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-outline-primary" (click)="onCancel()">ยกเลิก</button>
+  </dxi-toolbar-item>
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-primary" (click)="onSubmit()" [disabled]="this.accessMenu != 1">ตกลง</button>
+  </dxi-toolbar-item>
+  <dx-scroll-view width="100%" height="100%">
+    <form>
+      <dx-validation-group #targetGroup>
+        <div class="form-group">
+          <label for="cal-data">Value</label>
+          <dx-number-box [inputAttr]="{ id: 'val-data'}" [(value)]="dataInfo[dataInfoEditColumn.field]"
+            [readOnly]="this.accessMenu != 1">
+            <dx-validator>
+              <dxi-validation-rule type="required" message="กรุณากรอก Value"></dxi-validation-rule>
+            </dx-validator>
+          </dx-number-box>
+        </div>
+        <div class="form-group">
+          <label for="remark-data">remark</label>
+          <dx-text-area [(value)]="dataInfo['Remark'+ dataInfoEditColumn.field]" [readOnly]="this.accessMenu != 1">
+          </dx-text-area>
+        </div>
+      </dx-validation-group>
+    </form>
+  </dx-scroll-view>
+</dx-popup>

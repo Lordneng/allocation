@@ -1,0 +1,17 @@
+{ 
+  "entity": "pentaneplaninput",
+  "range": {
+    "from": "01/2021",
+    "to": "01/2022"
+  },
+  "data": {
+    "pentane": {
+      "gsp6": {
+        "item": {
+          "column": 51,
+          "row": 5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+<div class="row">
+  <div class="col-12">
+    <h2 class="mb-2">Full Cost</h2>
+    <div class="setting-float">
+      <form>
+        <label class="form-group has-float-label w-auto d-inline-block mb-0">
+          <!-- <dx-number-box [(value)]="numberBoxDigi" [min]="0">
+          </dx-number-box> -->
+          <dx-number-box [width]="107" [step]="1" [min]="0" [max]="15" [(value)]="numberBoxDigi"
+            (onFocusOut)="checkNullValue($event)" valueChangeEvent="keyup"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+          </dx-number-box>
+          <span>จำนวนจุดทศนิยม</span>
+        </label>
+      </form>
+    </div>
+    <br><br>
+    <dx-data-grid #dataGrid [columns]="dynamicColumns" [dataSource]="fullcostList" columnResizingMode="widget"
+      [allowColumnResizing]="true" [rowAlternationEnabled]="true" [focusedRowEnabled]="false"
+      (onCellPrepared)="onCellPrepared($event)">
+      <dxo-group-panel [visible]="false"></dxo-group-panel>
+      <dxo-sorting [mode]="'none'"></dxo-sorting>
+      <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+      <!-- <dxo-paging [enabled]="false"></dxo-paging> -->
+      <!-- <dxo-pager [visible]="false"></dxo-pager> -->
+      <div *dxTemplate="let itemTemp of cellTemplate">
+        <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer "
+          [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}"
+          [tooltip]="itemTemp.data['formula' + itemTemp.column.dataField] + (itemTemp.data['isManual' + itemTemp.column.dataField] === true ? ' ค่าจากการคำนวน ' + itemTemp.data['calculate' + itemTemp.column.dataField] : '')"
+          placement="bottom">
+          <i class="glyph-icon simple-icon-options-vertical"></i>
+          {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+          (numberBoxDigi ? numberBoxDigi: 0)}}
+        </div>
+        <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
+          [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
+          (onItemClick)="itemClick($event,itemTemp.column.code,itemTemp.rowIndex,itemTemp.column.monthIndex,fullcostList,itemTemp.data,itemTemp.column.dataField)">
+        </dx-context-menu>
+      </div>
+    </dx-data-grid>
+  </div>
+</div>
+
+<dx-popup #fullcostPopup [width]="550" [height]="280" [showTitle]="true" [title]="titleEdit"
+  [closeOnOutsideClick]="false" [(visible)]="popupVisible" [showCloseButton]="false">
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-outline-primary" (click)="popupCancelClick()">
+      <span>ยกเลิก</span>
+    </button>
+  </dxi-toolbar-item>
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-primary" (click)="popupSaveClick()" [disabled]="this.accessMenu != 1">
+      <span>ตกลง</span>
+    </button>
+  </dxi-toolbar-item>
+  <div *dxTemplate="let data of 'content'">
+    <div class="row mt-2">
+      <div class="col-md-12">
+        <div class="form-group">
+          <div class="d-flex flex-row justify-content-between align-items-center">
+            <label class="control-label">Value</label>
+            <div class="custom-control custom-checkbox mb-2" Tooltip="Edit">
+              <input type="checkbox" id="checkManualfullcost" [(ngModel)]="dataEdit['isManual' + dataFieldEdit]"
+                [disabled]="this.accessMenu != 1" class="custom-control-input">
+              <label for="checkManualfullcost" class="custom-control-label">Manual</label>
+            </div>
+          </div>
+          <dx-number-box #numberBox [(value)]="dataEdit[dataFieldEdit]" [disabled]="this.accessMenu != 1">
+          </dx-number-box>
+        </div>
+      </div>
+    </div>
+  </div>
+</dx-popup>

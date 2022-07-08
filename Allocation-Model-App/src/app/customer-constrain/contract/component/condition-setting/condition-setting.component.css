@@ -1,0 +1,11 @@
+#btnFormula {
+    margin-top: 1.5rem;
+}
+
+.formula-danger {
+    border: 0.1px solid #dd8784 !important;
+}
+
+::ng-deep.swal2-container {
+    z-index: 1000000;
+}

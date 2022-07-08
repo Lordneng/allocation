@@ -1,0 +1,47 @@
+<div class="page-wrapper">
+
+    <div #spacer></div>
+    <div class="page-header" sticky [spacer]="spacer">
+        <!-- sticky [spacer]="spacer" -->
+        <div class="nav-block">
+            <a href="javascript:;"
+                (click)="menuButtonClick($event, sidebar.menuClickCount, sidebar.containerClassnames); false;"
+                class="menu-button">
+                <i class="fas fa-align-left"></i>
+            </a>
+        </div>
+        <div class="header-block">
+            <div class="block">
+                <div class="page-title">
+                    <div class="page-name">Source, Delivery Point</div>
+                </div>
+                <div class="text-zero top-right-button-container">
+                </div>
+            </div>
+            <hr class="line" />
+        </div>
+    </div>
+
+    <div class="page-body">
+        <section class="section section-bg-grey">
+            <div class="block-wrapper">
+                <div class="result-block">
+                    <div class="detail-block">
+                        <!-- <div class="row">
+                            <div class="col-12">
+                                <h1>Source, Delivery Point</h1>
+                                <div class="separator mb-3"></div>
+                            </div>
+                        </div> -->
+                        <div class="row">
+                            <div class="col-12 ml-1">
+                                <app-master-source-list></app-master-source-list>
+                                <app-master-delivery-point-list></app-master-delivery-point-list>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

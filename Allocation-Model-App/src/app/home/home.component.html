@@ -1,0 +1,25 @@
+<!-- <div #topPage></div> -->
+<!-- <div class="page-content"></div> -->
+<div class="page-wrapper">
+    <div #spacer></div>
+    <div class="page-header" sticky>
+        <!-- sticky [spacer]="spacer" -->
+        <div class="nav-block">
+            <a href="javascript:;"
+                (click)="menuButtonClick($event, sidebar.menuClickCount, sidebar.containerClassnames); false;"
+                class="menu-button">
+                <i class="fas fa-align-left"></i>
+            </a>
+        </div>
+        <div class="header-block">
+            <div class="block">
+                <div class="page-title">
+                    <div class="page-name">Welcome to Allocation System.</div>
+                </div>
+            </div>
+            <hr class="line" />
+        </div>
+    </div>
+    <div class="page-body">
+    </div>
+</div>

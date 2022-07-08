@@ -1,0 +1,1 @@
+export * from './master-reference-smart-prices.entity';

@@ -1,0 +1,90 @@
+<div class="row container-custom">
+  <div class="col-12 col-md-7 col-xl-7">
+    <div>
+      <div>
+        <form>
+          <div class="form-group mb-0">
+            <dx-file-uploader accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+              class="file-input" [(value)]="uploadFile" [uploadUrl]="uploadFilesUrl" width="100%"
+              [uploadMode]="uploadMode" [multiple]="true" (onValueChanged)="onFileUploadValueChanged($event)"
+              selectButtonText="เลือกไฟล์" labelText="หรือ วางไฟล์ที่นี่เพื่ออัพโหลด">
+            </dx-file-uploader>
+          </div>
+        </form>
+
+        <div class="mt-3">
+          <h3 class="mb-2"><i class="fas fa-file-excel icon-color-green mr-2"></i>Excel File ข้อมูลต้นทาง</h3>
+          <form>
+            <p *ngIf="!dataInfo.fileName" class="text-muted">No file</p>
+            <ul class="file-list-wrapper">
+              <li>
+                <a *ngIf="dataInfo.fileName" [href]="apiUrlService + dataInfo.filePath" target="_blank">
+                  <i class="fas fa-file-excel icon-color-green mr-1"></i>
+                  {{ dataInfo.fileName }}
+                </a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-5 col-xl-5">
+    <div class="mb-0 w-100">
+      <div>
+        <div>
+          <h3 class="mb-4"><i class="fas fa-solid fa-file-import icon-color-theme mr-2"></i>Import ข้อมูลเข้าระบบ</h3>
+          <div class="form-group">
+            <label for="inputState">Year<span class="dx-field-item-required-mark">&nbsp;*</span></label>
+            <div class="dx-field year-filed">
+              <div class="">
+                <dx-date-box [(value)]="date" type="date" pickerType="calendar" displayFormat="year" [calendarOptions]="{
+                                                        maxZoomLevel: 'decade',
+                                                        minZoomLevel: 'century'
+                                                      }"></dx-date-box>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputState">Remark</label>
+            <div class="dx-field">
+              <div class="">
+                <textarea class="form-control" rows="7"[(ngModel)]="dataInfo.remark" name="remark">
+                                        </textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row mb-0">
+          <div class="col-sm-12">
+            <button type="button" [attr.disabled]="!isImport ? 'disabled' : null" (click)="onImportExcel($event)"
+              class="btn btn-secondary mb-0 w-100">
+              Import
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <div class="mt-0 pb-0 d-flex flex-column flex-grow-1">
+            <p class="text-muted mb-2">
+              รูปแบบ File Template สำหรับ Import ข้อมูลเข้าระบบหน้า Cost วผก
+            </p>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a [href]="
+                    apiUrlService +
+                    'FileUpload/ExcelTemplate/Template_cost_วผก.xlsx'
+                  " target="_blank"><i class="fas fa-file-excel icon-color-green mr-2"></i>Template Input Cost วผก.xlsx
+                  <!-- <button type="button" class="ml-3 btn btn-xs btn-outline-success">
+                    Download
+                  </button> -->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

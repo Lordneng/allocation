@@ -1,0 +1,13 @@
+.sticky-toolbars{
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
+}
+input-xx{
+  border: 0;
+  box-sizing: border-box;
+  display:block;
+}
+.dx-texteditor.dx-state-readonly,.dx-texteditor.dx-editor-outlined{
+  border: 0px !important;
+}

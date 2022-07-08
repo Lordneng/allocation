@@ -1,0 +1,33 @@
+<div class="card mt-4">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-12">
+        <div class="form-group">
+          <label>Optimization & Merge Allo Version :</label>
+          <dx-select-box [dataSource]="mergeAlloVersionList" valueExpr="id" [displayExpr]="displayVersion"
+            name="mergeAlloVersionId" [showClearButton]="true" [(ngModel)]="mergeAlloId"
+            (onValueChanged)="onAccept($event)">
+            <dx-validator>
+              <dxi-validation-rule type="required" message="กรุณาเลือก Optimization & Merge Allo Version">
+              </dxi-validation-rule>
+            </dx-validator>
+          </dx-select-box>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="mt-4">
+      <dx-data-grid [allowColumnReordering]="true">
+        <dxi-column dataField="FullName"></dxi-column>
+        <dxi-column dataField="Position"></dxi-column>
+        <dxi-column dataField="BirthDate" dataType="date"> </dxi-column>
+        <dxi-column dataField="HireDate" dataType="date"> </dxi-column>
+        <dxi-column dataField="City"></dxi-column>
+        <dxi-column dataField="Country"></dxi-column>
+        <dxi-column dataField="Address"></dxi-column>
+        <dxi-column dataField="HomePhone"></dxi-column>
+        <dxi-column dataField="PostalCode"></dxi-column>
+      </dx-data-grid>
+    </div> -->
+  </div>
+</div>

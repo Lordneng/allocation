@@ -1,0 +1,40 @@
+<footer class="page-footer">
+  <div class="footer-content">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="copyright">
+          <p class="mb-0">
+            <span class="mr-2">Copyright @ 2022 by</span>
+            <img src="/assets/logos/imgPTT_LOGO.png" width="48px" style="position: relative;top: -2px;" alt="">
+            <!-- <span>PTT PUBLIC COMPANY LIMITED</span> -->
+          </p>
+        </div>
+        <div class="user dropup" placement="top-right" dropdown>
+          <button class="btn btn-empty p-0" type="button" dropdownToggle>
+            <!-- <span>
+                <img class="user-img" alt="Profile Picture" src="/assets/img/profiles/blank-profile.png" />
+              </span> -->
+            <!-- <div class="d-flex flex-column">
+                <span class="name">Chalida.x</span>
+                <span class="name">Administrator</span>
+              </div> -->
+            <i class="glyph-icon iconsminds-female-2 mr-1"></i>
+            <span class="name mr-2">{{displayName}}</span>
+            <i class="fas fa-sign-out-alt" tooltip="Sign out" placement="top" (click)="onSignOut()"></i>
+          </button>
+
+          <!-- <div class="dropdown-menu dropdown-menu-right mt-3" *dropdownMenu role="menu">
+            <a class="dropdown-item c-pointer">Account</a>
+            <a class="dropdown-item c-pointer">Features</a>
+            <a class="dropdown-item c-pointer">History</a>
+            <a class="dropdown-item c-pointer">Support</a>
+            <li class="divider dropdown-divider"></li> 
+            <a class="dropdown-item c-pointer" (click)="onSignOut()">Sign out</a>
+            <a class="dropdown-item c-pointer">Sign out</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>

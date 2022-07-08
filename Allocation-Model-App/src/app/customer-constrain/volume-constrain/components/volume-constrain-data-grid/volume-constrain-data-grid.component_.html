@@ -1,0 +1,77 @@
+<!-- <div class="setting-float">
+  <form>
+    <label class="form-group has-float-label w-auto d-inline-block mb-0">
+      <dx-number-box [(value)]="numberBoxDigi" [min]="0">
+      </dx-number-box>
+      <span>จำนวนจุดทศนิยม</span>
+    </label>
+  </form>
+</div> -->
+<button class="btn btn-outline-secondary btn-xs mb-2 d-flex align-items-center" *ngIf="numberBoxReadOnly"
+  (click)="onEditData($event)">
+  <i class="glyph-icon simple-icon-note mr-1"></i>แก้ไข Data
+</button>
+<button class="btn btn-outline-secondary btn-xs mb-2 d-flex align-items-center" *ngIf="!numberBoxReadOnly"
+  (click)="onEditData($event)">
+  <i class="glyph-icon simple-icon-eye mr-1"></i> ดู Data
+</button>
+<dx-tag-box [items]="dynamicColumnsVisible" [showSelectionControls]="true" displayExpr="caption" valueExpr="dataField"
+  (onValueChanged)="onVisibleValueChange($event)" applyValueMode="useButtons">
+</dx-tag-box>
+<!-- <ng-container *ngFor="let item of dynamicColumns; let i=index">
+  <ng-container *ngIf="i > 4 && item.code !=='colForm'">
+    <dx-check-box [(ngModel)]="item.visible" (onValueChanged)="onVisibleValueChange($event,item)"></dx-check-box>
+    {{item.caption}} &nbsp;
+  </ng-container>
+</ng-container> -->
+<!-- <dx-html-editor [height]="40">
+  <dxi-mention
+      valueExpr="text" 
+      displayExpr="text"
+      searchExpr="text"
+      [dataSource]="itemParameters"
+  ></dxi-mention>
+</dx-html-editor> -->
+<!-- <input type="text"  [mentionConfig]="mentionConfig" [(ngModel)]="textBoxSelected.data[textBoxSelected.column.valueName]" /> -->
+<dx-data-grid #dataGridList [columns]="dynamicColumns" [dataSource]="dataList" columnResizingMode="widget"
+  [allowColumnResizing]="true">
+  <dxo-sorting [mode]="'none'"></dxo-sorting>
+  <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+  <div *dxTemplate="let itemTemp of cellTemplate" [ngClass]="{'text-danger': itemTemp.data[itemTemp.column.name]}"
+    [tooltip]="itemTemp.data[itemTemp.column.name] ? itemTemp.data[itemTemp.column.name] : null" placement="bottom">
+    {{itemTemp.data[itemTemp.column.dataField] | number: '1.0-' + numberBoxDigi}}
+
+
+    <!-- tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." placement="top" -->
+  </div>
+  <div *dxTemplate="let itemTemp of 'cellEditTemplate'">
+    <dx-number-box #numberBox [(value)]="itemTemp.data[itemTemp.column.valueName]">
+    </dx-number-box>
+    <!-- <dx-html-editor [height]="40" [(value)]="itemTemp.data[itemTemp.column.valueName]">
+      <dxi-mention
+          valueExpr="text" 
+          displayExpr="text"
+          searchExpr="text"
+          [dataSource]="itemParameters"
+      ></dxi-mention>
+    </dx-html-editor> -->
+    <!-- <input type="text" (focus)="onFocus($event,itemTemp)" [(ngModel)]="itemTemp.data[itemTemp.column.valueName]" /> -->
+    <!-- tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." placement="top" -->
+  </div>
+
+  <div *dxTemplate="let itemTemp of 'cellCalEditTemplate'">
+    <!-- <dx-check-box [(value)]="itemTemp.data[itemTemp.column.code]"></dx-check-box> -->
+    <dx-select-box
+        [dataSource]="settingData"
+        valueExpr="cal"
+        displayExpr="name"
+        [(value)]="itemTemp.data[itemTemp.column.code]">
+    </dx-select-box>
+  </div>
+
+  <div *dxTemplate="let itemTemp of 'cellAppltAllTemplate'">
+
+    <button class="btn btn-secondary btn-shadow mb-0" (click)="onAppltAll($event,itemTemp.data)"><i
+        class="iconsminds-right"></i></button>
+  </div>
+</dx-data-grid>

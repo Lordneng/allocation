@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-12">
+    <div class="d-flex flex-column mt-2 ml-auto float-right">
+      <label class="has-float-label">
+        <dx-number-box [width]="107" [step]="1" [min]="0" [max]="15" [(value)]="numberBoxDigi"
+          (onFocusOut)="checkNullValue($event)" valueChangeEvent="keyup"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+        </dx-number-box>
+        <span>จำนวนจุดทศนิยม</span>
+      </label>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <dx-data-grid #marginDataGrid [columns]="dynamicColumns" [dataSource]="calMarginDataList"
+      columnResizingMode="widget" [allowColumnResizing]="true" [allowColumnResizing]="true"
+      [rowAlternationEnabled]="true" [focusedRowEnabled]="false">
+      <dxo-group-panel [visible]="false"></dxo-group-panel>
+      <dxo-sorting [mode]="'none'"></dxo-sorting>
+      <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+      <!-- <dxo-paging [enabled]="false"></dxo-paging> -->
+      <!-- <dxo-pager [visible]="false"></dxo-pager> -->
+      <div *dxTemplate="let itemTemp of 'formulaTemplate'">
+        <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer "
+          [tooltip]="'Selling Price - Full Cost'" placement="bottom">
+          {{itemTemp.data[itemTemp.column.dataField]}}
+        </div>
+
+      </div>
+      <div *dxTemplate="let itemTemp of cellTemplate">
+        <div>
+        {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+        (numberBoxDigi ? numberBoxDigi: 0)}}</div>
+      </div>
+    </dx-data-grid>
+  </div>
+</div>

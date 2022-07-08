@@ -1,0 +1,246 @@
+<div class="row">
+   <div class="col-12">
+      <div>
+         <!-- <h1><i ng-reflect-ng-class="iconsminds-three-arrow-fork" class="rounded-circle border iconsminds-three-arrow-fork"></i> Cost ผวก</h1> -->
+         <h1> Volume (KT)</h1>
+         <div class="text-zero top-right-button-container">
+            <button class="btn btn-sm pd-x-15 mg-l-5 btn-outline-secondary">
+               <i ng-reflect-ng-class="iconsminds-back-2" class="iconsminds-back-2"></i>
+            </button>
+            <button (click)="onSearch($event)" class="btn btn-sm pd-x-15 mg-l-5 btn-outline-secondary">
+               <i ng-reflect-ng-class="simple-icon-magnifier" class="simple-icon-magnifier"></i>
+            </button>
+            <button class="btn btn-sm pd-x-15 mg-l-5 btn-outline-secondary">
+               <i ng-reflect-ng-class="iconsminds-file" class="iconsminds-file"></i>
+            </button>
+
+            <div class="btn-group" dropdown>
+               <button id="button-split" type="button" dropdownToggle
+                  class="btn btn-secondary dropdown-toggle dropdown-toggle-split" aria-controls="dropdown-split">
+                  <span class="caret"> </span><i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save"></i>
+               </button> &nbsp;
+               <ul id="dropdown-split" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
+                  aria-labelledby="button-split">
+                  <li role="menuitem"><a class="dropdown-item" href="javascript:;">Save</a></li>
+                  <li role="menuitem"><a class="dropdown-item" href="javascript:;">Save & Send</a></li>
+               </ul>
+            </div>
+
+            <button class="btn btn-sm pd-x-15 mg-l-5 btn-outline-secondary">
+               <i ng-reflect-ng-class="simple-icon-options" class="simple-icon-options-vertical"></i>
+            </button>
+         </div>
+         <div class="separator mb-3"></div>
+      </div>
+
+      <div>
+         <tabset #tabSet class="separator-tabs">
+            <tab heading="Data">
+               <div class="row">
+                  <div class="col-12 col-md-12 col-xl-4 col-right">
+                     <div class="card mb-4 w-100">
+                        <div class="card-body">
+                           <h5 class="mb-4">Year</h5>
+                           <form>
+                              <dx-calendar [maxZoomLevel]="'decade'" [minZoomLevel]="'century'" [(value)]="date"
+                                 (onValueChanged)="onYearChange($event)">
+                              </dx-calendar>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-12 col-xl-8">
+                     <div class="card mb-4 w-100">
+                        <div class="card-body">
+                           <h5 class="mb-4">Import Data From Excel</h5>
+                           <form>
+                              <div class="form-group">
+                                 <dropzone [config]="configDrop" [message]="'คลิก upload หรือ ลากไฟล์มาวาง'"
+                                    (error)="onUploadError($event)" (success)="onUploadSuccess($event)"></dropzone>
+                              </div>
+                              <div class="form-group row mb-0">
+                                 <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-secondary btn-shadow mb-0">Import</button>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="row">
+                  <div class="col-12 col-lg-7 col-xl-7 col-right d-flex">
+                     <div class="card mb-4 w-100">
+                        <div class="card-body">
+                           <h5 class="mb-4">Other</h5>
+                           <form>
+                              <label class="form-group has-float-label">
+                                 <textarea class="form-control" [(ngModel)]="dataInfo.remark" name="remark"></textarea>
+                                 <span>Remark</span>
+                              </label>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-lg-7 col-xl-5 col-left">
+                     <div class="card mb-4 w-100">
+                        <div class="card-body">
+                           <!-- <h5 class="mb-4">File</h5> -->
+                           <form>
+                              <p class="text-muted text-small">Excel File ข้อมูลต้นทาง</p>
+                              <a href="javascript:;">
+                                 <i class="far fa-file-excel"></i>
+                                 สรุปการจัดทำ Allocation และ LR_2021061800001.xlsx
+                              </a>
+                              <hr>
+                              <p class="text-muted text-small">Excel File Template</p>
+                              <a href="javascript:;">
+                                 <i class="far fa-file-excel"></i>
+                                 สรุปการจัดทำ Allocation และ LR.xlsx
+                              </a>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-12">
+                     <div class="card">
+                        <div class="card-body">
+                           <tabset class="card-tabs">
+                              <tab heading="Volume (KT)" class="card-body">
+                                 <app-volume-data-grid #VolumeDataGrid></app-volume-data-grid>
+                              </tab>
+                              <tab heading="Selling Price" class="card-body" (click)="onHistoryClick($event)">
+                                 <app-volume-selling-price #VolumeSellingPrice></app-volume-selling-price>
+                              </tab>
+                              <tab heading="Margin per unit" class="card-body" on>
+                                 <app-volume-margin-per-unit #VolumeMarginPerUnit></app-volume-margin-per-unit>
+                              </tab>
+                              <tab heading="History" class="card-body">
+                                 <app-volume-history #VolumeHistory></app-volume-history>
+                              </tab>
+                           </tabset>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </tab>
+
+            <!-- <tab heading="History">
+               <app-cost-history #costHistory (onEventClick)="onHistoryClick($event)"></app-cost-history>
+            </tab> -->
+            <tab heading="ส่งข้อมูลแล้ว">
+               <div class="row">
+                  <div class="col-12">
+                     <div [ngClass]="{'card d-flex mb-3 card': true, 'active':true}">
+                        <div class="d-flex flex-grow-1 min-width-zero">
+                           <div
+                              class="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center card-body">
+
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">Year</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">Version Data</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">วันที่ส่ง</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">ส่งโดย</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">Tracking No.</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">สถานะ</p>
+                              <div class="w-15 w-xs-100 text-right">
+                                 Action
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12">
+                     <div [ngClass]="{'card d-flex mb-3 card': true, 'active':true}">
+                        <div class="d-flex flex-grow-1 min-width-zero">
+                           <div
+                              class="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center card-body">
+
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">2021</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">3</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">23/05/2021 17:30</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">Admin</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">FS202105003</p>
+
+                              <div class="w-15 w-xs-100"><span
+                                    [class]="'badge badge-pill badge-danger'">Unsuccess</span>
+                              </div>
+                              <div class="w-15 w-xs-100 text-right">
+                                 <button class="btn btn-sm pd-x-15 mg-l-5 btn-outline-secondary">
+                                    <i class="iconsminds-file"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12">
+                     <div [ngClass]="{'card d-flex mb-3 card': true, 'active':true}">
+                        <div class="d-flex flex-grow-1 min-width-zero">
+                           <div
+                              class="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center card-body">
+
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">2021</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">2</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">22/05/2021 17:30</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">Admin</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">FS202105002</p>
+                              <div class="w-15 w-xs-100"><span [class]="'badge badge-pill badge-success'">Success</span>
+                              </div>
+                              <div class="w-15 w-xs-100 text-right">
+                                 <button class="btn btn-sm pd-x-15 mg-l-5 btn-outline-secondary">
+                                    <i class="iconsminds-file"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12">
+                     <div [ngClass]="{'card d-flex mb-3 card': true, 'active':true}">
+                        <div class="d-flex flex-grow-1 min-width-zero">
+                           <div
+                              class="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center card-body">
+
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">2021</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">1</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">21/05/2021 12:30</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">Admin</p>
+                              <p class="mb-1 text-muted text-small w-15 w-xs-100">FS202105001</p>
+                              <div class="w-15 w-xs-100"><span [class]="'badge badge-pill badge-success'">Success</span>
+                              </div>
+                              <div class="w-15 w-xs-100 text-right">
+                                 <button class="btn btn-sm pd-x-15 mg-l-5 btn-outline-secondary">
+                                    <i class="iconsminds-file"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </tab>
+            <!-- <tab heading="{{'pages.followers' | translate | uppercase }}">
+            <app-profile-friends></app-profile-friends>
+          </tab> -->
+         </tabset>
+      </div>
+   </div>
+</div>
+
+
+<ng-template #template>
+   <div class="modal-body">
+      <h5 class="mb-4">ค้นหา</h5>
+      <label class="form-group has-top-label">
+         <input class="form-control" bsDatepicker [container]="'html'">
+         <span>Year</span>
+      </label>
+   </div>
+   <div class="modal-footer">
+      <button type="button" class="btn btn-outline-primary" (click)="modalRef.hide()">ยกเลิก</button>
+      <button type="submit" class="btn btn-primary float-right">ค้นหา</button>
+   </div>
+</ng-template>

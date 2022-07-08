@@ -1,0 +1,31 @@
+{
+  "DRIVERCODE": "4700023761",
+  "PERSCODE": "3361100050479",
+  "CARRIER": "0010001785",
+  "FIRST_NAME": "สุจิน",
+  "LAST_NAME": "ผลมาตร",
+  "DRVSTATUS": " ",
+  "GT_DRIVER_LINCENSE": [
+    {
+      "LICENSETYP": "Z001",
+      "LICENSENO": "สบ.00091/62",
+      "VALID_FROM": "2019-03-24",
+      "VALID_TO": "2022-03-23",
+      "LICENSETXT": null
+    },
+    {
+      "LICENSETYP": "Z003",
+      "LICENSENO": "0163001550",
+      "VALID_FROM": "2020-09-14",
+      "VALID_TO": "2025-09-13",
+      "LICENSETXT": null
+    },
+    {
+      "LICENSETYP": "Z002",
+      "LICENSENO": "0955769438",
+      "VALID_FROM": "1900-01-01",
+      "VALID_TO": "1900-01-01",
+      "LICENSETXT": null
+    }
+  ]
+}

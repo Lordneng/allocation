@@ -1,0 +1,2445 @@
+{
+  "entity": "revenuemboutput",
+  "range": {
+    "from": "01/2021",
+    "to": "12/2021"
+  },
+  "data": {
+    "c2": {
+      "dollar-ton": {
+        "gspry": {
+          "c2-ole1": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-ole1\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-ole1\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "c2-ole2": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-ole2\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-ole2\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "c2-ole3": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-ole3\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-ole3\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "c2-ole3-vol-274t-hr": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-ole3-vol-274t-hr\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-ole3-vol-274t-hr\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "c2-ole3-spot-gsp5": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-ole3-spot-gsp5\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-ole3-spot-gsp5\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "c2-ole3-hybrid-supplement-c2": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-ole3-hybrid-supplement-c2\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-ole3-hybrid-supplement-c2\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "c2-scg": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-scg\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c2\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"c2-scg\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        }
+      }
+    },
+    "c3": {
+      "dollar-ton": {
+        "gspry": {
+          "gc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"gc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"gc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "hmc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"hmc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"hmc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "pttac": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttac\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttac\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "pttac-spot": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttac-spot\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttac-spot\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "scg-tier1": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"scg-tier1\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"scg-tier1\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "scg-tier2": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"scg-tier2\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"scg-tier2\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "scg-substitued-c3": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"scg-substitued-c3\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"scg-substitued-c3\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "scg-c3-truck": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"scg-c3-truck\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"scg-c3-truck\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        },
+        "import": {
+          "gc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"gc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"gc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "hmc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"hmc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"hmc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "pttac": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"pttac\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"pttac\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "scg-tier1": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"scg-tier1\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"scg-tier1\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "scg-tier2": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"scg-tier2\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"scg-tier2\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "scg-substitued-c3": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"scg-substitued-c3\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"c3\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"scg-substitued-c3\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        }
+      }
+    },
+    "lpg": {
+      "dollar-ton": {
+        "gspry": {
+          "gsp-lpg-to-gc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"gsp-lpg-to-gc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"gsp-lpg-to-gc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "lpg-48-240-kt": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"lpg-48-240-kt\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"lpg-48-240-kt\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "additional-lpg-tier-1-1-384-kt": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"additional-lpg-tier-1-1-384-kt\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"additional-lpg-tier-1-1-384-kt\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "additional-lpg-tier-2-384-001-720-kt": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"additional-lpg-tier-2-384-001-720-kt\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"additional-lpg-tier-2-384-001-720-kt\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "pttor-lpg-no-smell": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttor-lpg-no-smell\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttor-lpg-no-smell\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "pttor": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "brp": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"brp\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"brp\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank-truck": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"ptt-tank-truck\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"ptt-tank-truck\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "sgp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"sgp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"sgp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "ugp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"ugp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"ugp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "bcp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"bcp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"bcp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"bcp\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"bcp\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "big-gas": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"big-gas\" , \"DeliveryPoint\": \",mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"big-gas\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"big-gas\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"big-gas\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "pap": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank-truck": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"ptt-tank-truck\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"ptt-tank-truck\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "wp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"wp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"wp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"wp\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"wp\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "chevron": {
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"chevron\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"chevron\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "irpc": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"irpc\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"irpc\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"irpc\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"irpc\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "atlas": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"atlas\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"atlas\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"atlas\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"atlas\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "esso": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"esso\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"esso\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "brp": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"esso\" , \"DeliveryPoint\": \"brp\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"esso\" , \"DeliveryPoint\": \"brp\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"esso\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"esso\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "uno": {
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"uno\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"uno\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "orchid": {
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"orchid\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"orchid\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        },
+        "import": {
+          "import-lpg-to-gc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"import-lpg-to-gc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"import-lpg-to-gc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "spot-lpg-max-400-kt": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"spot-lpg-max-400-kt\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"spot-lpg-max-400-kt\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "pttor": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "sgp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"sgp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"sgp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "ugp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"ugp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"import\" , \"Demand\": \"ugp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        },
+        "export": {
+          "tbu": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"export\" , \"Demand\": \"tbu\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"export\" , \"Demand\": \"tbu\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        },
+        "irpc": {
+          "pttor": {
+            "irpc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"irpc\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"irpc\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"irpc\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"irpc\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "wp": {
+            "irpc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"irpc\" , \"Demand\": \"wp\" , \"DeliveryPoint\": \"irpc\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"irpc\" , \"Demand\": \"wp\" , \"DeliveryPoint\": \"irpc\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "atlas": {
+            "irpc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"irpc\" , \"Demand\": \"atlas\" , \"DeliveryPoint\": \"irpc\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"irpc\" , \"Demand\": \"atlas\" , \"DeliveryPoint\": \"irpc\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        },
+        "gc": {
+          "pttor": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank-truck": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"ptt-tank-truck\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"ptt-tank-truck\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "bcp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"bcp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"bcp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"bcp\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"bcp\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "pap": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank-truck": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"ptt-tank-truck\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"ptt-tank-truck\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "wp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"wp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"wp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"wp\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"wp\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "irpc": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"irpc\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"irpc\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"irpc\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"irpc\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "atlas": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"atlas\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"atlas\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"atlas\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"atlas\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "esso": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"esso\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"esso\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            },
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"esso\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"esso\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "orchid": {
+            "ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"orchid\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gc\" , \"Demand\": \"orchid\" , \"DeliveryPoint\": \"ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        },
+        "sprc": {
+          "sgp": {
+            "mt": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"sprc\" , \"Demand\": \"sgp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"sprc\" , \"Demand\": \"sgp\" , \"DeliveryPoint\": \"mt\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "pttor": {
+            "sprc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"sprc\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"sprc\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"sprc\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"sprc\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "pap": {
+            "sprc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"sprc\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"sprc\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"sprc\" , \"Demand\": \"pap\" , \"DeliveryPoint\": \"sprc\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "wp": {
+            "sprc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"sprc\" , \"Demand\": \"wp\" , \"DeliveryPoint\": \"sprc\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"sprc\" , \"Demand\": \"wp\" , \"DeliveryPoint\": \"sprc\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "atlas": {
+            "sprc": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"sprc\" , \"Demand\": \"atlas\" , \"DeliveryPoint\": \"sprc\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"sprc\" , \"Demand\": \"atlas\" , \"DeliveryPoint\": \"sprc\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        },
+        "pttep-lkb": {
+          "pttor": {
+            "pttep-lkb-truck": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"pttep-lkb\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"pttep-lkb-truck\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"pttep-lkb\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"pttep-lkb-truck\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        },
+        "gsp-ksm": {
+          "pttor": {
+            "gsp-ksm": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"lpg\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"pttor\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        }
+      }
+    },
+    "ngl": {
+      "dollar-ton": {
+        "gspry": {
+          "gc": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"ngl\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"gc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"ngl\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"gc\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "scg": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"ngl\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"scg\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"ngl\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"scg\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "export": {
+            "mt-ptt-tank": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"ngl\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"export\" , \"DeliveryPoint\": \"mt-ptt-tank\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"ngl\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"export\" , \"DeliveryPoint\": \"mt-ptt-tank\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        },
+        "gsp-ksm": {
+          "export": {
+            "gsp-ksm": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"ngl\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gsp-ksm\" , \"Demand\": \"export\" , \"DeliveryPoint\": \"gsp-ksm\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"ngl\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gsp-ksm\" , \"Demand\": \"export\" , \"DeliveryPoint\": \"gsp-ksm\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          },
+          "irpc": {
+            "gsp-ksm": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"ngl\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gsp-ksm\" , \"Demand\": \"irpc\" , \"DeliveryPoint\": \"gsp-ksm\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"ngl\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gsp-ksm\" , \"Demand\": \"irpc\" , \"DeliveryPoint\": \"gsp-ksm\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pentane": {
+      "dollar-ton": {
+        "gspry": {
+          "scg": {
+            "gspry": {
+              "item": {
+                "parameters": [
+                  {
+                    "name": "sellingPrice",
+                    "collection": "SellingPriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"SellingPriceInput\" ,\"Product\":\"pentane\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"scg\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "volumeKTPrice",
+                    "collection": "VolumeKTInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"VolumeKTInput\" ,\"Product\":\"pentane\" , \"Currency\": \"dollar-ton\" , \"Source\": \"gspry\" , \"Demand\": \"scg\" , \"DeliveryPoint\": \"gspry\" }"
+                  },
+                  {
+                    "name": "fx",
+                    "collection": "PriceInput",
+                    "condition": "",
+                    "query": "{\"_t\":\"PriceInput\" ,\"Product\":\"fx\" , \"Currency\": \"baht-dollar\"}"
+                  }
+                ],
+                "equation": "[sellingPrice]*[volumeKTPrice]*[fx]/1000"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

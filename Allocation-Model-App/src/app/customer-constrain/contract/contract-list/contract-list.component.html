@@ -1,0 +1,143 @@
+<div class="page-wrapper">
+  <div #spacer></div>
+  <div class="page-header" sticky [spacer]="spacer">
+    <!-- sticky [spacer]="spacer" -->
+    <div class="nav-block">
+      <a href="javascript:;"
+        (click)="menuButtonClick($event, sidebar.menuClickCount, sidebar.containerClassnames); false;"
+        class="menu-button">
+        <i class="fas fa-align-left"></i>
+      </a>
+    </div>
+    <div class="header-block">
+      <div class="block">
+        <div class="page-title">
+          <div class="page-name">Contract</div>
+        </div>
+        <div class="text-zero top-right-button-container">
+          <button class="btn btn-outline-primary mg-l-5 mr-1" (click)="onSearch($event)">
+            <i ng-reflect-ng-class="simple-icon-magnifier" class="simple-icon-magnifier mr-1"></i>
+            <span>ค้นหา</span>
+          </button>
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+
+  <div class="page-body">
+    <section class="section section-bg-grey">
+      <div class="block-wrapper">
+        <div class="result-block">
+          <div class="detail-block">
+            <!-- <div class="row">
+              <div class="col-12">
+                <h1>Contract</h1>
+                <div class="text-zero top-right-button-container">
+                  <button class="btn btn-outline-primary mg-l-5 mr-1" (click)="onSearch($event)">
+                    <i ng-reflect-ng-class="simple-icon-magnifier" class="simple-icon-magnifier mr-1"></i>
+                    <span>ค้นหา</span>
+                  </button>
+                </div>
+                <div class="separator mb-3"></div>
+              </div>
+            </div> -->
+            <div class="row">
+              <div class="col-12">
+                <!-- <div class="mb-4"> -->
+                <!-- <div class="card-body"> -->
+                <dx-data-grid #dxDataGridList keyExpr="id" [dataSource]="dataList" [showBorders]="true"
+                  (onToolbarPreparing)="onToolbarPreparing($event)" (onRowPrepared)='onRowPrepared($event)'>
+                  <dxo-row-dragging [allowReordering]="true" [onReorder]="onReorderListAssessor" [showDragIcons]="true">
+                  </dxo-row-dragging>
+                  <!-- <dxi-column dataField="rowOrder" caption="#" [width]="50" alignment="center">
+          </dxi-column> -->
+                  <dxi-column cellTemplate="cellTemplateRowOrder" caption="#" alignment="center" [allowHiding]="false"
+                    [fixed]="true" fixedPosition="left">
+                    <div *dxTemplate="let actionCell of 'cellTemplateRowOrder'">
+                      <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+                        {{getRowNumber(actionCell)}}
+                      </div>
+                    </div>
+                  </dxi-column>
+                  <dxi-column dataField="contractTypeName" caption="Contract Type" groupIndex="0"></dxi-column>
+                  <dxi-column dataField="productName" caption="Product" groupIndex="1"></dxi-column>
+                  <dxi-column dataField="customerName" caption="Customer"></dxi-column>
+                  <dxi-column dataField="name" caption="Contract Name"></dxi-column>
+                  <dxi-column dataField="minVolumn" caption="Year Volume (Min)" dataType="number" format="#,##0">
+                  </dxi-column>
+                  <dxi-column dataField="maxVolumn" caption="Year Volume (Max)" dataType="number" format="#,##0">
+                  </dxi-column>
+                  <dxi-column dataField="unitName" caption="Unit"></dxi-column>
+                  <dxi-column dataField="startContractDate" caption="Start Date" dataType="date"
+                    [customizeText]="customizeTextDateFormat">
+                  </dxi-column>
+                  <dxi-column dataField="endContractDate" caption="End Date" dataType="date"
+                    [customizeText]="customizeTextDateFormat">
+                  </dxi-column>
+                  <dxi-column dataField="duration" [caption]="'Duration(Year)'"></dxi-column>
+                  <dxi-column dataField="tier" dataType="number"></dxi-column>
+                  <dxi-column dataField="remark"></dxi-column>
+                  <dxi-column dataField="activeStatus"></dxi-column>
+                  <dxi-column dataField="createBy"></dxi-column>
+                  <dxi-column dataField="createDate" dataType="datetime" [format]="{ type: 'dd/MM/yyyy HH:mm' }">
+                  </dxi-column>
+                  <dxi-column dataField="updateBy"></dxi-column>
+                  <dxi-column dataField="updateDate" dataType="datetime" [format]="{ type: 'dd/MM/yyyy HH:mm' }">
+                  </dxi-column>
+                  <dxi-column cellTemplate="cellTemplateAction" caption="" alignment="center" width="70px"
+                    [allowHiding]="false" [fixed]="true" fixedPosition="right">
+                    <div *dxTemplate="let actionCell of 'cellTemplateAction'">
+                      <div class="cell-context-action" *ngIf="actionCell.rowType == 'data'">
+                        <a class="text-dark" title="แก้ไข" (click)="editClick($event, actionCell.data)">
+                          <span class="tx-18 p-1 w-100"><i class="fas fa-pen"></i></span>
+                        </a>
+                        <a [id]="'edit' + actionCell.data.id" class="pointer " placement="bottom"
+                          *ngIf="this.accessMenu == 1">
+                          <i class="glyph-icon simple-icon-options-vertical"></i>
+                        </a>
+                        <dx-context-menu [dataSource]="[{text:'Delete'},{text:'Copy'}]" [showEvent]="'dxclick'"
+                          [width]="200" [target]="'#edit' + actionCell.data.id"
+                          (onItemClick)="itemClick($event,actionCell.data)">
+                        </dx-context-menu>
+                      </div>
+                    </div>
+                  </dxi-column>
+                </dx-data-grid>
+                <!-- </div> -->
+                <!-- </div> -->
+              </div>
+            </div>
+            <ng-template #template>
+              <div class="modal-body">
+                <h5 class="mb-4"> <i class="far fa-calendar-alt icon-color"></i> ค้นหา</h5>
+                <div class="form-group">
+                  <label>Year :</label>
+                  <dx-date-box type="date" displayFormat="yyyy" [showClearButton]="true" [(ngModel)]="filtersData.year"
+                    [calendarOptions]="{ maxZoomLevel:'decade' }">
+                  </dx-date-box>
+                </div>
+                <div class="form-group">
+                  <label>Customer :</label>
+                  <dx-select-box [dataSource]="masterData.masterCustomer" valueExpr="id" [displayExpr]="displayCustomer"
+                    [(ngModel)]="filtersData.customerId" [showClearButton]="true">
+                  </dx-select-box>
+                </div>
+                <div class="form-group">
+                  <label>Product :</label>
+                  <dx-select-box [dataSource]="masterData.masterProduct" valueExpr="id" [displayExpr]="displayProduct"
+                    [(ngModel)]="filtersData.productId" [showClearButton]="true">
+                  </dx-select-box>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" (click)="searchCancelClick()">ยกเลิก</button>
+                <button type="submit" class="btn btn-primary float-right" (click)="searchClick()">ค้นหา</button>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

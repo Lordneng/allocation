@@ -1,0 +1,169 @@
+<div>
+  <!-- <div class="setting-float">
+    <label class="form-group has-float-label">
+      <dx-number-box [width]="107" [step]="1" [min]="0" [max]="15" [(value)]="numberBoxDigi"
+        (onFocusOut)="checkNullValue($event)" valueChangeEvent="keyup"
+        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+      </dx-number-box>
+      <span>จำนวนจุดทศนิยม</span>
+    </label>
+  </div> -->
+  <div class="d-flex flex-row flex align-items-center mt-3 mb-2">
+    <!-- <div class="d-flex flex-column mr-2">
+      <button class="btn btn-outline-secondary btn-xs d-flex align-items-center border-none" *ngIf="numberBoxReadOnly"
+        (click)="onEditData($event)">
+        <i class="glyph-icon simple-icon-note mr-1"></i>
+        <div>
+          แก้ไข Data
+        </div>
+      </button>
+      <button class="btn btn-outline-secondary btn-xs d-flex align-items-center" *ngIf="!numberBoxReadOnly"
+        (click)="onEditData($event)">
+        <i class="glyph-icon simple-icon-eye mr-1"></i> ดู Data
+      </button>
+    </div>
+    <div class="border-left-default-version mr-2">
+      <div class="ml-2 custom-control custom-checkbox"><input type="checkbox" id="customCheckThis"
+          class="custom-control-input">
+        <label for="customCheckThis" class="custom-control-label">Default Version</label>
+      </div>
+    </div> -->
+  </div>
+  <!-- <accordion [isAnimated]="true">
+    <dx-data-grid #dataGridList [columns]="dynamicColumns" [dataSource]="dataList.data" columnResizingMode="widget"
+      [height]="420" [allowColumnResizing]="true">
+      <dxo-search-panel [visible]="false"></dxo-search-panel>
+      <dxo-filter-row [visible]="false"></dxo-filter-row>
+
+      <dxo-paging [enabled]="false"></dxo-paging>
+      <dxo-pager [visible]="false"></dxo-pager>
+      <div *dxTemplate="let itemTemp of headerCellTemplate" placement="bottom">
+        <ng-container *ngIf="numberBoxReadOnly; else elseTemplate">
+          <div class="text-center">
+            {{ itemTemp.column.caption }}
+          </div>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <div class="text-center">
+            {{ itemTemp.column.caption }}
+          </div>
+          <div class="form-group-sm row">
+            <label for="numberDate" class="col-sm-2 col-form-label">วัน</label>
+            <div class="col-sm-10">
+              <dx-number-box #numberBoxDate class="form-control-sm"
+                [(value)]="dataDayMonth['dayMonth'+itemTemp.column.dataField]"
+                (onValueChanged)="onValueChanged($event, itemTemp.column.dataField)">
+              </dx-number-box>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+      <div *dxTemplate="let itemTemp of cellTemplate" [ngClass]="{'text-danger': itemTemp.data[itemTemp.column.name]}"
+        [tooltip]="itemTemp.data[itemTemp.column.name] ? itemTemp.data[itemTemp.column.name] : null" placement="bottom">
+        {{itemTemp.data[itemTemp.column.dataField] | number: '1.0-' + numberBoxDigi}}
+      </div>
+
+      <div *dxTemplate="let itemTemp of 'cellEditTemplate'">
+        <dx-number-box #numberBox [(value)]="itemTemp.data[itemTemp.column.dataField]"
+          (paste)="onPaste($event,itemTemp.column.code,itemTemp.rowIndex,dataList.data)">
+        </dx-number-box>
+      </div>
+
+      <div *dxTemplate="let itemTemp of 'cellCalEditTemplate'">
+        <dx-select-box [dataSource]="calculateSetting" valueExpr="cal" displayExpr="name"
+          [(value)]="itemTemp.data[itemTemp.column.code]">
+        </dx-select-box>
+      </div>
+
+      <div *dxTemplate="let itemTemp of 'cellAppltAllTemplate'">
+        <button class="btn btn-secondary btn-shadow mb-0" (click)="onAppltAll($event,itemTemp.data)"><i
+            class="iconsminds-right"></i></button>
+      </div>
+    </dx-data-grid>
+
+  </accordion> -->
+  <!-- <div class="row">
+    <div class="col-12">
+      <div class="circleBase importNotMatch"></div>
+      <div class="txt-desc">= ไฟล์ excel ระหว่าง daily กับ summary ไม่ตรงกัน</div>
+    </div>
+  </div> -->
+    <dx-data-grid #dataGridList [columns]="dynamicColumns" [dataSource]="dataList.data" columnResizingMode="widget"
+      [allowColumnResizing]="true" [focusedRowEnabled]="false" (onCellPrepared)="onCellPrepared($event)"
+      (onRowPrepared)="onRowPrepared($event)">
+      <dxo-sorting [mode]="'none'"></dxo-sorting>
+      <dxo-search-panel [visible]="false"></dxo-search-panel>
+      <dxo-filter-row [visible]="false"></dxo-filter-row>
+      <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+      <dxo-paging [enabled]="false"></dxo-paging>
+      <dxo-pager [visible]="false"></dxo-pager>
+      <!-- <div *dxTemplate="let itemTemp of refineryCellTemplate; let i = index">
+        <ng-container>
+          <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer">
+            {{itemTemp.data.product}}
+            <i class="glyph-icon simple-icon-options-vertical"></i>
+          </div>
+          <dx-context-menu [dataSource]="[{text:'Edit'}]" [showEvent]="'dxclick'" [width]="200"
+            [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
+            (onItemClick)="itemClick($event, itemTemp.data, itemTemp.rowIndex ,itemTemp.column.code, itemTemp.column.dataField,  true)">
+          </dx-context-menu>
+        </ng-container>
+      </div> -->
+      <div *dxTemplate="let itemTemp of cellTemplate">
+        <!-- <ng-container *ngIf="numberBoxReadOnly; else elseTemplate"> -->
+        <ng-container *ngIf="!(itemTemp.data.productionPlant == 'Total' || itemTemp.data.product === 'C2')">
+          <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer"
+            [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}"
+            [tooltip]="itemTemp.data[itemTemp.column.name] ? itemTemp.data[itemTemp.column.name] : null"
+            placement="bottom">
+            <i class="glyph-icon simple-icon-options-vertical"></i>
+            {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+            (numberBoxDigi ? numberBoxDigi: 0)}}
+          </div>
+          <dx-context-menu [dataSource]="[{text:'Edit'}, {text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
+            [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
+            (onItemClick)="itemClick($event, itemTemp.data, itemTemp.rowIndex ,itemTemp.column.code, itemTemp.column.dataField,  false)">
+          </dx-context-menu>
+        </ng-container>
+        <ng-container *ngIf="itemTemp.data.productionPlant == 'Total' || itemTemp.data.product === 'C2'">
+          <div>
+            {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+            (numberBoxDigi ? numberBoxDigi: 0)}}
+          </div>
+        </ng-container>
+      </div>
+    </dx-data-grid>
+</div>
+
+<dx-popup [width]="500" [height]="280" [showTitle]="true" [title]="dataInfoEditColumn.title"
+  [closeOnOutsideClick]="false" [(visible)]="popupVisible" [showCloseButton]="false">
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-outline-primary" (click)="popupCancelClick()">
+      <span>ยกเลิก</span>
+    </button>
+  </dxi-toolbar-item>
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-primary" (click)="popupSaveClick()" [disabled]="this.accessMenu != 1">
+      <span>ตกลง</span>
+    </button>
+  </dxi-toolbar-item>
+  <div *dxTemplate="let data of 'content'">
+    <div class="row mt-2">
+      <div class="col-md-12">
+        <div class="form-group">
+          <div class="d-flex flex-row justify-content-between align-items-center">
+            <label class="control-label">Value</label>
+            <!-- <div class="custom-control custom-checkbox mb-2" Tooltip="xxxxx">
+              <input type="checkbox" id="checkManual" [(ngModel)]="dataEdit['isManual' + dataFieldEdit]"
+                class="custom-control-input">
+              <label for="checkManual" class="custom-control-label">Manual</label>
+            </div> -->
+          </div>
+          <dx-number-box #numberBox format="#,##0.###############" [readOnly]="this.accessMenu != 1"
+            [(value)]="dataInfoEditColumn.isFrom ? dataInfo['valMonthM'] : dataInfo[dataInfoEditColumn.field]">
+          </dx-number-box>
+        </div>
+      </div>
+    </div>
+  </div>
+</dx-popup>

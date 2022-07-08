@@ -1,0 +1,132 @@
+{
+  "MENU_LEVEL1": [
+    {
+      "ID": "65CD93A3-319A-405D-81C7-39B4A760668F",
+      "MENU_URL": "home",
+      "MENU_ICON": "fas fa-home",
+      "ROW_ORDER": 1,
+      "TABLE_NAME_PREFIX": null,
+      "TABLE_NAME": "",
+      "SYSTEM_ID": "1E9A17B5-B07F-405D-B7EF-D94D0EEA2114",
+      "MENU_CODE": 0,
+      "DATA_VERSION": 7,
+      "IS_ACTIVE": 1,
+      "CREATE_BY": null,
+      "CREATE_DATETIME": "2019-12-31T18:06:19.327",
+      "UPDATE_BY": null,
+      "UPDATE_DATETIME": "2020-01-20T17:36:59.850",
+      "M_NAME": "home",
+      "MENU_NAME": "home",
+      "CREATE_BY_NAME": null,
+      "UPDATE_BY_NAME": null
+    },
+    {
+      "ID": "153CC675-DEA4-4243-8E50-2A90CD0BA74D",
+      "MENU_URL": "transaction",
+      "MENU_ICON": "fas fa-tint",
+      "ROW_ORDER": 2,
+      "TABLE_NAME_PREFIX": "T_TC_",
+      "TABLE_NAME": "",
+      "SYSTEM_ID": "1E9A17B5-B07F-405D-B7EF-D94D0EEA2114",
+      "MENU_CODE": 4000,
+      "DATA_VERSION": 9,
+      "IS_ACTIVE": 1,
+      "CREATE_BY": null,
+      "CREATE_DATETIME": "2019-12-31T18:06:19.327",
+      "UPDATE_BY": null,
+      "UPDATE_DATETIME": "2020-01-20T17:36:59.850",
+      "M_NAME": "Transaction",
+      "MENU_NAME": "Transaction",
+      "CREATE_BY_NAME": null,
+      "UPDATE_BY_NAME": null
+    },
+    {
+      "ID": "C2C5B5BF-920F-4A05-8F18-8982E93FEB08",
+      "MENU_URL": "master",
+      "MENU_ICON": "fas fa-map-marker-alt",
+      "ROW_ORDER": 3,
+      "TABLE_NAME_PREFIX": "T_TP_",
+      "TABLE_NAME": "",
+      "SYSTEM_ID": "1E9A17B5-B07F-405D-B7EF-D94D0EEA2114",
+      "MENU_CODE": 3000,
+      "DATA_VERSION": 7,
+      "IS_ACTIVE": 1,
+      "CREATE_BY": null,
+      "CREATE_DATETIME": "2019-12-31T18:06:19.327",
+      "UPDATE_BY": null,
+      "UPDATE_DATETIME": "2020-01-20T17:36:59.850",
+      "M_NAME": "Master Data",
+      "MENU_NAME": "Master Data",
+      "CREATE_BY_NAME": null,
+      "UPDATE_BY_NAME": null
+    },
+    {
+      "ID": "37123461-D220-4455-9259-78EDDF2A36F0",
+      "MENU_URL": "system",
+      "MENU_ICON": "fas fa-car-crash",
+      "ROW_ORDER": 4,
+      "TABLE_NAME_PREFIX": "T_TI_",
+      "TABLE_NAME": "",
+      "SYSTEM_ID": "1E9A17B5-B07F-405D-B7EF-D94D0EEA2114",
+      "MENU_CODE": 2000,
+      "DATA_VERSION": 7,
+      "IS_ACTIVE": 1,
+      "CREATE_BY": null,
+      "CREATE_DATETIME": "2019-12-31T18:06:19.327",
+      "UPDATE_BY": null,
+      "UPDATE_DATETIME": "2020-01-20T17:36:59.850",
+      "M_NAME": "System",
+      "MENU_NAME": "System",
+      "CREATE_BY_NAME": null,
+      "UPDATE_BY_NAME": null
+    }
+  ],
+  "MENU_LEVEL2": [
+    {
+      "ID": "01211CF8-8F61-44CC-911F-A371C0C35ABA",
+      "MENU_LEVEL1_ID": "153CC675-DEA4-4243-8E50-2A90CD0BA74D",
+      "MENU_URL": "transaction/cost-and-selling-price",
+      "MENU_ICON": "fa ",
+      "ROW_ORDER": 1,
+      "MENU_NAME": "Cost And Selling Price"
+    },{
+      "ID": "01211CF8-8F61-44CC-911F-A371C0C35ABA",
+      "MENU_LEVEL1_ID": "153CC675-DEA4-4243-8E50-2A90CD0BA74D",
+      "MENU_URL": "transaction/allocation-and-lr",
+      "MENU_ICON": "fa ",
+      "ROW_ORDER": 2,
+      "MENU_NAME": "Allocation And LR"
+    },{
+      "ID": "01211CF8-8F61-44CC-911F-A371C0C35ABA",
+      "MENU_LEVEL1_ID": "C2C5B5BF-920F-4A05-8F18-8982E93FEB08",
+      "MENU_URL": "master/allocation-and-lr2",
+      "MENU_ICON": "fa ",
+      "ROW_ORDER": 1,
+      "MENU_NAME": "Master 1"
+    }
+    ,{
+      "ID": "01211CF8-8F61-44CC-911F-A371C0C35ABA",
+      "MENU_LEVEL1_ID": "37123461-D220-4455-9259-78EDDF2A36F0",
+      "MENU_URL": "system/user-group",
+      "MENU_ICON": "fa ",
+      "ROW_ORDER": 1,
+      "MENU_NAME": "User Group"
+    }
+    ,{
+      "ID": "01211CF8-8F61-44CC-911F-A371C0C35ABA",
+      "MENU_LEVEL1_ID": "37123461-D220-4455-9259-78EDDF2A36F0",
+      "MENU_URL": "system/user",
+      "MENU_ICON": "fa ",
+      "ROW_ORDER": 2,
+      "MENU_NAME": "User"
+    }
+    ,{
+      "ID": "01211CF8-8F61-44CC-911F-A371C0C35ABA",
+      "MENU_LEVEL1_ID": "37123461-D220-4455-9259-78EDDF2A36F0",
+      "MENU_URL": "system/permission",
+      "MENU_ICON": "fa ",
+      "ROW_ORDER": 3,
+      "MENU_NAME": "Permission"
+    }
+  ]
+}

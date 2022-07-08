@@ -1,0 +1,7411 @@
+{
+  "product": [
+    { "id": 1, "tank_id": null, "product": "Ethane" },
+    { "id": 2, "tank_id": null, "product": "Sub Propane" },
+    { "id": 3, "tank_id": 1, "product": "Propane" },
+    { "id": 4, "tank_id": 1, "product": "LPG" },
+    { "id": 5, "tank_id": null, "product": "SWAP LPG" },
+    { "id": 6, "tank_id": 2, "product": "NGL" },
+    { "id": 7, "tank_id": null, "product": "Pentane" },
+    { "id": 8, "tank_id": null, "product": "CO2" }
+  ],
+  "monthly_constrain": [
+    {
+      "key": {},
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 1
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 2
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 3
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 4
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 5
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 6
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 7
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 8
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 9
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 10
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        26.04, 26.04, 25.2, 26.04, 25.2, 26.04, 26.04, 23.52, 26.04, 25.2,
+        26.04, 25.2
+      ],
+      "max": [
+        818.4, 818.4, 792.0, 818.4, 792.0, 818.4, 818.4, 739.2, 818.4, 792.0,
+        818.4, 792.0
+      ],
+      "product_id": null,
+      "id": 11
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 12
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        22.32, 22.32, 21.6, 22.32, 21.6, 22.32, 22.32, 20.16, 22.32, 21.6,
+        22.32, 21.6
+      ],
+      "max": [
+        37.2, 37.2, 36.0, 37.2, 36.0, 37.2, 37.2, 33.6, 37.2, 36.0, 37.2, 36.0
+      ],
+      "product_id": null,
+      "id": 13
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 14
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 15
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0
+      ],
+      "max": [
+        30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0
+      ],
+      "product_id": null,
+      "id": 16
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 17
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 18
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 19
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 20
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0],
+      "product_id": null,
+      "id": 21
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 22
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 23
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 24
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 25
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 26
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 27
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 28
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 29
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 30
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 31
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 32
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 33
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 34
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 35
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 36
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 37
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 38
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 39
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 40
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 41
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 42
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 43
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 44
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 45
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 46
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 47
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 48
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 49
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 50
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 51
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 52
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [
+        85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0, 85.0
+      ],
+      "product_id": null,
+      "id": 53
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 54
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 55
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 56
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 57
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [3.6, 3.6, 3.6, 3.6, 3.6, 3.6, 3.6, 3.6, 3.6, 3.6, 3.6, 3.6],
+      "product_id": null,
+      "id": 58
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6, 0.6],
+      "product_id": null,
+      "id": 59
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [
+        90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0, 90.0
+      ],
+      "product_id": null,
+      "id": 60
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [
+        94.0, 94.0, 94.0, 94.0, 94.0, 94.0, 94.0, 94.0, 94.0, 94.0, 94.0, 94.0
+      ],
+      "product_id": null,
+      "id": 61
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [
+        33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0
+      ],
+      "product_id": null,
+      "id": 62
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0],
+      "product_id": null,
+      "id": 63
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0],
+      "product_id": null,
+      "id": 64
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [
+        60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0, 60.0
+      ],
+      "product_id": null,
+      "id": 65
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 66
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 67
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 68
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 69
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [
+        15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0
+      ],
+      "product_id": null,
+      "id": 70
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 71
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 72
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [
+        44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0, 44.0
+      ],
+      "product_id": null,
+      "id": 73
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 74
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 75
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 76
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 77
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 78
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 79
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 80
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 81
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 82
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 83
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "product_id": null,
+      "id": 84
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [
+        1.4136, 1.4136, 1.368, 1.4136, 1.368, 1.4136, 1.4136, 1.2768, 1.4136,
+        1.368, 1.4136, 1.368
+      ],
+      "product_id": null,
+      "id": 85
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [
+        1.4136, 1.4136, 1.368, 1.4136, 1.368, 1.4136, 1.4136, 1.2768, 1.4136,
+        1.368, 1.4136, 1.368
+      ],
+      "product_id": null,
+      "id": 86
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [
+        1.4136, 1.4136, 1.368, 1.4136, 1.368, 1.4136, 1.4136, 1.2768, 1.4136,
+        1.368, 1.4136, 1.368
+      ],
+      "product_id": null,
+      "id": 87
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [
+        30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0
+      ],
+      "product_id": null,
+      "id": 88
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "max": [
+        28.272, 28.272, 27.36, 28.272, 27.36, 28.272, 28.272, 25.536, 28.272,
+        27.36, 28.272, 27.36
+      ],
+      "product_id": null,
+      "id": 89
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        2.232, 2.232, 2.16, 2.232, 2.16, 2.232, 2.232, 2.016, 2.232, 2.16,
+        2.232, 2.16
+      ],
+      "max": [
+        4.464, 4.464, 4.32, 4.464, 4.32, 4.464, 4.464, 4.032, 4.464, 4.32,
+        4.464, 4.32
+      ],
+      "product_id": null,
+      "id": 90
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0
+      ],
+      "max": [
+        40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0, 40.0
+      ],
+      "product_id": null,
+      "id": 91
+    },
+    {
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "min": [
+        15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0
+      ],
+      "max": [
+        25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0
+      ],
+      "product_id": null,
+      "id": 92
+    }
+  ],
+  "yearly_contract": [
+    {
+      "key": {},
+      "id": 1,
+      "contract_relation_id": 1,
+      "start_contract": "2020-01-01",
+      "ending_contract": "2030-12-31",
+      "volume_actual": 1000.0,
+      "min": 1900000.0,
+      "max": 2500000.0
+    },
+    {
+      "key": {},
+      "id": 2,
+      "contract_relation_id": 2,
+      "start_contract": "2020-01-01",
+      "ending_contract": "2030-12-31",
+      "volume_actual": 1000.0,
+      "min": 150000.0,
+      "max": null
+    },
+    {
+      "key": {},
+      "id": 3,
+      "contract_relation_id": 2,
+      "start_contract": "2020-01-01",
+      "ending_contract": "2030-12-31",
+      "volume_actual": 1000.0,
+      "min": 150000.0,
+      "max": null
+    },
+    {
+      "key": {},
+      "id": 4,
+      "contract_relation_id": 3,
+      "start_contract": "2020-01-01",
+      "ending_contract": "2030-12-31",
+      "volume_actual": 1000.0,
+      "min": 260000.0,
+      "max": 1200000.0
+    },
+    {
+      "key": {},
+      "id": 5,
+      "contract_relation_id": 4,
+      "start_contract": "2010-01-19",
+      "ending_contract": "2025-01-18",
+      "volume_actual": 1000.0,
+      "min": 350000.0,
+      "max": 410000.0
+    },
+    {
+      "key": {},
+      "id": 7,
+      "contract_relation_id": 5,
+      "start_contract": "2011-11-03",
+      "ending_contract": "2026-11-02",
+      "volume_actual": 1000.0,
+      "min": null,
+      "max": 330000.0
+    },
+    {
+      "key": {},
+      "id": 8,
+      "contract_relation_id": 6,
+      "start_contract": "2020-01-01",
+      "ending_contract": "2030-12-31",
+      "volume_actual": 1000.0,
+      "min": 0.0,
+      "max": 48000.0
+    },
+    {
+      "key": {},
+      "id": 9,
+      "contract_relation_id": 7,
+      "start_contract": "2020-01-01",
+      "ending_contract": "2030-12-31",
+      "volume_actual": 1000.0,
+      "min": 48001.0,
+      "max": 400000.0
+    },
+    {
+      "key": {},
+      "id": 10,
+      "contract_relation_id": 8,
+      "start_contract": "2020-01-01",
+      "ending_contract": "2030-12-31",
+      "volume_actual": 1000.0,
+      "min": 400000.0,
+      "max": 1000000.0
+    },
+    {
+      "key": {},
+      "id": 11,
+      "contract_relation_id": 9,
+      "start_contract": "2013-06-01",
+      "ending_contract": "2023-05-31",
+      "volume_actual": 1000.0,
+      "min": 48000.0,
+      "max": 240000.0
+    },
+    {
+      "key": {},
+      "id": 12,
+      "contract_relation_id": 10,
+      "start_contract": "2020-01-01",
+      "ending_contract": "2030-12-31",
+      "volume_actual": 1000.0,
+      "min": 0.0,
+      "max": 384000.0
+    },
+    {
+      "key": {},
+      "id": 13,
+      "contract_relation_id": 11,
+      "start_contract": "2020-01-01",
+      "ending_contract": "2030-12-31",
+      "volume_actual": 1000.0,
+      "min": 384001.0,
+      "max": 720000.0
+    },
+    {
+      "key": {},
+      "id": 14,
+      "contract_relation_id": 12,
+      "start_contract": "",
+      "ending_contract": "",
+      "volume_actual": 1000.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "key": {},
+      "id": 15,
+      "contract_relation_id": 13,
+      "start_contract": "2020-01-01",
+      "ending_contract": "2027-12-31",
+      "volume_actual": 1000.0,
+      "min": 0.0,
+      "max": 400000.0
+    },
+    {
+      "key": {},
+      "id": 16,
+      "contract_relation_id": 14,
+      "start_contract": "2020-01-01",
+      "ending_contract": "2030-12-31",
+      "volume_actual": 1000.0,
+      "min": 200000.0,
+      "max": 400000.0
+    },
+    {
+      "key": {},
+      "id": 17,
+      "contract_relation_id": 15,
+      "start_contract": "2013-06-01",
+      "ending_contract": "2023-05-31",
+      "volume_actual": 1000.0,
+      "min": 380000.0,
+      "max": 600000.0
+    },
+    {
+      "key": {},
+      "id": 18,
+      "contract_relation_id": 16,
+      "start_contract": "2021-01-01",
+      "ending_contract": "2021-12-31",
+      "volume_actual": 1000.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "key": {},
+      "id": 19,
+      "contract_relation_id": 17,
+      "start_contract": "2021-01-01",
+      "ending_contract": "2021-12-31",
+      "volume_actual": 1000.0,
+      "min": null,
+      "max": null
+    },
+    {
+      "key": {},
+      "id": 20,
+      "contract_relation_id": 18,
+      "start_contract": "2015-02-20",
+      "ending_contract": "2025-02-19",
+      "volume_actual": 1000.0,
+      "min": 26000.0,
+      "max": 87000.0
+    },
+    {
+      "key": {},
+      "id": 21,
+      "contract_relation_id": 19,
+      "start_contract": "2019-01-01",
+      "ending_contract": "2028-12-31",
+      "volume_actual": 1000.0,
+      "min": 120000.0,
+      "max": null
+    },
+    {
+      "key": {},
+      "id": 22,
+      "contract_relation_id": 20,
+      "start_contract": "2019-01-01",
+      "ending_contract": "2028-12-31",
+      "volume_actual": 1000.0,
+      "min": 7200.0,
+      "max": null
+    }
+  ],
+  "tank": [
+    {
+      "key": {},
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "value": [
+        22500.0, 22500.0, 22500.0, 22500.0, 22500.0, 22500.0, 22500.0, 22500.0,
+        22500.0, 22500.0, 22500.0, 22500.0
+      ],
+      "remain_inventory": [
+        100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0,
+        100.0, 100.0
+      ],
+      "min": [
+        36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "id": 2
+    },
+    {
+      "key": {},
+      "date": [
+        "2021-7",
+        "2021-8",
+        "2021-9",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-1",
+        "2022-2",
+        "2022-3",
+        "2022-4",
+        "2022-5",
+        "2022-6"
+      ],
+      "value": [
+        22500.0, 22500.0, 22500.0, 22500.0, 22500.0, 22500.0, 22500.0, 22500.0,
+        22500.0, 22500.0, 22500.0, 22500.0
+      ],
+      "remain_inventory": [
+        100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0,
+        100.0, 100.0
+      ],
+      "min": [
+        36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0, 36.0
+      ],
+      "max": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "id": 2
+    }
+  ],
+  "margin": [
+    {
+      "key": {
+        "product": "C2",
+        "source": "GSP RY",
+        "demand": "C2 - OLE1",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        21.0, 33.0, 106.0, 95.0, 45.0, 35.0, 29.0, 17.0, 16.0, 17.0, 19.0, 14.0
+      ],
+      "id": 1,
+      "product_id": 1,
+      "month_constrain_id": 1,
+      "year_contract_id": 1
+    },
+    {
+      "key": {
+        "product": "C2",
+        "source": "GSP RY",
+        "demand": "C2 - OLE2",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        42.0, 54.0, 130.0, 119.0, 67.0, 57.0, 50.0, 38.0, 37.0, 38.0, 40.0, 35.0
+      ],
+      "id": 2,
+      "product_id": 1,
+      "month_constrain_id": 2,
+      "year_contract_id": 1
+    },
+    {
+      "key": {
+        "product": "C2",
+        "source": "GSP RY",
+        "demand": "C2 - OLE3",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        29.0, 41.0, 115.0, 104.0, 53.0, 44.0, 37.0, 25.0, 24.0, 25.0, 27.0, 22.0
+      ],
+      "id": 3,
+      "product_id": 1,
+      "month_constrain_id": 3,
+      "year_contract_id": 1
+    },
+    {
+      "key": {
+        "product": "C2",
+        "source": "GSP RY",
+        "demand": "C2 - OLE3 (Vol >274T/Hr)",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        55.0, 67.0, 141.0, 130.0, 79.0, 70.0, 63.0, 51.0, 50.0, 51.0, 53.0, 48.0
+      ],
+      "id": 4,
+      "product_id": 1,
+      "month_constrain_id": 4,
+      "year_contract_id": 1
+    },
+    {
+      "key": {
+        "product": "C2",
+        "source": "GSP RY",
+        "demand": "C2 - OLE3 (SPOT) GSP5",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        42.0, 54.0, 130.0, 119.0, 67.0, 57.0, 50.0, 38.0, 37.0, 38.0, 40.0, 35.0
+      ],
+      "id": 5,
+      "product_id": 1,
+      "month_constrain_id": 5,
+      "year_contract_id": 1
+    },
+    {
+      "key": {
+        "product": "C2",
+        "source": "GSP RY",
+        "demand": "C2 - OLE3 (Hybrid) supplement C2",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        127.0, 139.0, 213.0, 202.0, 151.0, 142.0, 135.0, 123.0, 122.0, 123.0,
+        125.0, 120.0
+      ],
+      "id": 6,
+      "product_id": 1,
+      "month_constrain_id": 6,
+      "year_contract_id": 1
+    },
+    {
+      "key": {
+        "product": "C2",
+        "source": "GSP RY",
+        "demand": "C2 - SCG",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        50.0, 96.0, 130.0, 101.0, 114.0, 110.0, 109.0, 101.0, 102.0, 105.0,
+        101.0, 105.0
+      ],
+      "id": 7,
+      "product_id": 1,
+      "month_constrain_id": 7,
+      "year_contract_id": 2
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "GSP RY",
+        "demand": "GC",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        261.0, 308.0, 295.0, 217.0, 157.0, 158.0, 160.0, 164.0, 181.0, 198.0,
+        201.0, 212.0
+      ],
+      "id": 8,
+      "product_id": 3,
+      "month_constrain_id": 9,
+      "year_contract_id": 3
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "Import",
+        "demand": "GC",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        139.0, 80.0, 57.0, 11.0, -41.0, 25.0, 25.0, 23.0, 18.0, 19.0, 20.0, 20.0
+      ],
+      "id": 9,
+      "product_id": 3,
+      "month_constrain_id": 8,
+      "year_contract_id": 3
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "GSP RY",
+        "demand": "HMC",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        273.0, 321.0, 307.0, 229.0, 170.0, 171.0, 173.0, 177.0, 193.0, 211.0,
+        214.0, 225.0
+      ],
+      "id": 10,
+      "product_id": 3,
+      "month_constrain_id": 11,
+      "year_contract_id": 5
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "Import",
+        "demand": "HMC",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        152.0, 93.0, 70.0, 24.0, -28.0, 37.0, 38.0, 36.0, 31.0, 32.0, 32.0, 33.0
+      ],
+      "id": 11,
+      "product_id": 3,
+      "month_constrain_id": 10,
+      "year_contract_id": 5
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "GSP RY",
+        "demand": "PTTAC",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        61.0, 54.0, 94.0, 137.0, 102.0, 66.0, 56.0, 45.0, 39.0, 34.0, 34.0, 35.0
+      ],
+      "id": 12,
+      "product_id": 3,
+      "month_constrain_id": 13,
+      "year_contract_id": 7
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "Import",
+        "demand": "PTTAC",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        -60.0, -174.0, -144.0, -68.0, -96.0, -68.0, -79.0, -96.0, -123.0,
+        -145.0, -147.0, -157.0
+      ],
+      "id": 13,
+      "product_id": 3,
+      "month_constrain_id": 12,
+      "year_contract_id": 7
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "GSP RY",
+        "demand": "PTTAC (Spot)",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        269.0, 316.0, 303.0, 225.0, 165.0, 166.0, 168.0, 172.0, 189.0, 206.0,
+        209.0, 220.0
+      ],
+      "id": 14,
+      "product_id": 3,
+      "month_constrain_id": 14,
+      "year_contract_id": 7
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "GSP RY",
+        "demand": "SCG Tier 1 : 0 - 48 KT",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        246.0, 295.0, 286.0, 208.0, 147.0, 148.0, 150.0, 153.0, 169.0, 186.0,
+        188.0, 199.0
+      ],
+      "id": 15,
+      "product_id": 3,
+      "month_constrain_id": 15,
+      "year_contract_id": 8
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "Import",
+        "demand": "SCG Tier 1 : 0 - 48 KT",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        118.0, 60.0, 42.0, -13.0, -57.0, 8.0, 8.0, 5.0, 0.0, 0.0, 0.0, 0.0
+      ],
+      "id": 16,
+      "product_id": 3,
+      "month_constrain_id": 15,
+      "year_contract_id": 8
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "GSP RY",
+        "demand": "SCG Tier 2 : 48.001 - 400 KT",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        248.0, 297.0, 287.0, 209.0, 148.0, 149.0, 151.0, 154.0, 171.0, 188.0,
+        190.0, 201.0
+      ],
+      "id": 17,
+      "product_id": 3,
+      "month_constrain_id": 18,
+      "year_contract_id": 9
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "Import",
+        "demand": "SCG Tier 2 : 48.001 - 400 KT",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        120.0, 62.0, 42.0, -3.0, -56.0, 9.0, 9.0, 6.0, 2.0, 2.0, 2.0, 2.0
+      ],
+      "id": 18,
+      "product_id": 3,
+      "month_constrain_id": 17,
+      "year_contract_id": 9
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "GSP RY",
+        "demand": "Ssubstitued C3 - SCG",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        246.0, 295.0, 286.0, 208.0, 147.0, 148.0, 150.0, 153.0, 169.0, 186.0,
+        188.0, 199.0
+      ],
+      "id": 19,
+      "product_id": 3,
+      "month_constrain_id": 20,
+      "year_contract_id": 3
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "Import",
+        "demand": "Ssubstitued C3 - SCG",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        118.0, 60.0, 42.0, -4.0, -57.0, 8.0, 8.0, 5.0, 0.0, 0.0, 0.0, 0.0
+      ],
+      "id": 20,
+      "product_id": 3,
+      "month_constrain_id": 19,
+      "year_contract_id": 3
+    },
+    {
+      "key": {
+        "product": "C3",
+        "source": "GSP RY",
+        "demand": "C3 truck",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        65.0, 68.0, 73.0, 51.0, 52.0, 52.0, 50.0, 44.0, 47.0, 55.0, 50.0, 50.0
+      ],
+      "id": 21,
+      "product_id": 3,
+      "month_constrain_id": 21,
+      "year_contract_id": 0
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "GSP (LPG) to GC",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        252.0, 300.0, 281.0, 204.0, 149.0, 152.0, 154.0, 161.0, 183.0, 200.0,
+        203.0, 214.0
+      ],
+      "id": 22,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "Import",
+        "demand": "Import (LPG) to GC",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        124.0, 65.0, 37.0, -9.0, -56.0, 12.0, 12.0, 13.0, 13.0, 14.0, 15.0, 15.0
+      ],
+      "id": 23,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "LPG : 48 - 240 KT",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        56.0, 189.0, 147.0, 114.0, 131.0, 127.0, 126.0, 118.0, 119.0, 121.0,
+        118.0, 123.0
+      ],
+      "id": 24,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "Additional LPG Tier 1 : 1 - 384 KT",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        243.0, 292.0, 278.0, 200.0, 144.0, 147.0, 149.0, 155.0, 176.0, 193.0,
+        196.0, 206.0
+      ],
+      "id": 25,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "Additional LPG Tier 2 : 384.001 - 720 KT",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        245.0, 294.0, 279.0, 201.0, 145.0, 148.0, 150.0, 156.0, 178.0, 195.0,
+        197.0, 208.0
+      ],
+      "id": 26,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "Import",
+        "demand": "SWAP LPG : Max 400 KT",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0],
+      "id": 27,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "PTTOR (LPG ??????????)",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        67.0, 70.0, 76.0, 53.0, 55.0, 55.0, 53.0, 47.0, 50.0, 58.0, 53.0, 53.0
+      ],
+      "id": 28,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "Export",
+        "demand": "TBU",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        145.0, 202.0, 226.0, 152.0, 84.0, 85.0, 84.0, 84.0, 103.0, 117.0, 114.0,
+        119.0
+      ],
+      "id": 29,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "Import",
+        "demand": "PTTOR",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        143.0, 0.0, -55.0, -94.0, -78.0, -9.0, -6.0, -8.0, -8.0, -5.0, -4.0, 0.0
+      ],
+      "id": 30,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "Import",
+        "demand": "SGP",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        145.0, 1.0, -54.0, -93.0, -76.0, -8.0, -5.0, -7.0, -7.0, -3.0, -3.0, 1.0
+      ],
+      "id": 31,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "Import",
+        "demand": "UGP",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        145.0, 1.0, -54.0, -93.0, -76.0, -8.0, -5.0, -7.0, -7.0, -3.0, -3.0, 1.0
+      ],
+      "id": 32,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "PTTOR",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [18.0, 22.0, 28.0, 6.0, 8.0, 8.0, 6.0, 0.0, 3.0, 10.0, 5.0, 5.0],
+      "id": 33,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "PTTOR",
+        "delivery_point": "BRP "
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [18.0, 22.0, 28.0, 6.0, 8.0, 8.0, 6.0, 0.0, 3.0, 10.0, 5.0, 5.0],
+      "id": 34,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "PTTOR",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [15.0, 19.0, 24.0, 4.0, 5.0, 5.0, 3.0, -3.0, 1.0, 8.0, 3.0, 3.0],
+      "id": 35,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "PTTOR",
+        "delivery_point": "PTT TANK (Truck)"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        31.0, 34.0, 40.0, 18.0, 20.0, 20.0, 18.0, 12.0, 15.0, 22.0, 17.0, 17.0
+      ],
+      "id": 36,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "SGP",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [20.0, 23.0, 29.0, 8.0, 9.0, 9.0, 7.0, 1.0, 4.0, 11.0, 6.0, 6.0],
+      "id": 37,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "UGP",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [20.0, 23.0, 29.0, 8.0, 9.0, 9.0, 7.0, 1.0, 4.0, 11.0, 6.0, 6.0],
+      "id": 38,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "BCP",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        42.0, 45.0, 51.0, 29.0, 30.0, 30.0, 28.0, 22.0, 25.0, 33.0, 28.0, 28.0
+      ],
+      "id": 39,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "BCP",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        39.0, 42.0, 47.0, 26.0, 27.0, 27.0, 26.0, 19.0, 23.0, 30.0, 25.0, 25.0
+      ],
+      "id": 40,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "Big gas",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        28.0, 32.0, 38.0, 16.0, 17.0, 17.0, 15.0, 9.0, 13.0, 20.0, 15.0, 15.0
+      ],
+      "id": 41,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "Big gas",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        25.0, 29.0, 34.0, 13.0, 15.0, 15.0, 13.0, 7.0, 10.0, 17.0, 12.0, 12.0
+      ],
+      "id": 42,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "PAP",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        28.0, 32.0, 38.0, 16.0, 17.0, 17.0, 15.0, 9.0, 13.0, 20.0, 15.0, 15.0
+      ],
+      "id": 43,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "PAP",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        25.0, 29.0, 34.0, 13.0, 15.0, 15.0, 13.0, 7.0, 10.0, 17.0, 12.0, 12.0
+      ],
+      "id": 44,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "PAP",
+        "delivery_point": "PTT TANK (Truck)"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        41.0, 44.0, 49.0, 28.0, 29.0, 29.0, 28.0, 21.0, 25.0, 32.0, 27.0, 27.0
+      ],
+      "id": 45,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "WP",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        21.0, 24.0, 30.0, 9.0, 10.0, 10.0, 8.0, 2.0, 6.0, 13.0, 8.0, 8.0
+      ],
+      "id": 46,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "WP",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [18.0, 21.0, 27.0, 6.0, 8.0, 8.0, 6.0, 0.0, 3.0, 10.0, 5.0, 5.0],
+      "id": 47,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "Chevron",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        39.0, 42.0, 47.0, 26.0, 27.0, 27.0, 26.0, 19.0, 23.0, 30.0, 25.0, 25.0
+      ],
+      "id": 48,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "IRPC",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        28.0, 32.0, 38.0, 16.0, 17.0, 17.0, 15.0, 9.0, 13.0, 20.0, 15.0, 15.0
+      ],
+      "id": 49,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "IRPC",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        25.0, 29.0, 34.0, 13.0, 15.0, 15.0, 13.0, 7.0, 10.0, 17.0, 12.0, 12.0
+      ],
+      "id": 50,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "Atlas",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        28.0, 32.0, 38.0, 16.0, 17.0, 17.0, 15.0, 9.0, 13.0, 20.0, 15.0, 15.0
+      ],
+      "id": 51,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "Atlas",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        25.0, 29.0, 34.0, 13.0, 15.0, 15.0, 13.0, 7.0, 10.0, 17.0, 12.0, 12.0
+      ],
+      "id": 52,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "ESSO",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        42.0, 45.0, 51.0, 29.0, 30.0, 30.0, 28.0, 22.0, 25.0, 33.0, 28.0, 28.0
+      ],
+      "id": 53,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "ESSO",
+        "delivery_point": "BRP "
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        42.0, 45.0, 51.0, 29.0, 30.0, 30.0, 28.0, 22.0, 25.0, 33.0, 28.0, 28.0
+      ],
+      "id": 54,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "ESSO",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        39.0, 42.0, 47.0, 26.0, 27.0, 27.0, 26.0, 19.0, 23.0, 30.0, 25.0, 25.0
+      ],
+      "id": 55,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "UNO",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        39.0, 42.0, 47.0, 26.0, 27.0, 27.0, 26.0, 19.0, 23.0, 30.0, 25.0, 25.0
+      ],
+      "id": 56,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP RY",
+        "demand": "Orchid",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        39.0, 42.0, 47.0, 26.0, 27.0, 27.0, 26.0, 19.0, 23.0, 30.0, 25.0, 25.0
+      ],
+      "id": 57,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "IRPC",
+        "demand": "PTTOR",
+        "delivery_point": "IRPC"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      "id": 58,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "IRPC",
+        "demand": "WP",
+        "delivery_point": "IRPC"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [4.0, 4.0, 4.0, 4.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0],
+      "id": 59,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "IRPC",
+        "demand": "Atlas",
+        "delivery_point": "IRPC"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [8.0, 8.0, 8.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0],
+      "id": 60,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "PTTOR",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        54.0, 54.0, 54.0, 52.0, 52.0, 52.0, 52.0, 52.0, 52.0, 53.0, 53.0, 53.0
+      ],
+      "id": 61,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "PTTOR",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        34.0, 34.0, 34.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0, 33.0
+      ],
+      "id": 62,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "PTTOR",
+        "delivery_point": "PTT TANK (Truck)"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        49.0, 49.0, 49.0, 48.0, 47.0, 48.0, 47.0, 47.0, 47.0, 48.0, 48.0, 48.0
+      ],
+      "id": 63,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "BCP",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        77.0, 78.0, 77.0, 75.0, 74.0, 75.0, 74.0, 74.0, 74.0, 75.0, 75.0, 75.0
+      ],
+      "id": 64,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "BCP",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        57.0, 57.0, 57.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0
+      ],
+      "id": 65,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "PAP",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        64.0, 64.0, 64.0, 62.0, 62.0, 62.0, 62.0, 62.0, 62.0, 62.0, 62.0, 62.0
+      ],
+      "id": 66,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "PAP",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        44.0, 44.0, 44.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 43.0, 43.0, 43.0
+      ],
+      "id": 67,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "PAP",
+        "delivery_point": "PTT TANK (Truck)"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        50.0, 50.0, 50.0, 49.0, 48.0, 48.0, 48.0, 48.0, 48.0, 49.0, 49.0, 49.0
+      ],
+      "id": 68,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "WP",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        57.0, 57.0, 56.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0
+      ],
+      "id": 69,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "WP",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        37.0, 37.0, 36.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 36.0, 36.0, 36.0
+      ],
+      "id": 70,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "IRPC",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        64.0, 64.0, 64.0, 62.0, 62.0, 62.0, 62.0, 62.0, 62.0, 62.0, 62.0, 62.0
+      ],
+      "id": 71,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "IRPC",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        44.0, 44.0, 44.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 43.0, 43.0, 43.0
+      ],
+      "id": 72,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "Atlas",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        64.0, 64.0, 64.0, 62.0, 62.0, 62.0, 62.0, 62.0, 62.0, 62.0, 62.0, 62.0
+      ],
+      "id": 73,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "Atlas",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        44.0, 44.0, 44.0, 42.0, 42.0, 42.0, 42.0, 42.0, 42.0, 43.0, 43.0, 43.0
+      ],
+      "id": 74,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "ESSO",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        77.0, 78.0, 77.0, 75.0, 74.0, 75.0, 74.0, 74.0, 74.0, 75.0, 75.0, 75.0
+      ],
+      "id": 75,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "ESSO",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        57.0, 57.0, 57.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0
+      ],
+      "id": 76,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GC",
+        "demand": "Orchid",
+        "delivery_point": "PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        57.0, 57.0, 57.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0
+      ],
+      "id": 77,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "SPRC",
+        "demand": "SGP",
+        "delivery_point": "MT"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        81.0, 44.0, 15.0, 25.0, 29.0, 32.0, 38.0, 42.0, 45.0, 51.0, 57.0, 66.0
+      ],
+      "id": 78,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "SPRC",
+        "demand": "PTTOR",
+        "delivery_point": "SPRC "
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        84.0, 47.0, 18.0, 28.0, 32.0, 35.0, 41.0, 44.0, 48.0, 54.0, 60.0, 69.0
+      ],
+      "id": 79,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "SPRC",
+        "demand": "PAP",
+        "delivery_point": "SPRC "
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        99.0, 62.0, 33.0, 42.0, 46.0, 49.0, 56.0, 59.0, 62.0, 68.0, 74.0, 84.0
+      ],
+      "id": 80,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "SPRC",
+        "demand": "WP",
+        "delivery_point": "SPRC "
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        92.0, 55.0, 25.0, 35.0, 39.0, 42.0, 49.0, 52.0, 55.0, 61.0, 67.0, 77.0
+      ],
+      "id": 81,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "SPRC",
+        "demand": "Atlas",
+        "delivery_point": "SPRC "
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        96.0, 59.0, 29.0, 39.0, 43.0, 46.0, 52.0, 56.0, 59.0, 65.0, 71.0, 80.0
+      ],
+      "id": 82,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "PTTEP (LKB)",
+        "demand": "PTTOR",
+        "delivery_point": "PTTEP/LKB (Truck)"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0],
+      "id": 83,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "LPG",
+        "source": "GSP KHM",
+        "demand": "PTTOR",
+        "delivery_point": "GSP KHM"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [18.0, 22.0, 28.0, 6.0, 8.0, 8.0, 6.0, 0.0, 3.0, 10.0, 5.0, 5.0],
+      "id": 84,
+      "product_id": 4,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "NGL",
+        "source": "GSP RY",
+        "demand": "GC",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        137.0, 190.0, 228.0, 196.0, 212.0, 209.0, 208.0, 200.0, 201.0, 203.0,
+        200.0, 205.0
+      ],
+      "id": 85,
+      "product_id": 6,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "NGL",
+        "source": "GSP RY",
+        "demand": "SCG",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        137.0, 190.0, 228.0, 196.0, 213.0, 209.0, 208.0, 201.0, 202.0, 204.0,
+        200.0, 206.0
+      ],
+      "id": 86,
+      "product_id": 6,
+      "month_constrain_id": 89,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "NGL",
+        "source": "GSP RY",
+        "demand": "Export",
+        "delivery_point": "MT/PTT TANK"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        96.0, 156.0, 195.0, 160.0, 132.0, 128.0, 127.0, 120.0, 120.0, 122.0,
+        119.0, 125.0
+      ],
+      "id": 87,
+      "product_id": 6,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "NGL",
+        "source": "GSP KHM",
+        "demand": "Export",
+        "delivery_point": "GSP KHM"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        96.0, 156.0, 195.0, 160.0, 132.0, 128.0, 127.0, 120.0, 120.0, 122.0,
+        119.0, 125.0
+      ],
+      "id": 88,
+      "product_id": 6,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "NGL",
+        "source": "GSP KHM",
+        "demand": "IRPC",
+        "delivery_point": "GSP KHM"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        117.0, 170.0, 208.0, 176.0, 192.0, 189.0, 188.0, 180.0, 181.0, 183.0,
+        180.0, 185.0
+      ],
+      "id": 89,
+      "product_id": 6,
+      "month_constrain_id": null,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "Pentane",
+        "source": "GSP RY",
+        "demand": "SCG Tier1",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        69.0, 122.0, 160.0, 128.0, 145.0, 141.0, 140.0, 133.0, 134.0, 136.0,
+        132.0, 138.0
+      ],
+      "id": 90,
+      "product_id": 7,
+      "month_constrain_id": 90,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "Pentane",
+        "source": "GSP RY",
+        "demand": "SCG Tier2",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        49.0, 102.0, 140.0, 108.0, 125.0, 121.0, 120.0, 113.0, 114.0, 116.0,
+        112.0, 118.0
+      ],
+      "id": 91,
+      "product_id": 7,
+      "month_constrain_id": 90,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "Pentane",
+        "source": "GSP RY",
+        "demand": "SCG Tier3",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        34.0, 87.0, 125.0, 93.0, 110.0, 106.0, 105.0, 98.0, 99.0, 101.0, 97.0,
+        103.0
+      ],
+      "id": 92,
+      "product_id": 7,
+      "month_constrain_id": 90,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "CO2",
+        "source": "GSP RY",
+        "demand": "Praxair",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        583.0, 583.0, 583.0, 583.0, 583.0, 583.0, 583.0, 583.0, 583.0, 583.0,
+        583.0, 583.0
+      ],
+      "id": 93,
+      "product_id": 8,
+      "month_constrain_id": 91,
+      "year_contract_id": null
+    },
+    {
+      "key": {
+        "product": "CO2",
+        "source": "GSP RY",
+        "demand": "Linde",
+        "delivery_point": "GSP RY"
+      },
+      "date": [
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12"
+      ],
+      "value": [
+        583.0, 583.0, 583.0, 583.0, 583.0, 583.0, 583.0, 583.0, 583.0, 583.0,
+        583.0, 583.0
+      ],
+      "id": 94,
+      "product_id": 8,
+      "month_constrain_id": 92,
+      "year_contract_id": null
+    }
+  ],
+  "ability_monthly": [
+    {
+      "key": { "product": "Ethane", "src": "GSP I" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        29.5, 30.5, 29.8, 28.8, 28.9, 27.2, 28.1, 21.7, 19.6, 21.7, 21.0, 21.7
+      ],
+      "id": 1,
+      "product_id": 1
+    },
+    {
+      "key": { "product": "Ethane", "src": "GSP II" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [5.0, 5.2, 5.2, 5.3, 4.8, 5.8, 6.0, 5.2, 4.7, 5.2, 5.8, 6.0],
+      "id": 2,
+      "product_id": 1
+    },
+    {
+      "key": { "product": "Ethane", "src": "GSP III" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [7.2, 8.1, 8.2, 6.1, 1.8, 7.1, 7.3, 7.4, 6.7, 7.4, 7.2, 7.4],
+      "id": 3,
+      "product_id": 1
+    },
+    {
+      "key": { "product": "Ethane", "src": "GSP V" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        46.8, 48.4, 48.4, 46.8, 46.7, 45.2, 47.5, 47.5, 42.9, 47.5, 46.0, 47.5
+      ],
+      "id": 4,
+      "product_id": 1
+    },
+    {
+      "key": { "product": "Ethane", "src": "GSP VI" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        61.2, 10.2, 62.5, 61.9, 65.4, 62.6, 66.2, 63.2, 57.1, 63.2, 58.3, 60.3
+      ],
+      "id": 5,
+      "product_id": 1
+    },
+    {
+      "key": { "product": "Ethane", "src": "ESP" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        46.8, 48.4, 49.1, 34.8, 11.9, 50.0, 46.4, 43.2, 39.0, 43.2, 39.3, 40.6
+      ],
+      "id": 6,
+      "product_id": 1
+    },
+    {
+      "key": { "product": "Propane", "src": "GSP I" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        11.6, 13.3, 13.3, 12.9, 13.0, 12.2, 12.6, 11.1, 10.0, 11.1, 10.8, 11.1
+      ],
+      "id": 7,
+      "product_id": 3
+    },
+    {
+      "key": { "product": "Propane", "src": "GSP II" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [6.9, 7.1, 7.1, 6.7, 6.7, 6.6, 6.1, 6.1, 5.5, 6.1, 5.9, 6.1],
+      "id": 8,
+      "product_id": 3
+    },
+    {
+      "key": { "product": "Propane", "src": "GSP III" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [11.4, 9.3, 9.3, 6.9, 4.5, 8.6, 7.9, 7.9, 7.2, 7.9, 7.7, 7.9],
+      "id": 9,
+      "product_id": 3
+    },
+    {
+      "key": { "product": "Propane", "src": "GSP V" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        10.5, 14.0, 14.0, 13.5, 13.5, 13.0, 13.7, 13.7, 12.4, 13.7, 13.3, 13.7
+      ],
+      "id": 10,
+      "product_id": 3
+    },
+    {
+      "key": { "product": "Propane", "src": "GSP VI" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        51.8, 8.6, 53.6, 51.8, 52.4, 51.3, 53.6, 53.6, 48.4, 53.6, 51.8, 53.6
+      ],
+      "id": 11,
+      "product_id": 3
+    },
+    {
+      "key": { "product": "LPG", "src": "GSP I" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        27.9, 26.7, 27.6, 26.7, 27.7, 26.1, 26.9, 23.8, 21.5, 23.8, 23.0, 23.8
+      ],
+      "id": 12,
+      "product_id": 4
+    },
+    {
+      "key": { "product": "LPG", "src": "GSP II" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        31.0, 29.5, 30.1, 27.2, 25.8, 29.4, 31.1, 31.1, 28.1, 31.1, 30.1, 31.1
+      ],
+      "id": 13,
+      "product_id": 4
+    },
+    {
+      "key": { "product": "LPG", "src": "GSP III" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        38.2, 40.9, 48.1, 31.7, 15.0, 39.4, 41.7, 41.7, 37.6, 41.7, 40.3, 41.7
+      ],
+      "id": 14,
+      "product_id": 4
+    },
+    {
+      "key": { "product": "LPG", "src": "GSP V" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        50.3, 54.9, 51.2, 52.5, 55.4, 53.0, 56.4, 56.4, 50.9, 56.4, 54.5, 56.4
+      ],
+      "id": 15,
+      "product_id": 4
+    },
+    {
+      "key": { "product": "Butane", "src": "GSP VI" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        38.8, 6.8, 39.1, 37.9, 41.6, 40.7, 41.0, 36.3, 32.8, 36.3, 35.2, 36.3
+      ],
+      "id": 16,
+      "product_id": 8
+    },
+    {
+      "key": { "product": "C3/LPG", "src": "GSP I" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        39.5, 40.0, 40.9, 39.6, 40.7, 38.3, 39.5, 34.9, 31.5, 34.9, 33.8, 34.9
+      ],
+      "id": 17,
+      "product_id": 2
+    },
+    {
+      "key": { "product": "C3/LPG", "src": "GSP II" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        37.9, 36.6, 37.2, 33.9, 32.4, 36.0, 37.2, 37.2, 33.6, 37.2, 36.0, 37.2
+      ],
+      "id": 18,
+      "product_id": 2
+    },
+    {
+      "key": { "product": "C3/LPG", "src": "GSP III" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        49.6, 50.2, 57.4, 38.6, 19.5, 48.0, 49.6, 49.6, 44.8, 49.6, 48.0, 49.6
+      ],
+      "id": 19,
+      "product_id": 2
+    },
+    {
+      "key": { "product": "C3/LPG", "src": "GSP V" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        60.8, 68.8, 65.1, 66.0, 68.8, 66.0, 70.1, 70.1, 63.3, 70.1, 67.8, 70.1
+      ],
+      "id": 20,
+      "product_id": 2
+    },
+    {
+      "key": { "product": "C3/LPG", "src": "GSP VI" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        90.6, 15.4, 92.7, 89.7, 93.9, 91.9, 94.6, 89.9, 81.2, 89.9, 87.0, 89.9
+      ],
+      "id": 21,
+      "product_id": 2
+    },
+    {
+      "key": { "product": "NGL", "src": "GSP I" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [10.5, 10.9, 10.9, 9.3, 9.3, 8.8, 9.1, 8.0, 7.2, 8.0, 7.8, 8.0],
+      "id": 22,
+      "product_id": 6
+    },
+    {
+      "key": { "product": "NGL", "src": "GSP II" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [9.4, 9.7, 9.3, 9.4, 8.6, 8.9, 8.3, 8.3, 7.5, 8.3, 8.0, 8.3],
+      "id": 23,
+      "product_id": 6
+    },
+    {
+      "key": { "product": "NGL", "src": "GSP III" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        12.3, 12.7, 12.7, 9.4, 2.6, 12.3, 12.7, 12.7, 11.5, 12.7, 12.3, 12.7
+      ],
+      "id": 24,
+      "product_id": 6
+    },
+    {
+      "key": { "product": "NGL", "src": "GSP V" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        13.8, 14.3, 14.3, 12.6, 12.6, 12.2, 12.8, 12.8, 11.6, 12.8, 12.4, 12.8
+      ],
+      "id": 25,
+      "product_id": 6
+    },
+    {
+      "key": { "product": "NGL", "src": "GSP VI" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        19.5, 3.3, 20.2, 18.3, 18.5, 18.1, 18.9, 18.9, 17.1, 18.9, 18.3, 18.9
+      ],
+      "id": 26,
+      "product_id": 6
+    },
+    {
+      "key": { "product": "NGL", "src": "NGL FROM STABILIZER" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        13.5, 13.0, 13.0, 12.6, 13.0, 12.6, 13.0, 13.0, 11.8, 13.0, 12.6, 13.0
+      ],
+      "id": 27,
+      "product_id": 6
+    },
+    {
+      "key": { "product": "Pentane", "src": "GSP VI" },
+      "date": [
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06"
+      ],
+      "volume": [
+        4.46, 3.96, 0.72, 4.46, 4.32, 4.46, 4.32, 4.46, 4.46, 4.03, 4.46, 4.32
+      ],
+      "id": 28,
+      "product_id": 7
+    }
+  ],
+  "ability_daily": [
+    {
+      "date": [
+        "2021-05-01",
+        "2021-05-02",
+        "2021-05-03",
+        "2021-05-04",
+        "2021-05-05",
+        "2021-05-06",
+        "2021-05-07",
+        "2021-05-08",
+        "2021-05-09",
+        "2021-05-10",
+        "2021-05-11",
+        "2021-05-12",
+        "2021-05-13",
+        "2021-05-14",
+        "2021-05-15",
+        "2021-05-16",
+        "2021-05-17",
+        "2021-05-18",
+        "2021-05-19",
+        "2021-05-20",
+        "2021-05-21",
+        "2021-05-22",
+        "2021-05-23",
+        "2021-05-24",
+        "2021-05-25",
+        "2021-05-26",
+        "2021-05-27",
+        "2021-05-28",
+        "2021-05-29",
+        "2021-05-30",
+        "2021-05-31"
+      ],
+      "volume": [
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.392",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552",
+        "6.552"
+      ],
+      "product_id": "1"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+
+
+    flowchart LR
+   
+  
+   Margin[fas:fa-hand-holding-usd : Margin/unit ] -->|input data| Web[fas:fa-database :Allocation Web]
+   Ability[fas:fa-industry : Ability C2 low and hight] -->|input data| Web[fas:fa-database :Allocation Web]
+   StandardRate[fas:fa-cog : Standard Rate] -->|input data| Web[fas:fa-database :Allocation Web]
+   YearlyConstrain[fas:fa-cog : Yearly Constrain] -->|input data| Web[fas:fa-database :Allocation Web]
+   MonthlyConstrain[fas:fa-cog : Monthly Constrain] -->|input data| Web[fas:fa-database :Allocation Web]
+   Web[fas:fa-database : Allocation Web] --> |interface data| Model[fas:fa-laptop-code : Model Optimization]
+   Model[fas:fa-laptop-code : Model Optimization]-->|output to allocation web| VolumnKT[fas:fa-burn : Volumn KT]
+   VolumnKT-.present customer.-> demand[fas:fa-user-edit : Adjust SCG Demand C2Low]
+  
+   demand-->|input data| MergeAllo[fas:fa-laptop : Model Optimization]
+   MergeAllo--> Web

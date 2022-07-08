@@ -1,0 +1,29 @@
+:host {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .setting-float {
+    position: absolute;
+    top: 28px;
+    right: 25px;
+    max-width: 115px;
+  }
+}
+
+/* .circleBase {
+  border-radius: 50%;
+}
+
+.importNotMatch {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: rgb(254, 255, 196);
+  border: 3px solid #fdd835;
+  display: inline-block;
+}
+
+.txt-desc {
+  display: inline-block;
+  margin-left: 0.5rem;
+} */

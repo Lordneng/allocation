@@ -1,0 +1,204 @@
+<div>
+  <!-- <div class="setting-float">
+    <form>
+      <label class="form-group has-float-label w-auto d-inline-block mb-0">
+        <dx-number-box [(value)]="numberBoxDigi" [min]="0">
+        </dx-number-box>
+        <span>จำนวนจุดทศนิยม</span>
+      </label>
+    </form>
+  </div>
+  <div class="d-flex flex-row flex align-items-center mt-3 mb-2">
+    <div class="d-flex flex-column mr-2">
+      <div>
+
+      </div>
+    </div>
+  </div> -->
+
+
+  <dx-data-grid #dataGridList [columns]="dynamicColumns" [dataSource]="dataList" columnResizingMode="widget"
+    [allowColumnResizing]="true" [focusedRowEnabled]="false" (onCellPrepared)="onCellPrepared($event)" (onToolbarPreparing)="onToolbarPreparing($event)">
+    <dxo-sorting [mode]="'none'"></dxo-sorting>
+    <dxo-search-panel [visible]="false"></dxo-search-panel>
+    <dxo-filter-row [visible]="false"></dxo-filter-row>
+    <dxo-scrolling columnRenderingMode="virtual"></dxo-scrolling>
+    <dxo-paging [enabled]="true"></dxo-paging>
+    <dxo-pager [visible]="true"></dxo-pager>
+    <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
+    <div *dxTemplate="let itemTemp of 'tagBoxTemplate'">
+      <dx-tag-box [items]="dynamicColumnsVisible" [showSelectionControls]="true" displayExpr="caption" valueExpr="dataField"
+        (onValueChanged)="onVisibleValueChange($event)" applyValueMode="useButtons" [value]="valueMonth">
+      </dx-tag-box>
+    </div>
+    <div *dxTemplate="let itemTemp of refineryCellTemplate; let i = index">
+      <ng-container>
+        <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer">
+          {{itemTemp.data.product}}
+          <i class="glyph-icon simple-icon-options-vertical"></i>
+        </div>
+        <dx-context-menu [dataSource]="[{text:'Edit'}]" [showEvent]="'dxclick'" [width]="200"
+          [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
+          (onItemClick)="itemClick($event, itemTemp.data, itemTemp.rowIndex ,itemTemp.column.indexMonth, itemTemp.column.dataField,  true)">
+        </dx-context-menu>
+      </ng-container>
+    </div>
+    <div *dxTemplate="let itemTemp of cellTemplate">
+      <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer"
+        [ngClass]="{'text-danger': itemTemp.data[itemTemp.column.name]}"
+        (mouseenter)="itemTemp.data[itemTemp.column.dataField + itemTemp.rowIndex] = true"
+        (mouseleave)="itemTemp.data[itemTemp.column.dataField + itemTemp.rowIndex] = false">
+        <i class="glyph-icon simple-icon-options-vertical"></i>
+        {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
+        (numberBoxDigi ? numberBoxDigi: 0)}}
+      </div>
+      <dx-context-menu [dataSource]="[{text:'Edit'}, {text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
+        [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
+        (onItemClick)="itemClick($event, itemTemp.data, itemTemp.rowIndex ,itemTemp.column.code, itemTemp.column.dataField,  false, itemTemp)">
+      </dx-context-menu>
+      <dx-tooltip *ngIf="itemTemp.data[itemTemp.column.name]"
+        [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
+        [(visible)]="itemTemp.data[itemTemp.column.dataField + itemTemp.rowIndex]" [closeOnOutsideClick]="false">
+        <div *dxTemplate="let data = data; of: 'content'"> {{itemTemp.data[itemTemp.column.name] ?
+          itemTemp.data[itemTemp.column.name] : null}} </div>
+      </dx-tooltip>
+    </div>
+  </dx-data-grid>
+</div>
+
+<dx-popup [showTitle]="true" [title]="dataInfoEditColumn.title" [closeOnOutsideClick]="false" [(visible)]="popupVisible"
+  [showCloseButton]="false">
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button class="btn btn-outline-primary" (click)="onCancel()">ยกเลิก</button>
+  </dxi-toolbar-item>
+  <dxi-toolbar-item toolbar="bottom" location="after">
+    <button [disabled]="this.accessMenu != 1" class="btn btn-primary" (click)="onSubmit()">ตกลง</button>
+  </dxi-toolbar-item>
+  <dx-scroll-view width="100%" height="100%">
+    <form>
+      <dx-validation-group #targetGroup>
+        <div class="row row-sm mg-t-15 sticky-validate-result mb-3" [ngClass]="{'d-hidden': validateResult.isValid}">
+          <div class="col-sm-12">
+            <div class="card pd-20">
+              <div class="">
+                <dx-validation-summary id="summary"></dx-validation-summary>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="cal-data-min">Product</label>
+            <dx-text-box [readOnly]="true" [(value)]="dataInfo['product']"></dx-text-box>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="cal-data-min">Unit</label>
+            <dx-text-box [readOnly]="true" [(value)]="dataInfo['unit']"></dx-text-box>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="cal-data-min">Source</label>
+            <dx-text-box [readOnly]="true" [(value)]="dataInfo['source']"></dx-text-box>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="cal-data-min">Demand</label>
+            <dx-text-box [readOnly]="true" [(value)]="dataInfo['demand']"></dx-text-box>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="cal-data-min">Delivery Point</label>
+            <dx-text-box [readOnly]="true" [(value)]="dataInfo['deliveryPoint']"></dx-text-box>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="cal-data-min">Min</label>
+            <dx-number-box [inputAttr]="{ id: 'cal-data-min'}" [readOnly]="this.accessMenu != 1 || isNullMin"
+              [(value)]="dataInfoEditColumn.isFrom ? dataInfo['min'] : dataInfo['minM' + dataInfoEditColumn.month + dataInfoEditColumn.year]"
+              (onValueChanged)="valMonthValueChanged($event, dataInfoEditColumn.isFrom ? 'min' : 'minM' + dataInfoEditColumn.month + dataInfoEditColumn.year)">
+              <!-- <dx-validator>
+                <dxi-validation-rule type="required" message="กรุณากรอก Min"></dxi-validation-rule>
+              </dx-validator> -->
+            </dx-number-box>
+            <div class="isNullBox">
+              <dx-check-box
+                [(value)]="dataInfoEditColumn.isFrom ? dataInfo.isNullMin : dataInfo['isNullMinM' + dataInfoEditColumn.month + dataInfoEditColumn.year]"
+                (onValueChanged)="isNullMinValueChanged($event, dataInfoEditColumn.isFrom ? 'min' : 'minM' + dataInfoEditColumn.month + dataInfoEditColumn.year)"
+                [readOnly]="this.accessMenu != 1" id="isNullMin">
+              </dx-check-box>
+              <label for="isNullMin" class="lblisNullBox">ไม่ระบุ Min</label>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="cal-data-max">Max</label>
+            <dx-number-box [inputAttr]="{ id: 'cal-data-max'}" [readOnly]="this.accessMenu != 1 || isNullMax"
+              [(value)]="dataInfoEditColumn.isFrom ? dataInfo['max'] : dataInfo['maxM' + dataInfoEditColumn.month + dataInfoEditColumn.year]"
+              (onValueChanged)="valMonthValueChanged($event, dataInfoEditColumn.isFrom ? 'max' : 'maxM' + dataInfoEditColumn.month + dataInfoEditColumn.year)">
+              <!-- <dx-validator>
+                <dxi-validation-rule type="required" message="กรุณากรอก Max"></dxi-validation-rule>
+              </dx-validator> -->
+            </dx-number-box>
+            <div class="isNullBox">
+              <dx-check-box
+                [(value)]="dataInfoEditColumn.isFrom ? dataInfo.isNullMax : dataInfo['isNullMaxM' + dataInfoEditColumn.month + dataInfoEditColumn.year]"
+                (onValueChanged)="isNullMaxValueChanged($event, dataInfoEditColumn.isFrom ? 'max' : 'maxM' + dataInfoEditColumn.month + dataInfoEditColumn.year)"
+                [readOnly]="this.accessMenu != 1" id="isNullMax">
+              </dx-check-box>
+              <label for="isNullMax" class="lblisNullBox">ไม่ระบุ Max</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="unit">Unit</label>
+            <dx-select-box [inputAttr]="{ id: 'unit' }" [dataSource]="calculateSetting" valueExpr="cal"
+              [readOnly]="this.accessMenu != 1" displayExpr="name"
+              [(value)]="dataInfoEditColumn.isFrom ? dataInfo['isCalculate'] : dataInfo['isCalculateM' + dataInfoEditColumn.month + dataInfoEditColumn.year]"
+              (onValueChanged)="isCalculateValueChanged($event, dataInfoEditColumn.isFrom ? 'isCalculate' : 'isCalculateM' + dataInfoEditColumn.month + dataInfoEditColumn.year)">
+              <!-- <dx-validator>
+                <dxi-validation-rule type="required" message="กรุณาเลือก Unit"></dxi-validation-rule>
+              </dx-validator> -->
+            </dx-select-box>
+          </div>
+        </div>
+        <ng-container *ngIf="!dataInfoEditColumn.isFrom; else isFromTemplate">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="work-day">Work Day</label>
+              <dx-number-box [inputAttr]="{ id: 'work-day'}" [readOnly]="this.accessMenu != 1"
+                [(value)]="dataInfo['dayMonthM' + dataInfoEditColumn.month + dataInfoEditColumn.year]">
+                <dx-validator>
+                  <dxi-validation-rule type="required" message="กรุณากรอก Work Day"></dxi-validation-rule>
+                </dx-validator>
+              </dx-number-box>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="ta-day">Turn Around / Turn Down</label>
+              <dx-number-box [readOnly]="true" [inputAttr]="{ id: 'ta-day'}"
+                [(value)]="dataInfo['dayTurnAroundM' + dataInfoEditColumn.month + dataInfoEditColumn.year]">
+              </dx-number-box>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="unit">Remark</label>
+              <dx-text-area [readOnly]="this.accessMenu != 1"
+                [(value)]="dataInfo['remarkM' + dataInfoEditColumn.month + dataInfoEditColumn.year]">
+              </dx-text-area>
+            </div>
+          </div>
+        </ng-container>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <ng-template #isFromTemplate>
+              <dx-check-box [inputAttr]="{ id: 'is-all', class: 'form-check-input'}" [(value)]="dataInfo['isAll']"
+                [readOnly]="this.accessMenu != 1" text="นำไปใช้ทั้งหมดกับข้อมูล Rolling">
+              </dx-check-box>
+            </ng-template>
+          </div>
+        </div>
+      </dx-validation-group>
+    </form>
+  </dx-scroll-view>
+
+</dx-popup>

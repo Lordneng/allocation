@@ -1,0 +1,103 @@
+<div class="page-wrapper">
+  <div #spacer></div>
+  <div class="page-header" sticky [spacer]="spacer">
+    <!-- sticky [spacer]="spacer" -->
+    <div class="nav-block">
+      <a href="javascript:;" class="menu-button">
+        <i class="fas fa-align-left"></i>
+      </a>
+    </div>
+    <div class="header-block">
+      <div class="block">
+        <div class="page-title">
+          <p class="page-name">LR By Legal</p>
+          <p class="mb-0">
+            <span class="badge badge-success mb-1">{{ dataInfo.versionName }}</span>
+            <span class="space"> | </span>
+            <!-- <span>Last Updated, 10 days ago</span> -->
+            <span>Last updated By : {{ dataInfo.updateBy}} | {{ dataInfo.updateDate | date:"dd/MM/yyyy HH:mm:ss"}}
+              <span class="badge badge-light mb-1">{{ dataInfo.updateBy}}</span></span>
+          </p>
+        </div>
+        <div class="text-zero top-right-button-container">
+          <button class="btn btn-outline-primary mg-l-5 mr-1" (click)="onSearch($event)">
+            <i ng-reflect-ng-class="simple-icon-magnifier" class="simple-icon-magnifier mr-1"></i>
+            <span>ค้นหา</span>
+          </button>
+          <div class="btn-group" dropdown>
+            <div *ngIf="accessMenu === 1">
+              <button id="button-split" type="button" dropdownToggle
+                class="btn btn-primary dropdown-toggle dropdown-toggle-split mr-1" aria-controls="dropdown-split">
+                <i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save mr-1"></i>
+                <span class="caret">บันทึก </span>
+              </button> &nbsp;
+            </div>
+            <div *ngIf="accessMenu !== 1">
+              <button id="button-split" type="button" disabled
+                class="btn btn-primary dropdown-toggle dropdown-toggle-split mr-1" aria-controls="dropdown-split">
+                <i ng-reflect-ng-class="iconsminds-save" class="iconsminds-save mr-1"></i>
+                <span class="caret">บันทึก </span>
+              </button> &nbsp;
+            </div>
+
+            <ul id="dropdown-split" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
+              aria-labelledby="button-split">
+              <li role="menuitem" *ngIf="icanSave"><a class="dropdown-item" tooltip="Save this version (ctrl+s)"
+                  placement="right" href="javascript:;" (click)="onSave()">บันทึก</a></li>
+              <li role="menuitem"><a class="dropdown-item" tooltip="Save new version (ctrl+shift+s)" placement="right"
+                  href="javascript:;" (click)="onSaveAs()">บันทึกเป็น</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+  <div class="page-body">
+    <section class="section section-bg-grey">
+      <div class="block-wrapper" style="margin-bottom: 100px;">
+        <div class="result-block">
+          <div class="detail-block">
+            <tabset #tabSet class="separator-tabs">
+              <tab heading="Data (LR By Legal)" (selectTab)="tabSecondChange($event)">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card card-cost-data mb-4">
+                      <div class="card-body">
+                        <h2 class="mb-2">LR By Legal
+                          <!-- <button type="button" class="btn btn-outline-secondary btn-xs" (click)="onSearch($event)"><i
+                        class="iconsminds-filter-2"></i>Filter by month</button> -->
+                        </h2>
+                        <app-lr-by-legal-meter-data-grid #lrByLegalMeterDataGrid [maxVersion]="maxVersion"
+                          [numberBoxReadOnly]="numberBoxReadOnly">
+                        </app-lr-by-legal-meter-data-grid>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </tab>
+              <tab heading="Version">
+                <app-lr-by-legal-history #lrBylegalHistory (onEventClick)="onHistoryClick($event)">
+                </app-lr-by-legal-history>
+              </tab>
+            </tabset>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<ng-template #template>
+
+  <div class="modal-body">
+    <h5 class="mb-4"> <i class="far fa-calendar-alt icon-color"></i> Year</h5>
+    <form>
+      <dx-calendar [maxZoomLevel]="'year'" [minZoomLevel]="'century'" [(value)]="date"></dx-calendar>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-primary" (click)="searchCancelClick()">ยกเลิก</button>
+    <button type="submit" class="btn btn-primary float-right" (click)="searchClick()">ค้นหา</button>
+  </div>
+</ng-template>

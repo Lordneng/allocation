@@ -1,0 +1,107 @@
+<div class="form-group row mt-2">
+  <label for="staticEmail" class="col-1 offset-9 col-form-label">ข้อมูลเดือน : </label>
+  <div class="col-2">
+    <!-- <dx-select-box [items]="listMonth"></dx-select-box> -->
+    <dx-select-box [dataSource]="listMonth" valueExpr="id" displayExpr="monthName" name="filterHistoryByUser"
+      [(selectedItem)]="dataInfo.selectedMonth" (onValueChanged)="onMonthChanged($event)" [showClearButton]="false"
+      [(ngModel)]="filterHistoryByUser">
+    </dx-select-box>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 d-none d-md-block">
+    <div class="d-flex mb-2">
+      <div class="d-flex flex-grow-1 min-width-zero card-heading">
+        <div
+          class="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center card-body py-1">
+          <div class="mb-0 truncate w-40 w-xs-100 my-1">
+            Version
+          </div>
+          <div class="mb-0 truncate w-10 w-xs-100 my-1">
+            Year
+          </div>
+
+          <div class="w-15 w-xs-100">Updated by</div>
+          <div class="w-15 w-xs-100">Updated date</div>
+          <!-- <div class="w-10 w-xs-100">Version ที่ใช้คำนวณ</div> -->
+          <div class="w-10 w-xs-100 text-right">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12" *ngFor="let item of masterData.calMarginVersion; let i=index">
+    <div [ngClass]="{'card d-flex mb-3 card': true, 'active':true}">
+      <div class="d-flex flex-grow-1 min-width-zero">
+        <div
+          class="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center card-body py-2">
+          <div class="mb-0 w-40 w-xs-100 my-1 field-version">
+            <span class="field-label d-block d-md-none">
+              Version
+            </span>
+            <a id="toggler1" href="javascript:;">
+              <i
+                [ngClass]="{'heading-icon mr-2':true, 'simple-icon-refresh opacity-0 d-none d-md-inline-block' : !(item.id === dataInfo.id), 'simple-icon-check color-success' : item.id === dataInfo.id }"></i>
+              <span class="align-middle d-inline-block">{{item.versionName}}</span>
+            </a>
+          </div>
+          <div class="mb-0 truncate w-10 w-xs-100 my-1">
+            <span class="field-label d-block d-md-none">
+              Year
+            </span>
+            <a id="toggler1" href="javascript:;">
+              <span class="align-middle d-inline-block">{{item.year}}</span></a>
+          </div>
+
+          <div class="my-1 w-15 w-xs-100">
+            <span class="field-label d-block d-md-none">Updated by</span>
+            <span class="text-muted text-small">{{item.updateBy}}</span>
+
+          </div>
+          <div class="my-1 w-15 w-xs-100">
+            <span class="field-label d-block d-md-none">Updated by</span>
+            <span class="text-muted text-small">{{item.updateDate | date:'dd/MM/yyyy HH:mm:sss'}}</span>
+          </div>
+          <!-- <div class="my-1 w-10 w-xs-100">
+            <span class="field-label d-block d-md-none">Version ที่ใช้คำนวณ</span>
+            <span class="text-muted text-small">
+              <i *ngIf="item.isApply === true" class="heading-icon mr-2 simple-icon-check"></i>
+            </span>
+          </div> -->
+          <div class="my-1 w-10 w-xs-100 text-md-right">
+            <button class="btn btn-outline-secondary btn-xs btn-viewmore" (click)="onView($event,item)">
+              <!-- <i class="iconsminds-file"></i> -->
+              ดูข้อมูล
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="row">
+  <div class="col-12" *ngFor="let item of masterData.costVersion; let i=index">
+    <div [ngClass]="{'card d-flex mb-3 card': true, 'active':true}">
+      <div class="d-flex flex-grow-1 min-width-zero">
+        <div
+          class="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center card-body">
+          <a class="list-item-heading mb-0 truncate w-20 w-xs-100  mb-1 mt-1" id="toggler1" href="javascript:;">
+            <i [ngClass]="{'heading-icon':true, 'simple-icon-refresh' : item.version !== version, 'simple-icon-check' : item.version === version }"></i>
+            <span class="align-middle d-inline-block">{{item.version}}</span></a>
+          <a class="list-item-heading mb-0 truncate w-20 w-xs-100  mb-1 mt-1" id="toggler1" href="javascript:;">
+            <span class="align-middle d-inline-block">{{item.year}}</span></a>
+          <p class="mb-1 text-muted text-small w-15 w-xs-100">{{item.updateBy}}</p>
+          <p class="mb-1 text-muted text-small w-15 w-xs-100">{{item.updateDate | date:'dd/MM/yyyy HH:mm:sss'}}</p>
+          <div class="w-15 w-xs-100"><span [class]="'badge badge-pill badge-primary'">{{item.action}}</span></div>
+          <div class="w-15 w-xs-100 text-right">
+            <button class="btn btn-sm pd-x-15 mg-l-5 btn-outline-secondary" (click)="onView($event,item)">
+              <i class="iconsminds-file"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div> -->
