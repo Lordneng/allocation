@@ -708,3 +708,8 @@ input-xx {
 .tooltip {
   z-index: 100000000000 !important;
 }
+
+.text-smart-price{
+  font-weight: 700;
+  color: #388E3C;
+}
