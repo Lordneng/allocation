@@ -1,5 +1,5 @@
 <tabset #tabSet class="separator-tabs">
-  <tab heading="Balance" class="nav-link"  (selectTab)="tabBalanceChange($event)">
+  <tab heading="Balance" class="nav-link" (selectTab)="tabBalanceChange($event)">
     <section class="section section-bg-grey">
       <div class="block-wrapper" style="margin-bottom: 10px;">
         <div class="result-block">
@@ -29,7 +29,7 @@
                 <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
                   *ngIf="!itemTemp.data.isViewOnly"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceC3LPG'"
-                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListBalanceC3LPG,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
                 </dx-context-menu>
                 <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceC3LPG'"
@@ -51,9 +51,9 @@
             <h3><i class="simple-icon-diamond"></i> Balance C3</h3>
           </div>
           <div class="detail-block">
-            <dx-data-grid #dataGrid2 [columns]="dynamicColumns" [dataSource]="dataListBalanceC3" columnResizingMode="widget"
-              keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true" [focusedRowEnabled]="false"
-              (onCellPrepared)="onCellPrepared($event)">
+            <dx-data-grid #dataGrid2 [columns]="dynamicColumns" [dataSource]="dataListBalanceC3"
+              columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+              [focusedRowEnabled]="false" (onCellPrepared)="onCellPrepared($event)">
               <dxo-filter-row [visible]="false"></dxo-filter-row>
               <dxo-group-panel [visible]="false"></dxo-group-panel>
               <dxo-sorting [mode]="'none'"></dxo-sorting>
@@ -73,7 +73,7 @@
                 <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
                   *ngIf="!itemTemp.data.isViewOnly"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceC3'"
-                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListBalanceC3,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
                 </dx-context-menu>
                 <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceC3'"
@@ -116,7 +116,7 @@
                 <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
                   *ngIf="!itemTemp.data.isViewOnly"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPG'"
-                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListBalanceLPG,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
                 </dx-context-menu>
                 <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPG'"
@@ -159,7 +159,7 @@
                 <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
                   *ngIf="!itemTemp.data.isViewOnly"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex  + itemTemp.column.headerName + 'dataListBalanceLPGPetro'"
-                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListBalanceLPGPetro,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
                 </dx-context-menu>
                 <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPGPetro'"
@@ -202,7 +202,7 @@
                 <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
                   *ngIf="!itemTemp.data.isViewOnly"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPGDom'"
-                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListBalanceLPGDom,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
                 </dx-context-menu>
                 <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListBalanceLPGDom'"
@@ -217,7 +217,7 @@
       </div>
     </section>
   </tab>
-  <tab heading="Supply"  (selectTab)="tabSupplyChange($event)">
+  <tab heading="Supply" (selectTab)="tabSupplyChange($event)">
 
     <section class="section section-bg-grey">
       <div class="block-wrapper" style="margin-bottom: 10px;">
@@ -386,7 +386,7 @@
                 <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
                   *ngIf="!itemTemp.data.isViewOnly"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListC3Import'"
-                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListC3Import,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
                 </dx-context-menu>
                 <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListC3Import'"
@@ -401,7 +401,7 @@
       </div>
     </section>
   </tab>
-  <tab heading="Demand"  (selectTab)="tabDemandChange($event)">
+  <tab heading="Demand" (selectTab)="tabDemandChange($event)">
 
 
     <section class="section section-bg-grey">
@@ -430,7 +430,7 @@
                 <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
                   *ngIf="!itemTemp.data.isViewOnly"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListDemand'"
-                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+                  (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListDemand,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
                 </dx-context-menu>
                 <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
                   [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + 'dataListDemand'"
@@ -618,9 +618,9 @@
               <div class="d-flex flex-row justify-content-between align-items-center">
                 <label class="control-label">Value</label>
                 <div class="custom-control custom-checkbox mb-2" Tooltip="Manual">
-                  <input type="checkbox" id="checkManual" name="isManual" [(ngModel)]="dataInfoPopup.isManual"
+                  <input type="checkbox" id="checkManualC3LPG" name="isManualC3LPG" [(ngModel)]="dataInfoPopup.isManual"
                     class="custom-control-input">
-                  <label for="checkManual" class="custom-control-label">Manual</label>
+                  <label for="checkManualC3LPG" class="custom-control-label">Manual</label>
                 </div>
               </div>
               <dx-number-box [inputAttr]="{ id: 'val-data'}" [step]="1" [min]="0" name="value"

@@ -21,7 +21,7 @@
   <dxo-sorting [mode]="'none'"></dxo-sorting>
   <div *dxTemplate="let itemTemp of cellTemplate">
     <div [id]="'edit' +itemTemp.column.dataField + itemTemp.rowIndex" class="pointer "
-      [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true,'text-primary': itemTemp.data['isActual'+itemTemp.column.dataField] === true}"
+      [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true,'text-smart-price': itemTemp.data['isActual'+itemTemp.column.dataField] === true}"
       (mouseenter)="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex] = true"
       (mouseleave)="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex] = false">
       <i class="glyph-icon simple-icon-options-vertical"></i>{{itemTemp.data[itemTemp.column.dataField] | number: '1.'
@@ -29,7 +29,8 @@
       (numberBoxDigi ? numberBoxDigi: 0) + '-' +
       (numberBoxDigi ? numberBoxDigi: 0)}}
     </div>
-    <dx-context-menu *ngIf="itemTemp.data['isActual'+itemTemp.column.dataField] !== true" [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
+    <dx-context-menu *ngIf="itemTemp.data['isActual'+itemTemp.column.dataField] !== true"
+      [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
       [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
       (onItemClick)="itemClick($event,itemTemp.rowIndex, itemTemp.column.code, dataList,itemTemp.data,itemTemp.column.dataField)">
     </dx-context-menu>

@@ -26,7 +26,7 @@
             <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
               *ngIf="!itemTemp.data.isViewOnly"
               [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName"
-              (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+              (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListSupplySource,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
             </dx-context-menu>
             <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
               [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName"
@@ -69,7 +69,7 @@
             <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
               *ngIf="!itemTemp.data.isViewOnly"
               [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + itemTemp.column.source"
-              (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+              (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code,dataListDemand,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
             </dx-context-menu>
             <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
               [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.column.headerName + itemTemp.column.source"
@@ -179,9 +179,9 @@
               <div class="d-flex flex-row justify-content-between align-items-center">
                 <label class="control-label">Value</label>
                 <div class="custom-control custom-checkbox mb-2" Tooltip="Manual">
-                  <input type="checkbox" id="checkManual" name="isManual" [(ngModel)]="dataInfoPopup.isManual"
+                  <input type="checkbox" id="checkManualCO2" name="isManualCO2" [(ngModel)]="dataInfoPopup.isManual"
                     class="custom-control-input">
-                  <label for="checkManual" class="custom-control-label">Manual</label>
+                  <label for="checkManualCO2" class="custom-control-label">Manual</label>
                 </div>
               </div>
               <dx-number-box [inputAttr]="{ id: 'val-data'}" [step]="1" [min]="0" name="value"

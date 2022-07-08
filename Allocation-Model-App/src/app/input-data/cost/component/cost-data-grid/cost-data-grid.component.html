@@ -28,7 +28,7 @@
               (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code, item.dataList,itemTemp.data,itemTemp.column.dataField)">
             </dx-context-menu> -->
             <div [id]="'edit' + item.id + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer "
-              [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true,'text-primary': itemTemp.data['isActual'+itemTemp.column.dataField] === true}"
+              [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true,'text-smart-price': itemTemp.data['isActual'+itemTemp.column.dataField] === true}"
               (mouseenter)="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex] = true"
               (mouseleave)="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex] = false">
               <i class="glyph-icon simple-icon-options-vertical"></i>{{itemTemp.data[itemTemp.column.dataField] |

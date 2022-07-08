@@ -5,8 +5,9 @@
         <h3><i class="simple-icon-diamond"></i> Ability {{dataInfo.abilityPlanRayongOldItem?.versionName}}</h3>
       </div>
       <div class="detail-block">
-        <dx-data-grid #dataGridAbility0 [columns]="dynamicColumns" [dataSource]="dataListAbility0" columnResizingMode="widget"
-          keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true" [focusedRowEnabled]="false">
+        <dx-data-grid #dataGridAbility0 [columns]="dynamicColumns" [dataSource]="dataListAbility0"
+          columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+          [focusedRowEnabled]="false">
           <dxo-filter-row [visible]="false"></dxo-filter-row>
           <dxo-group-panel [visible]="false"></dxo-group-panel>
           <dxo-sorting [mode]="'none'"></dxo-sorting>
@@ -44,8 +45,9 @@
         <h3><i class="simple-icon-diamond"></i> Ability {{dataInfo.abilityPlanRayongItem?.versionName}}</h3>
       </div>
       <div class="detail-block">
-        <dx-data-grid #dataGridAbility1 [columns]="dynamicColumns" [dataSource]="dataListAbility1" columnResizingMode="widget"
-          keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true" [focusedRowEnabled]="false">
+        <dx-data-grid #dataGridAbility1 [columns]="dynamicColumns" [dataSource]="dataListAbility1"
+          columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+          [focusedRowEnabled]="false">
           <dxo-filter-row [visible]="false"></dxo-filter-row>
           <dxo-group-panel [visible]="false"></dxo-group-panel>
           <dxo-sorting [mode]="'none'"></dxo-sorting>
@@ -93,7 +95,7 @@
           <dxo-paging [enabled]="false"></dxo-paging>
           <dxo-pager [visible]="false"></dxo-pager>
           <div *dxTemplate="let itemTemp of cellTemplate">
-            <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer "
+            <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.headerName" class="pointer "
               style="font-weight: 500;"
               [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
               <i class="glyph-icon simple-icon-options-vertical" *ngIf="!itemTemp.data.isViewOnly"></i>
@@ -101,12 +103,13 @@
               (numberBoxDigi ? numberBoxDigi: 0)}}
             </div>
             <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
-              *ngIf="!itemTemp.data.isViewOnly" [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
+              *ngIf="!itemTemp.data.isViewOnly"
+              [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.headerName"
               (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code, dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
             </dx-context-menu>
             <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
-              [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
-              [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex]"
+              [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex + itemTemp.headerName"
+              [(visible)]="itemTemp.data['isTooltip' + itemTemp.column.dataField + itemTemp.rowIndex  + itemTemp.headerName]"
               [closeOnOutsideClick]="false">
               <div *dxTemplate="let data = data; of: 'content'"> {{getDataVersion0(item,itemTemp)}} </div>
             </dx-tooltip>
@@ -124,8 +127,9 @@
         <h3><i class="simple-icon-diamond"></i> Allocate ลดลงตามสัดส่วน</h3>
       </div>
       <div class="detail-block">
-        <dx-data-grid #dataGridAllocate [columns]="dynamicColumns" [dataSource]="dataListAllocate" columnResizingMode="widget"
-          keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true" [focusedRowEnabled]="false">
+        <dx-data-grid #dataGridAllocate [columns]="dynamicColumns" [dataSource]="dataListAllocate"
+          columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+          [focusedRowEnabled]="false">
           <dxo-filter-row [visible]="false"></dxo-filter-row>
           <dxo-group-panel [visible]="false"></dxo-group-panel>
           <dxo-sorting [mode]="'none'"></dxo-sorting>
@@ -213,15 +217,14 @@
           <dxo-paging [enabled]="false"></dxo-paging>
           <dxo-pager [visible]="false"></dxo-pager>
           <div *dxTemplate="let itemTemp of cellTemplate">
-            <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer "
-              style="font-weight: 500;"
+            <div class="pointer " style="font-weight: 500;"
               [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
               <!-- <i class="glyph-icon simple-icon-options-vertical"></i> -->
               {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
               (numberBoxDigi ? numberBoxDigi: 0)}}
             </div>
-            <!-- <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200" *ngIf="!itemTemp.data.isViewOnly"
-              [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
+            <!-- <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" *ngIf="!itemTemp.data.isViewOnly" [width]="200"
+              [target]="'#editAbility0' + itemTemp.column.dataField + itemTemp.rowIndex"
               (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code, item.dataList,itemTemp.data,itemTemp.column.dataField)">
             </dx-context-menu> -->
             <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
@@ -243,8 +246,9 @@
         <h3><i class="simple-icon-diamond"></i> Balance</h3>
       </div>
       <div class="detail-block">
-        <dx-data-grid #dataGridBalance [columns]="dynamicColumns" [dataSource]="dataListBalance" columnResizingMode="widget"
-          keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true" [focusedRowEnabled]="false">
+        <dx-data-grid #dataGridBalance [columns]="dynamicColumns" [dataSource]="dataListBalance"
+          columnResizingMode="widget" keyExpr="rowOrder" [allowColumnResizing]="true" [rowAlternationEnabled]="true"
+          [focusedRowEnabled]="false">
           <dxo-filter-row [visible]="false"></dxo-filter-row>
           <dxo-group-panel [visible]="false"></dxo-group-panel>
           <dxo-sorting [mode]="'none'"></dxo-sorting>
@@ -252,15 +256,14 @@
           <dxo-paging [enabled]="false"></dxo-paging>
           <dxo-pager [visible]="false"></dxo-pager>
           <div *dxTemplate="let itemTemp of cellTemplate">
-            <div [id]="'edit' + itemTemp.column.dataField + itemTemp.rowIndex" class="pointer "
-              style="font-weight: 500;"
+            <div class="pointer " style="font-weight: 500;"
               [ngClass]="{'text-danger': itemTemp.data['isManual'+itemTemp.column.dataField] === true}">
               <!-- <i class="glyph-icon simple-icon-options-vertical"></i> -->
               {{itemTemp.data[itemTemp.column.dataField] | number: '1.' + (numberBoxDigi ? numberBoxDigi: 0) + '-' +
               (numberBoxDigi ? numberBoxDigi: 0)}}
             </div>
-            <!-- <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200" *ngIf="!itemTemp.data.isViewOnly"
-              [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
+            <!-- <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" *ngIf="!itemTemp.data.isViewOnly" [width]="200"
+              [target]="'#editAbility0' + itemTemp.column.dataField + itemTemp.rowIndex"
               (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code, item.dataList,itemTemp.data,itemTemp.column.dataField)">
             </dx-context-menu> -->
             <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"

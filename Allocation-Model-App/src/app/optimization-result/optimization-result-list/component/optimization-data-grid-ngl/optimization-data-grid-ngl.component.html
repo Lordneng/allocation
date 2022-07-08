@@ -60,7 +60,7 @@
             </div>
             <dx-context-menu [dataSource]="[{text:'Edit'},{text:'Paste'}]" [showEvent]="'dxclick'" [width]="200"
               *ngIf="!itemTemp.data.isViewOnly" [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
-              (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code, dataListStandardRate,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
+              (onItemClick)="itemClick($event,itemTemp.rowIndex,itemTemp.column.code, dataListDemandOut0,itemTemp.data,itemTemp.column.dataField,itemTemp.column.month,itemTemp.column.year)">
             </dx-context-menu>
             <dx-tooltip *ngIf="itemTemp.data['isManual'+itemTemp.column.dataField] === true"
               [target]="'#edit' + itemTemp.column.dataField + itemTemp.rowIndex"
@@ -241,9 +241,9 @@
               <div class="d-flex flex-row justify-content-between align-items-center">
                 <label class="control-label">Value</label>
                 <div class="custom-control custom-checkbox mb-2" Tooltip="Manual">
-                  <input type="checkbox" id="checkManual" name="isManual" [(ngModel)]="dataInfoPopup.isManual"
+                  <input type="checkbox" id="checkManualNGL" name="isManualNGL" [(ngModel)]="dataInfoPopup.isManual"
                     class="custom-control-input">
-                  <label for="checkManual" class="custom-control-label">Manual</label>
+                  <label for="checkManualNGL" class="custom-control-label">Manual</label>
                 </div>
               </div>
               <dx-number-box [inputAttr]="{ id: 'val-data'}" [step]="1" [min]="0" name="value"
